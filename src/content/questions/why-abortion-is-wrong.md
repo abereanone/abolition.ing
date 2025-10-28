@@ -10,6 +10,6 @@ sortOrder: 1
 published: true
 ---
 
-Abortion is wrong because it ends the life of an innocent human being made in the image of God.
+Abortion is wrong because God says not to murder and makes it clear that murder is wrong.
 
 The call to abolish abortion is a call to justice — to love our preborn neighbors and to obey God rather than men.
