@@ -1,0 +1,6 @@
+name = "abolition-ing"
+main = "worker.js"
+compatibility_date = "2025-10-28"
+
+[assets]
+directory = "./dist"
