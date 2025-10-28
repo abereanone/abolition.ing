@@ -1,0 +1,8 @@
+---
+const { questions } = Astro.props;
+---
+<ul>
+  {questions.map(q => (
+    <li><a href={`/questions/${q.slug}`}>{q.title}</a></li>
+  ))}
+</ul>

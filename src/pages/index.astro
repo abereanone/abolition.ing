@@ -1,0 +1,26 @@
+---
+import NavBar from "@/components/NavBar.astro";
+import Footer from "@/components/Footer.astro";
+import QuestionList from "@/components/QuestionList.astro";
+import questions from "@/data/questions.json";
+
+const published = Array.isArray(questions)
+  ? questions.filter((q) => q.published)
+  : [];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>abolition.ing – Questions & Answers</title>
+    <link rel="stylesheet" href="/styles/theme.css" />
+  </head>
+  <body>
+    <NavBar />
+    <main>
+      <h1>Questions & Answers</h1>
+      <QuestionList questions={published} />
+    </main>
+    <Footer />
+  </body>
+</html>

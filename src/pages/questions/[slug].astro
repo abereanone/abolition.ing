@@ -1,0 +1,50 @@
+---
+import NavBar from "@/components/NavBar.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import questions from "@/data/questions.json";
+import categories from "@/data/categories.json";
+
+// Generate static paths for each question
+export function getStaticPaths() {
+  return questions
+    .filter((q) => q.published)
+    .map((q) => ({ params: { slug: q.slug } }));
+}
+
+const { slug } = Astro.params;
+
+// Find this question
+const q = questions.find((q) => q.slug === slug);
+
+// Prepare breadcrumb category names
+const catNames = q.categories.map((id) => {
+  const c = categories.find((c) => c.name === id || c.id === id);
+  return c ? c.name : id;
+});
+
+// ✅ Load markdown content using import.meta.glob (Astro v4+)
+const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
+const page = Object.values(markdownFiles).find((m) =>
+  m.file?.endsWith(q.markdown)
+);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{q.title} – abolition.ing</title>
+    <link rel="stylesheet" href="/styles/theme.css" />
+  </head>
+  <body>
+    <NavBar />
+    <main>
+      <Breadcrumbs categories={catNames} title={q.title} />
+      {page ? <page.Content /> : <p><em>Content not found.</em></p>}
+      <p class="author">
+        — <a href={q.author.url} target="_blank">{q.author.name}</a>
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>

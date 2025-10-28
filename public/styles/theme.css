@@ -1,0 +1,40 @@
+body {
+  background: #111;
+  color: #eaeaea;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #4ac1ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav, footer {
+  background: #181818;
+  padding: 1rem;
+  text-align: center;
+}
+h1, h2 {
+  color: #fff;
+}
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.breadcrumbs {
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+.breadcrumbs a {
+  color: #4ac1ff;
+}
