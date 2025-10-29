@@ -1,4 +1,43 @@
-<nav>
-  <a href="/">abolition.ing</a>
-  <a href="/resources">Resources</a>
-</nav>
+---
+---
+<header class="navbar">
+  <a href="/" class="logo">
+    <img src="/images/abolitioninglogoEdited.svg" alt="abolition.ing logo" />
+  </a>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/resources">Resources</a>
+  </nav>
+</header>
+
+<style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: #f2f2f2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .logo img {
+    height: 150px; /* increase logo size */
+    width: auto;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 400;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+</style>
