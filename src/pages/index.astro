@@ -1,6 +1,5 @@
 ---
-import NavBar from "@/components/NavBar.astro";
-import Footer from "@/components/Footer.astro";
+import Main from "@/layouts/Main.astro";
 import QuestionList from "@/components/QuestionList.astro";
 import questions from "@/data/questions.json";
 
@@ -9,18 +8,7 @@ const published = Array.isArray(questions)
   : [];
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>abolition.ing – Questions & Answers</title>
-    <link rel="stylesheet" href="/styles/theme.css" />
-  </head>
-  <body>
-    <NavBar />
-    <main>
-      <h1>Questions & Answers</h1>
-      <QuestionList questions={published} />
-    </main>
-    <Footer />
-  </body>
-</html>
+<Main title="abolition.ing – Questions & Answers">
+  <h1>Questions & Answers</h1>
+  <QuestionList questions={published} />
+</Main>

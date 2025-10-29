@@ -1,6 +1,5 @@
 ---
-import NavBar from "@/components/NavBar.astro";
-import Footer from "@/components/Footer.astro";
+import Main from "@/layouts/Main.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import questions from "@/data/questions.json";
 import categories from "@/data/categories.json";
@@ -30,21 +29,10 @@ const page = Object.values(markdownFiles).find((m) =>
 );
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{q.title} – abolition.ing</title>
-    <link rel="stylesheet" href="/styles/theme.css" />
-  </head>
-  <body>
-    <NavBar />
-    <main>
-      <Breadcrumbs categories={catNames} title={q.title} />
-      {page ? <page.Content /> : <p><em>Content not found.</em></p>}
-      <p class="author">
-        — <a href={q.author.url} target="_blank">{q.author.name}</a>
-      </p>
-    </main>
-    <Footer />
-  </body>
-</html>
+<Main title={`${q.title} – abolition.ing`}>
+  <Breadcrumbs categories={catNames} title={q.title} />
+  {page ? <page.Content /> : <p><em>Content not found.</em></p>}
+  <p class="author">
+    — <a href={q.author.url} target="_blank">{q.author.name}</a>
+  </p>
+</Main>
