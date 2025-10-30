@@ -1,0 +1,40 @@
+---
+import QuestionList from "@/components/QuestionList.astro";
+
+const { title, questions } = Astro.props;
+const hasQuestions = Array.isArray(questions) && questions.length > 0;
+---
+
+<section class="question-feed">
+  <header class="feed-header">
+    <slot name="header">
+      <h1>{title}</h1>
+    </slot>
+  </header>
+
+  {hasQuestions ? (
+    <QuestionList questions={questions} />
+  ) : (
+    <slot name="empty">
+      <p><em>No questions found.</em></p>
+    </slot>
+  )}
+</section>
+
+<style>
+  .question-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .feed-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .feed-header h1 {
+    margin: 0;
+  }
+</style>

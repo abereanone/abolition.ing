@@ -1,0 +1,63 @@
+---
+import Main from "@/layouts/Main.astro";
+import QuestionFeed from "@/components/QuestionFeed.astro";
+import { findCategory, getPublishedQuestions, listCategories } from "@/lib/questions";
+
+export function getStaticPaths() {
+  return listCategories().map((category) => ({
+    params: { category: category.id },
+  }));
+}
+
+const { category } = Astro.params;
+const activeCategory = findCategory(category);
+
+if (!activeCategory) {
+  throw new Error(`Category not found for slug "${category}".`);
+}
+
+const matchingQuestions = getPublishedQuestions(activeCategory.id);
+---
+
+<Main title={`${activeCategory.name} Questions - abolition.ing`}>
+  <QuestionFeed
+    title={`${activeCategory.name} Questions`}
+    questions={matchingQuestions}
+  >
+    <fragment slot="header">
+      <div class="category-header">
+        <a class="breadcrumb" href="/">All questions</a>
+        <h1>{activeCategory.name}</h1>
+      </div>
+    </fragment>
+    <fragment slot="empty">
+      <p><em>No questions found in this category yet.</em></p>
+    </fragment>
+  </QuestionFeed>
+</Main>
+
+<style>
+  .category-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .category-header h1 {
+    margin: 0;
+  }
+
+  .breadcrumb {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.75;
+  }
+
+  .breadcrumb:hover,
+  .breadcrumb:focus-visible {
+    text-decoration: underline;
+    opacity: 1;
+  }
+</style>

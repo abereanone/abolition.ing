@@ -1,0 +1,65 @@
+---
+import Main from "@/layouts/Main.astro";
+import { listCategories } from "@/lib/questions";
+
+const categoryIndex = listCategories();
+---
+
+<Main title="Categories - abolition.ing">
+  <h1>Categories</h1>
+  {categoryIndex.length ? (
+    <ul class="category-grid">
+      {categoryIndex.map((category) => (
+        <li>
+          <a href={`/categories/${category.id}`}>
+            <span class="category-name">{category.name}</span>
+            <span class="category-count">
+              {category.count === 1 ? "1 question" : `${category.count} questions`}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p><em>No categories available yet.</em></p>
+  )}
+</Main>
+
+<style>
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+  }
+
+  .category-grid li a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .category-grid li a:hover,
+  .category-grid li a:focus-visible {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+
+  .category-name {
+    font-weight: 600;
+  }
+
+  .category-count {
+    font-size: 0.85rem;
+    opacity: 0.75;
+  }
+</style>

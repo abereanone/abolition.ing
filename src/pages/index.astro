@@ -1,14 +1,11 @@
 ---
 import Main from "@/layouts/Main.astro";
-import QuestionList from "@/components/QuestionList.astro";
-import questions from "@/data/questions.json";
+import QuestionFeed from "@/components/QuestionFeed.astro";
+import { getPublishedQuestions } from "@/lib/questions";
 
-const published = Array.isArray(questions)
-  ? questions.filter((q) => q.published)
-  : [];
+const published = getPublishedQuestions();
 ---
 
-<Main title="abolition.ing – Questions & Answers">
-  <h1>Questions & Answers</h1>
-  <QuestionList questions={published} />
+<Main title="abolition.ing - Questions & Answers">
+  <QuestionFeed title="Questions & Answers" questions={published} />
 </Main>

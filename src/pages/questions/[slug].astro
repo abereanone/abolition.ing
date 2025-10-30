@@ -1,38 +1,110 @@
 ---
 import Main from "@/layouts/Main.astro";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
-import questions from "@/data/questions.json";
-import categories from "@/data/categories.json";
+import {
+  findQuestion,
+  getPublishedQuestions,
+  getQuestionCategories,
+} from "@/lib/questions";
 
-// Generate static paths for each question
 export function getStaticPaths() {
-  return questions
-    .filter((q) => q.published)
-    .map((q) => ({ params: { slug: q.slug } }));
+  return getPublishedQuestions().map((question) => ({
+    params: { slug: question.slug },
+  }));
 }
 
 const { slug } = Astro.params;
+const question = findQuestion(slug);
 
-// Find this question
-const q = questions.find((q) => q.slug === slug);
+if (!question) {
+  throw new Error(`Question not found for slug "${slug}".`);
+}
 
-// Prepare breadcrumb category names
-const catNames = q.categories.map((id) => {
-  const c = categories.find((c) => c.name === id || c.id === id);
-  return c ? c.name : id;
-});
+const questionCategories = getQuestionCategories(question);
 
-// ✅ Load markdown content using import.meta.glob (Astro v4+)
 const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
-const page = Object.values(markdownFiles).find((m) =>
-  m.file?.endsWith(q.markdown)
+const page = Object.values(markdownFiles).find((module) =>
+  module.file?.endsWith(question.markdown)
 );
 ---
 
-<Main title={`${q.title} – abolition.ing`}>
-  <Breadcrumbs categories={catNames} title={q.title} />
+<Main title={`${question.title} - abolition.ing`}>
+  <section class="question-header">
+    <h1>{question.title}</h1>
+
+    {questionCategories.length ? (
+      <div class="category-meta">
+        <a class="category-chip" href="/categories">Categories</a>
+        <ul class="category-list">
+          {questionCategories.map((category) => (
+            <li>
+              <a class="category-chip" href={`/categories/${category.id}`}>{category.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ) : (
+      <p class="category-placeholder">Uncategorized</p>
+    )}
+  </section>
+
   {page ? <page.Content /> : <p><em>Content not found.</em></p>}
+
   <p class="author">
-    — <a href={q.author.url} target="_blank">{q.author.name}</a>
+    - <a href={question.author.url} target="_blank" rel="noopener noreferrer">{question.author.name}</a>
   </p>
 </Main>
+
+<style>
+  .question-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .question-header h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .category-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .category-list li {
+    display: inline-flex;
+  }
+
+  .category-chip {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .category-chip:hover,
+  .category-chip:focus-visible {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .category-placeholder {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .author {
+    margin-top: 2rem;
+  }
+</style>
