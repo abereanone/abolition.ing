@@ -1,0 +1,87 @@
+---
+import Main from "@/layouts/Main.astro";
+import QuestionFeed from "@/components/QuestionFeed.astro";
+import { findAuthor, getQuestionsByAuthor, listAuthors } from "@/lib/questions";
+
+export function getStaticPaths() {
+  return listAuthors().map((author) => ({
+    params: { author: author.id },
+  }));
+}
+
+const { author } = Astro.params;
+const activeAuthor = findAuthor(author);
+
+if (!activeAuthor) {
+  throw new Error(`Author not found for slug "${author}".`);
+}
+
+const matchingQuestions = getQuestionsByAuthor(activeAuthor.id);
+---
+
+<Main title={`${activeAuthor.name} Questions - abolition.ing`}>
+  <QuestionFeed
+    title={`${activeAuthor.name} Questions`}
+    questions={matchingQuestions}
+  >
+    <fragment slot="header">
+      <div class="author-header">
+        <a class="breadcrumb" href="/">All questions</a>
+        <h1>{activeAuthor.name}</h1>
+        {activeAuthor.title ? <p class="author-title">{activeAuthor.title}</p> : null}
+        {activeAuthor.bio ? <p class="author-bio">{activeAuthor.bio}</p> : null}
+        {activeAuthor.url ? (
+          <p class="author-link">
+            <a href={activeAuthor.url} target="_blank" rel="noopener noreferrer">
+              Visit author website
+            </a>
+          </p>
+        ) : null}
+      </div>
+    </fragment>
+    <fragment slot="empty">
+      <p><em>No questions found for this author yet.</em></p>
+    </fragment>
+  </QuestionFeed>
+</Main>
+
+<style>
+  .author-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .author-header h1 {
+    margin: 0;
+  }
+
+  .author-title {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  .author-bio {
+    margin: 0;
+    opacity: 0.75;
+  }
+
+  .author-link {
+    margin: 0;
+  }
+
+  .breadcrumb {
+    display: inline-block;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.75;
+  }
+
+  .breadcrumb:hover,
+  .breadcrumb:focus-visible {
+    text-decoration: underline;
+    opacity: 1;
+  }
+</style>

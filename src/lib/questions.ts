@@ -1,8 +1,10 @@
 import questionsData from "@/data/questions.json";
 import categoriesData from "@/data/categories.json";
+import authorsData from "@/data/authors.json";
 
 type Question = (typeof questionsData)[number];
 type Category = (typeof categoriesData)[number];
+type Author = (typeof authorsData)[number];
 
 function slugify(value: string): string {
   return value
@@ -32,6 +34,15 @@ interface CategorySummary {
   id: string;
   name: string;
   count: number;
+}
+
+interface AuthorSummary {
+  id: string;
+  name: string;
+  count: number;
+  url?: string;
+  title?: string;
+  bio?: string;
 }
 
 function buildCategoryMap(): Map<string, CategorySummary> {
@@ -65,8 +76,48 @@ function buildCategoryMap(): Map<string, CategorySummary> {
   return map;
 }
 
+function buildAuthorMap(): Map<string, AuthorSummary> {
+  const map = new Map<string, AuthorSummary>();
+
+  authorsData.forEach((author: Author) => {
+    const slug = slugify(author.id || author.name);
+    map.set(slug, {
+      id: slug,
+      name: author.name,
+      url: author.url,
+      title: author.title,
+      bio: author.bio,
+      count: 0,
+    });
+  });
+
+  publishedQuestions.forEach((question) => {
+    if (!question.authorId) {
+      return;
+    }
+
+    const slug = slugify(question.authorId);
+    const entry =
+      map.get(slug) ??
+      (() => {
+        const fallback = { id: slug, name: question.authorId, count: 0 };
+        map.set(slug, fallback);
+        return fallback;
+      })();
+
+    entry.count += 1;
+  });
+
+  return map;
+}
+
 const categoryMap = buildCategoryMap();
 const categoryList = Array.from(categoryMap.values()).sort((a, b) =>
+  a.name.localeCompare(b.name)
+);
+
+const authorMap = buildAuthorMap();
+const authorList = Array.from(authorMap.values()).sort((a, b) =>
   a.name.localeCompare(b.name)
 );
 
@@ -82,6 +133,14 @@ export function getPublishedQuestions(categoryId?: string): Question[] {
   );
 }
 
+export function getQuestionsByAuthor(authorId: string): Question[] {
+  const slug = slugify(authorId);
+
+  return publishedQuestions.filter(
+    (question) => question.authorId && slugify(question.authorId) === slug
+  );
+}
+
 export function listCategories(): CategorySummary[] {
   return categoryList;
 }
@@ -89,6 +148,15 @@ export function listCategories(): CategorySummary[] {
 export function findCategory(categoryId: string): CategorySummary | null {
   const slug = slugify(categoryId);
   return categoryMap.get(slug) ?? null;
+}
+
+export function listAuthors(): AuthorSummary[] {
+  return authorList;
+}
+
+export function findAuthor(authorId: string): AuthorSummary | null {
+  const slug = slugify(authorId);
+  return authorMap.get(slug) ?? null;
 }
 
 export function findQuestion(slug: string): Question | null {
@@ -110,6 +178,15 @@ export function getQuestionCategories(question: Question) {
   });
 
   return result;
+}
+
+export function getQuestionAuthor(question: Question): AuthorSummary | null {
+  if (!question.authorId) {
+    return null;
+  }
+
+  const slug = slugify(question.authorId);
+  return authorMap.get(slug) ?? null;
 }
 
 export { slugify };

@@ -4,6 +4,7 @@ import {
   findQuestion,
   getPublishedQuestions,
   getQuestionCategories,
+  getQuestionAuthor,
 } from "@/lib/questions";
 
 export function getStaticPaths() {
@@ -20,6 +21,7 @@ if (!question) {
 }
 
 const questionCategories = getQuestionCategories(question);
+const author = getQuestionAuthor(question);
 
 const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
 const page = Object.values(markdownFiles).find((module) =>
@@ -49,9 +51,20 @@ const page = Object.values(markdownFiles).find((module) =>
 
   {page ? <page.Content /> : <p><em>Content not found.</em></p>}
 
-  <p class="author">
-    - <a href={question.author.url} target="_blank" rel="noopener noreferrer">{question.author.name}</a>
-  </p>
+  {author ? (
+    <p class="author">
+      - <a href={`/authors/${author.id}`}>{author.name}</a>
+      {author.url ? (
+        <>
+          {" "}
+          ·{" "}
+          <a class="external-link" href={author.url} target="_blank" rel="noopener noreferrer">
+            External
+          </a>
+        </>
+      ) : null}
+    </p>
+  ) : null}
 </Main>
 
 <style>
@@ -106,5 +119,10 @@ const page = Object.values(markdownFiles).find((module) =>
 
   .author {
     margin-top: 2rem;
+  }
+
+  .author .external-link {
+    font-size: 0.85rem;
+    opacity: 0.8;
   }
 </style>

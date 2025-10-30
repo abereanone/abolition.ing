@@ -4,7 +4,7 @@
     "slug": "why-abortion-is-wrong",
     "title": "Why is abortion wrong?",
     "categories": ["Moral", "Biblical"],
-    "author": { "name": "John Doe", "url": "https://example.com" },
+    "authorId": "john-doe",
     "sortOrder": 1,
     "published": true,
     "markdown": "why-abortion-is-wrong.md"
