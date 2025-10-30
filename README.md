@@ -29,7 +29,7 @@ Key data files:
 
 - `src/data/questions.json` describes each question (title, slug, categories, authorId, markdown filename).
 - `src/data/categories.json` provides canonical category labels.
-- `src/data/authors.json` stores author metadata (name, slug, external url, optional title/bio).
+- `src/data/authors.json` stores author/resource metadata (name, slug, external url, optional title/bio).
 - `src/lib/questions.ts` centralizes helpers for slugs, published-question filtering, and category/author lookups.
 
 ## Local Development
@@ -61,7 +61,7 @@ Astro outputs static assets in `dist/`, suitable for static hosting or deploymen
 2. Create the associated Markdown file under `src/content/questions/`.
 3. Define any new categories in `src/data/categories.json`. The helper library automatically slugifies category names and counts question usage.
 4. Add or update author entries in `src/data/authors.json`, then reference by `authorId` inside questions.
-5. Category pages are generated at `/categories/{slug}` (index at `/categories/`); author pages live at `/authors/{slug}`.
+5. Category pages are generated at `/categories/{slug}` (index at `/categories/`); author/resource pages live at `/authors/{slug}` and feed the `/resources` listing.
 
 ## Scripts
 

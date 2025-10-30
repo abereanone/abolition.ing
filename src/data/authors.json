@@ -5,5 +5,19 @@
     "url": "https://example.com",
     "title": "Author & Contributor",
     "bio": "Sample author profile used for the abolition.ing starter content."
+  },
+  {
+    "id": "end-abortion-now",
+    "name": "End Abortion Now",
+    "url": "https://endabortionnow.com",
+    "title": "Abolitionist Ministry",
+    "bio": "Equipping churches with resources to engage their communities and defend the lives of preborn children."
+  },
+  {
+    "id": "free-the-states",
+    "name": "Free the States",
+    "url": "https://freethestates.com",
+    "title": "Abolitionist Organization",
+    "bio": "Grassroots effort calling for immediate abolition of abortion through local and state action."
   }
 ]
