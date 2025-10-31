@@ -1,11 +1,11 @@
 [
   {
-    "id": "john-doe",
-    "name": "John Doe",
-    "url": "https://example.com",
-    "title": "Author & Contributor",
-    "bio": "Sample author profile used for the abolition.ing starter content.",
-    "sortOrder": 110
+    "id": "chatgpt",
+    "name": "The Abolitionist Voice",
+    "url": "https://chatgpt.com/g/g-68c9835ac6bc819182c9f7dc31bad372-the-abolitionist-voice",
+    "title": "AI",
+    "bio": "ChatGPT AI response based on being a 1689 Baptist Abolitionist.",
+    "sortOrder": 30
   },
   {
     "id": "end-abortion-now",
@@ -13,7 +13,7 @@
     "url": "https://endabortionnow.com",
     "title": "Abolitionist Ministry",
     "bio": "Equipping churches with resources to engage their communities and defend the lives of preborn children." ,
-    "sortOrder": 100
+    "sortOrder": 150
   },
   {
     "id": "free-the-states",
