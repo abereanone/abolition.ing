@@ -6,6 +6,7 @@ import {
   getQuestionCategories,
   getQuestionAuthor,
 } from "@/lib/questions";
+import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
 
 export function getStaticPaths() {
   return getPublishedQuestions().map((question) => ({
@@ -35,7 +36,7 @@ const page = Object.values(markdownFiles).find((module) =>
       <h1 class="page-title">{question.title}</h1>
     </section>
 
-    <div class="question-body">
+    <div class="question-body" data-bible-autolink>
       {page ? <page.Content /> : <p><em>Content not found.</em></p>}
     </div>
   </article>
@@ -79,4 +80,6 @@ const page = Object.values(markdownFiles).find((module) =>
   ) : (
     <p class="category-placeholder category-footer">Uncategorized</p>
   )}
+
+  <BibleReferencesScript />
 </Main>
