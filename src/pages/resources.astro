@@ -10,7 +10,7 @@ const authors = listAuthors();
   {authors.length ? (
     <ul class="resource-grid">
       {authors.map((author) => (
-        <li>
+        <li class="resource-card card-panel">
           <h2>{author.name}</h2>
           {author.title ? <p class="resource-title">{author.title}</p> : null}
           {author.bio ? <p class="resource-bio">{author.bio}</p> : null}
@@ -37,66 +37,3 @@ const authors = listAuthors();
     <p><em>No resources available yet.</em></p>
   )}
 </Main>
-
-<style>
-  .resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.25rem;
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 0;
-  }
-
-  .resource-grid li {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.25rem;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .resource-grid h2 {
-    margin: 0;
-    font-size: 1.15rem;
-  }
-
-  .resource-title {
-    margin: 0;
-    font-size: 0.95rem;
-    opacity: 0.8;
-  }
-
-  .resource-bio {
-    margin: 0;
-    font-size: 0.9rem;
-    opacity: 0.75;
-  }
-
-  .resource-actions {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .resource-link {
-    display: inline-block;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.08);
-    color: inherit;
-    text-decoration: none;
-    font-size: 0.85rem;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-  }
-
-  .resource-link:hover,
-  .resource-link:focus-visible {
-    background-color: rgba(255, 255, 255, 0.18);
-    border-color: rgba(255, 255, 255, 0.35);
-  }
-</style>

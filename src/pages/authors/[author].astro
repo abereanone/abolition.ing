@@ -27,7 +27,7 @@ const matchingQuestions = getQuestionsByAuthor(activeAuthor.id);
     <fragment slot="header">
       <div class="author-header">
         <a class="breadcrumb" href="/">All questions</a>
-        <h1>{activeAuthor.name}</h1>
+        <h1 class="page-title">{activeAuthor.name}</h1>
         {activeAuthor.title ? <p class="author-title">{activeAuthor.title}</p> : null}
         {activeAuthor.bio ? <p class="author-bio">{activeAuthor.bio}</p> : null}
         {activeAuthor.url ? (
@@ -44,44 +44,3 @@ const matchingQuestions = getQuestionsByAuthor(activeAuthor.id);
     </fragment>
   </QuestionFeed>
 </Main>
-
-<style>
-  .author-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .author-header h1 {
-    margin: 0;
-  }
-
-  .author-title {
-    margin: 0;
-    font-size: 0.95rem;
-    opacity: 0.8;
-  }
-
-  .author-bio {
-    margin: 0;
-    opacity: 0.75;
-  }
-
-  .author-link {
-    margin: 0;
-  }
-
-  .breadcrumb {
-    display: inline-block;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: inherit;
-    opacity: 0.75;
-  }
-
-  .breadcrumb:hover,
-  .breadcrumb:focus-visible {
-    text-decoration: underline;
-    opacity: 1;
-  }
-</style>

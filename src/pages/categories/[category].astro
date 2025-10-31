@@ -27,7 +27,7 @@ const matchingQuestions = getPublishedQuestions(activeCategory.id);
     <fragment slot="header">
       <div class="category-header">
         <a class="breadcrumb" href="/">All questions</a>
-        <h1>{activeCategory.name}</h1>
+        <h1 class="page-title">{activeCategory.name}</h1>
       </div>
     </fragment>
     <fragment slot="empty">
@@ -35,29 +35,3 @@ const matchingQuestions = getPublishedQuestions(activeCategory.id);
     </fragment>
   </QuestionFeed>
 </Main>
-
-<style>
-  .category-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .category-header h1 {
-    margin: 0;
-  }
-
-  .breadcrumb {
-    display: inline-block;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: inherit;
-    opacity: 0.75;
-  }
-
-  .breadcrumb:hover,
-  .breadcrumb:focus-visible {
-    text-decoration: underline;
-    opacity: 1;
-  }
-</style>

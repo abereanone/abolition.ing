@@ -1,8 +1,12 @@
 ---
 const { questions } = Astro.props;
 ---
-<ul>
-  {questions.map(q => (
-    <li><a href={`/questions/${q.slug}`}>{q.title}</a></li>
+<ul class="question-list">
+  {questions.map((q) => (
+    <li>
+      <a class="question-card card-panel" href={`/questions/${q.slug}`}>
+        <span class="question-title">{q.title}</span>
+      </a>
+    </li>
   ))}
 </ul>
