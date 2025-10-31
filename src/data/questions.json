@@ -8,5 +8,16 @@
     "sortOrder": 1,
     "published": true,
     "markdown": "why-is-abortion-wrong.md"
+  },
+  {
+    "id": 2,
+    "slug": "how-should-we-care-for-mothers",
+    "title": "How should we care for mothers facing abortion?",
+    "categories": ["Pastoral", "Practical"],
+    "authorId": "mac",
+    "sortOrder": 2,
+    "published": true,
+    "markdown": "how-should-we-care-for-mothers.md",
+    "longExplanation": "how-should-we-care-for-mothers-long.md"
   }
 ]

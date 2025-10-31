@@ -28,6 +28,9 @@ const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true
 const page = Object.values(markdownFiles).find((module) =>
   module.file?.endsWith(question.markdown)
 );
+const longPage = question.longExplanation
+  ? Object.values(markdownFiles).find((module) => module.file?.endsWith(question.longExplanation))
+  : null;
 ---
 
 <Main title={`${question.title} - abolition.ing`}>
@@ -39,6 +42,22 @@ const page = Object.values(markdownFiles).find((module) =>
     <div class="question-body" data-bible-autolink>
       {page ? <page.Content /> : <p><em>Content not found.</em></p>}
     </div>
+
+    {longPage ? (
+      <div class="long-explanation" data-long-explanation>
+        <button
+          type="button"
+          class="long-toggle"
+          data-long-toggle
+          aria-expanded="false"
+        >
+          Want a longer explanation?
+        </button>
+        <div class="long-content" data-long-content hidden data-bible-autolink>
+          <longPage.Content />
+        </div>
+      </div>
+    ) : null}
   </article>
 
   {author ? (
@@ -82,4 +101,37 @@ const page = Object.values(markdownFiles).find((module) =>
   )}
 
   <BibleReferencesScript />
+
+  {longPage ? (
+    <script type="module" is:inline>
+      document.querySelectorAll("[data-long-explanation]").forEach((section) => {
+        const button = section.querySelector("[data-long-toggle]");
+        const content = section.querySelector("[data-long-content]");
+        if (!button || !content) {
+          return;
+        }
+
+        const expandedText = {
+          true: "Hide the long explanation",
+          false: "Read the long explanation",
+        };
+
+        button.addEventListener("click", () => {
+          const isExpanded = button.getAttribute("aria-expanded") === "true";
+          const nextExpanded = !isExpanded;
+
+          button.setAttribute("aria-expanded", String(nextExpanded));
+          button.textContent = expandedText[String(nextExpanded)];
+
+          if (nextExpanded) {
+            content.hidden = false;
+            content.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            content.hidden = true;
+          }
+        });
+      });
+    </script>
+  ) : null}
 </Main>
+
