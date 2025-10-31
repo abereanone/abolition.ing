@@ -166,8 +166,15 @@ ul {
   font-weight: 600;
 }
 
+.feed-subtitle .category-parent-link {
+  color: #4ac1ff;
+  font-weight: 600;
+}
+
 .feed-subtitle .author-name-link:hover,
-.feed-subtitle .author-name-link:focus-visible {
+.feed-subtitle .author-name-link:focus-visible,
+.feed-subtitle .category-parent-link:hover,
+.feed-subtitle .category-parent-link:focus-visible {
   text-decoration: underline;
 }
 
