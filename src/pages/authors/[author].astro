@@ -20,14 +20,11 @@ const matchingQuestions = getQuestionsByAuthor(activeAuthor.id);
 ---
 
 <Main title={`${activeAuthor.name} Questions - abolition.ing`}>
-  <QuestionFeed
-    title={`${activeAuthor.name} Questions`}
-    questions={matchingQuestions}
-  >
+  <QuestionFeed title="Questions & Answers" questions={matchingQuestions}>
     <fragment slot="header">
       <div class="author-header">
-        <a class="breadcrumb" href="/">All questions</a>
-        <h1 class="page-title">{activeAuthor.name}</h1>
+        <h1 class="page-title">Questions &amp; Answers</h1>
+        <p class="feed-subtitle">By: {activeAuthor.name}</p>
         {activeAuthor.title ? <p class="author-title">{activeAuthor.title}</p> : null}
         {activeAuthor.bio ? <p class="author-bio">{activeAuthor.bio}</p> : null}
         {activeAuthor.url ? (

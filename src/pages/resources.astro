@@ -16,9 +16,11 @@ const authors = listAuthors();
           {author.bio ? <p class="resource-bio">{author.bio}</p> : null}
 
           <div class="resource-actions">
-            <a class="resource-link" href={`/authors/${author.id}`}>
-              View articles{typeof author.count === "number" ? ` (${author.count})` : ""}
-            </a>
+            {typeof author.count === "number" && author.count > 0 ? (
+              <a class="resource-link" href={`/authors/${author.id}`}>
+                View Answers ({author.count})
+              </a>
+            ) : null}
             {author.url ? (
               <a
                 class="resource-link"

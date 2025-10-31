@@ -20,14 +20,11 @@ const matchingQuestions = getPublishedQuestions(activeCategory.id);
 ---
 
 <Main title={`${activeCategory.name} Questions - abolition.ing`}>
-  <QuestionFeed
-    title={`${activeCategory.name} Questions`}
-    questions={matchingQuestions}
-  >
+  <QuestionFeed title="Questions & Answers" questions={matchingQuestions}>
     <fragment slot="header">
       <div class="category-header">
-        <a class="breadcrumb" href="/">All questions</a>
-        <h1 class="page-title">{activeCategory.name}</h1>
+        <h1 class="page-title">Questions &amp; Answers</h1>
+        <p class="feed-subtitle">In the Category: {activeCategory.name}</p>
       </div>
     </fragment>
     <fragment slot="empty">

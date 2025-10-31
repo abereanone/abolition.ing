@@ -154,6 +154,13 @@ ul {
   margin: 0;
 }
 
+.feed-subtitle {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .empty-state {
   text-align: center;
 }
