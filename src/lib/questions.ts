@@ -34,6 +34,7 @@ interface CategorySummary {
   id: string;
   name: string;
   count: number;
+  sortOrder?: number;
 }
 
 interface AuthorSummary {
@@ -41,8 +42,8 @@ interface AuthorSummary {
   name: string;
   count: number;
   url?: string;
-  title?: string;
   bio?: string;
+  sortOrder?: number;
 }
 
 function buildCategoryMap(): Map<string, CategorySummary> {
@@ -50,7 +51,12 @@ function buildCategoryMap(): Map<string, CategorySummary> {
 
   categoriesData.forEach((category: Category) => {
     const slug = slugify(category.id);
-    map.set(slug, { id: slug, name: category.name, count: 0 });
+    map.set(slug, {
+      id: slug,
+      name: category.name,
+      count: 0,
+      sortOrder: typeof category.sortOrder === "number" ? category.sortOrder : undefined,
+    });
   });
 
   publishedQuestions.forEach((question) => {
@@ -85,8 +91,8 @@ function buildAuthorMap(): Map<string, AuthorSummary> {
       id: slug,
       name: author.name,
       url: author.url,
-      title: author.title,
       bio: author.bio,
+      sortOrder: typeof author.sortOrder === "number" ? author.sortOrder : undefined,
       count: 0,
     });
   });
@@ -112,14 +118,28 @@ function buildAuthorMap(): Map<string, AuthorSummary> {
 }
 
 const categoryMap = buildCategoryMap();
-const categoryList = Array.from(categoryMap.values()).sort((a, b) =>
-  a.name.localeCompare(b.name)
-);
+const categoryList = Array.from(categoryMap.values()).sort((a, b) => {
+  const orderA = typeof a.sortOrder === "number" ? a.sortOrder : Number.MAX_SAFE_INTEGER;
+  const orderB = typeof b.sortOrder === "number" ? b.sortOrder : Number.MAX_SAFE_INTEGER;
+
+  if (orderA !== orderB) {
+    return orderA - orderB;
+  }
+
+  return a.name.localeCompare(b.name);
+});
 
 const authorMap = buildAuthorMap();
-const authorList = Array.from(authorMap.values()).sort((a, b) =>
-  a.name.localeCompare(b.name)
-);
+const authorList = Array.from(authorMap.values()).sort((a, b) => {
+  const orderA = typeof a.sortOrder === "number" ? a.sortOrder : Number.MAX_SAFE_INTEGER;
+  const orderB = typeof b.sortOrder === "number" ? b.sortOrder : Number.MAX_SAFE_INTEGER;
+
+  if (orderA !== orderB) {
+    return orderA - orderB;
+  }
+
+  return a.name.localeCompare(b.name);
+});
 
 export function getPublishedQuestions(categoryId?: string): Question[] {
   if (!categoryId) {

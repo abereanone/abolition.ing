@@ -1,4 +1,5 @@
 [
-  { "id": "moral", "name": "Moral" },
-  { "id": "biblical", "name": "Biblical" }
+  { "id": "moral", "name": "Moral", "sortOrder": 20 },
+  { "id": "biblical", "name": "Biblical", "sortOrder": 10  },
+  { "id": "sci", "name": "Scientific", "sortOrder": 30  }
 ]

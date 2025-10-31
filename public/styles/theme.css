@@ -161,6 +161,16 @@ ul {
   color: #ffffff;
 }
 
+.feed-subtitle .author-name-link {
+  color: #4ac1ff;
+  font-weight: 600;
+}
+
+.feed-subtitle .author-name-link:hover,
+.feed-subtitle .author-name-link:focus-visible {
+  text-decoration: underline;
+}
+
 .empty-state {
   text-align: center;
 }
@@ -197,6 +207,18 @@ ul {
 /* === Question Detail === */
 .question-header {
   margin-bottom: 1.5rem;
+}
+
+.question-article {
+  margin: 1.5rem 0 2rem;
+}
+
+.question-article .page-title {
+  margin-bottom: 1rem;
+}
+
+.question-article .question-body {
+  margin-bottom: 0;
 }
 
 .question-header h1 {
@@ -266,21 +288,8 @@ ul {
   margin-bottom: 0;
 }
 
-.author-card {
+.question-author-card {
   margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-.author-card span {
-  font-weight: 600;
-}
-
-.author-card .external-link {
-  font-size: 0.85rem;
-  opacity: 0.8;
 }
 
 /* === Category Pages === */
@@ -336,23 +345,9 @@ ul {
   margin: 0;
 }
 
-.author-title {
-  margin: 0;
-  font-size: 0.95rem;
-  opacity: 0.8;
-}
-
 .author-bio {
   margin: 0;
   opacity: 0.75;
-}
-
-.author-link {
-  margin: 0;
-}
-
-.author-link a {
-  color: #4ac1ff;
 }
 
 /* === Resource Grid === */
@@ -374,12 +369,6 @@ ul {
 .resource-card h2 {
   margin: 0;
   font-size: 1.35rem;
-}
-
-.resource-title {
-  margin: 0;
-  font-size: 1.05rem;
-  opacity: 0.85;
 }
 
 .resource-bio {

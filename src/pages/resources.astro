@@ -12,7 +12,6 @@ const authors = listAuthors();
       {authors.map((author) => (
         <li class="resource-card card-panel">
           <h2>{author.name}</h2>
-          {author.title ? <p class="resource-title">{author.title}</p> : null}
           {author.bio ? <p class="resource-bio">{author.bio}</p> : null}
 
           <div class="resource-actions">

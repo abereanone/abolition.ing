@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "slug": "why-abortion-is-wrong",
+    "slug": "why-is-abortion-wrong",
     "title": "Why is abortion wrong?",
     "categories": ["Moral", "Biblical"],
-    "authorId": "john-doe",
+    "authorId": "mac",
     "sortOrder": 1,
     "published": true,
-    "markdown": "why-abortion-is-wrong.md"
+    "markdown": "why-is-abortion-wrong.md"
   }
 ]
