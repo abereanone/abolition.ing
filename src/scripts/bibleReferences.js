@@ -2,17 +2,9 @@ import { autoLinkBibleRefs } from "@/lib/bible/autoLinkBibleRefs";
 import { normalizeReference } from "@/lib/bible/normalizeRef";
 import { getVerse } from "@/lib/bible/bibleClient";
 
-type BibleRefElement = HTMLElement & {
-  dataset: {
-    ref: string;
-    bibleTooltipState?: "pending" | "ready";
-  };
-  __tooltipElement?: HTMLDivElement;
-};
+const verseCache = new Map();
 
-const verseCache = new Map<string, string>();
-
-function ensureTooltip(element: BibleRefElement) {
+function ensureTooltip(element) {
   if (element.__tooltipElement) {
     const tooltip = element.__tooltipElement;
     positionTooltip(element, tooltip);
@@ -21,7 +13,6 @@ function ensureTooltip(element: BibleRefElement) {
   }
 
   const normalized = normalizeReference(element.dataset.ref);
-  console.debug("[bible] lookup", element.dataset.ref, "=>", normalized);
 
   return Promise.resolve()
     .then(async () => {
@@ -47,7 +38,7 @@ function ensureTooltip(element: BibleRefElement) {
     });
 }
 
-function positionTooltip(anchor: HTMLElement, tooltip: HTMLElement) {
+function positionTooltip(anchor, tooltip) {
   const rect = anchor.getBoundingClientRect();
 
   tooltip.style.visibility = "hidden";
@@ -71,13 +62,13 @@ function positionTooltip(anchor: HTMLElement, tooltip: HTMLElement) {
   tooltip.style.visibility = "visible";
 }
 
-function hideTooltip(element: BibleRefElement) {
+function hideTooltip(element) {
   if (element.__tooltipElement) {
     element.__tooltipElement.style.display = "none";
   }
 }
 
-function enhanceElement(element: BibleRefElement) {
+function enhanceElement(element) {
   if (element.dataset.bibleTooltipState === "ready") {
     return;
   }
@@ -99,20 +90,20 @@ function enhanceElement(element: BibleRefElement) {
   element.dataset.bibleTooltipState = "ready";
 }
 
-function processScope(scope: HTMLElement) {
+function processScope(scope) {
   if (scope.dataset.bibleProcessed !== "true") {
     scope.innerHTML = autoLinkBibleRefs(scope.innerHTML);
     scope.dataset.bibleProcessed = "true";
   }
 
-  scope.querySelectorAll<HTMLElement>(".bible-ref").forEach((el) => {
-    enhanceElement(el as BibleRefElement);
+  scope.querySelectorAll(".bible-ref").forEach((el) => {
+    enhanceElement(el);
   });
 }
 
 function scan() {
   document
-    .querySelectorAll<HTMLElement>("[data-bible-autolink]")
+    .querySelectorAll("[data-bible-autolink]")
     .forEach((scope) => processScope(scope));
 }
 
@@ -123,3 +114,5 @@ if (document.readyState === "loading") {
 } else {
   scan();
 }
+
+export {};
