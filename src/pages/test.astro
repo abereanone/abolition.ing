@@ -1,6 +1,6 @@
 ---
 import Main from "@/layouts/Main.astro";
-import bibleScriptUrl from "@/scripts/bibleReferences.ts?url";
+import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
 ---
 
 <Main title="Bible Reference Test - abolition.ing">
@@ -23,5 +23,5 @@ import bibleScriptUrl from "@/scripts/bibleReferences.ts?url";
     </p>
   </section>
 
-  <script type="module" src={bibleScriptUrl}></script>
+  <BibleReferencesScript />
 </Main>
