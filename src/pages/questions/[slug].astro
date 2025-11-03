@@ -27,7 +27,15 @@ const questionCategories = getQuestionCategories(question);
 const author = getQuestionAuthor(question);
 const showAuthors = siteSettings.showAuthor;
 const showAuthorCard = showAuthors && !question.suppressAuthor && author;
-const showQuestionId = siteSettings.showQuestionId && typeof question.id === "number";
+const allPublishedQuestions = getPublishedQuestions();
+const fallbackIndex = allPublishedQuestions.findIndex((entry) => entry.slug === question.slug) + 1;
+const questionNumber =
+  typeof question.id === "number"
+    ? question.id
+    : fallbackIndex > 0
+      ? fallbackIndex
+      : null;
+const showQuestionId = siteSettings.showQuestionId && questionNumber !== null;
 
 const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
 const page = Object.values(markdownFiles).find((module) =>
@@ -45,7 +53,7 @@ const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
     <section class="question-header">
       <h1 class="page-title">{question.title}</h1>
       {showQuestionId ? (
-        <p class="question-meta">Question #{question.id}</p>
+        <p class="question-meta">Question #{questionNumber}</p>
       ) : null}
     </section>
 

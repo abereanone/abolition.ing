@@ -1,8 +1,8 @@
 export const siteSettings = {
-  showQuestionId: false,
+  showQuestionId: true,
   showAuthor: true,
   enablePagination: true,
-  questionsPerPage: 10,
+  questionsPerPage: 20,
 } as const;
 
 export type SiteSettings = typeof siteSettings;

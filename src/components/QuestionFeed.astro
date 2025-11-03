@@ -19,7 +19,10 @@ const showPagination =
   </header>
 
   {hasQuestions ? (
-    <QuestionList questions={questions} />
+    <QuestionList
+      questions={questions}
+      startIndex={pagination && typeof pagination.startIndex === "number" ? pagination.startIndex : 0}
+    />
   ) : (
     <div class="card-panel empty-state">
       <slot name="empty">

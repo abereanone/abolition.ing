@@ -8,7 +8,6 @@ interface Question {
   categories: string[];
   markdown: string;
   authorId?: string;
-  sortOrder?: number;
   published?: boolean;
   longExplanation?: string;
   longAuthorId?: string;
@@ -49,8 +48,8 @@ function slugify(value: string): string {
 
 function sortQuestions(list: Question[]): Question[] {
   return [...list].sort((a, b) => {
-    const orderA = typeof a.sortOrder === "number" ? a.sortOrder : Number.MAX_SAFE_INTEGER;
-    const orderB = typeof b.sortOrder === "number" ? b.sortOrder : Number.MAX_SAFE_INTEGER;
+    const orderA = typeof a.id === "number" ? a.id : Number.MAX_SAFE_INTEGER;
+    const orderB = typeof b.id === "number" ? b.id : Number.MAX_SAFE_INTEGER;
 
     if (orderA !== orderB) {
       return orderA - orderB;

@@ -58,7 +58,7 @@ Astro outputs static assets in `dist/`, suitable for static hosting or deploymen
 
 ## Content Workflow
 
-1. Add or update question metadata in a JSON file under `src/data/questions/` (set `published: true` and optional `suppressAuthor`, `longExplanation`, `longAuthorId`). Include an `id` value if you want it surfaced when `showQuestionId` is enabled. Pagination automatically slices lists according to `questionsPerPage`.
+1. Add or update question metadata in a JSON file under `src/data/questions/` (set `published: true` and optional `suppressAuthor`, `longExplanation`, `longAuthorId`). Include an `id` value if you want it surfaced when `showQuestionId` is enabled—the list order also follows ascending `id` (falling back to title sorting when omitted). Pagination automatically slices lists according to `questionsPerPage`.
 2. Create the associated Markdown file under `src/content/questions/`.
 3. Define any new categories in `src/data/categories.json`. The helper library automatically slugifies category names and counts question usage.
 4. Add or update author entries in `src/data/authors.json`, then reference by `authorId` inside questions.
