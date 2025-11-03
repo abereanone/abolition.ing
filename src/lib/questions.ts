@@ -243,6 +243,42 @@ export function getQuestionAuthor(question: Question): AuthorSummary | null {
   return authorMap.get(slug) ?? null;
 }
 
+export interface PaginatedResult<T> {
+  items: T[];
+  currentPage: number;
+  pageCount: number;
+  perPage: number;
+  totalItems: number;
+  hasNext: boolean;
+  hasPrev: boolean;
+  startIndex: number;
+  endIndex: number;
+}
+
+export function paginateQuestions(list: Question[], page: number, perPage: number): PaginatedResult<Question> {
+  const safePerPage = Math.max(1, perPage);
+  const totalItems = list.length;
+  const pageCount = Math.max(1, Math.ceil(totalItems / safePerPage));
+  const safePage = Math.min(Math.max(1, Number.isFinite(page) ? Math.floor(page) : 1), pageCount);
+  const start = (safePage - 1) * safePerPage;
+  const end = start + safePerPage;
+
+  const items = list.slice(start, end);
+  const endIndex = Math.min(totalItems, start + items.length);
+
+  return {
+    items,
+    currentPage: safePage,
+    pageCount,
+    perPage: safePerPage,
+    totalItems,
+    hasNext: safePage < pageCount,
+    hasPrev: safePage > 1,
+    startIndex: start,
+    endIndex,
+  };
+}
+
 export { slugify };
 
 function validateQuestionEntries(entries: QuestionEntry[]) {

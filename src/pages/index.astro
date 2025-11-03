@@ -1,14 +1,42 @@
 ---
 import Main from "@/layouts/Main.astro";
 import QuestionFeed from "@/components/QuestionFeed.astro";
-import { getPublishedQuestions, listCategories } from "@/lib/questions";
+import { getPublishedQuestions, listCategories, paginateQuestions } from "@/lib/questions";
+import { siteSettings } from "@/config/siteSettings";
 
-const published = getPublishedQuestions();
+const allQuestions = getPublishedQuestions();
 const categories = listCategories();
+const enablePagination = siteSettings.enablePagination;
+const perPage = siteSettings.questionsPerPage;
+const paginationResult = enablePagination
+  ? paginateQuestions(allQuestions, 1, perPage)
+  : {
+      items: allQuestions,
+      currentPage: 1,
+      pageCount: 1,
+    };
+
+const questions = paginationResult.items;
+const pagination =
+  enablePagination && paginationResult.pageCount > 1
+    ? {
+        currentPage: paginationResult.currentPage,
+        pageCount: paginationResult.pageCount,
+        basePath: "/",
+        pageSegment: "page",
+        totalItems: paginationResult.totalItems,
+        startIndex: paginationResult.startIndex,
+        endIndex: paginationResult.endIndex,
+      }
+    : null;
 ---
 
 <Main title="abolition.ing - Questions & Answers">
-  <QuestionFeed title="Questions & Answers" questions={published}>
+  <QuestionFeed
+    title="Questions & Answers"
+    questions={questions}
+    pagination={pagination ?? undefined}
+  >
     <fragment slot="header">
       <div class="feed-header">
         <h1 class="page-title">Questions &amp; Answers</h1>
