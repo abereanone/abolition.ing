@@ -1,8 +1,42 @@
-import questionsData from "@/data/questions.json";
 import categoriesData from "@/data/categories.json";
 import authorsData from "@/data/authors.json";
 
-type Question = (typeof questionsData)[number];
+interface Question {
+  id?: number;
+  slug: string;
+  title: string;
+  categories: string[];
+  markdown: string;
+  authorId?: string;
+  sortOrder?: number;
+  published?: boolean;
+  longExplanation?: string;
+  longAuthorId?: string;
+  suppressAuthor?: boolean;
+}
+
+interface QuestionEntry {
+  question: Question;
+  source: string;
+}
+
+const questionModules = import.meta.glob<{ default: Question[] }>("@/data/questions/*.json", {
+  eager: true,
+});
+
+const questionEntries: QuestionEntry[] = Object.keys(questionModules)
+  .sort()
+  .flatMap((key) =>
+    questionModules[key].default.map((question, index) => ({
+      question,
+      source: `${key}#${index + 1}`,
+    }))
+  );
+
+validateQuestionEntries(questionEntries);
+
+const questionsData: Question[] = questionEntries.map((entry) => entry.question);
+
 type Category = (typeof categoriesData)[number];
 type Author = (typeof authorsData)[number];
 
@@ -210,3 +244,70 @@ export function getQuestionAuthor(question: Question): AuthorSummary | null {
 }
 
 export { slugify };
+
+function validateQuestionEntries(entries: QuestionEntry[]) {
+  const duplicateReport: Array<{ label: string; value: string; sources: string[] }> = [];
+
+  const seenIds = new Map<string, string[]>();
+  const seenSlugs = new Map<string, string[]>();
+
+  for (const { question, source } of entries) {
+    if (question.id !== undefined && question.id !== null) {
+      const key = String(question.id);
+      const bucket = seenIds.get(key);
+      if (bucket) {
+        bucket.push(source);
+      } else {
+        seenIds.set(key, [source]);
+      }
+    }
+
+    if (question.slug) {
+      const slugBucket = seenSlugs.get(question.slug);
+      if (slugBucket) {
+        slugBucket.push(source);
+      } else {
+        seenSlugs.set(question.slug, [source]);
+      }
+    }
+  }
+
+  for (const [value, sources] of seenIds) {
+    if (sources.length > 1) {
+      duplicateReport.push({ label: "ID", value, sources });
+    }
+  }
+
+  for (const [value, sources] of seenSlugs) {
+    if (sources.length > 1) {
+      duplicateReport.push({ label: "slug", value, sources });
+    }
+  }
+
+  if (!duplicateReport.length) {
+    if ("__QUESTION_DUPLICATE_REPORT__" in globalThis) {
+      // Clear any previous report once issues are resolved.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      delete (globalThis as any).__QUESTION_DUPLICATE_REPORT__;
+    }
+    return;
+  }
+
+  const lines: string[] = ["Duplicate question metadata detected:"];
+  duplicateReport.forEach(({ label, value, sources }) => {
+    lines.push(`- ${label} "${value}" appears in:`);
+    sources.forEach((source) => {
+      lines.push(`  - ${source}`);
+    });
+  });
+
+  const message = lines.join("\n");
+  console.warn(message);
+
+  // Persist details so the client bundle can surface them in the browser console.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (globalThis as any).__QUESTION_DUPLICATE_REPORT__ = {
+    heading: "Duplicate question metadata detected",
+    entries: duplicateReport,
+  };
+}

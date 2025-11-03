@@ -6,6 +6,18 @@ const {
   title = "abolition.ing",
   description = "Questions & Answers about abortion abolition",
 } = Astro.props;
+
+const duplicateReport =
+  (
+    globalThis as typeof globalThis & {
+      __QUESTION_DUPLICATE_REPORT__?: {
+        heading: string;
+        entries: Array<{ label: string; value: string; sources: string[] }>;
+      };
+    }
+  ).__QUESTION_DUPLICATE_REPORT__ ?? null;
+
+const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport) : null;
 ---
 
 <html lang="en">
@@ -44,5 +56,43 @@ const {
       <slot /> <!-- Your page-specific content -->
     </main>
     <Footer />
+
+    {duplicateReportPayload ? (
+      <script
+        is:inline
+        data-duplicate-report={duplicateReportPayload}
+      >
+        (function () {
+          const script = document.currentScript;
+          if (!script) {
+            return;
+          }
+
+          let report;
+          try {
+            report = JSON.parse(script.dataset.duplicateReport || "");
+          } catch (error) {
+            console.error("Duplicate question metadata: unable to parse payload", error);
+            return;
+          }
+
+          if (!report || !Array.isArray(report.entries) || report.entries.length === 0) {
+            return;
+          }
+
+          console.groupCollapsed(report.heading || "Duplicate question metadata detected");
+          for (const entry of report.entries) {
+            const intro = `${entry.label} "${entry.value}" appears in:`;
+            console.warn(intro);
+            if (Array.isArray(entry.sources)) {
+              for (const source of entry.sources) {
+                console.warn(`  - ${source}`);
+              }
+            }
+          }
+          console.groupEnd();
+        })();
+      </script>
+    ) : null}
   </body>
 </html>

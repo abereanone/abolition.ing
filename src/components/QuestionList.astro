@@ -1,10 +1,16 @@
 ---
+import { siteSettings } from "@/config/siteSettings";
+
 const { questions } = Astro.props;
+const showQuestionId = siteSettings.showQuestionId;
 ---
 <ul class="question-list">
   {questions.map((q) => (
     <li>
       <a class="question-card card-panel" href={`/questions/${q.slug}`}>
+        {showQuestionId && typeof q.id === "number" ? (
+          <span class="question-id">#{q.id}</span>
+        ) : null}
         <span class="question-title">{q.title}</span>
       </a>
     </li>

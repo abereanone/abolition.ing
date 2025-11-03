@@ -27,7 +27,8 @@ Static Astro site for abolition.ing, publishing questions, resources, and catego
 
 Key data files:
 
-- `src/data/questions.json` describes each question (title, slug, categories, authorId, markdown filename).
+- `src/data/questions/` contains one or more JSON files (each exporting an array of question objects). Questions support optional `longExplanation`, `longAuthorId`, and `suppressAuthor` fields.
+- `src/config/siteSettings.ts` centralizes global display toggles (e.g., `showQuestionId`, `showAuthor`). Setting `showAuthor` to `false` hides author/byline UI everywhere; when `true`, per-question `suppressAuthor` still applies.
 - `src/data/categories.json` provides canonical category labels.
 - `src/data/authors.json` stores author/resource metadata (name, slug, external url, optional title/bio).
 - `src/lib/questions.ts` centralizes helpers for slugs, published-question filtering, and category/author lookups.
@@ -57,7 +58,7 @@ Astro outputs static assets in `dist/`, suitable for static hosting or deploymen
 
 ## Content Workflow
 
-1. Add or update metadata in `src/data/questions.json` (set `published: true`).
+1. Add or update question metadata in a JSON file under `src/data/questions/` (set `published: true` and optional `suppressAuthor`, `longExplanation`, `longAuthorId`). Include an `id` value if you want it surfaced when `showQuestionId` is enabled.
 2. Create the associated Markdown file under `src/content/questions/`.
 3. Define any new categories in `src/data/categories.json`. The helper library automatically slugifies category names and counts question usage.
 4. Add or update author entries in `src/data/authors.json`, then reference by `authorId` inside questions.
@@ -82,3 +83,5 @@ npx wrangler deploy
 ## License
 
 MIT – see `LICENSE`.
+
+

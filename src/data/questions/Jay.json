@@ -1,0 +1,29 @@
+[
+    {
+        "slug":  "why-is-abortion-wrong",
+        "title":  "Why is abortion wrong?",
+        "categories":  [
+                           "Moral",
+                           "Biblical"
+                       ],
+        "authorId":  "jay",
+        "sortOrder":  1,
+        "published":  true,
+        "markdown":  "why-is-abortion-wrong.md",
+        "suppressAuthor":  true
+    },
+    {
+        "slug":  "how-should-we-care-for-mothers",
+        "title":  "How should we care for mothers facing abortion?",
+        "categories":  [
+                           "Pastoral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "sortOrder":  2,
+        "published":  true,
+        "markdown":  "how-should-we-care-for-mothers.md",
+        "longExplanation":  "how-should-we-care-for-mothers-long.md",
+        "longAuthorId":  "chatgpt"
+    }
+]
