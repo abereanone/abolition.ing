@@ -28,7 +28,8 @@ const author = getQuestionAuthor(question);
 const showAuthors = siteSettings.showAuthor;
 const showAuthorCard = showAuthors && !question.suppressAuthor && author;
 const allPublishedQuestions = getPublishedQuestions();
-const fallbackIndex = allPublishedQuestions.findIndex((entry) => entry.slug === question.slug) + 1;
+const currentIndex = allPublishedQuestions.findIndex((entry) => entry.slug === question.slug);
+const fallbackIndex = currentIndex + 1;
 const questionNumber =
   typeof question.id === "number"
     ? question.id
@@ -36,6 +37,11 @@ const questionNumber =
       ? fallbackIndex
       : null;
 const showQuestionId = siteSettings.showQuestionId && questionNumber !== null;
+const previousQuestion = currentIndex > 0 ? allPublishedQuestions[currentIndex - 1] : null;
+const nextQuestion =
+  currentIndex >= 0 && currentIndex < allPublishedQuestions.length - 1
+    ? allPublishedQuestions[currentIndex + 1]
+    : null;
 
 const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
 const page = Object.values(markdownFiles).find((module) =>
@@ -49,6 +55,22 @@ const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
 ---
 
 <Main title={`${question.title} - abolition.ing`}>
+  {previousQuestion || nextQuestion ? (
+    <nav class="question-top-nav" aria-label="Question navigation">
+      {previousQuestion ? (
+        <a class="question-top-link prev" href={`/questions/${previousQuestion.slug}`}>
+          ← Prev
+        </a>
+      ) : null}
+
+      {nextQuestion ? (
+        <a class="question-top-link next" href={`/questions/${nextQuestion.slug}`}>
+          Next →
+        </a>
+      ) : null}
+    </nav>
+  ) : null}
+
   <article class="question-article card-panel">
     <section class="question-header">
       <h1 class="page-title">{question.title}</h1>

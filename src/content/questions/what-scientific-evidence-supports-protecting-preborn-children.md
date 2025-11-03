@@ -1,0 +1,1 @@
+Modern embryology recognizes that human life begins at fertilization, when a distinct DNA code is formed. Ultrasound imagery, fetal heartbeat detection, and pain-response studies all reveal an active, developing child rather than impersonal tissue. Science therefore confirms what Scripture declares—that every preborn child is a human neighbor worthy of protection.

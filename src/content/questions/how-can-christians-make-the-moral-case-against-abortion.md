@@ -1,0 +1,1 @@
+Begin with the image of God: every child bears His likeness and therefore possesses intrinsic dignity. Clarify that justice requires protecting the innocent and that the command “you shall not murder” extends to the preborn. Then point to Christ, who offers both forgiveness for past sin and courage to defend the vulnerable today.

@@ -1,0 +1,1 @@
+Scripture treats the unborn as living persons known by God. Psalm 139, Jeremiah 1, and Luke 1 all testify that the Lord fashions, calls, and fills children while they are yet in the womb. Because God creates and values preborn life, the church must speak and act to defend it.

@@ -236,6 +236,29 @@ ul {
 }
 
 /* === Question Detail === */
+.question-top-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.question-top-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.question-top-link:hover,
+.question-top-link:focus-visible {
+  text-decoration: underline;
+}
+
+.question-top-link.next {
+  margin-left: auto;
+}
+
 .question-header {
   margin-bottom: 1.5rem;
 }
