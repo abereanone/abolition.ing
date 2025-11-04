@@ -1,0 +1,48 @@
+---
+import Main from "@/layouts/Main.astro";
+
+const quickLinks = [
+  { href: "/", label: "Go to the homepage", badge: "" },
+  {
+    href: "/questions/why-is-abortion-wrong/",
+    label: "Why is abortion wrong?",
+    badge: "#1",
+  },
+  {
+    href: "/questions/can-abortion-be-forgiven/",
+    label: "Can abortion be forgiven?",
+    badge: "#5",
+  },
+  {
+    href: "/questions/what-is-the-difference-between-abolition-and-pro-life/",
+    label: "What is the difference between abolition and pro-life?",
+    badge: "#3",
+  },
+];
+---
+
+<Main title="Page not found">
+  <section class="stack gap-lg">
+    <h1>Hey, sorry about this, but we could not find that page!</h1>
+    <p>The link may be broken, or the page may have been moved or deleted.</p>
+
+    <nav aria-label="Helpful links" class="quick-link-nav">
+      <ul class="question-list quick-link-list">
+        {quickLinks.map((link) => (
+          <li>
+            <a class="question-card card-panel" href={link.href}>
+              {link.badge ? <span class="question-id">{link.badge}</span> : null}
+              <span class="question-title">{link.label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </section>
+</Main>
+
+<style>
+  nav.quick-link-nav {
+    text-align: left;
+  }
+</style>
