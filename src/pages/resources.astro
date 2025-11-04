@@ -7,6 +7,7 @@ const authors = listAuthors();
 
 <Main title="Resources - abolition.ing">
   <h1>Resources & Contributors</h1>
+  <p>Here are some additional resources you may benefit from, as well as a list of the authors of the answers on this site.</p>
   {authors.length ? (
     <ul class="resource-grid">
       {authors.map((author) => (
@@ -37,4 +38,5 @@ const authors = listAuthors();
   ) : (
     <p><em>No resources available yet.</em></p>
   )}
+  <p>It goes without saying that we do not <em>necessarily</em> agree with everything that every ministry we recommend teaches or does.</p>
 </Main>
