@@ -29,7 +29,7 @@
     "url": "https://ThingsAbove.US",
     "title": "President",
     "bio": "Christian in Ohio.",
-    "sortOrder": 50
+    "sortOrder": 15
   },
   {
     "id": "jay",
@@ -38,5 +38,13 @@
     "title": "President",
     "bio": "Christian in Ohio.",
     "sortOrder": 10
+  },
+  {
+    "id": "hr",
+    "name": "Heritage Restored",
+    "url": "https://HeritageRestored.org",
+    "title": "Heritage Restored",
+    "bio": "Abolitionist Ministry in Ohio",
+    "sortOrder": 18
   }
 ]
