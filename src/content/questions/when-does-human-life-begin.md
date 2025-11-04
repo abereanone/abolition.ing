@@ -1,5 +1,5 @@
 ﻿### Biblical Answer:
-In the book of Job, the patriarch exclaims that he was a living being "from my mother's womb" (Job 3:11). Job says, "why did I not die at birth?", indicating he was alive in the womb before he was born. Additionally, in the Gospel of Luke, we read that when Mary visited Elizabeth, the unborn John the Baptist leaped in her womb upon hearing Mary's greeting (Luke 1:41). These passages indicate that --and personhood--are present even while in the womb.
+In the book of Job, the patriarch exclaims that he was a living being "from my mother's womb" (Job 3:11). Job says, "why did I not die at birth?", indicating he was alive in the womb before he was born. Additionally, in the Gospel of Luke, we read that when Mary visited Elizabeth, the unborn John the Baptist leaped in her womb upon hearing Mary's greeting (Luke 1:41). These passages indicate that life--and personhood--are present even while in the womb.
 
 ### Scientific Answer:
 According to the position paper by the American College of Pediatricians titled <a href="https://acpeds.org/when-human-life-begins/" target="_blank" rel="noopener noreferrer">
