@@ -607,5 +607,17 @@
         "authorId":  "mac",
         "published":  true,
         "markdown":  "if-infants-that-die-go-to-heaven-why-is-abortion-a-problem.md"
-}
+    },
+    {
+        "id":  47,
+        "slug":  "when-does-human-life-begin",
+        "title":  "When does human life begin?",
+        "categories":  [
+                           "Biblical",
+                           "Scientific"
+                       ],
+        "authorId":  "jay",
+        "published":  true,
+        "markdown":  "when-does-human-life-begin.md"
+    }
 ]
