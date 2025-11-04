@@ -1,140 +1,599 @@
 [
-  {
-    "id": 1,
-    "slug": "why-is-abortion-wrong",
-    "title": "Why is abortion wrong?",
-    "categories": ["Moral", "Biblical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "why-is-abortion-wrong.md",
-    "relatedAnswers": [5,6]
-  },
-  {
-    "id": 2,
-    "slug": "is-birth-control-ever-biblical",
-    "title": "Is birth control ever biblical?",
-    "categories": ["Biblical", "Moral"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "is-birth-control-ever-biblical.md"
-  },
-  {
-    "id": 3,
-    "slug": "what-is-the-difference-between-abolition-and-pro-life",
-    "title": "What is the difference between abolition and pro-life?",
-    "categories": ["Practical", "Moral"],
-    "authorId": "mac",
-    "published": true,
-    "markdown": "what-is-the-difference-between-abolition-and-pro-life.md",
-    "relatedAnswers": [1, 5]
-  },
-  {
-    "id": 4,
-    "slug": "how-should-christians-respond-to-rape-and-abortion",
-    "title": "How should Christians respond to rape and abortion?",
-    "categories": ["Moral", "Pastoral"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "how-should-christians-respond-to-rape-and-abortion.md"
-  },
-  {
-    "id": 5,
-    "slug": "can-abortion-be-forgiven",
-    "title": "Can abortion be forgiven?",
-    "categories": ["Biblical", "Pastoral"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "can-abortion-be-forgiven.md",
-    "relatedAnswers": [1, 3]
-  },
-  {
-    "id": 6,
-    "slug": "what-does-the-bible-say-about-the-value-of-life",
-    "title": "What does the Bible say about the value of life?",
-    "categories": ["Biblical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "what-does-the-bible-say-about-the-value-of-life.md"
-  },
-  {
-    "id": 7,
-    "slug": "should-abortion-be-punished-by-law",
-    "title": "Should abortion be punished by law?",
-    "categories": ["Moral", "Practical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "should-abortion-be-punished-by-law.md"
-  },
-  {
-    "id": 8,
-    "slug": "what-about-ectopic-pregnancy",
-    "title": "What about ectopic pregnancy?",
-    "categories": ["Scientific", "Pastoral"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "what-about-ectopic-pregnancy.md"
-  },
-  {
-    "id": 9,
-    "slug": "how-should-the-church-engage-abortion-culture",
-    "title": "How should the church engage abortion culture?",
-    "categories": ["Biblical", "Practical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "how-should-the-church-engage-abortion-culture.md"
-  },
-  {
-    "id": 10,
-    "slug": "does-science-prove-life-begins-at-conception",
-    "title": "Does science prove life begins at conception?",
-    "categories": ["Scientific", "Moral"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "does-science-prove-life-begins-at-conception.md"
-  },
-  {
-    "id": 11,
-    "slug": "how-should-we-care-for-post-abortive-women",
-    "title": "How should we care for post-abortive women?",
-    "categories": ["Pastoral", "Practical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "how-should-we-care-for-post-abortive-women.md"
-  },
-  {
-    "id": 12,
-    "slug": "is-it-loving-to-call-abortion-murder",
-    "title": "Is it loving to call abortion murder?",
-    "categories": ["Moral", "Biblical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "is-it-loving-to-call-abortion-murder.md"
-  },
-  {
-    "id": 13,
-    "slug": "what-about-contraceptives-that-cause-early-abortion",
-    "title": "What about contraceptives that cause early abortion?",
-    "categories": ["Scientific", "Moral"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "what-about-contraceptives-that-cause-early-abortion.md"
-  },
-  {
-    "id": 14,
-    "slug": "why-should-men-speak-out-against-abortion",
-    "title": "Why should men speak out against abortion?",
-    "categories": ["Moral", "Practical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "why-should-men-speak-out-against-abortion.md"
-  },
-  {
-    "id": 15,
-    "slug": "what-role-should-civil-government-play",
-    "title": "What role should civil government play in ending abortion?",
-    "categories": ["Biblical", "Practical"],
-    "authorId": "chatgpt",
-    "published": true,
-    "markdown": "what-role-should-civil-government-play.md"
-  }
+    {
+        "id":  1,
+        "slug":  "why-is-abortion-wrong",
+        "title":  "Why is abortion wrong?",
+        "categories":  [
+                           "Moral",
+                           "Biblical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "why-is-abortion-wrong.md",
+        "relatedAnswers":  [
+                               5,
+                               6
+                           ]
+    },
+    {
+        "id":  2,
+        "slug":  "is-birth-control-ever-biblical",
+        "title":  "Is birth control ever biblical?",
+        "categories":  [
+                           "Biblical",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "is-birth-control-ever-biblical.md"
+    },
+    {
+        "id":  3,
+        "slug":  "what-is-the-difference-between-abolition-and-pro-life",
+        "title":  "What is the difference between abolition and pro-life?",
+        "categories":  [
+                           "Practical",
+                           "Moral"
+                       ],
+        "authorId":  "mac",
+        "published":  true,
+        "markdown":  "what-is-the-difference-between-abolition-and-pro-life.md",
+        "relatedAnswers":  [
+                               1,
+                               5
+                           ]
+    },
+    {
+        "id":  4,
+        "slug":  "how-should-christians-respond-to-rape-and-abortion",
+        "title":  "How should Christians respond to rape and abortion?",
+        "categories":  [
+                           "Moral",
+                           "Pastoral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-should-christians-respond-to-rape-and-abortion.md"
+    },
+    {
+        "id":  5,
+        "slug":  "can-abortion-be-forgiven",
+        "title":  "Can abortion be forgiven?",
+        "categories":  [
+                           "Biblical",
+                           "Pastoral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "can-abortion-be-forgiven.md",
+        "relatedAnswers":  [
+                               1,
+                               3
+                           ]
+    },
+    {
+        "id":  6,
+        "slug":  "what-does-the-bible-say-about-the-value-of-life",
+        "title":  "What does the Bible say about the value of life?",
+        "categories":  [
+                           "Biblical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-does-the-bible-say-about-the-value-of-life.md"
+    },
+    {
+        "id":  7,
+        "slug":  "should-abortion-be-punished-by-law",
+        "title":  "Should abortion be punished by law?",
+        "categories":  [
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "should-abortion-be-punished-by-law.md"
+    },
+    {
+        "id":  8,
+        "slug":  "what-about-ectopic-pregnancy",
+        "title":  "What about ectopic pregnancy?",
+        "categories":  [
+                           "Scientific",
+                           "Pastoral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-about-ectopic-pregnancy.md"
+    },
+    {
+        "id":  9,
+        "slug":  "how-should-the-church-engage-abortion-culture",
+        "title":  "How should the church engage abortion culture?",
+        "categories":  [
+                           "Biblical",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-should-the-church-engage-abortion-culture.md"
+    },
+    {
+        "id":  10,
+        "slug":  "does-science-prove-life-begins-at-conception",
+        "title":  "Does science prove life begins at conception?",
+        "categories":  [
+                           "Scientific",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "does-science-prove-life-begins-at-conception.md"
+    },
+    {
+        "id":  11,
+        "slug":  "how-should-we-care-for-post-abortive-women",
+        "title":  "How should we care for post-abortive women?",
+        "categories":  [
+                           "Pastoral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-should-we-care-for-post-abortive-women.md"
+    },
+    {
+        "id":  12,
+        "slug":  "is-it-loving-to-call-abortion-murder",
+        "title":  "Is it loving to call abortion murder?",
+        "categories":  [
+                           "Moral",
+                           "Biblical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "is-it-loving-to-call-abortion-murder.md"
+    },
+    {
+        "id":  13,
+        "slug":  "what-about-contraceptives-that-cause-early-abortion",
+        "title":  "What about contraceptives that cause early abortion?",
+        "categories":  [
+                           "Scientific",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-about-contraceptives-that-cause-early-abortion.md"
+    },
+    {
+        "id":  14,
+        "slug":  "why-should-men-speak-out-against-abortion",
+        "title":  "Why should men speak out against abortion?",
+        "categories":  [
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "why-should-men-speak-out-against-abortion.md"
+    },
+    {
+        "id":  15,
+        "slug":  "what-role-should-civil-government-play",
+        "title":  "What role should civil government play in ending abortion?",
+        "categories":  [
+                           "Biblical",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-role-should-civil-government-play.md"
+    },
+    {
+        "id":  16,
+        "slug":  "is-gestational-surrogacy-biblical",
+        "title":  "Is gestational surrogacy consistent with biblical teaching on motherhood?",
+        "categories":  [
+                           "Biblical",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "is-gestational-surrogacy-biblical.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  17,
+        "slug":  "how-should-christians-view-frozen-embryos",
+        "title":  "How should Christians think about IVF embryos that remain frozen?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-should-christians-view-frozen-embryos.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  18,
+        "slug":  "does-scripture-allow-natural-family-planning",
+        "title":  "Does Scripture allow for delaying pregnancy through natural family planning?",
+        "categories":  [
+                           "Biblical",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "does-scripture-allow-natural-family-planning.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  19,
+        "slug":  "what-medical-evidence-distinguishes-ectopic-care-from-abortion",
+        "title":  "What medical evidence shows life-saving care for ectopic pregnancies differs from abortion?",
+        "categories":  [
+                           "Scientific",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-medical-evidence-distinguishes-ectopic-care-from-abortion.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  20,
+        "slug":  "how-can-churches-support-high-risk-pregnancies",
+        "title":  "How can churches support women with high-risk pregnancies?",
+        "categories":  [
+                           "Pastoral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-can-churches-support-high-risk-pregnancies.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  21,
+        "slug":  "are-hormonal-contraceptives-that-prevent-implantation-moral",
+        "title":  "Are hormonal contraceptives that prevent implantation morally permissible?",
+        "categories":  [
+                           "Moral",
+                           "Scientific"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "are-hormonal-contraceptives-that-prevent-implantation-moral.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  22,
+        "slug":  "what-does-the-bible-teach-about-fatherly-protection",
+        "title":  "What does the Bible teach about fathers protecting preborn children?",
+        "categories":  [
+                           "Biblical",
+                           "Pastoral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-does-the-bible-teach-about-fatherly-protection.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  23,
+        "slug":  "should-magistrates-prosecute-abortion-pill-distribution",
+        "title":  "Should civil magistrates prosecute abortion pill distribution?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "should-magistrates-prosecute-abortion-pill-distribution.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  24,
+        "slug":  "what-do-ultrasound-studies-reveal-about-fetal-pain",
+        "title":  "What do ultrasound studies reveal about fetal pain?",
+        "categories":  [
+                           "Scientific",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-do-ultrasound-studies-reveal-about-fetal-pain.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  25,
+        "slug":  "how-should-christians-respond-to-prenatal-disability-diagnoses",
+        "title":  "How should Christian couples respond to a prenatal diagnosis of disability?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Pastoral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-should-christians-respond-to-prenatal-disability-diagnoses.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  26,
+        "slug":  "is-permanent-sterilization-a-faithful-family-planning-choice",
+        "title":  "Is permanent sterilization an acceptable Christian response to family planning?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "is-permanent-sterilization-a-faithful-family-planning-choice.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  27,
+        "slug":  "how-does-psalm-139-guide-our-view-of-lab-created-embryos",
+        "title":  "How does Psalm 139 inform our view of embryos created in laboratories?",
+        "categories":  [
+                           "Biblical",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-does-psalm-139-guide-our-view-of-lab-created-embryos.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  28,
+        "slug":  "what-protections-do-post-roe-states-provide-for-mothers",
+        "title":  "What protections do post-Roe states provide for mothers?",
+        "categories":  [
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-protections-do-post-roe-states-provide-for-mothers.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  29,
+        "slug":  "can-christians-participate-in-fetal-tissue-research",
+        "title":  "Can Christians participate in fetal tissue research?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Scientific"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "can-christians-participate-in-fetal-tissue-research.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  30,
+        "slug":  "what-is-the-churchs-role-in-post-abortion-discipleship-for-men",
+        "title":  "What is the church\u0027s role in post-abortion discipleship for men?",
+        "categories":  [
+                           "Pastoral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-is-the-churchs-role-in-post-abortion-discipleship-for-men.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  31,
+        "slug":  "does-emergency-contraception-act-as-an-abortifacient",
+        "title":  "Does emergency contraception act as an abortifacient?",
+        "categories":  [
+                           "Scientific",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "does-emergency-contraception-act-as-an-abortifacient.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  32,
+        "slug":  "how-should-lawmakers-respond-to-abortion-tourism",
+        "title":  "How should lawmakers respond to abortion tourism?",
+        "categories":  [
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-should-lawmakers-respond-to-abortion-tourism.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  33,
+        "slug":  "what-are-ethical-alternatives-to-ivf",
+        "title":  "What are ethical alternatives to IVF for infertile couples?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-are-ethical-alternatives-to-ivf.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  34,
+        "slug":  "how-can-pastors-counsel-survivors-of-coerced-abortion",
+        "title":  "How can pastors counsel survivors of coerced abortion?",
+        "categories":  [
+                           "Pastoral",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-can-pastors-counsel-survivors-of-coerced-abortion.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  35,
+        "slug":  "what-does-church-history-teach-about-abortion",
+        "title":  "What does church history teach about abortion in the early centuries?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-does-church-history-teach-about-abortion.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  36,
+        "slug":  "should-christians-support-fetal-heartbeat-legislation",
+        "title":  "Should Christians support fetal heartbeat legislation?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "should-christians-support-fetal-heartbeat-legislation.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  37,
+        "slug":  "how-do-chemical-abortions-impact-womens-health",
+        "title":  "How do chemical abortions impact women\u0027s health?",
+        "categories":  [
+                           "Scientific",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-do-chemical-abortions-impact-womens-health.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  38,
+        "slug":  "what-does-proverbs-teach-about-rescuing-the-preborn",
+        "title":  "What does Proverbs teach about rescuing preborn neighbors?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-does-proverbs-teach-about-rescuing-the-preborn.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  39,
+        "slug":  "how-can-deacons-organize-mercy-ministry-for-single-mothers",
+        "title":  "How can deacons organize mercy ministry for single mothers?",
+        "categories":  [
+                           "Pastoral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-can-deacons-organize-mercy-ministry-for-single-mothers.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  40,
+        "slug":  "what-scriptures-address-children-conceived-in-rape",
+        "title":  "What scriptures address the value of children conceived in rape?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Pastoral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-scriptures-address-children-conceived-in-rape.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  41,
+        "slug":  "what-legal-strategies-end-abortion-without-exceptions",
+        "title":  "What legal strategies end abortion without exceptions?",
+        "categories":  [
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-legal-strategies-end-abortion-without-exceptions.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  42,
+        "slug":  "how-can-christians-discern-compromised-prolife-legislation",
+        "title":  "How can Christians discern pro-life legislation that compromises justice?",
+        "categories":  [
+                           "Biblical",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-can-christians-discern-compromised-prolife-legislation.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  43,
+        "slug":  "what-steps-should-fathers-take-when-mothers-consider-abortion",
+        "title":  "What steps should fathers take when mothers consider abortion?",
+        "categories":  [
+                           "Pastoral",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "what-steps-should-fathers-take-when-mothers-consider-abortion.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  44,
+        "slug":  "does-a-detectable-heartbeat-prove-personhood",
+        "title":  "Does a detectable heartbeat prove personhood scientifically and biblically?",
+        "categories":  [
+                           "Scientific",
+                           "Biblical",
+                           "Moral"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "does-a-detectable-heartbeat-prove-personhood.md",
+        "suppressAuthor":  true
+    },
+    {
+        "id":  45,
+        "slug":  "how-do-we-answer-claims-that-abortion-is-healthcare",
+        "title":  "How do we answer claims that abortion is healthcare?",
+        "categories":  [
+                           "Scientific",
+                           "Moral",
+                           "Practical"
+                       ],
+        "authorId":  "chatgpt",
+        "published":  true,
+        "markdown":  "how-do-we-answer-claims-that-abortion-is-healthcare.md",
+        "suppressAuthor":  true
+    }
 ]
