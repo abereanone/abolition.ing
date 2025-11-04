@@ -1,28 +1,26 @@
 export default {
   async fetch(request, env) {
     try {
-      const response = await env.ASSETS.fetch(request);
-      if (response.status !== 404) {
-        return response;
+      const assetResponse = await env.ASSETS.fetch(request);
+      if (assetResponse.status !== 404 || request.method !== "GET") {
+        return assetResponse;
       }
 
-      const url = new URL(request.url);
-      const notFoundUrl = new URL("/404.html", url.origin);
-      const notFoundResponse = await env.ASSETS.fetch(
-        new Request(notFoundUrl.toString(), request),
-      );
+      const notFoundUrl = new URL("/404.html", request.url);
+      const notFoundResponse = await env.ASSETS.fetch(notFoundUrl);
 
-      if (notFoundResponse.status !== 404) {
-        return new Response(notFoundResponse.body, {
+      if (notFoundResponse.status === 200) {
+        const body = await notFoundResponse.arrayBuffer();
+        return new Response(body, {
           status: 404,
-          headers: notFoundResponse.headers,
+          headers: new Headers(notFoundResponse.headers),
         });
       }
 
-      return response;
+      return assetResponse;
     } catch (error) {
       console.error("Worker error:", error);
-      return new Response("Internal error", { status: 500 });
+      return new Response("Internal Server Error", { status: 500 });
     }
   },
 };
