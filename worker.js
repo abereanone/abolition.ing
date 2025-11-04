@@ -1,6 +1,11 @@
 export default {
   async fetch(request, env) {
     try {
+      if (!env.ASSETS || typeof env.ASSETS.fetch !== "function") {
+        console.error("ASSETS binding unavailable on this deployment.");
+        return new Response("Internal Server Error", { status: 500 });
+      }
+
       const assetResponse = await env.ASSETS.fetch(request);
       if (assetResponse.status !== 404 || request.method !== "GET") {
         return assetResponse;
