@@ -1,49 +1,11 @@
 [
   {
-    "id": 3,
-    "slug": "does-the-bible-affirm-the-personhood-of-the-unborn",
-    "title": "Does the Bible affirm the personhood of the unborn?",
-    "categories": ["Biblical"],
+    "id": 16,
+    "slug": "do-gays-get-abortions",
+    "title": "Do gays get abortions?",
+    "categories": ["Moral", "Biblical"],
     "authorId": "jay",
     "published": true,
-    "markdown": "does-the-bible-affirm-the-personhood-of-the-unborn.md"
-  },
-  {
-    "id": 4,
-    "slug": "how-can-christians-make-the-moral-case-against-abortion",
-    "title": "How can Christians make the moral case against abortion?",
-    "categories": ["Moral", "Practical"],
-    "authorId": "jay",
-    "published": true,
-    "markdown": "how-can-christians-make-the-moral-case-against-abortion.md"
-  },
-  {
-    "id": 5,
-    "slug": "what-scientific-evidence-supports-protecting-preborn-children",
-    "title": "What scientific evidence supports protecting preborn children?",
-    "categories": ["Scientific"],
-    "authorId": "jay",
-    "published": true,
-    "markdown": "what-scientific-evidence-supports-protecting-preborn-children.md"
-  },
-  {
-    "id": 6,
-    "slug": "how-should-churches-walk-with-repentant-post-abortive-parents",
-    "title": "How should churches walk with repentant post-abortive parents?",
-    "categories": ["Pastoral"],
-    "authorId": "jay",
-    "published": true,
-    "markdown": "how-should-churches-walk-with-repentant-post-abortive-parents.md"
-  },
-  {
-    "id": 7,
-    "slug": "what-practical-steps-can-communities-take-to-stand-with-mothers",
-    "title": "What practical steps can communities take to stand with mothers?",
-    "categories": ["Practical"],
-    "authorId": "jay",
-    "published": true,
-    "markdown": "what-practical-steps-can-communities-take-to-stand-with-mothers.md"
+    "markdown": "do-gays-get-abortions.md"
   }
 ]
-
-

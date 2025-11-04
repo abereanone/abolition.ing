@@ -10,15 +10,128 @@
   },
   {
     "id": 2,
-    "slug": "how-should-we-care-for-mothers",
-    "title": "How should we care for mothers facing abortion?",
+    "slug": "is-birth-control-ever-biblical",
+    "title": "Is birth control ever biblical?",
+    "categories": ["Biblical", "Moral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "is-birth-control-ever-biblical.md"
+  },
+  {
+    "id": 3,
+    "slug": "what-is-the-difference-between-abolition-and-pro-life",
+    "title": "What is the difference between abolition and pro-life?",
+    "categories": ["Practical", "Moral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "what-is-the-difference-between-abolition-and-pro-life.md"
+  },
+  {
+    "id": 4,
+    "slug": "how-should-christians-respond-to-rape-and-abortion",
+    "title": "How should Christians respond to rape and abortion?",
+    "categories": ["Moral", "Pastoral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "how-should-christians-respond-to-rape-and-abortion.md"
+  },
+  {
+    "id": 5,
+    "slug": "can-abortion-be-forgiven",
+    "title": "Can abortion be forgiven?",
+    "categories": ["Biblical", "Pastoral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "can-abortion-be-forgiven.md"
+  },
+  {
+    "id": 6,
+    "slug": "what-does-the-bible-say-about-the-value-of-life",
+    "title": "What does the Bible say about the value of life?",
+    "categories": ["Biblical"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "what-does-the-bible-say-about-the-value-of-life.md"
+  },
+  {
+    "id": 7,
+    "slug": "should-abortion-be-punished-by-law",
+    "title": "Should abortion be punished by law?",
+    "categories": ["Moral", "Practical"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "should-abortion-be-punished-by-law.md"
+  },
+  {
+    "id": 8,
+    "slug": "what-about-ectopic-pregnancy",
+    "title": "What about ectopic pregnancy?",
+    "categories": ["Scientific", "Pastoral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "what-about-ectopic-pregnancy.md"
+  },
+  {
+    "id": 9,
+    "slug": "how-should-the-church-engage-abortion-culture",
+    "title": "How should the church engage abortion culture?",
+    "categories": ["Biblical", "Practical"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "how-should-the-church-engage-abortion-culture.md"
+  },
+  {
+    "id": 10,
+    "slug": "does-science-prove-life-begins-at-conception",
+    "title": "Does science prove life begins at conception?",
+    "categories": ["Scientific", "Moral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "does-science-prove-life-begins-at-conception.md"
+  },
+  {
+    "id": 11,
+    "slug": "how-should-we-care-for-post-abortive-women",
+    "title": "How should we care for post-abortive women?",
     "categories": ["Pastoral", "Practical"],
     "authorId": "chatgpt",
     "published": true,
-    "markdown": "how-should-we-care-for-mothers.md",
-    "longExplanation": "how-should-we-care-for-mothers-long.md",
-    "longAuthorId": "chatgpt"
+    "markdown": "how-should-we-care-for-post-abortive-women.md"
+  },
+  {
+    "id": 12,
+    "slug": "is-it-loving-to-call-abortion-murder",
+    "title": "Is it loving to call abortion murder?",
+    "categories": ["Moral", "Biblical"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "is-it-loving-to-call-abortion-murder.md"
+  },
+  {
+    "id": 13,
+    "slug": "what-about-contraceptives-that-cause-early-abortion",
+    "title": "What about contraceptives that cause early abortion?",
+    "categories": ["Scientific", "Moral"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "what-about-contraceptives-that-cause-early-abortion.md"
+  },
+  {
+    "id": 14,
+    "slug": "why-should-men-speak-out-against-abortion",
+    "title": "Why should men speak out against abortion?",
+    "categories": ["Moral", "Practical"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "why-should-men-speak-out-against-abortion.md"
+  },
+  {
+    "id": 15,
+    "slug": "what-role-should-civil-government-play",
+    "title": "What role should civil government play in ending abortion?",
+    "categories": ["Biblical", "Practical"],
+    "authorId": "chatgpt",
+    "published": true,
+    "markdown": "what-role-should-civil-government-play.md"
   }
 ]
-
-

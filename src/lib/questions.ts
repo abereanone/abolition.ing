@@ -1,5 +1,5 @@
 import categoriesData from "@/data/categories.json";
-import authorsData from "@/data/authors.json";
+import authorsData from "@/data/resources.json";
 
 interface Question {
   id?: number;
