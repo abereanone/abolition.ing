@@ -595,5 +595,18 @@
         "published":  true,
         "markdown":  "how-do-we-answer-claims-that-abortion-is-healthcare.md",
         "suppressAuthor":  true
-    }
+    },
+    {
+        "id":  46,
+        "slug":  "if-infants-that-die-go-to-heaven-why-is-abortion-a-problem",
+        "title":  "If infants that die go to Heaven, why is abortion a problem?",
+        "categories":  [
+                       "Biblical",
+                       "Moral",
+                       "Practical"
+                   ],
+        "authorId":  "mac",
+        "published":  true,
+        "markdown":  "if-infants-that-die-go-to-heaven-why-is-abortion-a-problem.md"
+}
 ]
