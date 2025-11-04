@@ -594,7 +594,7 @@
         "authorId":  "chatgpt",
         "published":  true,
         "markdown":  "how-do-we-answer-claims-that-abortion-is-healthcare.md",
-        "suppressAuthor":  true
+        "suppressAuthor":  false
     },
     {
         "id":  46,

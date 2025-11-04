@@ -1,2 +1,9 @@
-this question has not been answered yet.
+That question goes right to the heart of the matter, and it’s one that deserves a clear and biblical answer.
 
+First, even if every aborted child were immediately received into the presence of Christ—which many Reformed Baptists and other Protestants believe is indeed the case—that would **not** make abortion any less evil. Scripture is clear that **we are never permitted to do evil that good may come** (Romans 3:8). The fact that God can redeem evil actions and bring good from them does not justify committing those actions. God’s sovereignty never excuses man’s sin.
+
+Abortion is murder—the intentional killing of an innocent human being. Each child in the womb is a living soul made by God (Psalm 139:13–16; Jeremiah 1:5). The moral question, therefore, is not *what happens to the baby afterward*, but *what man has done before God in shedding innocent blood.*
+
+We might also ask: would it be righteous for us to kill all infants, or all Christians, because we believe they would go to Heaven? Of course not. That would be rebellion against God’s law. Abortion is not a mercy; it is the unjust destruction of a neighbor whom we are commanded to love (Matthew 22:39).
+
+In addition, God uses even the short lives of those little ones to testify to His justice and grace. Their deaths are not meaningless, but their murderers will be held accountable unless they repent and trust in Christ. God commands rulers to protect innocent life, not to destroy it (Romans 13:3–4). The abolitionist stance is simply obedience to that command—calling both individuals and nations to **repent immediately and abolish abortion entirely**, not regulate or excuse it.

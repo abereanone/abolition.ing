@@ -622,3 +622,12 @@ ul {
 .long-author a:focus-visible {
   text-decoration: underline;
 }
+
+.question-body ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.question-body li {
+  margin-left: 0.5rem;
+}
