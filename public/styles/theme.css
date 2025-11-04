@@ -348,6 +348,22 @@ ul {
   margin-bottom: 0;
 }
 
+.related-questions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.related-questions h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.related-questions .question-list {
+  margin: 0;
+}
+
 .bible-ref {
   color: #4ac1ff;
   cursor: pointer;

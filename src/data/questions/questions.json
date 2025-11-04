@@ -6,7 +6,8 @@
     "categories": ["Moral", "Biblical"],
     "authorId": "chatgpt",
     "published": true,
-    "markdown": "why-is-abortion-wrong.md"
+    "markdown": "why-is-abortion-wrong.md",
+    "relatedAnswers": [5,6]
   },
   {
     "id": 2,
@@ -24,7 +25,8 @@
     "categories": ["Practical", "Moral"],
     "authorId": "mac",
     "published": true,
-    "markdown": "what-is-the-difference-between-abolition-and-pro-life.md"
+    "markdown": "what-is-the-difference-between-abolition-and-pro-life.md",
+    "relatedAnswers": [1, 5]
   },
   {
     "id": 4,
@@ -42,7 +44,8 @@
     "categories": ["Biblical", "Pastoral"],
     "authorId": "chatgpt",
     "published": true,
-    "markdown": "can-abortion-be-forgiven.md"
+    "markdown": "can-abortion-be-forgiven.md",
+    "relatedAnswers": [1, 3]
   },
   {
     "id": 6,

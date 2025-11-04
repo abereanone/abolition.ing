@@ -1,7 +1,7 @@
 import categoriesData from "@/data/categories.json";
 import authorsData from "@/data/resources.json";
 
-interface Question {
+export interface Question {
   id?: number;
   slug: string;
   title: string;
@@ -12,6 +12,7 @@ interface Question {
   longExplanation?: string;
   longAuthorId?: string;
   suppressAuthor?: boolean;
+  relatedAnswers?: number[];
 }
 
 interface QuestionEntry {
@@ -35,6 +36,13 @@ const questionEntries: QuestionEntry[] = Object.keys(questionModules)
 validateQuestionEntries(questionEntries);
 
 const questionsData: Question[] = questionEntries.map((entry) => entry.question);
+
+const questionIdMap = new Map<number, Question>();
+questionsData.forEach((question) => {
+  if (typeof question.id === "number") {
+    questionIdMap.set(question.id, question);
+  }
+});
 
 type Category = (typeof categoriesData)[number];
 type Author = (typeof authorsData)[number];
@@ -216,6 +224,31 @@ export function findQuestion(slug: string): Question | null {
   return questionsData.find((question) => question.slug === slug) ?? null;
 }
 
+export function getRelatedQuestions(question: Question): Question[] {
+  if (!Array.isArray(question.relatedAnswers) || !question.relatedAnswers.length) {
+    return [];
+  }
+
+  const seen = new Set<number>();
+  const related: Question[] = [];
+
+  question.relatedAnswers.forEach((id) => {
+    if (typeof id !== "number" || seen.has(id)) {
+      return;
+    }
+
+    const entry = questionIdMap.get(id);
+    if (!entry || entry === question || !entry.published) {
+      return;
+    }
+
+    seen.add(id);
+    related.push(entry);
+  });
+
+  return related;
+}
+
 export function getQuestionCategories(question: Question) {
   const seen = new Set<string>();
   const result: Array<{ id: string; name: string }> = [];
@@ -285,6 +318,7 @@ function validateQuestionEntries(entries: QuestionEntry[]) {
 
   const seenIds = new Map<string, string[]>();
   const seenSlugs = new Map<string, string[]>();
+  const idToEntry = new Map<number, { question: Question; source: string }>();
 
   for (const { question, source } of entries) {
     if (question.id !== undefined && question.id !== null) {
@@ -294,6 +328,10 @@ function validateQuestionEntries(entries: QuestionEntry[]) {
         bucket.push(source);
       } else {
         seenIds.set(key, [source]);
+      }
+
+      if (typeof question.id === "number") {
+        idToEntry.set(question.id, { question, source });
       }
     }
 
@@ -319,30 +357,58 @@ function validateQuestionEntries(entries: QuestionEntry[]) {
     }
   }
 
-  if (!duplicateReport.length) {
-    if ("__QUESTION_DUPLICATE_REPORT__" in globalThis) {
-      // Clear any previous report once issues are resolved.
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      delete (globalThis as any).__QUESTION_DUPLICATE_REPORT__;
-    }
-    return;
-  }
+  const relatedIssues: string[] = [];
 
-  const lines: string[] = ["Duplicate question metadata detected:"];
-  duplicateReport.forEach(({ label, value, sources }) => {
-    lines.push(`- ${label} "${value}" appears in:`);
-    sources.forEach((source) => {
-      lines.push(`  - ${source}`);
+  entries.forEach(({ question, source }) => {
+    if (question.relatedAnswers === undefined) {
+      return;
+    }
+
+    if (!Array.isArray(question.relatedAnswers)) {
+      relatedIssues.push(`- ${source} has an invalid relatedAnswers value (must be an array of numeric IDs).`);
+      return;
+    }
+
+    question.relatedAnswers.forEach((id, index) => {
+      if (typeof id !== "number" || Number.isNaN(id)) {
+        relatedIssues.push(`- ${source} relatedAnswers[${index}] is not a number.`);
+        return;
+      }
+
+      if (!idToEntry.has(id)) {
+        relatedIssues.push(`- ${source} references missing question ID ${id}.`);
+      }
     });
   });
 
-  const message = lines.join("\n");
-  console.warn(message);
+  if (!duplicateReport.length) {
+    if ("__QUESTION_DUPLICATE_REPORT__" in globalThis) {
+      // Clear any previous duplicate report once issues are resolved.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      delete (globalThis as any).__QUESTION_DUPLICATE_REPORT__;
+    }
+  } else {
+    const lines: string[] = ["Duplicate question metadata detected:"];
+    duplicateReport.forEach(({ label, value, sources }) => {
+      lines.push(`- ${label} "${value}" appears in:`);
+      sources.forEach((source) => {
+        lines.push(`  - ${source}`);
+      });
+    });
 
-  // Persist details so the client bundle can surface them in the browser console.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (globalThis as any).__QUESTION_DUPLICATE_REPORT__ = {
-    heading: "Duplicate question metadata detected",
-    entries: duplicateReport,
-  };
+    const message = lines.join("\n");
+    console.warn(message);
+
+    // Persist details so the client bundle can surface them in the browser console.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (globalThis as any).__QUESTION_DUPLICATE_REPORT__ = {
+      heading: "Duplicate question metadata detected",
+      entries: duplicateReport,
+    };
+  }
+
+  if (relatedIssues.length) {
+    const relatedMessage = ["Related question references contain issues:", ...relatedIssues].join("\n");
+    console.warn(relatedMessage);
+  }
 }
