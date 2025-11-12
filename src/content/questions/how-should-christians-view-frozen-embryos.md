@@ -1,2 +1,1 @@
-this question has not been answered yet.
-
+Christians should view frozen IVF embryos as living human beings created in God’s image, not as property or biological material. Scripture teaches that human life begins at conception (Psalm 139:13–16; Luke 1:41–44), so every embryo has inherent dignity and moral worth. Creating and freezing embryos violates God’s design for procreation within marriage and treats human life as something to be produced, stored, or discarded at will. The only righteous response is repentance from such practices and the recognition that each frozen embryo is a child deserving protection, not experimentation or destruction.

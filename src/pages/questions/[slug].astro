@@ -45,12 +45,30 @@ const nextQuestion =
     : null;
 
 const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
-const page = Object.values(markdownFiles).find((module) =>
-  module.file?.endsWith(question.markdown)
+const markdownModules = Object.values(markdownFiles);
+const findMarkdownModule = (fileName: string | undefined) =>
+  fileName ? markdownModules.find((module) => module.file?.endsWith(fileName)) ?? null : null;
+
+const page = findMarkdownModule(question.markdown);
+
+const longMarkdownCandidates = Array.from(
+  new Set(
+    [
+      question.markdown?.replace(/\.md$/i, "-long.md"),
+      question.slug ? `${question.slug}-long.md` : null,
+    ].filter((name): name is string => Boolean(name))
+  )
 );
-const longPage = question.longExplanation
-  ? Object.values(markdownFiles).find((module) => module.file?.endsWith(question.longExplanation))
-  : null;
+const resolveLongPage = () => {
+  for (const fileName of longMarkdownCandidates) {
+    const module = findMarkdownModule(fileName);
+    if (module) {
+      return module;
+    }
+  }
+  return null;
+};
+const longPage = resolveLongPage();
 const longAuthor = question.longAuthorId ? findAuthor(question.longAuthorId) : null;
 const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
 const relatedQuestions = getRelatedQuestions(question);

@@ -9,7 +9,6 @@ export interface Question {
   markdown: string;
   authorId?: string;
   published?: boolean;
-  longExplanation?: string;
   longAuthorId?: string;
   suppressAuthor?: boolean;
   relatedAnswers?: number[];
