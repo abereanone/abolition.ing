@@ -169,6 +169,17 @@ const relatedQuestions = getRelatedQuestions(question);
 
   {longPage ? (
     <script type="module" is:inline>
+      const scrollWithOffset = (target) => {
+        const header = document.querySelector(".navbar");
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+        const targetTop = window.scrollY + target.getBoundingClientRect().top - headerHeight - 16;
+
+        window.scrollTo({
+          top: Math.max(targetTop, 0),
+          behavior: "smooth",
+        });
+      };
+
       document.querySelectorAll("[data-long-explanation]").forEach((section) => {
         const button = section.querySelector("[data-long-toggle]");
         const content = section.querySelector("[data-long-content]");
@@ -190,7 +201,9 @@ const relatedQuestions = getRelatedQuestions(question);
 
           if (nextExpanded) {
             content.hidden = false;
-            content.scrollIntoView({ behavior: "smooth", block: "start" });
+            requestAnimationFrame(() => {
+              scrollWithOffset(content);
+            });
           } else {
             content.hidden = true;
           }
