@@ -201,6 +201,7 @@
         "authorId":  "chatgpt",
         "published":  true,
         "markdown":  "is-gestational-surrogacy-biblical.md",
+        "longExplanation":  "is-gestational-surrogacy-biblical-long.md",
         "suppressAuthor":  true
     },
     {

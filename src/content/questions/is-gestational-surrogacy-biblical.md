@@ -1,2 +1,1 @@
-this question has not been answered yet.
-
+No. Gestational surrogacy is **not consistent with biblical teaching** because it separates procreation from the covenant of marriage, divides motherhood, and often involves treating children as products rather than gifts from God (Genesis 2:24; Psalm 127:3).
