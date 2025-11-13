@@ -1,2 +1,1 @@
-this question has not been answered yet.
-
+Deacons can organize mercy ministry for single mothers by meeting their physical and spiritual needs through coordinated, gospel-centered care. They should first assess needs within the church, mobilize members to help with meals, childcare, and mentorship, manage a deacon’s fund for emergency aid, and pair every act of mercy with discipleship and pastoral care. In all, they reflect Christ’s compassion and uphold His righteousness in service to vulnerable families.
