@@ -54,7 +54,7 @@ This keeps the focus on reconciliation, repentance, and spiritual maturity—not
 
 5. Extend Help Beyond the Church
 
-Once the church is meeting internal needs well, deacons can lead outreach to single mothers in the community—especially those in crisis pregnancies or post-abortive situations. Partnering with abolitionist ministries like Free the States{target="_blank"} or Heritage Restored{target="_blank"} can connect the church to efforts that defend life and restore families in a gospel-centered way.
+Once the church is meeting internal needs well, deacons can lead outreach to single mothers in the community—especially those in crisis pregnancies or post-abortive situations. Partnering with abolitionist ministries like Heritage Restored can connect the church to efforts that defend life and restore families in a gospel-centered way.
 
 
 ---
