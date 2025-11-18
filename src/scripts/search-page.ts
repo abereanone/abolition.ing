@@ -10,7 +10,7 @@ export function initSearchPage() {
   }
   initialized = true;
 
-  document.addEventListener("DOMContentLoaded", () => {
+  const start = () => {
     const root = document.querySelector<HTMLElement>("[data-search-root]");
     if (!root) return;
 
@@ -103,7 +103,15 @@ export function initSearchPage() {
         })
         .join("");
     }
-  });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start, { once: true });
+  } else {
+    start();
+  }
 }
 
-initSearchPage();
+if (typeof document !== "undefined") {
+  initSearchPage();
+}

@@ -1,3 +1,9 @@
+---
+import { siteSettings } from "@/config/siteSettings";
+
+const version = siteSettings.version;
+---
+
 <header class="navbar">
   <a href="/" class="logo">
     <img src="/images/abolitioninglogoEdited.svg" alt="abolition.ing logo" />
@@ -9,6 +15,8 @@
     <a href="/about">About</a>
     <a href="/search">Search</a>
   </nav>
+
+  <span class="build-version" data-build-version={version} aria-hidden="true"></span>
 </header>
 
 <style>
@@ -41,6 +49,14 @@
 
   nav a:hover {
     text-decoration: underline;
+  }
+
+  .build-version {
+    display: inline-block;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 
   /* ✅ Mobile styles */

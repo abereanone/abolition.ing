@@ -1,9 +1,9 @@
 ---
 import Main from "@/layouts/Main.astro";
 import { siteSettings } from "@/config/siteSettings";
-import searchScriptUrl from "@/scripts/search-page.ts?url";
 
 const showQuestionIds = siteSettings.showQuestionId;
+const searchClientSrc = `/assets/search-client.js?v=${siteSettings.version}`;
 ---
 
 <Main title="Search | abolition.ing" description="Search across abolition.ing questions and answers.">
@@ -34,7 +34,7 @@ const showQuestionIds = siteSettings.showQuestionId;
     <div id="search-results" class="search-results" aria-live="polite"></div>
   </section>
 
-  <script type="module" src={searchScriptUrl}></script>
+  <script type="module" src={searchClientSrc}></script>
 
   <style>
     .search-page {
