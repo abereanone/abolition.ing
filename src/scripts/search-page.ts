@@ -3,6 +3,7 @@ import { createSearchEngine, searchIndex } from "@/lib/search-engine.js";
 
 const engine = createSearchEngine(Array.isArray(dataset) ? dataset : []);
 let initialized = false;
+const MIN_QUERY_LENGTH = 3;
 
 export function initSearchPage() {
   if (initialized || typeof document === "undefined") {
@@ -37,7 +38,7 @@ export function initSearchPage() {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const query = input.value.trim();
-      updateUrl(query);
+      updateUrl(query.length >= MIN_QUERY_LENGTH ? query : "");
       performSearch(query);
     });
 
@@ -48,7 +49,7 @@ export function initSearchPage() {
 
       debounceTimer = window.setTimeout(() => {
         const query = input.value.trim();
-        updateUrl(query);
+        updateUrl(query.length >= MIN_QUERY_LENGTH ? query : "");
         performSearch(query);
       }, 300);
     });
@@ -71,6 +72,11 @@ export function initSearchPage() {
         return;
       }
 
+      if (query.length < MIN_QUERY_LENGTH) {
+        metaContainer.textContent = "Please enter at least 3 characters to search.";
+        resultsContainer.innerHTML = "";
+        return;
+      }
       metaContainer.textContent = "Searching...";
 
       const payload = searchIndex(engine, query, { limit: 25 });

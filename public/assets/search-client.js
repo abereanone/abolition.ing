@@ -806,6 +806,7 @@ var STOP_WORDS = /* @__PURE__ */ new Set([
   "will",
   "with"
 ]);
+var MIN_TOKEN_LENGTH = 3;
 function createSearchEngine(dataset = []) {
   const documents = /* @__PURE__ */ new Map();
   const invertedIndex = /* @__PURE__ */ new Map();
@@ -841,7 +842,7 @@ function searchIndex(engine2, query, options = {}) {
   if (!engine2) {
     return { total: 0, items: [] };
   }
-  const tokens = tokenize(query).filter((token) => !STOP_WORDS.has(token));
+  const tokens = tokenize(query).filter((token) => token.length >= MIN_TOKEN_LENGTH && !STOP_WORDS.has(token));
   const uniqueTokens = [...new Set(tokens)];
   const docScores = /* @__PURE__ */ new Map();
   uniqueTokens.forEach((token) => {
@@ -892,7 +893,13 @@ function searchIndex(engine2, query, options = {}) {
   });
   const limit = options.limit ?? 10;
   const limited = filtered.slice(0, limit);
-  const highlightTokens = uniqueTokens.length ? uniqueTokens : normalizedQuery ? [normalizedQuery] : [];
+  const highlightTokens = filterHighlightTokens(
+    uniqueTokens.length
+      ? uniqueTokens
+      : normalizedQuery && normalizedQuery.length >= MIN_TOKEN_LENGTH
+        ? [normalizedQuery]
+        : []
+  );
   return {
     total: filtered.length,
     items: limited.map(({ doc, score }) => ({
@@ -966,10 +973,14 @@ function highlightText(text, tokens) {
   const pattern = new RegExp(tokens.map(escapeRegExp).join("|"), "gi");
   return text.replace(pattern, (match) => `<mark>${match}</mark>`);
 }
+function filterHighlightTokens(tokens) {
+  return tokens.filter((token) => token.length >= MIN_TOKEN_LENGTH);
+}
 
 // src/scripts/search-page.ts
 var engine = createSearchEngine(Array.isArray(search_index_default) ? search_index_default : []);
 var initialized = false;
+var MIN_QUERY_LENGTH = 3;
 function initSearchPage() {
   if (initialized || typeof document === "undefined") {
     return;
@@ -996,7 +1007,7 @@ function initSearchPage() {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const query = input.value.trim();
-      updateUrl(query);
+      updateUrl(query.length >= MIN_QUERY_LENGTH ? query : "");
       performSearch(query);
     });
     input.addEventListener("input", () => {
@@ -1005,7 +1016,7 @@ function initSearchPage() {
       }
       debounceTimer = window.setTimeout(() => {
         const query = input.value.trim();
-        updateUrl(query);
+        updateUrl(query.length >= MIN_QUERY_LENGTH ? query : "");
         performSearch(query);
       }, 300);
     });
@@ -1022,6 +1033,11 @@ function initSearchPage() {
     function performSearch(query) {
       if (!query) {
         metaContainer.textContent = "Type a phrase to begin searching.";
+        resultsContainer.innerHTML = "";
+        return;
+      }
+      if (query.length < MIN_QUERY_LENGTH) {
+        metaContainer.textContent = "Please enter at least 3 characters to search.";
         resultsContainer.innerHTML = "";
         return;
       }

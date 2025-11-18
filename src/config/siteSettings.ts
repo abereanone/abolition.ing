@@ -1,4 +1,4 @@
-const appVersion = '0.0.1';
+const appVersion = '0.0.2';
 
 export const siteSettings = {
   version: appVersion,

@@ -33,6 +33,7 @@ const STOP_WORDS = new Set([
   "will",
   "with",
 ]);
+const MIN_TOKEN_LENGTH = 3;
 
 export function createSearchEngine(dataset = []) {
   const documents = new Map();
@@ -78,7 +79,7 @@ export function searchIndex(engine, query, options = {}) {
     return { total: 0, items: [] };
   }
 
-  const tokens = tokenize(query).filter((token) => !STOP_WORDS.has(token));
+  const tokens = tokenize(query).filter((token) => token.length >= MIN_TOKEN_LENGTH && !STOP_WORDS.has(token));
   const uniqueTokens = [...new Set(tokens)];
   const docScores = new Map();
 
@@ -144,7 +145,13 @@ export function searchIndex(engine, query, options = {}) {
   const limit = options.limit ?? 10;
   const limited = filtered.slice(0, limit);
 
-  const highlightTokens = uniqueTokens.length ? uniqueTokens : normalizedQuery ? [normalizedQuery] : [];
+  const highlightTokens = filterHighlightTokens(
+    uniqueTokens.length
+      ? uniqueTokens
+      : normalizedQuery && normalizedQuery.length >= MIN_TOKEN_LENGTH
+        ? [normalizedQuery]
+        : []
+  );
 
   return {
     total: filtered.length,
@@ -249,6 +256,10 @@ function highlightText(text, tokens) {
 
   const pattern = new RegExp(tokens.map(escapeRegExp).join("|"), "gi");
   return text.replace(pattern, (match) => `<mark>${match}</mark>`);
+}
+
+function filterHighlightTokens(tokens) {
+  return tokens.filter((token) => token.length >= MIN_TOKEN_LENGTH);
 }
 
 export { STOP_WORDS };
