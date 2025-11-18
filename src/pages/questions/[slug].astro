@@ -9,6 +9,7 @@ import {
   findAuthor,
 } from "@/lib/questions";
 import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
+import InlineSearchBox from "@/components/InlineSearchBox.astro";
 import { siteSettings } from "@/config/siteSettings";
 
 export function getStaticPaths() {
@@ -79,18 +80,33 @@ const relatedQuestions = getRelatedQuestions(question);
     <nav class="question-top-nav" aria-label="Question navigation">
       {previousQuestion ? (
         <a class="question-top-link prev" href={`/questions/${previousQuestion.slug}`}>
-          ← Prev
+          Prev
         </a>
-      ) : null}
+      ) : (
+        <span aria-hidden="true" class="question-top-link placeholder" />
+      )}
+
+      <InlineSearchBox
+        id={`question-search-${question.slug}`}
+        label="Search for another question"
+        placeholder="Search other questions..."
+      />
 
       {nextQuestion ? (
         <a class="question-top-link next" href={`/questions/${nextQuestion.slug}`}>
-          Next →
+          Next
         </a>
-      ) : null}
+      ) : (
+        <span aria-hidden="true" class="question-top-link placeholder" />
+      )}
     </nav>
-  ) : null}
-
+  ) : (
+    <InlineSearchBox
+      id={`question-search-${question.slug}`}
+      label="Search for another question"
+      placeholder="Search other questions..."
+    />
+  )}
   <article class="question-article card-panel">
     <section class="question-header">
       <h1 class="page-title">{question.title}</h1>
@@ -229,4 +245,39 @@ const relatedQuestions = getRelatedQuestions(question);
       });
     </script>
   ) : null}
+
+  <style>
+    .question-top-nav {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .question-top-link {
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 600;
+      min-width: 90px;
+      text-align: center;
+    }
+
+    .question-top-link:hover {
+      border-color: #f5f5f5;
+    }
+
+    .question-top-link.placeholder {
+      visibility: hidden;
+    }
+
+    .question-top-nav .inline-search-box {
+      flex: 1;
+      min-width: 240px;
+      padding: 0;
+    }
+  </style>
 </Main>

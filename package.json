@@ -3,7 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "build:search-index": "node ./src/scripts/generate-search-index.mjs",
+    "predev": "npm run build:search-index",
     "dev": "astro dev",
+    "prebuild": "npm run build:search-index",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

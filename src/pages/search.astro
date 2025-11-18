@@ -1,0 +1,159 @@
+---
+import Main from "@/layouts/Main.astro";
+import { siteSettings } from "@/config/siteSettings";
+import searchClientScript from "@/scripts/search-page.ts?url";
+
+const showQuestionIds = siteSettings.showQuestionId;
+---
+
+<Main title="Search | abolition.ing" description="Search across abolition.ing questions and answers.">
+  <section
+    class="search-page"
+    data-search-root
+    data-show-question-ids={showQuestionIds ? "true" : "false"}
+  >
+    <header class="search-header">
+      <h1>Search</h1>
+      <p>Find questions, answers, and related resources across abolition.ing.</p>
+    </header>
+
+    <form id="search-form" role="search" class="search-form">
+      <label class="sr-only" for="search-input">Search questions</label>
+      <input
+        id="search-input"
+        type="search"
+        name="q"
+        placeholder="Search questions or topics..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="search-meta" class="search-meta" aria-live="polite">Type a phrase to begin searching.</div>
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+  </section>
+
+  <script type="module" src={searchClientScript}></script>
+
+  <style>
+    .search-page {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    .search-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .search-header p {
+      color: #b5b5b5;
+      margin: 0 0 1.5rem;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-form input[type="search"] {
+      flex: 1;
+      padding: 0.85rem 1rem;
+      font-size: 1.1rem;
+      border-radius: 0.75rem;
+      border: 1px solid #333;
+      background: #0c0c0c;
+      color: #f7f7f7;
+    }
+
+    .search-form button {
+      padding: 0.85rem 1.5rem;
+      border-radius: 0.75rem;
+      border: none;
+      background: #d35400;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .search-form button:hover {
+      background: #e67e22;
+    }
+
+    .search-meta {
+      margin-bottom: 1.25rem;
+      color: #dcdcdc;
+    }
+
+    .search-results {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .search-result {
+      padding: 1.25rem;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .search-result h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.5rem;
+    }
+
+    .search-result a {
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+
+    .search-result a:hover {
+      text-decoration: underline;
+    }
+
+    .result-snippet {
+      margin: 0;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    .result-snippet mark {
+      background: rgba(255, 215, 0, 0.2);
+      padding: 0 0.15rem;
+      border-radius: 0.2rem;
+    }
+
+    .result-id {
+      display: inline-block;
+      margin-right: 0.4rem;
+      color: #f0ad4e;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 640px) {
+      .search-form {
+        flex-direction: column;
+      }
+      .search-form button {
+        width: 100%;
+      }
+    }
+  </style>
+</Main>
