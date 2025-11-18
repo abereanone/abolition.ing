@@ -1003,6 +1003,7 @@ function initSearchPage() {
       input.value = initialQuery;
       performSearch(initialQuery);
     }
+    focusSearchInput();
     let debounceTimer = null;
     form.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -1029,6 +1030,13 @@ function initSearchPage() {
       }
       const next = `${window.location.pathname}${searchParams.toString() ? `?${searchParams}` : ""}`;
       window.history.replaceState({}, "", next);
+    }
+    function focusSearchInput() {
+      if (typeof input.focus === "function") {
+        requestAnimationFrame(() => {
+          input.focus({ preventScroll: true });
+        });
+      }
     }
     function performSearch(query) {
       if (!query) {

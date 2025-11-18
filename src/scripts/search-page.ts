@@ -33,6 +33,8 @@ export function initSearchPage() {
       performSearch(initialQuery);
     }
 
+    focusSearchInput();
+
     let debounceTimer: number | null = null;
 
     form.addEventListener("submit", (event) => {
@@ -63,6 +65,14 @@ export function initSearchPage() {
       }
       const next = `${window.location.pathname}${searchParams.toString() ? `?${searchParams}` : ""}`;
       window.history.replaceState({}, "", next);
+    }
+
+    function focusSearchInput() {
+      if (typeof input.focus === "function") {
+        requestAnimationFrame(() => {
+          input.focus({ preventScroll: true });
+        });
+      }
     }
 
     function performSearch(query: string) {
