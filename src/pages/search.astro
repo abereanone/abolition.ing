@@ -1,7 +1,7 @@
 ---
 import Main from "@/layouts/Main.astro";
 import { siteSettings } from "@/config/siteSettings";
-import searchClientScript from "@/scripts/search-page.ts?url";
+import searchScriptUrl from "@/scripts/search-page.ts?url";
 
 const showQuestionIds = siteSettings.showQuestionId;
 ---
@@ -34,7 +34,7 @@ const showQuestionIds = siteSettings.showQuestionId;
     <div id="search-results" class="search-results" aria-live="polite"></div>
   </section>
 
-  <script type="module" src={searchClientScript}></script>
+  <script type="module" src={searchScriptUrl}></script>
 
   <style>
     .search-page {
