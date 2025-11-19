@@ -79,7 +79,7 @@
         "published": true,
         "markdown": "can-abortion-be-forgiven.md",
         "relatedAnswers": [
-            1,
+            48,
             3,
             11
         ]
@@ -841,6 +841,22 @@
             10,
             6,
             44
+        ]
+    },
+    {
+        "id": 48,
+        "slug": "if-abortion-can-be-forgiven",
+        "title": "If abortion can be forgiven, why not do it and just ask for forgiveness after?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "mac",
+        "published": true,
+        "markdown": "if-abortion-can-be-forgiven.md",
+        "relatedAnswers": [
+            5,
+            11
         ]
     }
 ]
