@@ -1,5 +1,6 @@
 ---
 import Main from "@/layouts/Main.astro";
+import { siteSettings } from "@/config/siteSettings";
 
 const quickLinks = [
   { href: "/", label: "Go to the homepage", badge: "" },
@@ -19,9 +20,10 @@ const quickLinks = [
     badge: "#3",
   },
 ];
+const siteName = siteSettings.branding.siteName;
 ---
 
-<Main title="Page not found">
+<Main title={`Page not found | ${siteName}`}>
   <section class="stack gap-lg">
     <h1>Hey, sorry about this, but we could not find that page.</h1>
     <p>The link may be broken, or the page may have been moved or deleted. Try one of these links below instead!</p>

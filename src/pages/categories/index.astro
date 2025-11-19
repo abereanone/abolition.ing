@@ -1,11 +1,13 @@
 ---
 import Main from "@/layouts/Main.astro";
 import { listCategories } from "@/lib/questions";
+import { siteSettings } from "@/config/siteSettings";
 
 const categoryIndex = listCategories();
+const siteName = siteSettings.branding.siteName;
 ---
 
-<Main title="Categories - abolition.ing">
+<Main title={`Categories - ${siteName}`}>
   <h1>Categories</h1>
   {categoryIndex.length ? (
     <ul class="category-grid">

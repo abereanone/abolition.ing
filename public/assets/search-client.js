@@ -801,6 +801,7 @@ var STOP_WORDS = /* @__PURE__ */ new Set([
   "these",
   "they",
   "this",
+  "what",
   "to",
   "was",
   "will",
@@ -894,11 +895,7 @@ function searchIndex(engine2, query, options = {}) {
   const limit = options.limit ?? 10;
   const limited = filtered.slice(0, limit);
   const highlightTokens = filterHighlightTokens(
-    uniqueTokens.length
-      ? uniqueTokens
-      : normalizedQuery && normalizedQuery.length >= MIN_TOKEN_LENGTH
-        ? [normalizedQuery]
-        : []
+    uniqueTokens.length ? uniqueTokens : normalizedQuery && normalizedQuery.length >= MIN_TOKEN_LENGTH ? [normalizedQuery] : []
   );
   return {
     total: filtered.length,

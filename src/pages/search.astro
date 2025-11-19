@@ -4,9 +4,11 @@ import { siteSettings } from "@/config/siteSettings";
 
 const showQuestionIds = siteSettings.showQuestionId;
 const searchClientSrc = `/assets/search-client.js?v=${siteSettings.version}`;
+const siteName = siteSettings.branding.siteName;
+const siteDescription = siteSettings.branding.description;
 ---
 
-<Main title="Search | abolition.ing" description="Search across abolition.ing questions and answers.">
+<Main title={`Search | ${siteName}`} description={`Search across ${siteName} questions and answers.`}>
   <section
     class="search-page"
     data-search-root
@@ -14,7 +16,7 @@ const searchClientSrc = `/assets/search-client.js?v=${siteSettings.version}`;
   >
     <header class="search-header">
       <h1>Search</h1>
-      <p>Find questions, answers, and related resources across abolition.ing.</p>
+      <p>Find questions, answers, and related resources across {siteName}.</p>
     </header>
 
     <form id="search-form" role="search" class="search-form">

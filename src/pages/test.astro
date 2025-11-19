@@ -1,9 +1,12 @@
 ---
 import Main from "@/layouts/Main.astro";
 import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
+import { siteSettings } from "@/config/siteSettings";
+
+const siteName = siteSettings.branding.siteName;
 ---
 
-<Main title="Bible Reference Test - abolition.ing">
+<Main title={`Bible Reference Test | ${siteName}`}>
   <section class="test-content" data-bible-autolink>
     <h1>Scripture Hover Test</h1>
     <p>

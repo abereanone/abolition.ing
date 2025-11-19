@@ -8,6 +8,7 @@ const allQuestions = getPublishedQuestions();
 const categories = listCategories();
 const enablePagination = siteSettings.enablePagination;
 const perPage = siteSettings.questionsPerPage;
+const siteName = siteSettings.branding.siteName;
 const paginationResult = enablePagination
   ? paginateQuestions(allQuestions, 1, perPage)
   : {
@@ -31,7 +32,7 @@ const pagination =
     : null;
 ---
 
-<Main title="abolition.ing - Questions & Answers">
+<Main title={`Questions & Answers | ${siteName}`}>
   <QuestionFeed
     title="Questions & Answers"
     questions={questions}

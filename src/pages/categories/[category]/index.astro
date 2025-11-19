@@ -17,6 +17,7 @@ export function getStaticPaths() {
 
 const enablePagination = siteSettings.enablePagination;
 const perPage = siteSettings.questionsPerPage;
+const siteName = siteSettings.branding.siteName;
 
 const { category } = Astro.params;
 const activeCategory = findCategory(category);
@@ -48,7 +49,7 @@ const pagination =
     : null;
 ---
 
-<Main title={`${activeCategory.name} Questions - abolition.ing`}>
+<Main title={`${activeCategory.name} Questions - ${siteName}`}>
   <QuestionFeed
     title="Questions & Answers"
     questions={paginationResult.items}

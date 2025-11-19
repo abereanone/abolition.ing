@@ -28,6 +28,7 @@ const STOP_WORDS = new Set([
   "these",
   "they",
   "this",
+  "what",
   "to",
   "was",
   "will",

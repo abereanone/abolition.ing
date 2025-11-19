@@ -1,9 +1,12 @@
----
+ï»¿---
 import Main from "@/layouts/Main.astro";
 import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
+import { siteSettings } from "@/config/siteSettings";
+
+const siteName = siteSettings.branding.siteName;
 ---
 
-<Main title="Copyright — abolition.ing">
+<Main title={`Copyright | ${siteName}`}>
   <section data-bible-autolink>
     <h1>Copyright</h1>
 
@@ -16,7 +19,7 @@ import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
     </p>
 
     <p>
-      To avoid confusion, we ask that you do not use the abolition.ing branding or logo for
+      To avoid confusion, we ask that you do not use the {siteName} branding or logo for
       adaptations not associated with us (unless such use is covered under fair-use laws).
     </p>
 

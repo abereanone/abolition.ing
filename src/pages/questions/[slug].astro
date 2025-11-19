@@ -38,6 +38,7 @@ const questionNumber =
     : fallbackIndex > 0
       ? fallbackIndex
       : null;
+const siteName = siteSettings.branding.siteName;
 const showQuestionId = siteSettings.showQuestionId && questionNumber !== null;
 const previousQuestion = currentIndex > 0 ? allPublishedQuestions[currentIndex - 1] : null;
 const nextQuestion =
@@ -75,7 +76,7 @@ const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
 const relatedQuestions = getRelatedQuestions(question);
 ---
 
-<Main title={`${question.title} - abolition.ing`}>
+<Main title={`${question.title} - ${siteName}`}>
   {previousQuestion || nextQuestion ? (
     <nav class="question-top-nav" aria-label="Question navigation">
       {previousQuestion ? (
@@ -119,24 +120,6 @@ const relatedQuestions = getRelatedQuestions(question);
       {page ? <page.Content /> : <p><em>Content not found.</em></p>}
     </div>
 
-    {relatedQuestions.length ? (
-      <section class="related-questions">
-        <h2>Related questions</h2>
-        <ul class="question-list">
-          {relatedQuestions.map((entry) => (
-            <li>
-              <a class="question-card card-panel" href={`/questions/${entry.slug}`}>
-                {typeof entry.id === "number" ? (
-                  <span class="question-id">#{entry.id}</span>
-                ) : null}
-                <span class="question-title">{entry.title}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-    ) : null}
-
     {longPage ? (
       <div class="long-explanation" data-long-explanation>
         <button
@@ -156,6 +139,24 @@ const relatedQuestions = getRelatedQuestions(question);
           ) : null}
         </div>
       </div>
+    ) : null}
+
+    {relatedQuestions.length ? (
+      <section class="related-questions">
+        <h2>Related questions</h2>
+        <ul class="question-list">
+          {relatedQuestions.map((entry) => (
+            <li>
+              <a class="question-card card-panel" href={`/questions/${entry.slug}`}>
+                {typeof entry.id === "number" ? (
+                  <span class="question-id">#{entry.id}</span>
+                ) : null}
+                <span class="question-title">{entry.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
     ) : null}
   </article>
 
@@ -246,6 +247,30 @@ const relatedQuestions = getRelatedQuestions(question);
     </script>
   ) : null}
 
+  <script is:inline>
+    {`
+      document.addEventListener("keydown", (event) => {
+        if (event.defaultPrevented) {
+          return;
+        }
+        if (event.key !== "/" || event.altKey || event.ctrlKey || event.metaKey) {
+          return;
+        }
+        const activeElement = document.activeElement;
+        if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA" || activeElement.isContentEditable)) {
+          return;
+        }
+        const searchInput = document.getElementById("question-search-${question.slug}");
+        if (!searchInput) {
+          return;
+        }
+        event.preventDefault();
+        searchInput.focus({ preventScroll: false });
+        searchInput.select();
+      });
+    `}
+  </script>
+
   <style>
     .question-top-nav {
       display: flex;
@@ -278,6 +303,40 @@ const relatedQuestions = getRelatedQuestions(question);
       flex: 1;
       min-width: 240px;
       padding: 0;
+    }
+
+    .long-explanation {
+      margin-top: 1.5rem;
+    }
+
+    .long-toggle {
+      width: 100%;
+      padding: 1.25rem;
+      font-size: 1.25rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(99, 179, 237, 0.4);
+      background: var(--long-toggle-bg, rgba(99, 179, 237, 0.18));
+      color: #f5f5f5;
+      cursor: pointer;
+      font-weight: 600;
+      text-align: left;
+      transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .long-toggle:hover,
+    .long-toggle:focus-visible {
+      background: var(--long-toggle-bg-hover, rgba(99, 179, 237, 0.28));
+      border-color: rgba(99, 179, 237, 0.7);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .long-content {
+      margin-top: 1rem;
+      padding: 1.25rem;
+      border-radius: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.03);
     }
   </style>
 </Main>

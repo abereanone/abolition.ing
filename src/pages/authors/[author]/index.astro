@@ -12,6 +12,7 @@ export function getStaticPaths() {
 
 const enablePagination = siteSettings.enablePagination;
 const perPage = siteSettings.questionsPerPage;
+const siteName = siteSettings.branding.siteName;
 
 const { author } = Astro.params;
 const activeAuthor = findAuthor(author);
@@ -44,7 +45,7 @@ const pagination =
     : null;
 ---
 
-<Main title={`${activeAuthor.name} Questions - abolition.ing`}>
+<Main title={`${activeAuthor.name} Questions - ${siteName}`}>
   <QuestionFeed
     title="Questions & Answers"
     questions={paginationResult.items}

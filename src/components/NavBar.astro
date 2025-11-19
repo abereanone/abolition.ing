@@ -2,11 +2,14 @@
 import { siteSettings } from "@/config/siteSettings";
 
 const version = siteSettings.version;
+const branding = siteSettings.branding;
+const logoSrc = branding.logoPath;
+const logoAlt = branding.logoAlt || `${branding.siteName} logo`;
 ---
 
 <header class="navbar">
   <a href="/" class="logo">
-    <img src="/images/abolitioninglogoEdited.svg" alt="abolition.ing logo" />
+    <img src={logoSrc} alt={logoAlt} />
   </a>
 
   <nav>
