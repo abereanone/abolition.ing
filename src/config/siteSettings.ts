@@ -1,4 +1,4 @@
-const appVersion = '0.0.2';
+const appVersion = '0.0.3';
 const siteName = 'abolition.ing';
 const defaultDescription = 'Questions & Answers about abortion abolition';
 
@@ -21,7 +21,7 @@ export const siteSettings = {
   showQuestionId: true,
   showAuthor: true,
   enablePagination: true,
-  questionsPerPage: 10,
+  questionsPerPage: 15,
 } as const;
 
 export type SiteSettings = typeof siteSettings;
