@@ -39,11 +39,21 @@ const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport)
     {analyticsId ? (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`}></script>
-        <script is:inline>
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${analyticsId}');`}
+        <script
+          is:inline
+          data-analytics-id={analyticsId}
+        >
+          {`(() => {
+            const script = document.currentScript;
+            const id = script?.dataset.analyticsId;
+            if (!id) {
+              return;
+            }
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', id);
+          })();`}
         </script>
       </>
     ) : null}
