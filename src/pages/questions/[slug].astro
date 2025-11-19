@@ -70,11 +70,13 @@ const relatedQuestions = getRelatedQuestions(question);
         <span aria-hidden="true" class="question-top-link placeholder" />
       )}
 
-      <InlineSearchBox
-        id={`question-search-${question.slug}`}
-        label="Search for another question"
-        placeholder="Search other questions..."
-      />
+      <div class="question-top-search">
+        <InlineSearchBox
+          id={`question-search-${question.slug}`}
+          label="Search for another question"
+          placeholder="Search other questions..."
+        />
+      </div>
 
       {nextQuestion ? (
         <a class="question-top-link next" href={`/questions/${nextQuestion.slug}`}>
@@ -230,27 +232,38 @@ const relatedQuestions = getRelatedQuestions(question);
     </script>
   ) : null}
 
-  <script is:inline>
+  <script
+    is:inline
+    data-search-input-id={`question-search-${question.slug}`}
+  >
     {`
-      document.addEventListener("keydown", (event) => {
-        if (event.defaultPrevented) {
+      (function () {
+        const script = document.currentScript;
+        const targetId = script?.dataset.searchInputId;
+        if (!targetId) {
           return;
         }
-        if (event.key !== "/" || event.altKey || event.ctrlKey || event.metaKey) {
-          return;
-        }
-        const activeElement = document.activeElement;
-        if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA" || activeElement.isContentEditable)) {
-          return;
-        }
-        const searchInput = document.getElementById("question-search-${question.slug}");
-        if (!searchInput) {
-          return;
-        }
-        event.preventDefault();
-        searchInput.focus({ preventScroll: false });
-        searchInput.select();
-      });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.defaultPrevented) {
+            return;
+          }
+          if (event.key !== "/" || event.altKey || event.ctrlKey || event.metaKey) {
+            return;
+          }
+          const activeElement = document.activeElement;
+          if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA" || activeElement.isContentEditable)) {
+            return;
+          }
+          const searchInput = document.getElementById(targetId);
+          if (!searchInput) {
+            return;
+          }
+          event.preventDefault();
+          searchInput.focus({ preventScroll: false });
+          searchInput.select();
+        });
+      })();
     `}
   </script>
 
@@ -282,10 +295,23 @@ const relatedQuestions = getRelatedQuestions(question);
       visibility: hidden;
     }
 
-    .question-top-nav .inline-search-box {
+    .question-top-search {
       flex: 1;
       min-width: 240px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .question-top-search .inline-search-box {
+      width: 100%;
+      max-width: 360px;
       padding: 0;
+    }
+
+    @media (max-width: 640px) {
+      .question-top-search {
+        display: none;
+      }
     }
 
     .long-explanation {
