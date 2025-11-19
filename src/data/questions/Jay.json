@@ -1,11 +1,13 @@
-[
+﻿[
   {
     "id": 160,
     "slug": "do-gays-get-abortions",
     "title": "Do gays get abortions?",
-    "categories": ["Moral", "Biblical"],
+    "categories": [
+      "Moral",
+      "Biblical"
+    ],
     "authorId": "jay",
-    "published": false,
-    "markdown": "do-gays-get-abortions.md"
+    "published": false
   }
 ]

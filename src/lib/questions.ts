@@ -6,7 +6,6 @@ export interface Question {
   slug: string;
   title: string;
   categories: string[];
-  markdown: string;
   authorId?: string;
   published?: boolean;
   longAuthorId?: string;
@@ -27,7 +26,10 @@ const questionEntries: QuestionEntry[] = Object.keys(questionModules)
   .sort()
   .flatMap((key) =>
     questionModules[key].default.map((question, index) => ({
-      question,
+      question: {
+        ...question,
+        markdown: `${question.slug}.md`,
+      },
       source: `${key}#${index + 1}`,
     }))
   );

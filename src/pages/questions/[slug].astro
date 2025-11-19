@@ -53,24 +53,7 @@ const findMarkdownModule = (fileName: string | undefined) =>
 
 const page = findMarkdownModule(question.markdown);
 
-const longMarkdownCandidates = Array.from(
-  new Set(
-    [
-      question.markdown?.replace(/\.md$/i, "-long.md"),
-      question.slug ? `${question.slug}-long.md` : null,
-    ].filter((name): name is string => Boolean(name))
-  )
-);
-const resolveLongPage = () => {
-  for (const fileName of longMarkdownCandidates) {
-    const module = findMarkdownModule(fileName);
-    if (module) {
-      return module;
-    }
-  }
-  return null;
-};
-const longPage = resolveLongPage();
+const longPage = findMarkdownModule(`${question.slug}-long.md`);
 const longAuthor = question.longAuthorId ? findAuthor(question.longAuthorId) : null;
 const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
 const relatedQuestions = getRelatedQuestions(question);
