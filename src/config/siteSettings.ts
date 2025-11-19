@@ -1,4 +1,4 @@
-const appVersion = '0.0.3';
+const appVersion = '0.1.0';
 const siteName = 'abolition.ing';
 const defaultDescription = 'Questions & Answers about abortion abolition';
 
