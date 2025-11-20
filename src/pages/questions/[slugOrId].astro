@@ -431,8 +431,8 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
     .question-top-link {
       padding: 0.5rem 1rem;
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #f5f5f5;
+      border: 1px solid var(--surface-border);
+      color: var(--color-text);
       text-decoration: none;
       font-weight: 600;
       min-width: 90px;
@@ -440,7 +440,7 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
     }
 
     .question-top-link:hover {
-      border-color: #f5f5f5;
+      border-color: var(--surface-border-strong);
     }
 
     .question-top-link.placeholder {
@@ -486,7 +486,7 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
 
     .question-group-label {
       font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.75);
+      color: var(--question-group-label-color);
     }
 
     .long-explanation {
@@ -498,9 +498,9 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       padding: 1.25rem;
       font-size: 1.25rem;
       border-radius: 1rem;
-      border: 1px solid rgba(99, 179, 237, 0.4);
+      border: 1px solid var(--long-toggle-border);
       background: var(--long-toggle-bg, rgba(99, 179, 237, 0.18));
-      color: #f5f5f5;
+      color: var(--color-text);
       cursor: pointer;
       font-weight: 600;
       text-align: left;
@@ -510,7 +510,7 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
     .long-toggle:hover,
     .long-toggle:focus-visible {
       background: var(--long-toggle-bg-hover, rgba(99, 179, 237, 0.28));
-      border-color: rgba(99, 179, 237, 0.7);
+      border-color: var(--long-toggle-border-hover);
       transform: translateY(-1px);
       outline: none;
     }
@@ -519,8 +519,8 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       margin-top: 1rem;
       padding: 1.25rem;
       border-radius: 0.9rem;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--long-content-border);
+      background: var(--long-content-bg);
     }
   </style>
   </Main>

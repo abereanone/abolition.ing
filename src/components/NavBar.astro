@@ -12,12 +12,23 @@ const logoAlt = branding.logoAlt || `${branding.siteName} logo`;
     <img src={logoSrc} alt={logoAlt} />
   </a>
 
-  <nav>
+  <nav class="navbar-links">
     <a href="/">Home</a>
     <a href="/resources">Resources</a>
     <a href="/about">About</a>
     <a href="/search">Search</a>
   </nav>
+
+  <button
+    class="theme-toggle"
+    type="button"
+    data-theme-toggle
+    aria-pressed="false"
+    aria-label="Toggle color theme"
+  >
+    <span class="theme-toggle-icon" aria-hidden="true" data-theme-toggle-icon>🌙</span>
+    <span class="theme-toggle-label" data-theme-toggle-label>Dark</span>
+  </button>
 
   <span class="build-version" data-build-version={version} aria-hidden="true"></span>
 </header>
@@ -29,29 +40,63 @@ const logoAlt = branding.logoAlt || `${branding.siteName} logo`;
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     padding: 1rem 2rem;
-    background-color: #000;
-    color: #f2f2f2;
+    background-color: var(--color-nav-bg);
+    color: var(--color-nav-text);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   }
 
   .logo img {
     height: 150px;
     width: auto;
+    filter: var(--logo-filter);
   }
 
-  nav a {
-    margin-left: 1.75rem;
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+  }
+
+  .navbar-links a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: var(--color-nav-text);
     font-weight: 600;
     font-size: 1.3rem;
     letter-spacing: 0.01em;
   }
 
-  nav a:hover {
+  .navbar-links a:hover {
     text-decoration: underline;
+  }
+
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--surface-border);
+    background: transparent;
+    color: var(--color-nav-text);
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .theme-toggle:hover,
+  .theme-toggle:focus-visible {
+    background: var(--surface-bg-muted);
+    border-color: var(--surface-border-strong);
+    outline: none;
+  }
+
+  .theme-toggle-icon {
+    font-size: 1rem;
+    line-height: 1;
   }
 
   .build-version {
@@ -62,25 +107,40 @@ const logoAlt = branding.logoAlt || `${branding.siteName} logo`;
     overflow: hidden;
   }
 
-  /* ✅ Mobile styles */
   @media (max-width: 768px) {
     .navbar {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      padding: 0.5rem 1rem;
+      justify-content: space-between;
+      padding: 0.35rem 1rem;
+      gap: 0.5rem;
     }
 
     .logo img {
-      height: 80px; /* smaller logo on mobile */
+      height: 58px;
+      filter: var(--logo-filter);
     }
 
-    nav {
-      margin-top: 0.5rem;
+    .navbar-links {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-left: 0;
+      flex-wrap: wrap;
     }
 
-    nav a {
-      margin: 0 0.85rem;
-      font-size: 1.15rem;
+    .navbar-links a {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .theme-toggle {
+      margin-left: 0;
+      padding: 0.3rem 0.65rem;
+      font-size: 0.85rem;
     }
   }
 </style>

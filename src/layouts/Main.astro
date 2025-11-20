@@ -23,12 +23,41 @@ const duplicateReport =
 const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport) : null;
 ---
 
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <script is:inline>
+      (function () {
+        const STORAGE_KEY = "site-theme";
+        const root = document.documentElement;
+        if (!root) {
+          return;
+        }
+        const readStoredTheme = () => {
+          try {
+            const value = window.localStorage.getItem(STORAGE_KEY);
+            return value === "light" || value === "dark" ? value : null;
+          } catch (error) {
+            return null;
+          }
+        };
+        const prefersDark = () => {
+          if (typeof window.matchMedia !== "function") {
+            return null;
+          }
+          try {
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          } catch (error) {
+            return null;
+          }
+        };
+        const theme = readStoredTheme() || prefersDark() || "light";
+        root.dataset.theme = theme;
+      })();
+    </script>
     <link rel="stylesheet" href="/styles/theme.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@600&display=swap"
@@ -109,5 +138,110 @@ const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport)
         })();
       </script>
     ) : null}
+
+    <script is:inline>
+      (function () {
+        const STORAGE_KEY = "site-theme";
+        const root = document.documentElement;
+        if (!root) {
+          return;
+        }
+
+        const supportsStorage = (() => {
+          try {
+            const testKey = "__theme_test__";
+            window.localStorage.setItem(testKey, "1");
+            window.localStorage.removeItem(testKey);
+            return true;
+          } catch (error) {
+            return false;
+          }
+        })();
+
+        const readStoredTheme = () => {
+          if (!supportsStorage) {
+            return null;
+          }
+          try {
+            const value = window.localStorage.getItem(STORAGE_KEY);
+            return value === "light" || value === "dark" ? value : null;
+          } catch (error) {
+            return null;
+          }
+        };
+
+        const writeStoredTheme = (theme) => {
+          if (!supportsStorage) {
+            return;
+          }
+          try {
+            window.localStorage.setItem(STORAGE_KEY, theme);
+          } catch (error) {
+            // ignore
+          }
+        };
+
+        const prefersDark = () => {
+          if (typeof window.matchMedia !== "function") {
+            return null;
+          }
+          try {
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          } catch (error) {
+            return null;
+          }
+        };
+
+        const updateButtons = (theme) => {
+          document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+            button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            const label = button.querySelector("[data-theme-toggle-label]");
+            if (label) {
+              label.textContent = theme === "dark" ? "Light" : "Dark";
+            }
+            const icon = button.querySelector("[data-theme-toggle-icon]");
+            if (icon) {
+              icon.textContent = theme === "dark" ? "☀️" : "🌙";
+            }
+          });
+        };
+
+        const applyTheme = (theme, persist = true) => {
+          const next = theme === "dark" ? "dark" : "light";
+          root.dataset.theme = next;
+          if (persist) {
+            writeStoredTheme(next);
+          }
+          updateButtons(next);
+          return next;
+        };
+
+        const toggleTheme = () => {
+          const next = root.dataset.theme === "dark" ? "light" : "dark";
+          applyTheme(next);
+        };
+
+        const init = () => {
+          const stored = readStoredTheme();
+          const initial = stored || (prefersDark() === "dark" ? "dark" : "light");
+          applyTheme(initial, false);
+
+          document.addEventListener("click", (event) => {
+            const element = event.target instanceof Element ? event.target.closest("[data-theme-toggle]") : null;
+            if (!element) {
+              return;
+            }
+            event.preventDefault();
+            toggleTheme();
+          });
+        };
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", init);
+        } else {
+          init();
+        }
+      })();
+    </script>
   </body>
 </html>

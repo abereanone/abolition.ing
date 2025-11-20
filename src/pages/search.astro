@@ -67,7 +67,7 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
     }
 
     .search-header p {
-      color: #b5b5b5;
+      color: var(--secondary-text);
       margin: 0 0 1.5rem;
     }
 
@@ -82,28 +82,33 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
       padding: 0.85rem 1rem;
       font-size: 1.1rem;
       border-radius: 0.75rem;
-      border: 1px solid #333;
-      background: #0c0c0c;
-      color: #f7f7f7;
+      border: 1px solid var(--input-border);
+      background: var(--input-bg);
+      color: var(--input-text);
+    }
+
+    .search-form input[type="search"]::placeholder {
+      color: var(--input-placeholder);
     }
 
     .search-form button {
       padding: 0.85rem 1.5rem;
       border-radius: 0.75rem;
       border: none;
-      background: #d35400;
-      color: white;
+      background: var(--accent-bg);
+      color: var(--accent-text);
       font-weight: 600;
       cursor: pointer;
+      transition: background-color 0.2s ease;
     }
 
     .search-form button:hover {
-      background: #e67e22;
+      background: var(--accent-bg-hover);
     }
 
     .search-meta {
       margin-bottom: 1.25rem;
-      color: #dcdcdc;
+      color: var(--meta-text);
     }
 
     .author-filter {
@@ -114,19 +119,20 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
     }
 
     .author-pill {
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid var(--surface-border);
       background: transparent;
-      color: #e0e0e0;
+      color: var(--secondary-text);
       padding: 0.35rem 0.9rem;
       border-radius: 999px;
       font-size: 0.95rem;
       cursor: pointer;
-      transition: background 0.2s ease, border-color 0.2s ease;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
     }
 
     .author-pill.is-active {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.4);
+      background: var(--surface-bg-strong);
+      border-color: var(--surface-border-strong);
+      color: var(--color-text);
     }
 
     .search-results {
@@ -138,8 +144,8 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
     .search-result {
       padding: 1.25rem;
       border-radius: 1rem;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--surface-result-bg);
+      border: 1px solid var(--surface-result-border);
     }
 
     .search-result h2 {
@@ -148,7 +154,7 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
     }
 
     .search-result a {
-      color: #f5f5f5;
+      color: var(--color-text);
       text-decoration: none;
     }
 
@@ -158,7 +164,7 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
 
     .result-snippet {
       margin: 0;
-      color: #e0e0e0;
+      color: var(--secondary-text);
       line-height: 1.6;
     }
 
@@ -171,7 +177,7 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
     .result-id {
       display: inline-block;
       margin-right: 0.4rem;
-      color: #f0ad4e;
+      color: var(--highlight-text);
       font-size: 0.95rem;
       font-weight: 600;
     }
