@@ -16,7 +16,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 2,
@@ -34,7 +37,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 3,
@@ -52,7 +58,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "mac"
+    ]
   },
   {
     id: 4,
@@ -70,7 +79,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 5,
@@ -88,7 +100,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 6,
@@ -105,7 +120,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 7,
@@ -123,7 +141,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 8,
@@ -141,7 +162,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 9,
@@ -159,7 +183,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 10,
@@ -177,7 +204,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 11,
@@ -195,7 +225,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 12,
@@ -213,7 +246,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 13,
@@ -231,7 +267,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 14,
@@ -249,7 +288,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 15,
@@ -267,7 +309,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 16,
@@ -285,7 +330,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 17,
@@ -304,7 +352,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 18,
@@ -322,7 +373,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 19,
@@ -341,7 +395,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 20,
@@ -359,7 +416,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 21,
@@ -377,7 +437,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 22,
@@ -396,7 +459,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 23,
@@ -415,7 +481,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 24,
@@ -433,7 +502,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 25,
@@ -452,7 +524,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 26,
@@ -471,7 +546,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 27,
@@ -489,7 +567,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 28,
@@ -507,7 +588,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 29,
@@ -526,7 +610,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 30,
@@ -544,7 +631,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 31,
@@ -562,7 +652,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 32,
@@ -580,7 +673,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 33,
@@ -599,7 +695,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 34,
@@ -617,7 +716,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 35,
@@ -636,7 +738,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 36,
@@ -655,7 +760,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 37,
@@ -673,7 +781,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 38,
@@ -692,7 +803,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 39,
@@ -710,7 +824,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 40,
@@ -729,7 +846,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 41,
@@ -747,7 +867,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 42,
@@ -766,7 +889,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 43,
@@ -785,7 +911,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 44,
@@ -804,7 +933,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 45,
@@ -823,7 +955,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   },
   {
     id: 46,
@@ -842,7 +977,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "mac"
+    ]
   },
   {
     id: 47,
@@ -860,7 +998,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "jay"
+    ]
   },
   {
     id: 48,
@@ -877,7 +1018,10 @@ var search_index_default = [
     ],
     excerpt: "",
     content: "",
-    groupCodes: []
+    groupCodes: [],
+    authorIds: [
+      "mac"
+    ]
   }
 ];
 
@@ -976,7 +1120,13 @@ function searchIndex(engine2, query, options = {}) {
     });
   }
   const filters = (options.categories ?? []).map((category) => normalizeText(category));
+  const authorFilters = (options.authors ?? []).map((author) => String(author).toLowerCase());
   const normalizedQuery = normalizeText(query);
+  if (!docScores.size && !uniqueTokens.length && !normalizedQuery) {
+    engine2.documents.forEach((doc, docId) => {
+      docScores.set(docId, 0);
+    });
+  }
   const ranked = Array.from(docScores.entries()).map(([docId, score]) => {
     const doc = engine2.documents.get(docId);
     if (!doc) {
@@ -994,8 +1144,14 @@ function searchIndex(engine2, query, options = {}) {
     return { doc, score: adjusted };
   }).filter(Boolean);
   const filtered = ranked.filter(({ doc }) => {
-    if (!filters.length) return true;
-    return filters.every((target) => doc.normalizedCategories.includes(target));
+    if (filters.length && !filters.every((target) => doc.normalizedCategories.includes(target))) {
+      return false;
+    }
+    if (authorFilters.length) {
+      const docAuthors = (doc.authorIds ?? []).map((id) => String(id).toLowerCase());
+      return authorFilters.every((author) => docAuthors.includes(author));
+    }
+    return true;
   });
   filtered.sort((a, b) => {
     if (b.score !== a.score) {
@@ -1103,11 +1259,29 @@ function initSearchPage() {
     const input = root.querySelector("#search-input");
     const metaContainer = root.querySelector("#search-meta");
     const resultsContainer = root.querySelector("#search-results");
+    const authorFilter = root.querySelector("[data-author-filter]");
     if (!form || !input || !metaContainer || !resultsContainer) {
       return;
     }
     const params = new URLSearchParams(window.location.search);
     const initialQuery = params.get("q") ?? "";
+    let selectedAuthor = params.get("author") || "";
+    const authorMapRaw = root.dataset.authorMap;
+    const authorLookup = {};
+    if (authorMapRaw) {
+      try {
+        const parsed = JSON.parse(authorMapRaw);
+        if (Array.isArray(parsed)) {
+          parsed.forEach((entry) => {
+            if (entry && typeof entry.id === "string") {
+              authorLookup[entry.id] = entry.name ?? entry.id;
+            }
+          });
+        }
+      } catch (error) {
+        console.warn("Unable to parse author map for search filters.", error);
+      }
+    }
     if (initialQuery) {
       input.value = initialQuery;
       performSearch(initialQuery);
@@ -1117,8 +1291,9 @@ function initSearchPage() {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const query = input.value.trim();
-      updateUrl(query.length >= MIN_QUERY_LENGTH ? query : "");
-      performSearch(query);
+      const normalized = normalizeQueryValue(query);
+      updateUrlState(normalized);
+      performSearch(normalized);
     });
     input.addEventListener("input", () => {
       if (debounceTimer) {
@@ -1126,19 +1301,34 @@ function initSearchPage() {
       }
       debounceTimer = window.setTimeout(() => {
         const query = input.value.trim();
-        updateUrl(query.length >= MIN_QUERY_LENGTH ? query : "");
-        performSearch(query);
+        const normalized = normalizeQueryValue(query);
+        updateUrlState(normalized);
+        performSearch(normalized);
       }, 300);
     });
-    function updateUrl(query) {
-      const searchParams = new URLSearchParams(window.location.search);
-      if (query) {
-        searchParams.set("q", query);
-      } else {
-        searchParams.delete("q");
+    if (authorFilter) {
+      authorFilter.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!target || !target.closest("[data-author]")) {
+          return;
+        }
+        const authorId = target.dataset.author ?? "";
+        if (authorId === selectedAuthor) {
+          selectedAuthor = "";
+        } else {
+          selectedAuthor = authorId;
+        }
+        updateAuthorButtons(authorFilter, selectedAuthor);
+        applyUrlState(input.value.trim(), selectedAuthor);
+        performSearch(input.value.trim());
+      });
+      updateAuthorButtons(authorFilter, selectedAuthor);
+      if (selectedAuthor && !initialQuery) {
+        performSearch("");
       }
-      const next = `${window.location.pathname}${searchParams.toString() ? `?${searchParams}` : ""}`;
-      window.history.replaceState({}, "", next);
+    }
+    function updateUrlState(query) {
+      applyUrlState(query, selectedAuthor);
     }
     function focusSearchInput() {
       if (typeof input.focus === "function") {
@@ -1148,26 +1338,34 @@ function initSearchPage() {
       }
     }
     function performSearch(query) {
-      if (!query) {
-        metaContainer.textContent = "Type a phrase to begin searching.";
+      const normalizedQuery = normalizeQueryValue(query);
+      const hasQuery = Boolean(normalizedQuery);
+      const hasAuthor = Boolean(selectedAuthor);
+      if (!hasQuery && !hasAuthor) {
+        metaContainer.textContent = "Type a phrase or select an author to begin searching.";
         resultsContainer.innerHTML = "";
         return;
       }
-      if (query.length < MIN_QUERY_LENGTH) {
+      if (hasQuery && normalizedQuery.length < MIN_QUERY_LENGTH) {
         metaContainer.textContent = "Please enter at least 3 characters to search.";
         resultsContainer.innerHTML = "";
         return;
       }
       metaContainer.textContent = "Searching...";
-      const payload = searchIndex(engine, query, { limit: 25 });
+      const payload = searchIndex(engine, normalizedQuery, {
+        limit: 25,
+        authors: selectedAuthor ? [selectedAuthor] : void 0
+      });
       const { items, total } = payload;
+      const authorName = selectedAuthor ? authorLookup[selectedAuthor] ?? selectedAuthor : null;
+      const filterLabel = buildFilterLabel(hasQuery ? normalizedQuery : "", authorName);
       if (!items.length) {
-        metaContainer.textContent = `No results found for "${query}".`;
+        metaContainer.textContent = filterLabel ? `No results found for ${filterLabel}.` : "No results found.";
         resultsContainer.innerHTML = "";
         return;
       }
       const resultCount = total === items.length ? total : `${items.length} of ${total}`;
-      metaContainer.textContent = `Showing ${resultCount} results for "${query}".`;
+      metaContainer.textContent = filterLabel ? `Showing ${resultCount} results for ${filterLabel}.` : `Showing ${resultCount} results.`;
       resultsContainer.innerHTML = items.map((result) => {
         const titleHtml = result.highlightedTitle || result.title;
         const snippetHtml = result.snippet || result.excerpt || "";
@@ -1190,6 +1388,50 @@ function initSearchPage() {
 }
 if (typeof document !== "undefined") {
   initSearchPage();
+}
+function normalizeQueryValue(value) {
+  return value.trim();
+}
+function updateAuthorButtons(container, selected) {
+  const buttons = Array.from(container.querySelectorAll("[data-author]"));
+  buttons.forEach((button) => {
+    const id = button.dataset.author ?? "";
+    if (id === selected) {
+      button.classList.add("is-active");
+      button.setAttribute("aria-pressed", "true");
+    } else {
+      button.classList.remove("is-active");
+      button.setAttribute("aria-pressed", "false");
+    }
+  });
+}
+function applyUrlState(rawQuery, author) {
+  const query = normalizeQueryValue(rawQuery);
+  const searchParams = new URLSearchParams(window.location.search);
+  if (query) {
+    searchParams.set("q", query);
+  } else {
+    searchParams.delete("q");
+  }
+  if (author) {
+    searchParams.set("author", author);
+  } else {
+    searchParams.delete("author");
+  }
+  const next = `${window.location.pathname}${searchParams.toString() ? `?${searchParams}` : ""}`;
+  window.history.replaceState({}, "", next);
+}
+function buildFilterLabel(query, authorName) {
+  if (query && authorName) {
+    return `"${query}" and author: ${authorName}`;
+  }
+  if (query) {
+    return `"${query}"`;
+  }
+  if (authorName) {
+    return `author: ${authorName}`;
+  }
+  return "";
 }
 export {
   initSearchPage

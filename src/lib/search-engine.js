@@ -107,7 +107,14 @@ export function searchIndex(engine, query, options = {}) {
   }
 
   const filters = (options.categories ?? []).map((category) => normalizeText(category));
+  const authorFilters = (options.authors ?? []).map((author) => String(author).toLowerCase());
   const normalizedQuery = normalizeText(query);
+
+  if (!docScores.size && !uniqueTokens.length && !normalizedQuery) {
+    engine.documents.forEach((doc, docId) => {
+      docScores.set(docId, 0);
+    });
+  }
 
   const ranked = Array.from(docScores.entries())
     .map(([docId, score]) => {
@@ -132,8 +139,14 @@ export function searchIndex(engine, query, options = {}) {
     .filter(Boolean);
 
   const filtered = ranked.filter(({ doc }) => {
-    if (!filters.length) return true;
-    return filters.every((target) => doc.normalizedCategories.includes(target));
+    if (filters.length && !filters.every((target) => doc.normalizedCategories.includes(target))) {
+      return false;
+    }
+    if (authorFilters.length) {
+      const docAuthors = (doc.authorIds ?? []).map((id) => String(id).toLowerCase());
+      return authorFilters.every((author) => docAuthors.includes(author));
+    }
+    return true;
   });
 
   filtered.sort((a, b) => {

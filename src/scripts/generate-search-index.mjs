@@ -106,6 +106,7 @@ async function buildSearchIndex() {
       excerpt: buildExcerpt(cleaned),
       content: cleaned,
       groupCodes,
+      authorIds: deriveAuthorIds(question),
     });
   }
 
@@ -135,4 +136,15 @@ function deriveGroupCodes(categories = [], categoryMap = new Map()) {
     }
   });
   return [...codes];
+}
+
+function deriveAuthorIds(question = {}) {
+  const ids = new Set();
+  if (question.authorId) {
+    ids.add(String(question.authorId));
+  }
+  if (question.longAuthorId) {
+    ids.add(String(question.longAuthorId));
+  }
+  return [...ids];
 }
