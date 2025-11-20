@@ -13,17 +13,40 @@ import InlineSearchBox from "@/components/InlineSearchBox.astro";
 import { siteSettings } from "@/config/siteSettings";
 
 export function getStaticPaths() {
-  return getPublishedQuestions().map((question) => ({
-    params: { slug: question.slug },
-  }));
+  return getPublishedQuestions().flatMap((question) => {
+    const entries = [{ params: { slugOrId: question.slug } }];
+    if (typeof question.id === "number") {
+      entries.push({ params: { slugOrId: String(question.id) } });
+    }
+    return entries;
+  });
 }
 
-const { slug } = Astro.params;
-const question = findQuestion(slug);
+const { slugOrId } = Astro.params;
+
+let question = slugOrId ? findQuestion(slugOrId) : null;
+
+if (!question && slugOrId) {
+  const maybeId = Number(slugOrId);
+  if (!Number.isNaN(maybeId)) {
+    question = getPublishedQuestions().find((entry) => entry.id === maybeId) ?? null;
+  }
+}
 
 if (!question) {
-  throw new Error(`Question not found for slug "${slug}".`);
+  throw new Error(`Question not found for identifier "${slugOrId}".`);
 }
+
+const questionSlug = question.slug;
+const useIdLinks = typeof question.id === "number" && slugOrId === String(question.id);
+
+const buildQuestionHref = (target: typeof question | null) => {
+  if (!target) return "#";
+  if (useIdLinks && typeof target.id === "number") {
+    return `/questions/${target.id}`;
+  }
+  return `/questions/${target.slug}`;
+};
 
 const questionCategories = getQuestionCategories(question);
 const author = getQuestionAuthor(question);
@@ -53,7 +76,7 @@ const findMarkdownModule = (fileName: string | undefined) =>
 
 const page = findMarkdownModule(question.markdown);
 
-const longPage = findMarkdownModule(`${question.slug}-long.md`);
+const longPage = findMarkdownModule(`${questionSlug}-long.md`);
 const longAuthor = question.longAuthorId ? findAuthor(question.longAuthorId) : null;
 const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
 const relatedQuestions = getRelatedQuestions(question);
@@ -63,7 +86,7 @@ const relatedQuestions = getRelatedQuestions(question);
   {previousQuestion || nextQuestion ? (
     <nav class="question-top-nav" aria-label="Question navigation">
       {previousQuestion ? (
-        <a class="question-top-link prev" href={`/questions/${previousQuestion.slug}`}>
+        <a class="question-top-link prev" href={buildQuestionHref(previousQuestion)}>
           Prev
         </a>
       ) : (
@@ -72,14 +95,14 @@ const relatedQuestions = getRelatedQuestions(question);
 
       <div class="question-top-search">
         <InlineSearchBox
-          id={`question-search-${question.slug}`}
-          label="Search for another question"
-          placeholder="Search other questions..."
-        />
+        id={`question-search-${questionSlug}`}
+        label="Search for another question"
+        placeholder="Search other questions..."
+      />
       </div>
 
       {nextQuestion ? (
-        <a class="question-top-link next" href={`/questions/${nextQuestion.slug}`}>
+        <a class="question-top-link next" href={buildQuestionHref(nextQuestion)}>
           Next
         </a>
       ) : (
@@ -88,7 +111,7 @@ const relatedQuestions = getRelatedQuestions(question);
     </nav>
   ) : (
     <InlineSearchBox
-      id={`question-search-${question.slug}`}
+      id={`question-search-${questionSlug}`}
       label="Search for another question"
       placeholder="Search other questions..."
     />
@@ -234,7 +257,7 @@ const relatedQuestions = getRelatedQuestions(question);
 
   <script
     is:inline
-    data-search-input-id={`question-search-${question.slug}`}
+    data-search-input-id={`question-search-${questionSlug}`}
   >
     {`
       (function () {

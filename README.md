@@ -80,6 +80,25 @@ npm run build
 npx wrangler deploy
 ```
 
+## Spinning Up A New Q&A Site
+
+Use this repo as a template for other projects (e.g., a catechism Q&A) by following this checklist:
+
+1. **Copy the repo** – clone to a new folder or repo; run `npm install`.
+2. **Update global branding** – edit `src/config/siteSettings.ts` (site name, description, logo path, footer copy, analytics IDs). Replace `/public/images/site-logo.svg` or adjust `logoPath`.
+3. **Swap data/content** – replace JSON entries in `src/data/questions/` with your new questions. Drop matching Markdown files (`slug.md` and optional `slug-long.md`) into `src/content/questions/`. Update categories (`src/data/categories.json`) and authors/resources (`src/data/resources.json`) if needed.
+4. **Adjust static text** – review `src/pages/about.astro`, `resources.astro`, `copyright.astro`, `README.md`, etc., for project-specific language.
+5. **Check assets** – update favicons/site manifest, hero images, or any brand-specific images under `public/`.
+6. **Verify locally** – `npm run dev` to spot-check pages, including mobile layout. Run `npm run build` to rebuild the search index/client bundle.
+7. **Deploy** – configure a new Cloudflare (or other host) project, then run `npm run build && npx wrangler deploy` (or your host’s equivalent).
+
+## Styling & Theme Notes
+
+- Global colors/typography live in `styles/theme.css`. Modify variables or base selectors there to change the overall aesthetic.
+- Component-specific styles are usually defined inside each `.astro` file’s `<style>` block. Update these blocks to tweak layout/spacing for individual components (e.g., `InlineSearchBox`, `QuestionFeed`, `Footer`).
+- The navbar/footer pull brand assets from `siteSettings.branding.logoPath`. Swap that file or update the config path to change the logo across the site.
+- For per-page tweaks, edit the `<style>` sections inside the relevant page templates (e.g., `src/pages/questions/[slug].astro` for question detail layout). Media queries are already present; extend them as needed for custom breakpoints.
+
 ## License
 
 MIT – see `LICENSE`.
