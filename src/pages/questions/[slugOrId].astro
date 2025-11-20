@@ -93,12 +93,13 @@ const relatedQuestions = getRelatedQuestions(question);
         <span aria-hidden="true" class="question-top-link placeholder" />
       )}
 
+      <a class="question-top-link random-link" href="/random">Random</a>
       <div class="question-top-search">
         <InlineSearchBox
-        id={`question-search-${questionSlug}`}
-        label="Search for another question"
-        placeholder="Search other questions..."
-      />
+          id={`question-search-${questionSlug}`}
+          label="Search for another question"
+          placeholder="Search other questions..."
+        />
       </div>
 
       {nextQuestion ? (
@@ -293,10 +294,12 @@ const relatedQuestions = getRelatedQuestions(question);
   <style>
     .question-top-nav {
       display: flex;
-      gap: 1rem;
       align-items: center;
-      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      flex-wrap: nowrap;
       margin-bottom: 1rem;
+      width: 100%;
     }
 
     .question-top-link {
@@ -319,7 +322,7 @@ const relatedQuestions = getRelatedQuestions(question);
     }
 
     .question-top-search {
-      flex: 1;
+      flex: 0 1 360px;
       min-width: 240px;
       display: flex;
       justify-content: center;
@@ -331,7 +334,16 @@ const relatedQuestions = getRelatedQuestions(question);
       padding: 0;
     }
 
+    .question-top-link.random-link {
+      min-width: auto;
+    }
+
     @media (max-width: 640px) {
+      .question-top-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
       .question-top-search {
         display: none;
       }

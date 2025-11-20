@@ -13,8 +13,8 @@ var search_index_default = [
       6,
       12
     ],
-    excerpt: "Abortion is wrong because it is the taking of innocent human life. God commands, \u201CYou shall not murder\u201D (Exodus 20:13). A child in the womb is a living human being from conception (Psalm 139:13\u201316; Luke 1:41). Ending that life is\u2026",
-    content: "Abortion is wrong because it is the taking of innocent human life. God commands, \u201CYou shall not murder\u201D (Exodus 20:13). A child in the womb is a living human being from conception (Psalm 139:13\u201316; Luke 1:41). Ending that life is a direct violation of God\u2019s law. Abortion is not healthcare; it is violence against the most defenseless among us. God hates hands that shed innocent blood (Proverbs 6:16\u201317). Christians must call abortion what it is\u2014murder\u2014and call people to repentance and faith in Christ, who alone can forgive sin and change hearts (1 John 1:9)."
+    excerpt: "",
+    content: ""
   },
   {
     id: 2,
@@ -29,8 +29,8 @@ var search_index_default = [
       21,
       26
     ],
-    excerpt: "Birth control is not always sinful, but some forms are. Methods that destroy an embryo or prevent its implantation are wrong because they end a human life (Exodus 20:13). There is a difference between preventing conception and taking a life\u2026",
-    content: "Birth control is not always sinful, but some forms are. Methods that destroy an embryo or prevent its implantation are wrong because they end a human life (Exodus 20:13). There is a difference between preventing conception and taking a life that has already begun. Couples must act with knowledge and care, honoring God in every decision (Romans 14:12). The motive behind using birth control also matters. If the goal is selfishness or fear, that motive is sinful (Psalm 127:3\u20135). Each couple should seek the Lord in prayer and act with a clear conscience, trusting His wisdom."
+    excerpt: "",
+    content: ""
   },
   {
     id: 3,
@@ -45,8 +45,8 @@ var search_index_default = [
       5,
       42
     ],
-    excerpt: "The pro-life movement seeks to regulate abortion. Abolition calls for it to end immediately and completely. Pro-life legislation usually allows abortion in some cases or only prior to certain stages of development. Abolition rejects partial measures and demands equal justice\u2026",
-    content: "The pro-life movement seeks to regulate abortion. Abolition calls for it to end immediately and completely. Pro-life legislation usually allows abortion in some cases or only prior to certain stages of development. Abolition rejects partial measures and demands equal justice for all preborn children (Proverbs 17:15; Isaiah 1:16\u201317). Scripture teaches that murder should not be regulated but punished (Romans 13:3\u20134). Abolition stands on that truth. The goal is not fewer abortions\u2014it is no abortions, because every life is to be protected according to God."
+    excerpt: "",
+    content: ""
   },
   {
     id: 4,
@@ -61,8 +61,8 @@ var search_index_default = [
       25,
       20
     ],
-    excerpt: "Rape is evil, and those who commit it must face justice (Deuteronomy 22:25\u201327). But abortion does not bring justice. It takes the life of an innocent child. The child is not guilty of the father\u2019s crime (Ezekiel 18:20). Killing that\u2026",
-    content: "Rape is evil, and those who commit it must face justice (Deuteronomy 22:25\u201327). But abortion does not bring justice. It takes the life of an innocent child. The child is not guilty of the father\u2019s crime (Ezekiel 18:20). Killing that child only adds one sin to another. Christians must show compassion to women who suffer and defend the life of every child. The gospel offers healing and hope. God brings redemption even in tragedy (Romans 8:28). Our response should be mercy, justice, and truth."
+    excerpt: "",
+    content: ""
   },
   {
     id: 5,
@@ -73,12 +73,12 @@ var search_index_default = [
       "Pastoral"
     ],
     relatedAnswers: [
-      1,
+      48,
       3,
       11
     ],
-    excerpt: "Yes. Christ's atonement is sufficient for every sin of His people, including abortion. Abortion is a grave sin, but Christ\u2019s grace is greater (1 John 1:7\u20139). Anyone who has participated in abortion\u2014whether through the act itself or by supporting it\u2014can\u2026",
-    content: "Yes. Christ's atonement is sufficient for every sin of His people, including abortion. Abortion is a grave sin, but Christ\u2019s grace is greater (1 John 1:7\u20139). Anyone who has participated in abortion\u2014whether through the act itself or by supporting it\u2014can be forgiven if they repent and believe in Jesus Christ. His blood cleanses from all sin. Forgiveness does not erase what was done, but it removes guilt before God. The church must speak both truth and hope: abortion is murder, and Christ forgives murderers who turn to Him (Isaiah 1:18; Romans 8:1)."
+    excerpt: "",
+    content: ""
   },
   {
     id: 6,
@@ -92,8 +92,8 @@ var search_index_default = [
       10,
       47
     ],
-    excerpt: "The Bible teaches that life is a gift from God (Acts 17:25). He alone gives and takes life (Deuteronomy 32:39). From conception onward, every person exists by God\u2019s will and for His purposes (Psalm 139:13\u201316). To take innocent life is\u2026",
-    content: "The Bible teaches that life is a gift from God (Acts 17:25). He alone gives and takes life (Deuteronomy 32:39). From conception onward, every person exists by God\u2019s will and for His purposes (Psalm 139:13\u201316). To take innocent life is to reject God\u2019s authority and goodness. Murder is condemned throughout Scripture (Genesis 9:6). Christians defend life because it belongs to God, not to us. Our duty is to protect the weak and to love our neighbor as ourselves (Matthew 22:39)."
+    excerpt: "",
+    content: ""
   },
   {
     id: 7,
@@ -108,8 +108,8 @@ var search_index_default = [
       42,
       23
     ],
-    excerpt: "Yes. A just government must punish those who take innocent life (Romans 13:3\u20134). Equal justice under the law requires that abortion be treated as homicide. Abortion is not a private medical choice\u2014it is a public act of violence. The role\u2026",
-    content: "Yes. A just government must punish those who take innocent life (Romans 13:3\u20134). Equal justice under the law requires that abortion be treated as homicide. Abortion is not a private medical choice\u2014it is a public act of violence. The role of civil government is to restrain evil and protect the innocent (1 Peter 2:13\u201314). Forgiveness is found in Christ, but justice must still be done. Mercy and law are not enemies when both follow God\u2019s standard (Micah 6:8)"
+    excerpt: "",
+    content: ""
   },
   {
     id: 8,
@@ -124,8 +124,8 @@ var search_index_default = [
       20,
       10
     ],
-    excerpt: "Ectopic pregnancy is a tragic and rare condition where the embryo implants outside the womb. In most cases, the baby cannot survive. Abortion is never necessary, but it may be necessary to remove the child from the fallopian tubes, and\u2026",
-    content: "Ectopic pregnancy is a tragic and rare condition where the embryo implants outside the womb. In most cases, the baby cannot survive. Abortion is never necessary, but it may be necessary to remove the child from the fallopian tubes, and this is not the same as intentional abortion. When doctors act to save the mother\u2019s life, and the child\u2019s death is an unintended result, this is not the same as abortion. The moral difference is the purpose. Abortion intends to kill; treatment in an ectopic case seeks to preserve life where possible (Exodus 21:22\u201323). Christians should approach such cases with prayer, wisdom, and compassion, trusting God\u2019s mercy even in sorrow. Maybe if we are faithful to God in our efforts to save childre, He will one day bless us with wisdom and technology to save babies in ectopic pregnancies!"
+    excerpt: "",
+    content: ""
   },
   {
     id: 9,
@@ -140,8 +140,8 @@ var search_index_default = [
       15,
       45
     ],
-    excerpt: "The church must speak clearly and boldly. Silence in the face of evil is sin (Proverbs 24:11\u201312). Pastors should preach the truth about abortion and call for repentance (2 Timothy 4:2). Believers should act to defend the preborn, support mothers,\u2026",
-    content: "The church must speak clearly and boldly. Silence in the face of evil is sin (Proverbs 24:11\u201312). Pastors should preach the truth about abortion and call for repentance (2 Timothy 4:2). Believers should act to defend the preborn, support mothers, and confront unjust laws. The church\u2019s mission is not politics but obedience. Yet obedience includes calling nations to righteousness (Matthew 28:19\u201320). Revival begins when the people of God repent and stand for justice."
+    excerpt: "",
+    content: ""
   },
   {
     id: 10,
@@ -156,8 +156,8 @@ var search_index_default = [
       44,
       24
     ],
-    excerpt: "Yes. Science shows that a new human life begins at conception. From that moment, the embryo has its own DNA and grows by its own internal direction. This truth supports what Scripture has always said\u2014that human life begins in the\u2026",
-    content: "Yes. Science shows that a new human life begins at conception. From that moment, the embryo has its own DNA and grows by its own internal direction. This truth supports what Scripture has always said\u2014that human life begins in the womb (Psalm 139:13\u201316; Jeremiah 1:5). Science cannot define morality, but it can confirm facts. Abortion destroys a living human being. Christians should use truth from both Scripture and science to defend life."
+    excerpt: "",
+    content: ""
   },
   {
     id: 11,
@@ -172,8 +172,8 @@ var search_index_default = [
       34,
       30
     ],
-    excerpt: "Women who have had abortions need both truth and grace. We must never lessen the evil of what abortion is. To do so would dishonor God and offer false comfort. Abortion is the taking of an innocent life, and that\u2026",
-    content: "Women who have had abortions need both truth and grace. We must never lessen the evil of what abortion is. To do so would dishonor God and offer false comfort. Abortion is the taking of an innocent life, and that reality must be spoken plainly (Exodus 20:13; Proverbs 28:13). Yet we must also proclaim the power of God\u2019s grace. Forgiveness is real and complete for all who repent and trust in Jesus Christ (1 John 1:9; Isaiah 1:18). Healing does not come by downplaying sin but by confessing it and finding mercy in the Savior who bore our guilt. The church\u2019s role is to speak the truth in love (Ephesians 4:15), walking beside post-abortive women with compassion and hope. Through the gospel, shame is replaced with peace, and broken lives are made new in Christ (2 Corinthians 5:17)."
+    excerpt: "",
+    content: ""
   },
   {
     id: 12,
@@ -188,8 +188,8 @@ var search_index_default = [
       45,
       14
     ],
-    excerpt: "Yes. Love tells the truth, even when it\u2019s hard (Ephesians 4:15). To call abortion anything less than murder is to lie and allow sin to continue. Scripture commands us to expose the works of darkness (Ephesians 5:11). True love warns\u2026",
-    content: "Yes. Love tells the truth, even when it\u2019s hard (Ephesians 4:15). To call abortion anything less than murder is to lie and allow sin to continue. Scripture commands us to expose the works of darkness (Ephesians 5:11). True love warns of danger and points to hope in Christ. Speaking truth about abortion is not hatred\u2014it is compassion for both mother and child. Only when sin is seen for what it is can grace be understood for what it offers."
+    excerpt: "",
+    content: ""
   },
   {
     id: 13,
@@ -204,8 +204,8 @@ var search_index_default = [
       21,
       31
     ],
-    excerpt: "Some contraceptives can cause early abortion by preventing an embryo from implanting or surviving. Such methods destroy a human life and are morally wrong (Exodus 20:13). Christians must research and choose methods that do not harm life after conception. God\u2026",
-    content: "Some contraceptives can cause early abortion by preventing an embryo from implanting or surviving. Such methods destroy a human life and are morally wrong (Exodus 20:13). Christians must research and choose methods that do not harm life after conception. God calls us to act with knowledge and integrity (Proverbs 2:6\u20139). Convenience cannot justify wrongdoing. Believers must honor God even in private choices, trusting Him with every part of life."
+    excerpt: "",
+    content: ""
   },
   {
     id: 14,
@@ -220,8 +220,8 @@ var search_index_default = [
       30,
       22
     ],
-    excerpt: "Men are called to protect, lead, and defend the innocent (Proverbs 24:11\u201312; Micah 6:8). Silence in the face of injustice is cowardice (James 4:17). Abortion persists partly because men have abdicated their duty to act as righteous leaders and defenders.\u2026",
-    content: "Men are called to protect, lead, and defend the innocent (Proverbs 24:11\u201312; Micah 6:8). Silence in the face of injustice is cowardice (James 4:17). Abortion persists partly because men have abdicated their duty to act as righteous leaders and defenders. God holds men accountable to do justice and walk uprightly \u2014 not only as fathers and husbands, but also as citizens (Ezekiel 22:30; 1 Corinthians 16:13). Speaking out is not intrusion; it is obedience to God\u2019s command to rescue those being led to death (Proverbs 31:8\u20139)."
+    excerpt: "",
+    content: ""
   },
   {
     id: 15,
@@ -236,8 +236,8 @@ var search_index_default = [
       23,
       41
     ],
-    excerpt: "Civil government exists to punish evil and protect the innocent (Romans 13:3\u20134). Allowing abortion is rebellion against God\u2019s authority. Rulers are God\u2019s servants for good. When they approve of killing, they fail their duty and bring judgment on the nation\u2026",
-    content: "Civil government exists to punish evil and protect the innocent (Romans 13:3\u20134). Allowing abortion is rebellion against God\u2019s authority. Rulers are God\u2019s servants for good. When they approve of killing, they fail their duty and bring judgment on the nation (Psalm 2:10\u201312). The government must not regulate murder but abolish it completely. Equal protection for every person\u2014born and preborn\u2014is the demand of justice. Christians should urge their leaders to obey God and defend life."
+    excerpt: "",
+    content: ""
   },
   {
     id: 16,
@@ -252,8 +252,8 @@ var search_index_default = [
       33,
       27
     ],
-    excerpt: "No. Gestational surrogacy is not consistent with biblical teaching because it separates procreation from the covenant of marriage, divides motherhood, and often involves treating children as products rather than gifts from God (Genesis 2:24; Psalm 127:3).",
-    content: "No. Gestational surrogacy is not consistent with biblical teaching because it separates procreation from the covenant of marriage, divides motherhood, and often involves treating children as products rather than gifts from God (Genesis 2:24; Psalm 127:3)."
+    excerpt: "",
+    content: ""
   },
   {
     id: 17,
@@ -269,8 +269,8 @@ var search_index_default = [
       27,
       33
     ],
-    excerpt: "Christians should view frozen IVF embryos as living human beings created in God\u2019s image, not as property or biological material. Scripture teaches that human life begins at conception (Psalm 139:13\u201316; Luke 1:41\u201344), so every embryo has inherent dignity and moral\u2026",
-    content: "Christians should view frozen IVF embryos as living human beings created in God\u2019s image, not as property or biological material. Scripture teaches that human life begins at conception (Psalm 139:13\u201316; Luke 1:41\u201344), so every embryo has inherent dignity and moral worth. Creating and freezing embryos violates God\u2019s design for procreation within marriage and treats human life as something to be produced, stored, or discarded at will. The only righteous response is repentance from such practices and the recognition that each frozen embryo is a child deserving protection, not experimentation or destruction."
+    excerpt: "",
+    content: ""
   },
   {
     id: 18,
@@ -285,8 +285,8 @@ var search_index_default = [
       21,
       26
     ],
-    excerpt: "Scripture does not forbid careful timing or spacing of children through natural observation, when done with humility and right motives. Scripture does forbid any attempt to prevent or end life through sinful means, or to reject the blessing of children\u2026",
-    content: "Scripture does not forbid careful timing or spacing of children through natural observation, when done with humility and right motives. Scripture does forbid any attempt to prevent or end life through sinful means, or to reject the blessing of children out of selfishness."
+    excerpt: "",
+    content: ""
   },
   {
     id: 19,
@@ -302,8 +302,8 @@ var search_index_default = [
       24,
       37
     ],
-    excerpt: "Medical evidence clearly distinguishes life-saving care for ectopic pregnancies from abortion. An ectopic pregnancy occurs when a human embryo implants outside the uterus\u2014most often in a fallopian tube\u2014where it cannot survive and where rupture endangers the mother\u2019s life. Treatment involves\u2026",
-    content: "Medical evidence clearly distinguishes life-saving care for ectopic pregnancies from abortion. An ectopic pregnancy occurs when a human embryo implants outside the uterus\u2014most often in a fallopian tube\u2014where it cannot survive and where rupture endangers the mother\u2019s life. Treatment involves removing the embryo or the damaged tissue (via salpingectomy, salpingostomy, or methotrexate), which is not the same as intentionally killing a child in the womb. Abortion deliberately ends a living intrauterine pregnancy; ectopic care treats a pathological, nonviable implantation to preserve the mother\u2019s life. The intent, procedure, and moral nature differ completely."
+    excerpt: "",
+    content: ""
   },
   {
     id: 20,
@@ -318,8 +318,8 @@ var search_index_default = [
       25,
       39
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 21,
@@ -334,8 +334,8 @@ var search_index_default = [
       13,
       18
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 22,
@@ -351,8 +351,8 @@ var search_index_default = [
       43,
       39
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 23,
@@ -368,8 +368,8 @@ var search_index_default = [
       32,
       28
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 24,
@@ -384,8 +384,8 @@ var search_index_default = [
       44,
       37
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 25,
@@ -401,8 +401,8 @@ var search_index_default = [
       39,
       28
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 26,
@@ -418,8 +418,8 @@ var search_index_default = [
       18,
       21
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 27,
@@ -434,8 +434,8 @@ var search_index_default = [
       17,
       33
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 28,
@@ -450,8 +450,8 @@ var search_index_default = [
       23,
       41
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 29,
@@ -467,8 +467,8 @@ var search_index_default = [
       33,
       35
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 30,
@@ -483,8 +483,8 @@ var search_index_default = [
       14,
       43
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 31,
@@ -499,8 +499,8 @@ var search_index_default = [
       21,
       2
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 32,
@@ -515,8 +515,8 @@ var search_index_default = [
       23,
       41
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 33,
@@ -532,8 +532,8 @@ var search_index_default = [
       17,
       27
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 34,
@@ -548,8 +548,8 @@ var search_index_default = [
       30,
       43
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 35,
@@ -565,8 +565,8 @@ var search_index_default = [
       12,
       38
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 36,
@@ -582,8 +582,8 @@ var search_index_default = [
       44,
       41
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 37,
@@ -598,8 +598,8 @@ var search_index_default = [
       31,
       24
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 38,
@@ -615,8 +615,8 @@ var search_index_default = [
       22,
       1
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 39,
@@ -631,8 +631,8 @@ var search_index_default = [
       11,
       30
     ],
-    excerpt: "Deacons can organize mercy ministry for single mothers by meeting their physical and spiritual needs through coordinated, gospel-centered care. They should first assess needs within the church, mobilize members to help with meals, childcare, and mentorship, manage a deacon\u2019s fund\u2026",
-    content: "Deacons can organize mercy ministry for single mothers by meeting their physical and spiritual needs through coordinated, gospel-centered care. They should first assess needs within the church, mobilize members to help with meals, childcare, and mentorship, manage a deacon\u2019s fund for emergency aid, and pair every act of mercy with discipleship and pastoral care. In all, they reflect Christ\u2019s compassion and uphold His righteousness in service to vulnerable families."
+    excerpt: "",
+    content: ""
   },
   {
     id: 40,
@@ -648,8 +648,8 @@ var search_index_default = [
       25,
       5
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 41,
@@ -664,8 +664,8 @@ var search_index_default = [
       42,
       23
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 42,
@@ -681,8 +681,8 @@ var search_index_default = [
       36,
       41
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 43,
@@ -698,8 +698,8 @@ var search_index_default = [
       22,
       30
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 44,
@@ -715,8 +715,8 @@ var search_index_default = [
       36,
       24
     ],
-    excerpt: "this question has not been answered yet.",
-    content: "this question has not been answered yet."
+    excerpt: "",
+    content: ""
   },
   {
     id: 45,
@@ -732,8 +732,8 @@ var search_index_default = [
       37,
       9
     ],
-    excerpt: "We answer that claim by going back to the truth about what abortion is . Scripture and reason both reveal that abortion is the intentional killing of an innocent human being . No act that deliberately takes innocent human life\u2026",
-    content: "We answer that claim by going back to the truth about what abortion is . Scripture and reason both reveal that abortion is the intentional killing of an innocent human being . No act that deliberately takes innocent human life can rightly be called \u201Chealthcare.\u201D Healthcare, properly defined, is the practice of preserving and restoring health . It aims to protect life, heal the sick, and care for the weak. Abortion, by contrast, ends the life of one human being and often harms the body and soul of another. To call it \u201Chealthcare\u201D is to corrupt language in order to justify evil\u2014much like calling slavery \u201Cproperty management\u201D or genocide \u201Cpopulation control.\u201D It is a lie that disguises murder as mercy (Isaiah 5:20). From a biblical standpoint: - God alone has the authority to give and take life (Deuteronomy 32:39). - He commands, \u201CYou shall not murder\u201D (Exodus 20:13). - The civil magistrate\u2019s duty is to protect the innocent, not authorize their destruction (Romans 13:3\u20134). Thus, abortion is not medicine; it is rebellion against the Creator and injustice against one\u2019s smallest neighbor. Real healthcare would treat both the mother and the child as patients worthy of protection and care. It would seek to preserve both lives, not pit them against each other. As abolitionists, we must also expose how the \u201Chealthcare\u201D claim functions strategically\u2014it reframes moral evil as medical necessity to numb consciences and legalize murder. Christians must reject that framing entirely, not debate it on its own terms. The issue is not about access to medical services; it is about obedience to God\u2019s law and justice for the innocent ."
+    excerpt: "",
+    content: ""
   },
   {
     id: 46,
@@ -749,8 +749,8 @@ var search_index_default = [
       1,
       47
     ],
-    excerpt: "That question goes right to the heart of the matter, and it\u2019s one that deserves a clear and biblical answer. First, even if every aborted child were immediately received into the presence of Christ\u2014which many Reformed Baptists and other Protestants\u2026",
-    content: "That question goes right to the heart of the matter, and it\u2019s one that deserves a clear and biblical answer. First, even if every aborted child were immediately received into the presence of Christ\u2014which many Reformed Baptists and other Protestants believe is indeed the case\u2014that would not make abortion any less evil. Scripture is clear that we are never permitted to do evil that good may come (Romans 3:8). The fact that God can redeem evil actions and bring good from them does not justify committing those actions. God\u2019s sovereignty never excuses man\u2019s sin. Abortion is murder\u2014the intentional killing of an innocent human being. Each child in the womb is a living soul made by God (Psalm 139:13\u201316; Jeremiah 1:5). The moral question, therefore, is not what happens to the baby afterward , but what man has done before God in shedding innocent blood. We might also ask: would it be righteous for us to kill all infants, or all Christians, because we believe they would go to Heaven? Of course not. That would be rebellion against God\u2019s law. Abortion is not a mercy; it is the unjust destruction of a neighbor whom we are commanded to love (Matthew 22:39). In addition, God uses even the short lives of those little ones to testify to His justice and grace. Their deaths are not meaningless, but their murderers will be held accountable unless they repent and trust in Christ. God commands rulers to protect innocent life, not to destroy it (Romans 13:3\u20134). The abolitionist stance is simply obedience to that command\u2014calling both individuals and nations to repent immediately and abolish abortion entirely , not regulate or excuse it."
+    excerpt: "",
+    content: ""
   },
   {
     id: 47,
@@ -765,8 +765,23 @@ var search_index_default = [
       6,
       44
     ],
-    excerpt: `Biblical Answer: In the book of Job, the patriarch exclaims that he was a living being "from my mother's womb" (Job 3:11). Job says, "why did I not die at birth?", indicating he was alive in the womb before he\u2026`,
-    content: `Biblical Answer: In the book of Job, the patriarch exclaims that he was a living being "from my mother's womb" (Job 3:11). Job says, "why did I not die at birth?", indicating he was alive in the womb before he was born. Additionally, in the Gospel of Luke, we read that when Mary visited Elizabeth, the unborn John the Baptist leaped in her womb upon hearing Mary's greeting (Luke 1:41). These passages indicate that life--and personhood--are present even while in the womb. Scientific Answer: According to the position paper by the American College of Pediatricians titled <a href="https://acpeds.org/when-human-life-begins/" target=" blank" rel="noopener noreferrer" When Human Life Begins </a , "research in embryology and related biological sciences overwhelmingly indicates that human life begins at conception (fertilization)." At fertilization the zygote is a living, genetically distinct human organism who will grow and develop through every subsequent stage of life.`
+    excerpt: "",
+    content: ""
+  },
+  {
+    id: 48,
+    slug: "if-abortion-can-be-forgiven",
+    title: "If abortion can be forgiven, why not do it and just ask for forgiveness after?",
+    categories: [
+      "Biblical",
+      "Moral"
+    ],
+    relatedAnswers: [
+      5,
+      11
+    ],
+    excerpt: "",
+    content: ""
   }
 ];
 

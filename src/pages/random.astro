@@ -1,0 +1,47 @@
+---
+import { getPublishedQuestions } from "@/lib/questions";
+
+const questions = getPublishedQuestions().filter((question) => question.published);
+const entries = questions.map((question) => ({
+  id: typeof question.id === "number" ? question.id : null,
+  slug: question.slug,
+}));
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Question | abolition.ing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <script type="application/json" id="random-entries" set:html={JSON.stringify(entries)}></script>
+    <script is:inline>
+      (function () {
+        const container = document.getElementById("random-entries");
+        if (!container) {
+          window.location.href = "/";
+          return;
+        }
+        let randomEntries;
+        try {
+          randomEntries = JSON.parse(container.textContent || "[]");
+        } catch (error) {
+          randomEntries = [];
+        }
+        if (!Array.isArray(randomEntries) || !randomEntries.length) {
+          window.location.href = "/";
+          return;
+        }
+        const random = randomEntries[Math.floor(Math.random() * randomEntries.length)];
+        if (!random) {
+          window.location.href = "/";
+          return;
+        }
+        const target = typeof random.id === "number" ? `/questions/${random.id}` : `/questions/${random.slug}`;
+        window.location.replace(target);
+      })();
+    </script>
+  </body>
+</html>
