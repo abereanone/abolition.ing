@@ -105,9 +105,11 @@ export function initSearchPage() {
         .map((result) => {
           const titleHtml = result.highlightedTitle || result.title;
           const snippetHtml = result.snippet || result.excerpt || "";
+          const idLabel =
+            result.idLabel ?? (result.id !== null && result.id !== undefined ? String(result.id) : null);
           const titlePrefix =
-            showQuestionIds && result.id !== null && result.id !== undefined
-              ? `<span class="result-id">#${result.id}</span> `
+            showQuestionIds && idLabel
+              ? `<span class="result-id">#${idLabel}</span> `
               : "";
 
           return `

@@ -2,6 +2,7 @@
 var search_index_default = [
   {
     id: 1,
+    idLabel: "1",
     slug: "why-is-abortion-wrong",
     title: "Why is abortion wrong?",
     categories: [
@@ -14,10 +15,12 @@ var search_index_default = [
       12
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 2,
+    idLabel: "2",
     slug: "is-birth-control-ever-biblical",
     title: "Is birth control ever biblical?",
     categories: [
@@ -30,10 +33,12 @@ var search_index_default = [
       26
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 3,
+    idLabel: "3",
     slug: "what-is-the-difference-between-abolition-and-pro-life",
     title: "What is the difference between abolition and pro-life?",
     categories: [
@@ -46,10 +51,12 @@ var search_index_default = [
       42
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 4,
+    idLabel: "4",
     slug: "how-should-christians-respond-to-rape-and-abortion",
     title: "How should Christians respond to rape and abortion?",
     categories: [
@@ -62,10 +69,12 @@ var search_index_default = [
       20
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 5,
+    idLabel: "5",
     slug: "can-abortion-be-forgiven",
     title: "Can abortion be forgiven?",
     categories: [
@@ -78,10 +87,12 @@ var search_index_default = [
       11
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 6,
+    idLabel: "6",
     slug: "what-does-the-bible-say-about-the-value-of-life",
     title: "What does the Bible say about the value of life?",
     categories: [
@@ -93,10 +104,12 @@ var search_index_default = [
       47
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 7,
+    idLabel: "7",
     slug: "should-abortion-be-punished-by-law",
     title: "Should abortion be punished by law?",
     categories: [
@@ -109,10 +122,12 @@ var search_index_default = [
       23
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 8,
+    idLabel: "8",
     slug: "what-about-ectopic-pregnancy",
     title: "What about ectopic pregnancy?",
     categories: [
@@ -125,10 +140,12 @@ var search_index_default = [
       10
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 9,
+    idLabel: "9",
     slug: "how-should-the-church-engage-abortion-culture",
     title: "How should the church engage abortion culture?",
     categories: [
@@ -141,10 +158,12 @@ var search_index_default = [
       45
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 10,
+    idLabel: "10",
     slug: "does-science-prove-life-begins-at-conception",
     title: "Does science prove life begins at conception?",
     categories: [
@@ -157,10 +176,12 @@ var search_index_default = [
       24
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 11,
+    idLabel: "11",
     slug: "how-should-we-care-for-post-abortive-women",
     title: "How should we care for post-abortive women?",
     categories: [
@@ -173,10 +194,12 @@ var search_index_default = [
       30
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 12,
+    idLabel: "12",
     slug: "is-it-loving-to-call-abortion-murder",
     title: "Is it loving to call abortion murder?",
     categories: [
@@ -189,10 +212,12 @@ var search_index_default = [
       14
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 13,
+    idLabel: "13",
     slug: "what-about-contraceptives-that-cause-early-abortion",
     title: "What about contraceptives that cause early abortion?",
     categories: [
@@ -205,10 +230,12 @@ var search_index_default = [
       31
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 14,
+    idLabel: "14",
     slug: "why-should-men-speak-out-against-abortion",
     title: "Why should men speak out against abortion?",
     categories: [
@@ -221,10 +248,12 @@ var search_index_default = [
       22
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 15,
+    idLabel: "15",
     slug: "what-role-should-civil-government-play",
     title: "What role should civil government play in ending abortion?",
     categories: [
@@ -237,10 +266,12 @@ var search_index_default = [
       41
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 16,
+    idLabel: "16",
     slug: "is-gestational-surrogacy-biblical",
     title: "Is gestational surrogacy consistent with biblical teaching on motherhood?",
     categories: [
@@ -253,10 +284,12 @@ var search_index_default = [
       27
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 17,
+    idLabel: "17",
     slug: "how-should-christians-view-frozen-embryos",
     title: "How should Christians think about IVF embryos that remain frozen?",
     categories: [
@@ -270,10 +303,12 @@ var search_index_default = [
       33
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 18,
+    idLabel: "18",
     slug: "does-scripture-allow-natural-family-planning",
     title: "Does Scripture allow for delaying pregnancy through natural family planning?",
     categories: [
@@ -286,10 +321,12 @@ var search_index_default = [
       26
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 19,
+    idLabel: "19",
     slug: "what-medical-evidence-distinguishes-ectopic-care-from-abortion",
     title: "What medical evidence shows life-saving care for ectopic pregnancies differs from abortion?",
     categories: [
@@ -303,10 +340,12 @@ var search_index_default = [
       37
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 20,
+    idLabel: "20",
     slug: "how-can-churches-support-high-risk-pregnancies",
     title: "How can churches support women with high-risk pregnancies?",
     categories: [
@@ -319,10 +358,12 @@ var search_index_default = [
       39
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 21,
+    idLabel: "21",
     slug: "are-hormonal-contraceptives-that-prevent-implantation-moral",
     title: "Are hormonal contraceptives that prevent implantation morally permissible?",
     categories: [
@@ -335,10 +376,12 @@ var search_index_default = [
       18
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 22,
+    idLabel: "22",
     slug: "what-does-the-bible-teach-about-fatherly-protection",
     title: "What does the Bible teach about fathers protecting preborn children?",
     categories: [
@@ -352,10 +395,12 @@ var search_index_default = [
       39
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 23,
+    idLabel: "23",
     slug: "should-magistrates-prosecute-abortion-pill-distribution",
     title: "Should civil magistrates prosecute abortion pill distribution?",
     categories: [
@@ -369,10 +414,12 @@ var search_index_default = [
       28
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 24,
+    idLabel: "24",
     slug: "what-do-ultrasound-studies-reveal-about-fetal-pain",
     title: "What do ultrasound studies reveal about fetal pain?",
     categories: [
@@ -385,10 +432,12 @@ var search_index_default = [
       37
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 25,
+    idLabel: "25",
     slug: "how-should-christians-respond-to-prenatal-disability-diagnoses",
     title: "How should Christian couples respond to a prenatal diagnosis of disability?",
     categories: [
@@ -402,10 +451,12 @@ var search_index_default = [
       28
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 26,
+    idLabel: "26",
     slug: "is-permanent-sterilization-a-faithful-family-planning-choice",
     title: "Is permanent sterilization an acceptable Christian response to family planning?",
     categories: [
@@ -419,10 +470,12 @@ var search_index_default = [
       21
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 27,
+    idLabel: "27",
     slug: "how-does-psalm-139-guide-our-view-of-lab-created-embryos",
     title: "How does Psalm 139 inform our view of embryos created in laboratories?",
     categories: [
@@ -435,10 +488,12 @@ var search_index_default = [
       33
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 28,
+    idLabel: "28",
     slug: "what-protections-do-post-roe-states-provide-for-mothers",
     title: "What protections do post-Roe states provide for mothers?",
     categories: [
@@ -451,10 +506,12 @@ var search_index_default = [
       41
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 29,
+    idLabel: "29",
     slug: "can-christians-participate-in-fetal-tissue-research",
     title: "Can Christians participate in fetal tissue research?",
     categories: [
@@ -468,10 +525,12 @@ var search_index_default = [
       35
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 30,
+    idLabel: "30",
     slug: "what-is-the-churchs-role-in-post-abortion-discipleship-for-men",
     title: "What is the church's role in post-abortion discipleship for men?",
     categories: [
@@ -484,10 +543,12 @@ var search_index_default = [
       43
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 31,
+    idLabel: "31",
     slug: "does-emergency-contraception-act-as-an-abortifacient",
     title: "Does emergency contraception act as an abortifacient?",
     categories: [
@@ -500,10 +561,12 @@ var search_index_default = [
       2
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 32,
+    idLabel: "32",
     slug: "how-should-lawmakers-respond-to-abortion-tourism",
     title: "How should lawmakers respond to abortion tourism?",
     categories: [
@@ -516,10 +579,12 @@ var search_index_default = [
       41
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 33,
+    idLabel: "33",
     slug: "what-are-ethical-alternatives-to-ivf",
     title: "What are ethical alternatives to IVF for infertile couples?",
     categories: [
@@ -533,10 +598,12 @@ var search_index_default = [
       27
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 34,
+    idLabel: "34",
     slug: "how-can-pastors-counsel-survivors-of-coerced-abortion",
     title: "How can pastors counsel survivors of coerced abortion?",
     categories: [
@@ -549,10 +616,12 @@ var search_index_default = [
       43
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 35,
+    idLabel: "35",
     slug: "what-does-church-history-teach-about-abortion",
     title: "What does church history teach about abortion in the early centuries?",
     categories: [
@@ -566,10 +635,12 @@ var search_index_default = [
       38
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 36,
+    idLabel: "36",
     slug: "should-christians-support-fetal-heartbeat-legislation",
     title: "Should Christians support fetal heartbeat legislation?",
     categories: [
@@ -583,10 +654,12 @@ var search_index_default = [
       41
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 37,
+    idLabel: "37",
     slug: "how-do-chemical-abortions-impact-womens-health",
     title: "How do chemical abortions impact women's health?",
     categories: [
@@ -599,10 +672,12 @@ var search_index_default = [
       24
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 38,
+    idLabel: "38",
     slug: "what-does-proverbs-teach-about-rescuing-the-preborn",
     title: "What does Proverbs teach about rescuing preborn neighbors?",
     categories: [
@@ -616,10 +691,12 @@ var search_index_default = [
       1
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 39,
+    idLabel: "39",
     slug: "how-can-deacons-organize-mercy-ministry-for-single-mothers",
     title: "How can deacons organize mercy ministry for single mothers?",
     categories: [
@@ -632,10 +709,12 @@ var search_index_default = [
       30
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 40,
+    idLabel: "40",
     slug: "what-scriptures-address-children-conceived-in-rape",
     title: "What scriptures address the value of children conceived in rape?",
     categories: [
@@ -649,10 +728,12 @@ var search_index_default = [
       5
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 41,
+    idLabel: "41",
     slug: "what-legal-strategies-end-abortion-without-exceptions",
     title: "What legal strategies end abortion without exceptions?",
     categories: [
@@ -665,10 +746,12 @@ var search_index_default = [
       23
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 42,
+    idLabel: "42",
     slug: "how-can-christians-discern-compromised-prolife-legislation",
     title: "How can Christians discern pro-life legislation that compromises justice?",
     categories: [
@@ -682,10 +765,12 @@ var search_index_default = [
       41
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 43,
+    idLabel: "43",
     slug: "what-steps-should-fathers-take-when-mothers-consider-abortion",
     title: "What steps should fathers take when mothers consider abortion?",
     categories: [
@@ -699,10 +784,12 @@ var search_index_default = [
       30
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 44,
+    idLabel: "44",
     slug: "does-a-detectable-heartbeat-prove-personhood",
     title: "Does a detectable heartbeat prove personhood scientifically and biblically?",
     categories: [
@@ -716,10 +803,12 @@ var search_index_default = [
       24
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 45,
+    idLabel: "45",
     slug: "how-do-we-answer-claims-that-abortion-is-healthcare",
     title: "How do we answer claims that abortion is healthcare?",
     categories: [
@@ -733,10 +822,12 @@ var search_index_default = [
       9
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 46,
+    idLabel: "46",
     slug: "if-infants-that-die-go-to-heaven-why-is-abortion-a-problem",
     title: "If infants that die go to Heaven, why is abortion a problem?",
     categories: [
@@ -750,10 +841,12 @@ var search_index_default = [
       47
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 47,
+    idLabel: "47",
     slug: "when-does-human-life-begin",
     title: "When does human life begin?",
     categories: [
@@ -766,10 +859,12 @@ var search_index_default = [
       44
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   },
   {
     id: 48,
+    idLabel: "48",
     slug: "if-abortion-can-be-forgiven",
     title: "If abortion can be forgiven, why not do it and just ask for forgiveness after?",
     categories: [
@@ -781,7 +876,8 @@ var search_index_default = [
       11
     ],
     excerpt: "",
-    content: ""
+    content: "",
+    groupCodes: []
   }
 ];
 
@@ -916,6 +1012,7 @@ function searchIndex(engine2, query, options = {}) {
     total: filtered.length,
     items: limited.map(({ doc, score }) => ({
       id: doc.id,
+      idLabel: doc.idLabel ?? null,
       slug: doc.slug,
       title: doc.title,
       highlightedTitle: highlightText(doc.title ?? "", highlightTokens),
@@ -1074,7 +1171,8 @@ function initSearchPage() {
       resultsContainer.innerHTML = items.map((result) => {
         const titleHtml = result.highlightedTitle || result.title;
         const snippetHtml = result.snippet || result.excerpt || "";
-        const titlePrefix = showQuestionIds && result.id !== null && result.id !== void 0 ? `<span class="result-id">#${result.id}</span> ` : "";
+        const idLabel = result.idLabel ?? (result.id !== null && result.id !== void 0 ? String(result.id) : null);
+        const titlePrefix = showQuestionIds && idLabel ? `<span class="result-id">#${idLabel}</span> ` : "";
         return `
             <article class="search-result">
               <h2><a href="${result.url}">${titlePrefix}${titleHtml}</a></h2>

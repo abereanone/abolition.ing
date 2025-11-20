@@ -11,6 +11,8 @@ export interface Question {
   longAuthorId?: string;
   suppressAuthor?: boolean;
   relatedAnswers?: number[];
+  markdown?: string;
+  groupCodes?: readonly string[];
 }
 
 interface QuestionEntry {
@@ -22,6 +24,17 @@ const questionModules = import.meta.glob<{ default: Question[] }>("@/data/questi
   eager: true,
 });
 
+type Category = (typeof categoriesData)[number];
+type CategorySummary = {
+  id: string;
+  name: string;
+  count: number;
+  sortOrder?: number;
+  groupCode?: string;
+};
+
+const categoryConfigMap = buildCategoryConfigMap();
+
 const questionEntries: QuestionEntry[] = Object.keys(questionModules)
   .sort()
   .flatMap((key) =>
@@ -29,6 +42,7 @@ const questionEntries: QuestionEntry[] = Object.keys(questionModules)
       question: {
         ...question,
         markdown: `${question.slug}.md`,
+        groupCodes: deriveGroupCodes(question.categories ?? []),
       },
       source: `${key}#${index + 1}`,
     }))
@@ -38,10 +52,21 @@ validateQuestionEntries(questionEntries);
 
 const questionsData: Question[] = questionEntries.map((entry) => entry.question);
 
-const questionIdMap = new Map<number, Question>();
+const questionIdMap = new Map<number, Question[]>();
+const groupKeyMap = new Map<string, Question>();
 questionsData.forEach((question) => {
   if (typeof question.id === "number") {
-    questionIdMap.set(question.id, question);
+    const list = questionIdMap.get(question.id) ?? [];
+    list.push(question);
+    questionIdMap.set(question.id, list);
+
+    const codes = Array.isArray(question.groupCodes) ? question.groupCodes : [];
+    codes.forEach((code) => {
+      const key = `${String(code).toUpperCase()}${question.id}`;
+      if (!groupKeyMap.has(key)) {
+        groupKeyMap.set(key, question);
+      }
+    });
   }
 });
 
@@ -88,16 +113,33 @@ interface AuthorSummary {
   sortOrder?: number;
 }
 
+function buildCategoryConfigMap() {
+  const map = new Map<string, Category & { slug: string }>();
+  categoriesData.forEach((category) => {
+    const baseSlug = slugify(category.id);
+    const entry = { ...category, slug: baseSlug };
+    map.set(baseSlug, entry);
+    if (category.name) {
+      const nameSlug = slugify(category.name);
+      if (!map.has(nameSlug)) {
+        map.set(nameSlug, entry);
+      }
+    }
+  });
+  return map;
+}
+
 function buildCategoryMap(): Map<string, CategorySummary> {
   const map = new Map<string, CategorySummary>();
 
-  categoriesData.forEach((category: Category) => {
-    const slug = slugify(category.id);
+  categoryConfigMap.forEach((category, key) => {
+    const slug = key;
     map.set(slug, {
       id: slug,
       name: category.name,
       count: 0,
       sortOrder: typeof category.sortOrder === "number" ? category.sortOrder : undefined,
+      groupCode: category.groupCode ? String(category.groupCode) : undefined,
     });
   });
 
@@ -238,8 +280,12 @@ export function getRelatedQuestions(question: Question): Question[] {
       return;
     }
 
-    const entry = questionIdMap.get(id);
-    if (!entry || entry === question || !entry.published) {
+    const candidates = questionIdMap.get(id);
+    if (!candidates || !candidates.length) {
+      return;
+    }
+    const entry = candidates.find((candidate) => candidate !== question && candidate.published);
+    if (!entry) {
       return;
     }
 
@@ -252,11 +298,14 @@ export function getRelatedQuestions(question: Question): Question[] {
 
 export function getQuestionCategories(question: Question) {
   const seen = new Set<string>();
-  const result: Array<{ id: string; name: string }> = [];
+  const result: Array<{ id: string; name: string; groupCode?: string }> = [];
 
   question.categories.forEach((label) => {
     const slug = slugify(label);
-    const entry = categoryMap.get(slug) ?? { id: slug, name: label };
+    const fallbackGroupCode = categoryConfigMap.get(slug)?.groupCode
+      ? String(categoryConfigMap.get(slug)?.groupCode)
+      : undefined;
+    const entry = categoryMap.get(slug) ?? { id: slug, name: label, groupCode: fallbackGroupCode };
 
     if (!seen.has(entry.id)) {
       seen.add(entry.id);
@@ -313,6 +362,51 @@ export function paginateQuestions(list: Question[], page: number, perPage: numbe
 }
 
 export { slugify };
+
+function deriveGroupCodes(categories: string[]): string[] {
+  if (!Array.isArray(categories) || !categories.length) {
+    return [];
+  }
+  const codes = new Set<string>();
+  categories.forEach((label) => {
+    const slug = slugify(label);
+    const config = categoryConfigMap.get(slug);
+    if (config?.groupCode) {
+      codes.add(String(config.groupCode).toUpperCase());
+    }
+  });
+  return [...codes];
+}
+
+export function findQuestionByGroupKey(key: string): Question | null {
+  if (!key) return null;
+  return groupKeyMap.get(String(key).toUpperCase()) ?? null;
+}
+
+export function getQuestionsByNumericId(id: number): Question[] {
+  if (typeof id !== "number" || Number.isNaN(id)) {
+    return [];
+  }
+  return questionIdMap.get(id) ?? [];
+}
+
+export function formatQuestionIdentifier(
+  question: Question,
+  options: { groupCode?: string | null; fallback?: number | null } = {}
+): string | null {
+  const codes = Array.isArray(question.groupCodes) ? question.groupCodes.map((code) => String(code)) : [];
+  const numericId = typeof question.id === "number" ? question.id : null;
+  if (options.groupCode && numericId !== null && codes.includes(options.groupCode)) {
+    return `${options.groupCode}${numericId}`;
+  }
+  if (numericId !== null) {
+    return String(numericId);
+  }
+  if (typeof options.fallback === "number") {
+    return String(options.fallback);
+  }
+  return null;
+}
 
 function validateQuestionEntries(entries: QuestionEntry[]) {
   const duplicateReport: Array<{ label: string; value: string; sources: string[] }> = [];

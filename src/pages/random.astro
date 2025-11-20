@@ -5,6 +5,7 @@ const questions = getPublishedQuestions().filter((question) => question.publishe
 const entries = questions.map((question) => ({
   id: typeof question.id === "number" ? question.id : null,
   slug: question.slug,
+  groupCodes: Array.isArray(question.groupCodes) ? question.groupCodes : [],
 }));
 ---
 
@@ -39,7 +40,13 @@ const entries = questions.map((question) => ({
           window.location.href = "/";
           return;
         }
-        const target = typeof random.id === "number" ? `/questions/${random.id}` : `/questions/${random.slug}`;
+        const codes = Array.isArray(random.groupCodes) ? random.groupCodes : [];
+        const target =
+          codes.length && typeof random.id === "number"
+            ? `/questions/${codes[0]}${random.id}`
+            : typeof random.id === "number"
+              ? `/questions/${random.id}`
+              : `/questions/${random.slug}`;
         window.location.replace(target);
       })();
     </script>

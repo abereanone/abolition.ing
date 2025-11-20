@@ -1,4 +1,5 @@
 ---
+import { formatQuestionIdentifier } from "@/lib/questions";
 import { siteSettings } from "@/config/siteSettings";
 
 const { questions, startIndex = 0 } = Astro.props;
@@ -9,11 +10,14 @@ const baseIndex =
 <ul class="question-list">
   {questions.map((q, index) => {
     const fallbackId = baseIndex + index + 1;
-    const displayId = typeof q.id === "number" ? q.id : fallbackId;
+    const primaryGroup = Array.isArray(q.groupCodes) && q.groupCodes.length ? q.groupCodes[0] : undefined;
+    const displayId =
+      formatQuestionIdentifier(q, { groupCode: primaryGroup, fallback: fallbackId }) ??
+      (typeof fallbackId === "number" ? fallbackId : null);
     return (
     <li>
       <a class="question-card card-panel" href={`/questions/${q.slug}`}>
-        {showQuestionId ? (
+        {showQuestionId && displayId !== null ? (
           <span class="question-id">#{displayId}</span>
         ) : null}
         <span class="question-title">{q.title}</span>

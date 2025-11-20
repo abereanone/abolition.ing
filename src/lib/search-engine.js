@@ -158,6 +158,7 @@ export function searchIndex(engine, query, options = {}) {
     total: filtered.length,
     items: limited.map(({ doc, score }) => ({
       id: doc.id,
+      idLabel: doc.idLabel ?? null,
       slug: doc.slug,
       title: doc.title,
       highlightedTitle: highlightText(doc.title ?? "", highlightTokens),

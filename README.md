@@ -64,6 +64,12 @@ Astro outputs static assets in `dist/`, suitable for static hosting or deploymen
 4. Add or update author entries in `src/data/resources.json`, then reference by `authorId` inside questions.
 5. Category pages are generated at `/categories/{slug}` (index at `/categories/`); author/resource pages live at `/authors/{slug}` and feed the `/resources` listing.
 
+### Grouped Question IDs
+
+- To partition questions into named groups (e.g., catechisms), add a `groupCode` property to any category in `src/data/categories.json` (e.g., `"groupCode": "WSC"`). Every question tagged with that category is treated as part of the group.
+- For grouped questions, ID-style URLs include the group code (`/questions/WSC8`). Prev/Next navigation, random links, and display labels stay within the active group context.
+- Visiting `/questions/<id>` still works: if multiple grouped answers share the same numeric ID, that route shows a hub listing each group-specific answer so the user can choose the desired version.
+
 ## Scripts
 
 - `npm run dev` – local development server.

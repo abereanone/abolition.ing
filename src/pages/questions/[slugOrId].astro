@@ -1,11 +1,15 @@
 ---
 import Main from "@/layouts/Main.astro";
+import type { Question } from "@/lib/questions";
 import {
   findQuestion,
+  findQuestionByGroupKey,
+  formatQuestionIdentifier,
   getPublishedQuestions,
   getQuestionCategories,
   getRelatedQuestions,
   getQuestionAuthor,
+  getQuestionsByNumericId,
   findAuthor,
 } from "@/lib/questions";
 import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
@@ -25,103 +29,225 @@ export function getStaticPaths() {
 const { slugOrId } = Astro.params;
 
 let question = slugOrId ? findQuestion(slugOrId) : null;
+let activeGroupCode: string | null = null;
+let listingMatches: Question[] | null = null;
+let listingId: number | null = null;
 
 if (!question && slugOrId) {
-  const maybeId = Number(slugOrId);
-  if (!Number.isNaN(maybeId)) {
-    question = getPublishedQuestions().find((entry) => entry.id === maybeId) ?? null;
+  const groupMatch = findQuestionByGroupKey(slugOrId);
+  if (groupMatch) {
+    question = groupMatch;
+    activeGroupCode = resolveGroupCodeFromParam(slugOrId, groupMatch);
+  } else {
+    const maybeId = Number(slugOrId);
+    if (!Number.isNaN(maybeId)) {
+      const matches = getQuestionsByNumericId(maybeId);
+      if (matches.length === 1) {
+        question = matches[0];
+        const codes = Array.isArray(question.groupCodes) ? question.groupCodes : [];
+        activeGroupCode = codes.length ? codes[0] : null;
+      } else if (matches.length) {
+        listingMatches = matches;
+        listingId = maybeId;
+      }
+    }
   }
 }
 
-if (!question) {
+if (!question && !listingMatches) {
   throw new Error(`Question not found for identifier "${slugOrId}".`);
 }
 
-const questionSlug = question.slug;
-const useIdLinks = typeof question.id === "number" && slugOrId === String(question.id);
+const siteName = siteSettings.branding.siteName;
+const showAuthors = siteSettings.showAuthor;
+
+let questionSlug = "";
+let useIdLinks = false;
+let questionCategories: ReturnType<typeof getQuestionCategories> = [];
+let author = null;
+let showAuthorCard = false;
+let questionNumber: number | null = null;
+let questionIdentifierLabel: string | null = null;
+let previousQuestion: Question | null = null;
+let nextQuestion: Question | null = null;
+let questionGroupCodes: string[] = [];
+const allPublishedQuestions = getPublishedQuestions();
+
+if (question) {
+  questionSlug = question.slug;
+  questionCategories = getQuestionCategories(question);
+  author = getQuestionAuthor(question);
+  showAuthorCard = showAuthors && !question.suppressAuthor && author;
+  questionGroupCodes = Array.isArray(question.groupCodes) ? [...question.groupCodes] : [];
+
+  if (!activeGroupCode && questionGroupCodes.length === 1) {
+    activeGroupCode = questionGroupCodes[0];
+  }
+
+  const baseQuestions = activeGroupCode
+    ? allPublishedQuestions.filter((entry) => (entry.groupCodes ?? []).includes(activeGroupCode!))
+    : allPublishedQuestions;
+
+  const currentIndex = baseQuestions.findIndex((entry) => entry.slug === question.slug);
+  const fallbackIndex = currentIndex + 1;
+
+  questionNumber =
+    typeof question.id === "number"
+      ? question.id
+      : fallbackIndex > 0
+        ? fallbackIndex
+        : null;
+
+  questionIdentifierLabel = formatQuestionIdentifier(question, {
+    groupCode: activeGroupCode,
+    fallback: questionNumber,
+  });
+
+  useIdLinks = !activeGroupCode && typeof question.id === "number" && slugOrId === String(question.id);
+  previousQuestion = currentIndex > 0 ? baseQuestions[currentIndex - 1] : null;
+  nextQuestion = currentIndex >= 0 && currentIndex < baseQuestions.length - 1 ? baseQuestions[currentIndex + 1] : null;
+}
+
+const showQuestionId = siteSettings.showQuestionId && questionIdentifierLabel !== null;
 
 const buildQuestionHref = (target: typeof question | null) => {
   if (!target) return "#";
-  if (useIdLinks && typeof target.id === "number") {
+  if (activeGroupCode && typeof target.id === "number" && (target.groupCodes ?? []).includes(activeGroupCode)) {
+    return `/questions/${activeGroupCode}${target.id}`;
+  }
+  if (!activeGroupCode && useIdLinks && typeof target.id === "number") {
     return `/questions/${target.id}`;
   }
   return `/questions/${target.slug}`;
 };
-
-const questionCategories = getQuestionCategories(question);
-const author = getQuestionAuthor(question);
-const showAuthors = siteSettings.showAuthor;
-const showAuthorCard = showAuthors && !question.suppressAuthor && author;
-const allPublishedQuestions = getPublishedQuestions();
-const currentIndex = allPublishedQuestions.findIndex((entry) => entry.slug === question.slug);
-const fallbackIndex = currentIndex + 1;
-const questionNumber =
-  typeof question.id === "number"
-    ? question.id
-    : fallbackIndex > 0
-      ? fallbackIndex
-      : null;
-const siteName = siteSettings.branding.siteName;
-const showQuestionId = siteSettings.showQuestionId && questionNumber !== null;
-const previousQuestion = currentIndex > 0 ? allPublishedQuestions[currentIndex - 1] : null;
-const nextQuestion =
-  currentIndex >= 0 && currentIndex < allPublishedQuestions.length - 1
-    ? allPublishedQuestions[currentIndex + 1]
-    : null;
 
 const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
 const markdownModules = Object.values(markdownFiles);
 const findMarkdownModule = (fileName: string | undefined) =>
   fileName ? markdownModules.find((module) => module.file?.endsWith(fileName)) ?? null : null;
 
-const page = findMarkdownModule(question.markdown);
+const listingItems = listingMatches
+  ? [...listingMatches].sort((a, b) => {
+      const codeA = (Array.isArray(a.groupCodes) && a.groupCodes[0]) ? String(a.groupCodes[0]) : "";
+      const codeB = (Array.isArray(b.groupCodes) && b.groupCodes[0]) ? String(b.groupCodes[0]) : "";
+      if (codeA !== codeB) {
+        return codeA.localeCompare(codeB);
+      }
+      const idA = typeof a.id === "number" ? a.id : Number.MAX_SAFE_INTEGER;
+      const idB = typeof b.id === "number" ? b.id : Number.MAX_SAFE_INTEGER;
+      if (idA !== idB) {
+        return idA - idB;
+      }
+      return a.title.localeCompare(b.title);
+    })
+  : null;
 
-const longPage = findMarkdownModule(`${questionSlug}-long.md`);
-const longAuthor = question.longAuthorId ? findAuthor(question.longAuthorId) : null;
-const showLongAuthor = showAuthors && !question.suppressAuthor && longAuthor;
-const relatedQuestions = getRelatedQuestions(question);
+const page = question ? findMarkdownModule(question.markdown) : null;
+const longPage = question ? findMarkdownModule(`${questionSlug}-long.md`) : null;
+const longAuthor = question && question.longAuthorId ? findAuthor(question.longAuthorId) : null;
+const showLongAuthor = Boolean(question && showAuthors && !question.suppressAuthor && longAuthor);
+const relatedQuestions = question ? getRelatedQuestions(question) : [];
+
+function resolveGroupCodeFromParam(param: string | undefined, target: Question | null): string | null {
+  if (!param || !target || typeof target.id !== "number") {
+    return null;
+  }
+  const codes = Array.isArray(target.groupCodes) ? target.groupCodes : [];
+  if (!codes.length) {
+    return null;
+  }
+  const normalized = param.toUpperCase();
+  for (const code of codes) {
+    const key = `${String(code).toUpperCase()}${target.id}`;
+    if (normalized === key) {
+      return String(code);
+    }
+  }
+  return null;
+}
+
+function getQuestionLink(entry: Question, preferredGroup?: string | null) {
+  if (preferredGroup && entry.groupCodes?.includes(preferredGroup) && typeof entry.id === "number") {
+    return `/questions/${preferredGroup}${entry.id}`;
+  }
+  if (entry.groupCodes?.length && typeof entry.id === "number") {
+    return `/questions/${entry.groupCodes[0]}${entry.id}`;
+  }
+  if (typeof entry.id === "number") {
+    return `/questions/${entry.id}`;
+  }
+  return `/questions/${entry.slug}`;
+}
 ---
 
-<Main title={`${question.title} - ${siteName}`}>
-  {previousQuestion || nextQuestion ? (
-    <nav class="question-top-nav" aria-label="Question navigation">
-      {previousQuestion ? (
-        <a class="question-top-link prev" href={buildQuestionHref(previousQuestion)}>
-          Prev
-        </a>
-      ) : (
-        <span aria-hidden="true" class="question-top-link placeholder" />
-      )}
+{listingItems ? (
+  <Main title={`Question ${listingId} | ${siteName}`}>
+    <section class="question-hub card-panel">
+      <h1>Question #{listingId}</h1>
+      <p>Multiple answers share this identifier. Choose a version below.</p>
+      <ul class="question-list">
+        {listingItems.map((entry) => {
+          const primaryGroup = Array.isArray(entry.groupCodes) && entry.groupCodes.length ? entry.groupCodes[0] : null;
+          const displayLabel =
+            formatQuestionIdentifier(entry, { groupCode: primaryGroup }) ?? formatQuestionIdentifier(entry, {});
+          const entryCategories = getQuestionCategories(entry);
+          const groupName = entryCategories.find((cat) => cat.groupCode === primaryGroup)?.name ?? null;
+          return (
+            <li>
+              <a class="question-card card-panel" href={getQuestionLink(entry, primaryGroup)}>
+                {displayLabel ? <span class="question-id">#{displayLabel}</span> : null}
+                <span class="question-title">
+                  {entry.title}
+                  {groupName ? <span class="question-group-label"> ({groupName})</span> : null}
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  </Main>
+) : question ? (
+  <Main title={`${question.title} - ${siteName}`}>
+    {previousQuestion || nextQuestion ? (
+      <nav class="question-top-nav" aria-label="Question navigation">
+        {previousQuestion ? (
+          <a class="question-top-link prev" href={buildQuestionHref(previousQuestion)}>
+            Prev
+          </a>
+        ) : (
+          <span aria-hidden="true" class="question-top-link placeholder" />
+        )}
 
-      <a class="question-top-link random-link" href="/random">Random</a>
-      <div class="question-top-search">
-        <InlineSearchBox
-          id={`question-search-${questionSlug}`}
-          label="Search for another question"
-          placeholder="Search other questions..."
-        />
-      </div>
+        <a class="question-top-link random-link" href="/random">Random</a>
+        <div class="question-top-search">
+          <InlineSearchBox
+            id={`question-search-${questionSlug}`}
+            label="Search for another question"
+            placeholder="Search other questions..."
+          />
+        </div>
 
-      {nextQuestion ? (
-        <a class="question-top-link next" href={buildQuestionHref(nextQuestion)}>
-          Next
-        </a>
-      ) : (
-        <span aria-hidden="true" class="question-top-link placeholder" />
-      )}
-    </nav>
-  ) : (
-    <InlineSearchBox
-      id={`question-search-${questionSlug}`}
-      label="Search for another question"
-      placeholder="Search other questions..."
-    />
-  )}
-  <article class="question-article card-panel">
+        {nextQuestion ? (
+          <a class="question-top-link next" href={buildQuestionHref(nextQuestion)}>
+            Next
+          </a>
+        ) : (
+          <span aria-hidden="true" class="question-top-link placeholder" />
+        )}
+      </nav>
+    ) : (
+      <InlineSearchBox
+        id={`question-search-${questionSlug}`}
+        label="Search for another question"
+        placeholder="Search other questions..."
+      />
+    )}
+    <article class="question-article card-panel">
     <section class="question-header">
       <h1 class="page-title">{question.title}</h1>
       {showQuestionId ? (
-        <p class="question-meta">Question #{questionNumber}</p>
+        <p class="question-meta">Question #{questionIdentifierLabel}</p>
       ) : null}
     </section>
 
@@ -157,8 +283,8 @@ const relatedQuestions = getRelatedQuestions(question);
           {relatedQuestions.map((entry) => (
             <li>
               <a class="question-card card-panel" href={`/questions/${entry.slug}`}>
-                {typeof entry.id === "number" ? (
-                  <span class="question-id">#{entry.id}</span>
+                {formatQuestionIdentifier(entry) ? (
+                  <span class="question-id">#{formatQuestionIdentifier(entry)}</span>
                 ) : null}
                 <span class="question-title">{entry.title}</span>
               </a>
@@ -167,7 +293,7 @@ const relatedQuestions = getRelatedQuestions(question);
         </ul>
       </section>
     ) : null}
-  </article>
+    </article>
 
   {showAuthorCard ? (
     <div class="resource-card card-panel question-author-card">
@@ -349,6 +475,20 @@ const relatedQuestions = getRelatedQuestions(question);
       }
     }
 
+    .question-hub {
+      margin: 0 auto;
+      max-width: 720px;
+    }
+
+    .question-hub p {
+      margin-bottom: 1rem;
+    }
+
+    .question-group-label {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
     .long-explanation {
       margin-top: 1.5rem;
     }
@@ -383,4 +523,5 @@ const relatedQuestions = getRelatedQuestions(question);
       background: rgba(255, 255, 255, 0.03);
     }
   </style>
-</Main>
+  </Main>
+) : null}

@@ -1,7 +1,7 @@
 [
   { "id": "moral", "name": "Moral", "sortOrder": 20 },
-  { "id": "biblical", "name": "Biblical", "sortOrder": 10 },
-  { "id": "sci", "name": "Scientific", "sortOrder": 30 },
+  { "id": "biblical", "name": "Biblical", "sortOrder": 10},
+  { "id": "sci", "name": "Scientific", "sortOrder": 30},
   { "id": "pastoral", "name": "Pastoral", "sortOrder": 40 },
   { "id": "practical", "name": "Practical", "sortOrder": 50 }
 ]

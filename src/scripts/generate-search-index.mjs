@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(currentDir, "..", "..");
 const QUESTIONS_DIR = path.join(ROOT_DIR, "src", "data", "questions");
+const CATEGORIES_FILE = path.join(ROOT_DIR, "src", "data", "categories.json");
 const CONTENT_DIR = path.join(ROOT_DIR, "src", "content", "questions");
 const OUTPUT_FILE = path.join(ROOT_DIR, "src", "data", "search-index.json");
 
@@ -30,6 +31,17 @@ async function loadQuestions() {
   }
 
   return all.filter((entry) => entry && entry.published);
+}
+
+async function loadCategories() {
+  const raw = await fs.readFile(CATEGORIES_FILE, "utf-8");
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    console.error("Failed to parse categories.json:", error);
+    throw error;
+  }
 }
 
 async function loadMarkdownFile(filename) {
@@ -65,20 +77,35 @@ function buildExcerpt(text, wordLimit = 40) {
 
 async function buildSearchIndex() {
   const questions = await loadQuestions();
+  const categories = await loadCategories();
+  const categoryMap = new Map();
+  categories.forEach((category) => {
+    const slug = slugify(category.id);
+    categoryMap.set(slug, category);
+  });
   const documents = [];
 
   for (const question of questions) {
     const markdownContent = await loadMarkdownFile(question.markdown);
     const cleaned = cleanMarkdown(markdownContent);
+    const groupCodes = deriveGroupCodes(question.categories ?? [], categoryMap);
+    const idLabel =
+      groupCodes.length && typeof question.id === "number"
+        ? `${groupCodes[0]}${question.id}`
+        : question.id != null
+          ? String(question.id)
+          : null;
 
     documents.push({
       id: question.id ?? null,
+      idLabel,
       slug: question.slug,
       title: question.title,
       categories: question.categories ?? [],
       relatedAnswers: question.relatedAnswers ?? [],
       excerpt: buildExcerpt(cleaned),
       content: cleaned,
+      groupCodes,
     });
   }
 
@@ -90,3 +117,22 @@ buildSearchIndex().catch((error) => {
   console.error("Failed to build search index", error);
   process.exitCode = 1;
 });
+
+function slugify(value = "") {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function deriveGroupCodes(categories = [], categoryMap = new Map()) {
+  const codes = new Set();
+  categories.forEach((label) => {
+    const slug = slugify(label);
+    const entry = categoryMap.get(slug);
+    if (entry?.groupCode) {
+      codes.add(String(entry.groupCode).toUpperCase());
+    }
+  });
+  return [...codes];
+}
