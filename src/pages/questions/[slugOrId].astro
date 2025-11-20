@@ -382,41 +382,6 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
     </script>
   ) : null}
 
-  <script
-    is:inline
-    data-search-input-id={`question-search-${questionSlug}`}
-  >
-    {`
-      (function () {
-        const script = document.currentScript;
-        const targetId = script?.dataset.searchInputId;
-        if (!targetId) {
-          return;
-        }
-
-        document.addEventListener("keydown", (event) => {
-          if (event.defaultPrevented) {
-            return;
-          }
-          if (event.key !== "/" || event.altKey || event.ctrlKey || event.metaKey) {
-            return;
-          }
-          const activeElement = document.activeElement;
-          if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA" || activeElement.isContentEditable)) {
-            return;
-          }
-          const searchInput = document.getElementById(targetId);
-          if (!searchInput) {
-            return;
-          }
-          event.preventDefault();
-          searchInput.focus({ preventScroll: false });
-          searchInput.select();
-        });
-      })();
-    `}
-  </script>
-
   <style>
     .question-top-nav {
       display: flex;

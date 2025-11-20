@@ -64,6 +64,7 @@ body {
   --chip-hover-bg: rgba(120, 205, 255, 0.28);
   --chip-hover-border: rgba(165, 220, 255, 0.45);
   --logo-filter: invert(0);
+  --question-id-color: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme='light'] {
@@ -113,6 +114,7 @@ body {
   --chip-hover-bg: rgba(37, 99, 235, 0.15);
   --chip-hover-border: rgba(37, 99, 235, 0.4);
   --logo-filter: invert(1);
+  --question-id-color: rgba(15, 23, 42, 0.9);
 }
 
 /* === Links === */
@@ -321,7 +323,7 @@ ul {
 .question-card .question-id {
   font-size: 0.9rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--question-id-color);
 }
 
 .question-title {
