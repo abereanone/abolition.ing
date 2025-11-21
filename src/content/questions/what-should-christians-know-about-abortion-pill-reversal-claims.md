@@ -1,0 +1,1 @@
+Some report that progesterone given after the first abortion pill can halt the process. Evidence is contested, but Christians should not promise what is uncertain. The surest righteousness is to refuse the first pill and rescue the child. Advocate for mothers in crisis, offer medical help that honors both lives, and speak truth without false hope.

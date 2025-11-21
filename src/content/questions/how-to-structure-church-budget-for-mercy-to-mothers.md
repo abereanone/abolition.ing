@@ -1,0 +1,1 @@
+Build mercy for mothers into the church budget, not as an afterthought. Fund housing help, childcare, medical costs, and legal aid as needed. Deacons can steward these resources (Acts 6) while pastors shepherd souls. Sacrificial generosity displays the gospel to parents tempted by fear.

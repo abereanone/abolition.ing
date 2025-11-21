@@ -1,0 +1,1 @@
+Corporate lament teaches us to hate what God hates and hope in His mercy. Use Psalms of lament, pastoral prayers that name the sin of abortion, and assurance of pardon in Christ. Periodic days of fasting and prayer can cultivate earnestness without replacing obedience. Lament should move us to rescue and to rest in the gospel.

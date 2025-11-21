@@ -1,0 +1,1 @@
+Jesus commands us to make disciples, teaching them to obey all He commanded (Matthew 28:18-20). That includes rescuing the weak, refusing murder, and loving neighbors in the womb. Abolition flows from disciple-making: evangelize, baptize, and train believers to keep Christ’s law in public and private, confident He is with us to the end.

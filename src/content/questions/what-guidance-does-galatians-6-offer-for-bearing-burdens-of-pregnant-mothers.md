@@ -1,0 +1,1 @@
+Galatians 6 calls us to bear one another’s burdens and fulfill the law of Christ. For pregnant mothers, this means practical aid, patient listening, and restoring the fainthearted in gentleness. We sow to the Spirit when we invest time, money, and prayer into their good, trusting God’s harvest in due season.

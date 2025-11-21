@@ -1,0 +1,1 @@
+Read and pray Psalm 23, Psalm 139, and Romans 8 to fix hope on the Lord’s nearness. Sing hymns like “Great Is Thy Faithfulness” and “All Must Be Well” to steady fearful hearts. Scripture and song remind mothers that Christ is with them and that the church will stand beside them.

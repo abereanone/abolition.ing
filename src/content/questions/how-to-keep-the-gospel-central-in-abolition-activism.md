@@ -1,0 +1,1 @@
+Without the gospel, activism becomes anger or self-righteousness. Keep Christ crucified and risen at the center: preach repentance and faith, confess your own sins, and extend mercy to all involved in abortion. Let activism flow from worship and love for Christ, so your labor is in the Lord and not in the flesh.

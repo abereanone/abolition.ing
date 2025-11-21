@@ -1,0 +1,1 @@
+Christian employers must obey God rather than men (Acts 5:29). Challenge abortion mandates through legal channels, seek exemptions, and refuse to pay for the shedding of innocent blood. Care well for employees by offering alternatives that uphold life. Courageous obedience may be costly, but Christ is Lord over every ledger and policy.

@@ -1,0 +1,1 @@
+God’s justice requires truthful reckoning: those who shed innocent blood are liable to punishment (Genesis 9:6; Romans 13:4). If an abortionist repents, the church extends gospel forgiveness and discipleship, yet civil authorities must still do their duty. Mercy in Christ does not erase earthly justice; both can honor God’s holiness.

@@ -1,0 +1,1 @@
+When pro-life arguments excuse mothers or permit regulated killing, gently expose the partiality (Proverbs 24:11-12). Point to God’s equal standards and the image of God in every child (Genesis 9:6). Call for consistency: true love seeks both mercy and justice, not immunity that leaves some lives unprotected.

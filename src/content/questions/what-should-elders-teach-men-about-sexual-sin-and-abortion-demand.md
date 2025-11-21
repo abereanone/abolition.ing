@@ -1,0 +1,1 @@
+Elders must confront lust, pornography, and fornication that fuel abortion demand. Call men to purity, covenant faithfulness, and fatherly courage (Ephesians 5:25; 1 Thessalonians 4:3-4). Teach that abandoning mother and child is cowardice; Christ’s love sets men free to lead, provide, and protect.

@@ -1,0 +1,1 @@
+Start with prayer and shared doctrine: agree on the sin of abortion, and the authority of Christ. Gather pastors to repent of apathy, plan joint mercy efforts, and speak with one voice to magistrates. Cooperation around truth multiplies courage and care for mothers and children.

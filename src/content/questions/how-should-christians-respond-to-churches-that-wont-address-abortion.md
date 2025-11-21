@@ -1,0 +1,1 @@
+Appeal humbly to leaders with Scripture (Proverbs 24:11-12; Psalm 82). If they refuse to name abortion as murder and shepherd the flock, continue to exhort with patience, but seek faithful oversight where the whole counsel of God is preached (Acts 20:27). Silence in the face of bloodshed is negligence; love requires truthful, pastoral action.

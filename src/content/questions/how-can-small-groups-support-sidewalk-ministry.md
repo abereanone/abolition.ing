@@ -1,0 +1,1 @@
+Small groups can pray, fast, and rotate teams to be present where children are endangered. Provide literature, offer help to mothers, and connect them immediately to church support. Follow up faithfully; the goal is not protests but rescue and discipleship. Let your speech be gracious and truthful, seasoned with the gospel (Colossians 4:6).

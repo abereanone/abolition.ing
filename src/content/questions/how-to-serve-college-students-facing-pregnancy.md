@@ -1,0 +1,1 @@
+Meet students with compassion, not shame. Provide housing, transportation, childcare help, and academic advocacy. Connect them with older women for discipleship (Titus 2), and with physicians who refuse abortion. The church’s welcome should show that Christ cares for mother and child, even when campus culture pressures abandonment.

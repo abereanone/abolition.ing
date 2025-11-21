@@ -1,0 +1,1 @@
+Scripture forbids punishing children for their fathers' sins (Ezekiel 18:20). Each child is knit by God and belongs to Him (Psalm 139:13-16). Justice demands we prosecute the rapist and protect the baby. Exceptions make innocence a matter of circumstance; God calls all shedding of innocent blood evil.

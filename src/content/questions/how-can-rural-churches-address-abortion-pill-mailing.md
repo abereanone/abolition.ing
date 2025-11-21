@@ -1,0 +1,1 @@
+Rural areas are not immune to pill trafficking. Teach the saints to recognize and resist it, partner with magistrates to enforce just laws, and offer help to mothers before and after birth. Use local networks—churches, clinics, schools—to spread truth and provide support faster than pills can arrive. 

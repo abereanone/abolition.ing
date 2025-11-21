@@ -1,0 +1,1 @@
+Luke 1 shows unborn John leaping for joy at unborn Jesus. This is real personhood and real worship in the womb. Scripture treats these children as covenant participants, not tissue. Their joy rebukes any view that delays dignity until birth; God is already at work in the smallest.

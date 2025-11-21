@@ -1,0 +1,1 @@
+Jesus received little children and rebuked those who hindered them (Mark 10:13-16). If the King welcomes the smallest, His people must too. Abolition is simply living out Christ’s welcome: protecting, blessing, and making room for every child, because the kingdom belongs to such as these.

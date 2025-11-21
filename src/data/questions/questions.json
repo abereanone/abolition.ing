@@ -810,5 +810,810 @@
             5,
             11
         ]
+    },
+    {
+        "id": 49,
+        "slug": "how-should-church-discipline-address-abortion-advocacy",
+        "title": "How should church discipline address members who advocate for abortion?",
+        "categories": [
+            "Biblical",
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            34,
+            38
+        ]
+    },
+    {
+        "id": 50,
+        "slug": "how-can-families-plan-to-stand-with-unplanned-pregnancies",
+        "title": "How can Christian families plan to stand with mothers in unplanned pregnancies?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            20,
+            11,
+            39
+        ]
+    },
+    {
+        "id": 51,
+        "slug": "how-should-christians-engage-medical-providers-who-perform-abortion",
+        "title": "How should Christians engage medical providers who perform abortions?",
+        "categories": [
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            8,
+            37,
+            45
+        ]
+    },
+    {
+        "id": 52,
+        "slug": "what-role-do-psalm-82-and-micah-6-8-play-in-abolition",
+        "title": "What role do Psalm 82 and Micah 6:8 play in shaping abolition?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            38,
+            1,
+            42
+        ]
+    },
+    {
+        "id": 53,
+        "slug": "how-to-discern-ethical-insurance-coverage-for-abortion",
+        "title": "How can Christians discern ethical responses to insurance plans that cover abortion?",
+        "categories": [
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            45,
+            28,
+            31
+        ]
+    },
+    {
+        "id": 54,
+        "slug": "should-christians-pursue-embryo-adoption-from-ivf",
+        "title": "Should Christians pursue embryo adoption from IVF clinics?",
+        "categories": [
+            "Biblical",
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            17,
+            33,
+            27
+        ]
+    },
+    {
+        "id": 55,
+        "slug": "how-can-youth-be-discipled-for-abolition",
+        "title": "How can churches disciple youth for abolition?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            22
+        ]
+    },
+    {
+        "id": 56,
+        "slug": "how-does-the-great-commission-shape-abolition",
+        "title": "How does the Great Commission shape abolition work?",
+        "categories": [
+            "Biblical",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            45,
+            38
+        ]
+    },
+    {
+        "id": 57,
+        "slug": "how-should-christians-respond-to-churches-that-wont-address-abortion",
+        "title": "How should Christians respond when churches refuse to address abortion?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            1
+        ]
+    },
+    {
+        "id": 58,
+        "slug": "what-guidance-does-galatians-6-offer-for-bearing-burdens-of-pregnant-mothers",
+        "title": "What guidance does Galatians 6 give for bearing the burdens of pregnant mothers?",
+        "categories": [
+            "Biblical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            20,
+            11,
+            39
+        ]
+    },
+    {
+        "id": 59,
+        "slug": "how-can-small-groups-support-sidewalk-ministry",
+        "title": "How can small groups support sidewalk ministry outside abortion centers?",
+        "categories": [
+            "Practical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            45
+        ]
+    },
+    {
+        "id": 60,
+        "slug": "how-to-answer-claims-that-abolition-is-too-harsh",
+        "title": "How do we answer claims that abolition is too harsh?",
+        "categories": [
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            1,
+            42,
+            12
+        ]
+    },
+    {
+        "id": 61,
+        "slug": "what-is-biblical-equal-protection-for-the-preborn",
+        "title": "What is biblical equal protection for the preborn?",
+        "categories": [
+            "Biblical",
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            41,
+            7,
+            42
+        ]
+    },
+    {
+        "id": 62,
+        "slug": "how-should-christians-view-dignity-for-fetal-remains",
+        "title": "How should Christians view the dignity of fetal remains after abortion?",
+        "categories": [
+            "Moral",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            35,
+            29,
+            5
+        ]
+    },
+    {
+        "id": 63,
+        "slug": "how-can-churches-prepare-legal-help-for-mothers-pressured-to-abort",
+        "title": "How can churches prepare legal help for mothers pressured to abort?",
+        "categories": [
+            "Practical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            43,
+            20,
+            25
+        ]
+    },
+    {
+        "id": 64,
+        "slug": "what-pastoral-care-do-men-need-after-coercing-abortion",
+        "title": "What pastoral care do men need after coercing abortion?",
+        "categories": [
+            "Pastoral",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            30,
+            34,
+            11
+        ]
+    },
+    {
+        "id": 65,
+        "slug": "how-should-christians-view-genetic-testing-for-down-syndrome",
+        "title": "How should Christians view genetic testing when Down syndrome is suspected?",
+        "categories": [
+            "Scientific",
+            "Moral",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            25,
+            24,
+            10
+        ]
+    },
+    {
+        "id": 66,
+        "slug": "how-to-serve-college-students-facing-pregnancy",
+        "title": "How can churches serve college students facing pregnancy?",
+        "categories": [
+            "Practical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            20,
+            39,
+            11
+        ]
+    },
+    {
+        "id": 67,
+        "slug": "what-liturgical-practices-help-churches-lament-abortion",
+        "title": "What liturgical practices help churches lament abortion?",
+        "categories": [
+            "Pastoral",
+            "Biblical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            11
+        ]
+    },
+    {
+        "id": 68,
+        "slug": "how-does-the-incarnation-inform-our-view-of-the-unborn",
+        "title": "How does the incarnation inform our view of the unborn?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            6,
+            44,
+            1
+        ]
+    },
+    {
+        "id": 69,
+        "slug": "how-can-christian-businesses-stand-against-abortion-mandates",
+        "title": "How can Christian businesses stand against abortion mandates?",
+        "categories": [
+            "Practical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            45,
+            32,
+            28
+        ]
+    },
+    {
+        "id": 70,
+        "slug": "what-should-elders-teach-men-about-sexual-sin-and-abortion-demand",
+        "title": "What should elders teach men about sexual sin and abortion demand?",
+        "categories": [
+            "Pastoral",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            14,
+            43,
+            30
+        ]
+    },
+    {
+        "id": 71,
+        "slug": "how-to-structure-church-budget-for-mercy-to-mothers",
+        "title": "How can churches structure budgets to fund mercy for mothers?",
+        "categories": [
+            "Practical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            39,
+            20,
+            11
+        ]
+    },
+    {
+        "id": 72,
+        "slug": "what-role-do-prayer-and-fasting-play-in-abolition",
+        "title": "What role do prayer and fasting play in abolition?",
+        "categories": [
+            "Biblical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            38,
+            9,
+            11
+        ]
+    },
+    {
+        "id": 73,
+        "slug": "how-should-christians-interpret-exodus-21-in-the-abortion-debate",
+        "title": "How should Christians interpret Exodus 21 in the abortion debate?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            1,
+            12,
+            5
+        ]
+    },
+    {
+        "id": 74,
+        "slug": "should-christians-pursue-federal-or-state-abolition-first",
+        "title": "Should Christians prioritize federal abolition or state-level strategies?",
+        "categories": [
+            "Practical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            41,
+            42,
+            32
+        ]
+    },
+    {
+        "id": 75,
+        "slug": "how-to-guard-against-burnout-in-abolition-ministry",
+        "title": "How can Christians guard against burnout in abolition ministry?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            11,
+            38
+        ]
+    },
+    {
+        "id": 76,
+        "slug": "what-steps-should-churches-take-when-a-member-procures-an-abortion",
+        "title": "What steps should churches take when a member procures an abortion?",
+        "categories": [
+            "Pastoral",
+            "Biblical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            34,
+            11,
+            3
+        ]
+    },
+    {
+        "id": 77,
+        "slug": "how-can-christians-respond-to-family-pressure-to-abort",
+        "title": "How can Christians respond to family pressure to abort?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            14,
+            43,
+            25
+        ]
+    },
+    {
+        "id": 78,
+        "slug": "how-does-jesus-welcoming-children-shape-abolition",
+        "title": "How does Jesus welcoming children shape abolition?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            6,
+            1,
+            38
+        ]
+    },
+    {
+        "id": 79,
+        "slug": "what-hymns-and-scriptures-encourage-mothers-choosing-life",
+        "title": "What hymns and Scriptures encourage mothers choosing life?",
+        "categories": [
+            "Pastoral",
+            "Biblical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            20,
+            11,
+            6
+        ]
+    },
+    {
+        "id": 80,
+        "slug": "how-to-engage-local-media-with-the-abolition-message",
+        "title": "How can Christians engage local media with the abolition message?",
+        "categories": [
+            "Practical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            45,
+            9,
+            32
+        ]
+    },
+    {
+        "id": 81,
+        "slug": "should-christians-use-graphic-imagery-in-abolition-outreach",
+        "title": "Should Christians use graphic imagery in abolition outreach?",
+        "categories": [
+            "Practical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            45,
+            1
+        ]
+    },
+    {
+        "id": 82,
+        "slug": "how-can-rural-churches-address-abortion-pill-mailing",
+        "title": "How can rural churches address abortion pill mailing into their communities?",
+        "categories": [
+            "Practical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            23,
+            32,
+            45
+        ]
+    },
+    {
+        "id": 83,
+        "slug": "what-does-justice-require-for-abortionists-who-repent",
+        "title": "What does justice require for abortionists who repent?",
+        "categories": [
+            "Biblical",
+            "Moral",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            5,
+            7,
+            11
+        ]
+    },
+    {
+        "id": 84,
+        "slug": "how-should-christians-think-about-profit-based-surrogacy",
+        "title": "How should Christians think about profit-based surrogacy?",
+        "categories": [
+            "Moral",
+            "Biblical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            16,
+            26,
+            33
+        ]
+    },
+    {
+        "id": 85,
+        "slug": "what-is-the-role-of-abolition-in-missions-strategy",
+        "title": "What role should abolition play in church missions strategy?",
+        "categories": [
+            "Biblical",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            45
+        ]
+    },
+    {
+        "id": 86,
+        "slug": "how-to-disciple-new-believers-rescued-from-abortion-culture",
+        "title": "How can churches disciple new believers rescued from abortion culture?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            11,
+            20,
+            30
+        ]
+    },
+    {
+        "id": 87,
+        "slug": "what-can-christians-learn-from-wilberforce-and-abolition-history",
+        "title": "What can Christians learn from Wilberforce and abolition history?",
+        "categories": [
+            "Practical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            35,
+            38,
+            1
+        ]
+    },
+    {
+        "id": 88,
+        "slug": "how-can-churches-measure-faithful-engagement-against-abortion",
+        "title": "How can churches measure faithful engagement against abortion?",
+        "categories": [
+            "Practical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            39
+        ]
+    },
+    {
+        "id": 89,
+        "slug": "what-is-the-biblical-case-against-exceptions-for-rape-or-incest",
+        "title": "What is the biblical case against abortion exceptions for rape or incest?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            4,
+            40,
+            1
+        ]
+    },
+    {
+        "id": 90,
+        "slug": "how-to-correct-prolife-arguments-that-deny-equal-justice",
+        "title": "How can Christians correct pro-life arguments that deny equal justice?",
+        "categories": [
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            41,
+            42,
+            7
+        ]
+    },
+    {
+        "id": 91,
+        "slug": "how-can-churches-train-women-to-mentor-young-mothers",
+        "title": "How can churches train women to mentor young mothers?",
+        "categories": [
+            "Pastoral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            20,
+            11,
+            39
+        ]
+    },
+    {
+        "id": 92,
+        "slug": "what-ethical-issues-arise-with-prenatal-blood-testing",
+        "title": "What ethical issues arise with prenatal blood testing?",
+        "categories": [
+            "Scientific",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            24,
+            31,
+            25
+        ]
+    },
+    {
+        "id": 93,
+        "slug": "how-to-keep-the-gospel-central-in-abolition-activism",
+        "title": "How can Christians keep the gospel central in abolition activism?",
+        "categories": [
+            "Biblical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            45,
+            11
+        ]
+    },
+    {
+        "id": 94,
+        "slug": "what-should-christians-know-about-abortion-pill-reversal-claims",
+        "title": "What should Christians know about so-called abortion pill reversal?",
+        "categories": [
+            "Scientific",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            23,
+            37,
+            31
+        ]
+    },
+    {
+        "id": 95,
+        "slug": "how-to-build-coalitions-between-churches-for-abolition",
+        "title": "How can churches build coalitions for abolition in their region?",
+        "categories": [
+            "Practical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            9,
+            38,
+            32
+        ]
+    },
+    {
+        "id": 96,
+        "slug": "what-does-luke-1-teach-about-personhood-and-the-joy-of-the-unborn",
+        "title": "What does Luke 1 teach about personhood and the joy of the unborn?",
+        "categories": [
+            "Biblical",
+            "Moral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            6,
+            44,
+            1
+        ]
+    },
+    {
+        "id": 97,
+        "slug": "how-to-answer-claims-that-criminalizing-abortion-harms-women",
+        "title": "How can Christians answer claims that criminalizing abortion harms women?",
+        "categories": [
+            "Moral",
+            "Practical"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            45,
+            7,
+            11
+        ]
+    },
+    {
+        "id": 98,
+        "slug": "what-hope-does-revelation-offer-to-persecuted-abolitionists",
+        "title": "What hope does Revelation offer to persecuted abolitionists?",
+        "categories": [
+            "Biblical",
+            "Pastoral"
+        ],
+        "authorId": "chatgpt",
+        "published": true,
+        "relatedAnswers": [
+            38,
+            9,
+            5
+        ]
     }
 ]

@@ -1,0 +1,1 @@
+Older women should train younger women to love their children and be self-controlled (Titus 2:3-5). Build mentoring pairs, offer classes on newborn care, budgeting, and prayer, and include the gospel at every step. Mentorship turns doctrine into embodied help, showing young mothers they are not alone.

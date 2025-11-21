@@ -1,0 +1,1 @@
+New believers need milk and meat: clear teaching on grace, repentance, and the lordship of Christ. Address past sins, including abortion, with gospel hope (Isaiah 1:18) and practical accountability. Integrate them into ordinary means of grace, mentoring, and service so they grow in holiness and love for life.

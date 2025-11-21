@@ -1,0 +1,1 @@
+Equal protection means the same laws against murder apply to every human from conception without exception (Genesis 9:6). No immunity for age, location, or stage; no partiality for the powerful. Civil rulers are God’s servants to punish evil (Romans 13:4). Anything less tolerates injustice; true love demands equal justice and equal mercy.

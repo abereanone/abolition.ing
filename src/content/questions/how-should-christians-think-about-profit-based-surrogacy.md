@@ -1,0 +1,1 @@
+Profit-driven surrogacy treats wombs and children as commodities. Scripture teaches that children are a heritage from the Lord (Psalm 127:3), not products to buy or rent. Christians should reject arrangements that fracture motherhood for money and instead pursue ethical care and adoption that honors every party as an image-bearer.

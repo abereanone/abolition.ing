@@ -1,0 +1,1 @@
+Speak plainly and respectfully about abortion as the unjust taking of human life. Offer stories of mercy ministry that back your words. Anchor claims in Scripture and basic science, and call civil leaders to equal protection. Refuse euphemisms; let your light shine before others, pointing to Christ’s authority (Matthew 5:16).

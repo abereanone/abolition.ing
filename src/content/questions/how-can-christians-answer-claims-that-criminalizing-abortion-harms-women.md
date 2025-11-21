@@ -1,0 +1,1 @@
+True harm is done by abortion itself. Equal justice protects women by upholding their duty not to kill and by restraining those who prey on them. Laws should pair penalties with mercy provisions for those coerced, while still naming the act what it is. God’s law is for our good; sin destroys, but Christ heals.

@@ -1,0 +1,1 @@
+Psalm 82 rebukes rulers who fail to rescue the weak; Micah 6:8 commands us to do justice, love mercy, and walk humbly with God. Together they frame abolition: defend the fatherless, refuse partiality, and act under God’s gaze. Abortion is legalized oppression; these texts demand we oppose it with justice rooted in worship.

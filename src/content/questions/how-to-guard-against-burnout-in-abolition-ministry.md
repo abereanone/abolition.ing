@@ -1,0 +1,1 @@
+Burnout comes when we carry the load apart from Christ. Rest in the finished work of Jesus, keep the Sabbath rhythm, share the load with the body, and remember that results belong to God (1 Corinthians 3:6-7). Take joy in small obediences; do not confuse urgency with unbelieving frenzy. The Lord is our strength.

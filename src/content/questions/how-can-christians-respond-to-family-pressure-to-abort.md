@@ -1,0 +1,1 @@
+Honor parents, but fear God first (Acts 5:29). When family urges abortion, respond with gentle firmness: the child is God’s gift and not ours to kill. Seek church support, invite family to hear the gospel, and set boundaries against coercion. Love them, but obey Christ above all.

@@ -1,0 +1,1 @@
+Churches can identify trusted attorneys, establish benevolence funds, and create rapid-response teams to stand with mothers facing coercion. Teach members their rights, document threats, and intervene early. Proverbs 31:8-9 calls us to speak up for those being crushed; legal help is one way love protects both mother and child.

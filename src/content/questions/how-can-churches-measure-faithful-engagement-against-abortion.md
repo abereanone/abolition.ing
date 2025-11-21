@@ -1,0 +1,1 @@
+Measure faithfulness, not publicity: Are we preaching clearly? Are members serving mothers and fathers? Are we advocating for equal justice? Are we praying and fasting? Track tangible care (housing, meals, legal help), discipleship, and public witness. Numbers matter less than steadfast obedience from a pure heart.

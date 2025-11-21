@@ -1,0 +1,1 @@
+Even after death, human remains deserve dignity because they belonged to an image-bearer (Deuteronomy 21:22-23). Aborted children should not be treated as medical waste or research material. Christians should call for respectful handling, lament the injustice, and labor to end the bloodshed that creates this sorrow.
