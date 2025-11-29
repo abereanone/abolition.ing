@@ -2077,6 +2077,26 @@ var search_index_default = [
     authorIds: [
       "chatgpt"
     ]
+  },
+  {
+    id: 99,
+    idLabel: "99",
+    slug: "what-scientific-evidence-supports-protecting-preborn-children",
+    title: "What scientific evidence supports protecting preborn children?",
+    categories: [
+      "Scientific"
+    ],
+    relatedAnswers: [
+      38,
+      9,
+      5
+    ],
+    excerpt: "",
+    content: "",
+    groupCodes: [],
+    authorIds: [
+      "chatgpt"
+    ]
   }
 ];
 
