@@ -125,6 +125,28 @@ const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true
 const markdownModules = Object.values(markdownFiles);
 const findMarkdownModule = (fileName: string | undefined) =>
   fileName ? markdownModules.find((module) => module.file?.endsWith(fileName)) ?? null : null;
+const rawMarkdownFiles = import.meta.glob("@/content/questions/*.md", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+const findRawMarkdownSource = (fileName?: string) =>
+  fileName
+    ? Object.entries(rawMarkdownFiles).find(([key]) => key.endsWith(`/${fileName}`))?.[1] ?? null
+    : null;
+const buildQuestionSnippet = (text: string | null, maxLength = 60) => {
+  if (!text) {
+    return null;
+  }
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (!normalized) {
+    return null;
+  }
+  if (normalized.length <= maxLength) {
+    return normalized;
+  }
+  return `${normalized.slice(0, maxLength).trim()}…`;
+};
 
 const listingItems = listingMatches
   ? [...listingMatches].sort((a, b) => {
@@ -147,6 +169,12 @@ const longPage = question ? findMarkdownModule(`${questionSlug}-long.md`) : null
 const longAuthor = question && question.longAuthorId ? findAuthor(question.longAuthorId) : null;
 const showLongAuthor = Boolean(question && showAuthors && !question.suppressAuthor && longAuthor);
 const relatedQuestions = question ? getRelatedQuestions(question) : [];
+const questionSnippet = question
+  ? buildQuestionSnippet(findRawMarkdownSource(question.markdown ?? ""), 60)
+  : null;
+const questionOgDescription =
+  questionSnippet ?? (question ? question.title : null) ?? siteSettings.branding.description;
+const canonicalQuestionPath = question ? `/questions/${question.slug}` : undefined;
 
 function resolveGroupCodeFromParam(param: string | undefined, target: Question | null): string | null {
   if (!param || !target || typeof target.id !== "number") {
@@ -208,7 +236,14 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
     </section>
   </Main>
 ) : question ? (
-  <Main title={`${question.title} - ${siteName}`}>
+  <Main
+    title={`${question.title} - ${siteName}`}
+    openGraph={{
+      title: question.title,
+      description: questionOgDescription,
+      url: canonicalQuestionPath,
+    }}
+  >
     {previousQuestion || nextQuestion ? (
       <nav class="question-top-nav" aria-label="Question navigation">
         {previousQuestion ? (

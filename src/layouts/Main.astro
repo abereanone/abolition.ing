@@ -7,8 +7,49 @@ const branding = siteSettings.branding;
 const {
   title = branding.siteName,
   description = branding.description,
+  openGraph: pageOpenGraph,
 } = Astro.props;
 const analyticsId = siteSettings.integrations.googleAnalyticsId;
+const openGraphDefaults = siteSettings.openGraph ?? {};
+const openGraphProps = pageOpenGraph ?? {};
+const requestPath = `${Astro.url?.pathname ?? "/"}${Astro.url?.search ?? ""}`;
+const baseSiteUrl = Astro.site ?? openGraphDefaults.url;
+const resolveAbsoluteUrl = (value?: string | null) => {
+  if (!value) {
+    return undefined;
+  }
+  if (/^https?:\/\//i.test(value)) {
+    return value;
+  }
+  if (!baseSiteUrl) {
+    return value;
+  }
+  try {
+    return new URL(value, baseSiteUrl).toString();
+  } catch {
+    return value;
+  }
+};
+const defaultPageUrl = baseSiteUrl
+  ? (() => {
+      try {
+        return new URL(requestPath, baseSiteUrl).toString();
+      } catch {
+        return baseSiteUrl;
+      }
+    })()
+  : Astro.url?.toString() ?? openGraphDefaults.url;
+const ogUrl =
+  openGraphProps.url !== undefined
+    ? resolveAbsoluteUrl(openGraphProps.url)
+    : defaultPageUrl ?? openGraphDefaults.url;
+const ogTitle = openGraphProps.title ?? title ?? openGraphDefaults.title ?? branding.siteName;
+const ogDescription =
+  openGraphProps.description ?? description ?? openGraphDefaults.description ?? branding.description;
+const ogType = openGraphProps.type ?? openGraphDefaults.type ?? "website";
+const ogImage = resolveAbsoluteUrl(openGraphProps.image ?? openGraphDefaults.image);
+const ogImageAlt = openGraphProps.imageAlt ?? openGraphDefaults.imageAlt ?? branding.tagline;
+const twitterCard = openGraphProps.twitterCard ?? openGraphDefaults.twitterCard ?? "summary_large_image";
 
 const duplicateReport =
   (
@@ -29,6 +70,18 @@ const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport)
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {ogUrl ? <link rel="canonical" href={ogUrl} /> : null}
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={ogTitle} />
+    {ogDescription ? <meta property="og:description" content={ogDescription} /> : null}
+    {ogUrl ? <meta property="og:url" content={ogUrl} /> : null}
+    {ogImage ? <meta property="og:image" content={ogImage} /> : null}
+    {ogImageAlt ? <meta property="og:image:alt" content={ogImageAlt} /> : null}
+    <meta name="twitter:card" content={twitterCard} />
+    <meta name="twitter:title" content={ogTitle} />
+    {ogDescription ? <meta name="twitter:description" content={ogDescription} /> : null}
+    {ogImage ? <meta name="twitter:image" content={ogImage} /> : null}
+    {ogImageAlt ? <meta name="twitter:image:alt" content={ogImageAlt} /> : null}
     <script is:inline>
       (function () {
         const STORAGE_KEY = "site-theme";

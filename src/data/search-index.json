@@ -2096,5 +2096,77 @@
     "authorIds": [
       "chatgpt"
     ]
+  },
+  {
+    "id": 100,
+    "idLabel": "100",
+    "slug": "does-the-bible-affirm-the-personhood-of-the-unborn",
+    "title": "Does the Bible affirm the personhood of the unborn?",
+    "categories": [
+      "Biblical",
+      "Moral"
+    ],
+    "relatedAnswers": [
+      1,
+      10
+    ],
+    "excerpt": "",
+    "content": "",
+    "groupCodes": [],
+    "authorIds": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": 101,
+    "idLabel": "101",
+    "slug": "how-should-churches-walk-with-repentant-post-abortive-parents",
+    "title": "How should churches walk with repentant post-abortive parents?",
+    "categories": [
+      "Pastoral"
+    ],
+    "relatedAnswers": [
+      5,
+      11
+    ],
+    "excerpt": "",
+    "content": "",
+    "groupCodes": [],
+    "authorIds": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": 102,
+    "idLabel": "102",
+    "slug": "how-should-we-care-for-mothers",
+    "title": "How should we care for mothers?",
+    "categories": [
+      "Pastoral",
+      "Practical"
+    ],
+    "relatedAnswers": [],
+    "excerpt": "",
+    "content": "",
+    "groupCodes": [],
+    "authorIds": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": 103,
+    "idLabel": "103",
+    "slug": "what-practical-steps-can-communities-take-to-stand-with-mothers",
+    "title": "What practical steps can communities take to stand with mothers?",
+    "categories": [
+      "Practical"
+    ],
+    "relatedAnswers": [],
+    "excerpt": "",
+    "content": "",
+    "groupCodes": [],
+    "authorIds": [
+      "chatgpt"
+    ]
   }
 ]

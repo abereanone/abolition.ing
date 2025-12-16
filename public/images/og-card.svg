@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="40" fill="url(#bg)" />
+  <image
+    href="/images/site-logo.svg"
+    width="760"
+    height="224"
+    x="220"
+    y="210"
+    preserveAspectRatio="xMidYMid meet"
+  />
+  <text
+    x="600"
+    y="442"
+    text-anchor="middle"
+    fill="rgba(255,255,255,0.8)"
+    font-family="Merriweather, Georgia, serif"
+    font-size="32"
+  >
+    Questions &amp; Answers about abortion abolition
+  </text>
+  <text
+    x="600"
+    y="492"
+    text-anchor="middle"
+    fill="rgba(255,255,255,0.7)"
+    font-family="Courier New, Courier, monospace"
+    font-size="18"
+    letter-spacing="0.04em"
+  >
+    grounded in scripture • courageous in witness • loving toward mothers
+  </text>
+</svg>
