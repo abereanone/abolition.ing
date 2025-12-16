@@ -24,7 +24,7 @@ export const siteSettings = {
     title: branding.siteName,
     description: branding.description,
     url: defaultSiteUrl,
-    image: '/images/og-card.svg',
+    image: '/images/og-card.png',
     imageAlt: `${branding.siteName} logo`,
     type: 'website',
     twitterCard: 'summary_large_image',
