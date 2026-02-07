@@ -273,17 +273,46 @@ const bookPattern = Object.keys(bookMap)
   .map((book) => book.replace(/\./g, "\\."))
   .join("|");
 
-const referenceRegex = new RegExp(
-  `\\b(${bookPattern})\\s+(\\d+(?::\\d+(?:[-\\u2013\\u2014]\\d+)?)?)\\b`,
-  "gi"
-);
+  const multiVerseRegex = new RegExp(
+    `\\b(${bookPattern})\\s+(\\d+):(\\d+(?:[-\\u2013\\u2014]\\d+)?)(?:\\s*,\\s*\\d+(?:[-\\u2013\\u2014]\\d+)?)+`,
+    "gi"
+  );
+  const singleVerseRegex = new RegExp(
+    `\\b(${bookPattern})\\s+(\\d+):(\\d+(?:[-\\u2013\\u2014]\\d+)?)\\b`,
+    "gi"
+  );
 
-function autoLinkBibleRefs(html) {
-  return html.replace(referenceRegex, (match, book, chapterVerse) => {
-    const ref = `${book} ${chapterVerse}`;
-    return `<span class="bible-ref" data-ref="${ref}">${match}</span>`;
-  });
-}
+  function autoLinkBibleRefs(html) {
+    const placeholders = [];
+    const withMulti = html.replace(multiVerseRegex, (match, book, chapter, firstVerse) => {
+      const baseRef = `${book} ${chapter}`;
+      const firstRef = `${baseRef}:${firstVerse}`;
+      let output = `<span class="bible-ref" data-ref="${firstRef}">${book} ${chapter}:${firstVerse}</span>`;
+
+      const rest = match.slice(`${book} ${chapter}:${firstVerse}`.length);
+      const extraMatches = rest.match(/,\s*\d+(?:[-\u2013\u2014]\d+)?/g) || [];
+
+      extraMatches.forEach((chunk) => {
+        const verse = chunk.replace(/,\s*/, "");
+        const ref = `${baseRef}:${verse}`;
+        output += `${chunk.replace(verse, "")}<span class="bible-ref" data-ref="${ref}">${verse}</span>`;
+      });
+
+      const token = `__BIBLE_MULTI__${placeholders.length}__`;
+      placeholders.push(output);
+      return token;
+    });
+
+    const withSingles = withMulti.replace(singleVerseRegex, (match, book, chapter, verse) => {
+      const ref = `${book} ${chapter}:${verse}`;
+      return `<span class="bible-ref" data-ref="${ref}">${match}</span>`;
+    });
+
+    return withSingles.replace(/__BIBLE_MULTI__(\d+)__/g, (match, index) => {
+      const idx = Number(index);
+      return Number.isNaN(idx) ? match : placeholders[idx] || match;
+    });
+  }
 
 const verseCache = new Map();
 
@@ -367,13 +396,13 @@ async function getVerse(reference) {
   }
 }
 
-function ensureTooltip(element) {
-  if (element.__tooltipElement) {
-    const tooltip = element.__tooltipElement;
-    positionTooltip(element, tooltip);
-    tooltip.style.display = "block";
-    return Promise.resolve(tooltip);
-  }
+  function ensureTooltip(element) {
+    if (element.__tooltipElement) {
+      const tooltip = element.__tooltipElement;
+      positionTooltip(element, tooltip);
+      tooltip.style.display = element.__tooltipActive ? "block" : "none";
+      return Promise.resolve(tooltip);
+    }
 
   const normalized = normalizeReference(element.dataset.ref);
 
@@ -392,7 +421,7 @@ function ensureTooltip(element) {
 
       element.__tooltipElement = tooltip;
       positionTooltip(element, tooltip);
-      tooltip.style.display = "block";
+      tooltip.style.display = element.__tooltipActive ? "block" : "none";
       return tooltip;
     })
     .catch((error) => {
@@ -436,14 +465,18 @@ function enhanceElement(element) {
     return;
   }
 
-  const handleEnter = () => {
-    element.dataset.bibleTooltipState = "pending";
-    ensureTooltip(element).finally(() => {
-      element.dataset.bibleTooltipState = "ready";
-    });
-  };
+    const handleEnter = () => {
+      element.__tooltipActive = true;
+      element.dataset.bibleTooltipState = "pending";
+      ensureTooltip(element).finally(() => {
+        element.dataset.bibleTooltipState = "ready";
+      });
+    };
 
-  const handleLeave = () => hideTooltip(element);
+    const handleLeave = () => {
+      element.__tooltipActive = false;
+      hideTooltip(element);
+    };
 
   element.addEventListener("mouseenter", handleEnter);
   element.addEventListener("focus", handleEnter);

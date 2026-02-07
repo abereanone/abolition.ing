@@ -86,7 +86,8 @@ async function buildSearchIndex() {
   const documents = [];
 
   for (const question of questions) {
-    const markdownContent = await loadMarkdownFile(question.markdown);
+    const markdownFile = question.markdown ?? (question.slug ? `${question.slug}.md` : "");
+    const markdownContent = await loadMarkdownFile(markdownFile);
     const cleaned = cleanMarkdown(markdownContent);
     const groupCodes = deriveGroupCodes(question.categories ?? [], categoryMap);
     const idLabel =

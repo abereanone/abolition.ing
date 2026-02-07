@@ -8,7 +8,7 @@ function ensureTooltip(element) {
   if (element.__tooltipElement) {
     const tooltip = element.__tooltipElement;
     positionTooltip(element, tooltip);
-    tooltip.style.display = "block";
+    tooltip.style.display = element.__tooltipActive ? "block" : "none";
     return Promise.resolve(tooltip);
   }
 
@@ -29,7 +29,7 @@ function ensureTooltip(element) {
 
       element.__tooltipElement = tooltip;
       positionTooltip(element, tooltip);
-      tooltip.style.display = "block";
+      tooltip.style.display = element.__tooltipActive ? "block" : "none";
       return tooltip;
     })
     .catch((error) => {
@@ -74,13 +74,17 @@ function enhanceElement(element) {
   }
 
   const handleEnter = () => {
+    element.__tooltipActive = true;
     element.dataset.bibleTooltipState = "pending";
     ensureTooltip(element).finally(() => {
       element.dataset.bibleTooltipState = "ready";
     });
   };
 
-  const handleLeave = () => hideTooltip(element);
+  const handleLeave = () => {
+    element.__tooltipActive = false;
+    hideTooltip(element);
+  };
 
   element.addEventListener("mouseenter", handleEnter);
   element.addEventListener("focus", handleEnter);

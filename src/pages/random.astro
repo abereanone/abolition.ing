@@ -1,5 +1,6 @@
 ---
 import { getPublishedQuestions } from "@/lib/questions";
+import { siteSettings } from "@/config/siteSettings";
 
 const questions = getPublishedQuestions().filter((question) => question.published);
 const entries = questions.map((question) => ({
@@ -12,7 +13,7 @@ const entries = questions.map((question) => ({
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Random Question | abolition.ing</title>
+    <title>Random Question | {siteSettings.branding.siteName}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
   </head>
