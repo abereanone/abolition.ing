@@ -53,7 +53,15 @@
     "url": "https://thingsabove.us/author/jayharrod/",
     "title": "President",
     "bio": "A Reformed Baptist from Ohio. A husband, abolitionist, and a churchman with a passion for the unborn.",
-    "sortOrder": 10
+    "sortOrder": 100
+  },
+  {
+    "id": "forest",
+    "name": "Forest Welch",
+    "url": "",
+    "title": "",
+    "bio": "A Reformed Baptist from Ohio.",
+    "sortOrder": 15
   },
   {
     "id": "hr",

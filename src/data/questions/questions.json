@@ -1680,5 +1680,17 @@
         ],
         "authorId": "chatgpt",
         "published": true
+    },
+    {
+        "id": 104,
+        "slug": "is-it-compassionate-to-prosecute-women-for-having-abortions",
+        "title": "Is it compassionate to prosecute women for having abortions?",
+        "categories": [
+            "Pastoral",
+            "Practical",
+            "Biblical"
+        ],
+        "authorId": "forest",
+        "published": true
     }
 ]
