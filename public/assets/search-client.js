@@ -2180,7 +2180,12 @@ var search_index_default = [
       "Practical",
       "Biblical"
     ],
-    relatedAnswers: [],
+    relatedAnswers: [
+      97,
+      7,
+      90,
+      83
+    ],
     excerpt: "",
     content: "",
     groupCodes: [],

@@ -31,6 +31,7 @@ export const siteSettings = {
   },
   showQuestionId: true,
   showAuthor: true,
+  hideAnswersByDefault: false,
   enablePagination: true,
   questionsPerPage: 15,
 } as const;

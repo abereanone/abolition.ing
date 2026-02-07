@@ -60,6 +60,7 @@ if (!question && !listingMatches) {
 
 const siteName = siteSettings.branding.siteName;
 const showAuthors = siteSettings.showAuthor;
+const hideAnswersByDefault = siteSettings.hideAnswersByDefault;
 
 let questionSlug = "";
 let useIdLinks = false;
@@ -329,9 +330,25 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       </div>
     </div>
 
-    <div class="question-body" data-bible-autolink>
-      {page ? <page.Content /> : <p><em>Content not found.</em></p>}
-    </div>
+    {hideAnswersByDefault ? (
+      <div class="question-answer-toggle" data-answer-toggle>
+        <button
+          type="button"
+          class="answer-toggle"
+          data-answer-toggle-button
+          aria-expanded="false"
+        >
+          See answer
+        </button>
+        <div class="question-body" data-answer-content hidden data-bible-autolink>
+          {page ? <page.Content /> : <p><em>Content not found.</em></p>}
+        </div>
+      </div>
+    ) : (
+      <div class="question-body" data-bible-autolink>
+        {page ? <page.Content /> : <p><em>Content not found.</em></p>}
+      </div>
+    )}
 
     {longPage ? (
       <div class="long-explanation" data-long-explanation>
@@ -455,6 +472,23 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
           } else {
             content.hidden = true;
           }
+        });
+      });
+    </script>
+  ) : null}
+  {hideAnswersByDefault ? (
+    <script type="module" is:inline>
+      document.querySelectorAll("[data-answer-toggle]").forEach((section) => {
+        const button = section.querySelector("[data-answer-toggle-button]");
+        const content = section.querySelector("[data-answer-content]");
+        if (!button || !content) {
+          return;
+        }
+
+        button.addEventListener("click", () => {
+          button.setAttribute("aria-expanded", "true");
+          content.hidden = false;
+          button.hidden = true;
         });
       });
     </script>
@@ -605,6 +639,32 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       background: var(--long-content-bg);
     }
 
+    .question-answer-toggle {
+      margin-top: 1rem;
+    }
+
+    .answer-toggle {
+      width: 100%;
+      padding: 1.1rem 1.25rem;
+      font-size: 1.15rem;
+      border-radius: 0.9rem;
+      border: 1px solid var(--surface-border);
+      background: var(--surface-panel);
+      color: var(--color-text);
+      cursor: pointer;
+      font-weight: 600;
+      text-align: left;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .answer-toggle:hover,
+    .answer-toggle:focus-visible {
+      border-color: var(--surface-border-strong);
+      background: var(--surface-highlight);
+      outline: none;
+      transform: translateY(-1px);
+    }
+
     .question-share {
       display: flex;
       align-items: center;
@@ -654,6 +714,10 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
     .question-share-link.is-copied {
       border-color: var(--surface-border-strong);
       background: rgba(34, 197, 94, 0.18);
+    }
+
+    .question-body[hidden] {
+      display: none;
     }
   </style>
   </Main>
