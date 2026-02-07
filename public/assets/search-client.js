@@ -2169,6 +2169,24 @@ var search_index_default = [
     authorIds: [
       "chatgpt"
     ]
+  },
+  {
+    id: 104,
+    idLabel: "104",
+    slug: "is-it-compassionate-to-prosecute-women-for-having-abortions",
+    title: "Is it compassionate to prosecute women for having abortions?",
+    categories: [
+      "Pastoral",
+      "Practical",
+      "Biblical"
+    ],
+    relatedAnswers: [],
+    excerpt: "",
+    content: "",
+    groupCodes: [],
+    authorIds: [
+      "forest"
+    ]
   }
 ];
 

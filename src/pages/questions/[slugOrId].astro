@@ -175,6 +175,14 @@ const questionSnippet = question
 const questionOgDescription =
   questionSnippet ?? (question ? question.title : null) ?? siteSettings.branding.description;
 const canonicalQuestionPath = question ? `/questions/${question.slug}` : undefined;
+const shareUrl = canonicalQuestionPath
+  ? `${siteSettings.openGraph.url}${canonicalQuestionPath}`
+  : siteSettings.openGraph.url;
+const shareText = question ? question.title : siteSettings.branding.siteName;
+const encodedShareUrl = encodeURIComponent(shareUrl);
+const encodedShareText = encodeURIComponent(shareText);
+const encodedEmailSubject = encodeURIComponent(`Question: ${shareText}`);
+const encodedEmailBody = encodeURIComponent(`${shareText}\n\n${shareUrl}`);
 
 function resolveGroupCodeFromParam(param: string | undefined, target: Question | null): string | null {
   if (!param || !target || typeof target.id !== "number") {
@@ -285,6 +293,41 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
         <p class="question-meta">Question #{questionIdentifierLabel}</p>
       ) : null}
     </section>
+    <div class="question-share" aria-label="Share this question">
+      <span class="question-share-label">Share</span>
+      <div class="question-share-actions">
+        <a
+          class="question-share-link"
+          href={`https://twitter.com/intent/tweet?text=${encodedShareText}&url=${encodedShareUrl}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          X
+        </a>
+        <a
+          class="question-share-link"
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodedShareUrl}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+        <a
+          class="question-share-link"
+          href={`mailto:?subject=${encodedEmailSubject}&body=${encodedEmailBody}`}
+        >
+          Email
+        </a>
+        <button
+          type="button"
+          class="question-share-link question-share-copy"
+          data-share-copy
+          data-share-url={shareUrl}
+        >
+          Copy link
+        </button>
+      </div>
+    </div>
 
     <div class="question-body" data-bible-autolink>
       {page ? <page.Content /> : <p><em>Content not found.</em></p>}
@@ -416,6 +459,45 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       });
     </script>
   ) : null}
+  <script type="module" is:inline>
+    const copyButtons = document.querySelectorAll("[data-share-copy]");
+
+    const updateCopyState = (button, message) => {
+      const original = button.dataset.copyLabel || button.textContent;
+      button.dataset.copyLabel = original;
+      button.textContent = message;
+      button.classList.add("is-copied");
+      window.setTimeout(() => {
+        button.textContent = original;
+        button.classList.remove("is-copied");
+      }, 1800);
+    };
+
+    const writeTextFallback = (text) => {
+      const input = document.createElement("input");
+      input.value = text;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      document.body.removeChild(input);
+    };
+
+    copyButtons.forEach((button) => {
+      button.addEventListener("click", async () => {
+        const url = button.getAttribute("data-share-url") || window.location.href;
+        try {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(url);
+          } else {
+            writeTextFallback(url);
+          }
+          updateCopyState(button, "Copied");
+        } catch (error) {
+          updateCopyState(button, "Copy failed");
+        }
+      });
+    });
+  </script>
 
   <style>
     .question-top-nav {
@@ -521,6 +603,57 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       border-radius: 0.9rem;
       border: 1px solid var(--long-content-border);
       background: var(--long-content-bg);
+    }
+
+    .question-share {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin: 0.75rem 0 1.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.9rem;
+      border: 1px solid var(--surface-border);
+      background: var(--surface-panel);
+    }
+
+    .question-share-label {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .question-share-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .question-share-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--surface-border);
+      background: transparent;
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .question-share-link:hover,
+    .question-share-link:focus-visible {
+      border-color: var(--surface-border-strong);
+      background: var(--surface-highlight);
+      outline: none;
+    }
+
+    .question-share-link.is-copied {
+      border-color: var(--surface-border-strong);
+      background: rgba(34, 197, 94, 0.18);
     }
   </style>
   </Main>

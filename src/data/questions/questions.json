@@ -1691,6 +1691,12 @@
             "Biblical"
         ],
         "authorId": "forest",
-        "published": true
+        "published": true,
+        "relatedAnswers": [
+            97,
+            7,
+            90,
+            83
+        ]
     }
 ]
