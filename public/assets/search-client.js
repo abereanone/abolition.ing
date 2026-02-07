@@ -2018,8 +2018,8 @@ var search_index_default = [
   {
     id: 96,
     idLabel: "96",
-    slug: "what-does-luke-1-teach-about-personhood-and-the-joy-of-the-unborn",
-    title: "What does Luke 1 teach about personhood and the joy of the unborn?",
+    slug: "what-does-luke-1-teach-about-the-unborn",
+    title: "What does Luke 1 teach about the unborn?",
     categories: [
       "Biblical",
       "Moral"
@@ -2033,7 +2033,7 @@ var search_index_default = [
     content: "",
     groupCodes: [],
     authorIds: [
-      "chatgpt"
+      "mac"
     ]
   },
   {
