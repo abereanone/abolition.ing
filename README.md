@@ -60,9 +60,10 @@ Astro outputs static assets in `dist/`, suitable for static hosting or deploymen
 
 1. Add or update question metadata in a JSON file under `src/data/questions/` (set `published: true` and optional `suppressAuthor`, `longAuthorId`). Include an `id` value if you want it surfaced when `showQuestionId` is enabled-the list order also follows ascending `id` (falling back to title sorting when omitted). If you need a long-form answer, create a Markdown file named `{slug}-long.md` (or `{markdownFileName}-long.md`) alongside the main answer and it will be detected automatically. Pagination automatically slices lists according to `questionsPerPage`.
 2. Create the associated Markdown file under `src/content/questions/`.
-3. Define any new categories in `src/data/categories.json`. The helper library automatically slugifies category names and counts question usage.
-4. Add or update author entries in `src/data/resources.json`, then reference by `authorId` inside questions.
-5. Category pages are generated at `/categories/{slug}` (index at `/categories/`); author/resource pages live at `/authors/{slug}` and feed the `/resources` listing.
+3. Rebuild generated search data after question edits with `npm run build:search-index` (or any full `npm run build` / `npm run dev`, which runs the same generator first). `src/data/search-index.json` is generated from the question JSON plus Markdown bodies, so manual edits to that file will be overwritten.
+4. Define any new categories in `src/data/categories.json`. The helper library automatically slugifies category names and counts question usage.
+5. Add or update author entries in `src/data/resources.json`, then reference by `authorId` inside questions.
+6. Category pages are generated at `/categories/{slug}` (index at `/categories/`); author/resource pages live at `/authors/{slug}` and feed the `/resources` listing.
 
 ### Grouped Question IDs
 

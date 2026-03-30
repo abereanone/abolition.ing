@@ -1698,5 +1698,39 @@
             90,
             83
         ]
+    },
+    {
+        "id": 105,
+        "slug": "is-miscarriage-the-same-as-abortion",
+        "title": "Is miscarriage the same as abortion?",
+        "categories": [
+            "Scientific",
+            "Moral",
+            "Pastoral"
+        ],
+        "authorId": "mac",
+        "published": true,
+        "relatedAnswers": [
+            104,
+            106,
+            13
+        ]
+    },
+    {
+        "id": 106,
+        "slug": "will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage",
+        "title": "Will abortion laws criminalize a mother who has had a miscarriage?",
+        "categories": [
+            "Practical",
+            "Pastoral",
+            "Moral"
+        ],
+        "authorId": "mac",
+        "published": true,
+        "relatedAnswers": [
+            104,
+            97,
+            105
+        ]
     }
 ]
