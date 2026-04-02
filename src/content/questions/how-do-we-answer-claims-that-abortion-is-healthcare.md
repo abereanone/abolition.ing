@@ -1,3 +1,17 @@
+---
+id: 45
+title: How do we answer claims that abortion is healthcare?
+categories:
+  - Scientific
+  - Moral
+  - Practical
+authorId: chatgpt
+relatedAnswers:
+  - why-is-abortion-wrong
+  - how-do-chemical-abortions-impact-womens-health
+  - how-should-the-church-engage-abortion-culture
+---
+
 We answer that claim by going back to the truth about what abortion *is*. Scripture and reason both reveal that abortion is **the intentional killing of an innocent human being**. No act that deliberately takes innocent human life can rightly be called “healthcare.”
 
 Healthcare, properly defined, is the practice of **preserving and restoring health**. It aims to protect life, heal the sick, and care for the weak. Abortion, by contrast, **ends** the life of one human being and often harms the body and soul of another. To call it “healthcare” is to corrupt language in order to justify evil—much like calling slavery “property management” or genocide “population control.” It is a lie that disguises murder as mercy (Isaiah 5:20).

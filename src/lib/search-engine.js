@@ -86,11 +86,15 @@ export function searchIndex(engine, query, options = {}) {
 
   uniqueTokens.forEach((token) => {
     const entries = engine.invertedIndex.get(token);
-    if (!entries) return;
+    if (!entries) {
+      return;
+    }
 
     entries.forEach(({ docId, weight }) => {
       const doc = engine.documents.get(docId);
-      if (!doc) return;
+      if (!doc) {
+        return;
+      }
 
       const score = docScores.get(docId) ?? 0;
       docScores.set(docId, score + weight / doc.tokenCount);
@@ -142,10 +146,12 @@ export function searchIndex(engine, query, options = {}) {
     if (filters.length && !filters.every((target) => doc.normalizedCategories.includes(target))) {
       return false;
     }
+
     if (authorFilters.length) {
       const docAuthors = (doc.authorIds ?? []).map((id) => String(id).toLowerCase());
       return authorFilters.every((author) => docAuthors.includes(author));
     }
+
     return true;
   });
 
@@ -186,15 +192,23 @@ export function searchIndex(engine, query, options = {}) {
 }
 
 export function clampNumber(value, min, max) {
-  if (Number.isNaN(value)) return min;
-  if (value < min) return min;
-  if (value > max) return max;
+  if (Number.isNaN(value)) {
+    return min;
+  }
+  if (value < min) {
+    return min;
+  }
+  if (value > max) {
+    return max;
+  }
   return value;
 }
 
 function accumulateTokens(target, text, weightMultiplier) {
   tokenize(text).forEach((token) => {
-    if (!token) return;
+    if (!token) {
+      return;
+    }
     const current = target.get(token) ?? 0;
     target.set(token, current + weightMultiplier);
   });

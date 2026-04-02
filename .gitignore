@@ -12,3 +12,7 @@ dist/
 # system files
 .DS_Store
 Thumbs.db
+
+# random stuff not needed
+devserver*.err
+devserver*.log

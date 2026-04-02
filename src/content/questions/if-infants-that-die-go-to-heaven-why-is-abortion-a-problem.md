@@ -1,3 +1,17 @@
+---
+id: 46
+title: If infants that die go to Heaven, why is abortion a problem?
+categories:
+  - Biblical
+  - Moral
+  - Practical
+authorId: mac
+relatedAnswers:
+  - can-abortion-be-forgiven
+  - why-is-abortion-wrong
+  - when-does-human-life-begin
+---
+
 That question goes right to the heart of the matter, and it’s one that deserves a clear and biblical answer.
 
 First, even if every aborted child were immediately received into the presence of Christ—which many Reformed Baptists and other Protestants believe is indeed the case—that would **not** make abortion any less evil. Scripture is clear that **we are never permitted to do evil that good may come** (Romans 3:8). The fact that God can redeem evil actions and bring good from them does not justify committing those actions. God’s sovereignty never excuses man’s sin.

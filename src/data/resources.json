@@ -70,5 +70,13 @@
     "title": "Heritage Restored",
     "bio": "Abolitionist Ministry in Ohio",
     "sortOrder": 18
+  },
+  {
+    "id": "choice42",
+    "name": "Choice 4 2",
+    "url": "https://www.choice42.com",
+    "title": "Choice For 2",
+    "bio": "Abolitionist Ministry",
+    "sortOrder": 28
   }
 ]

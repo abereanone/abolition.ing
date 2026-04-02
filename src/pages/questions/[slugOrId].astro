@@ -21,6 +21,9 @@ export function getStaticPaths() {
     const entries = [{ params: { slugOrId: question.slug } }];
     if (typeof question.id === "number") {
       entries.push({ params: { slugOrId: String(question.id) } });
+      question.groupCodes.forEach((code) => {
+        entries.push({ params: { slugOrId: `${code}${question.id}` } });
+      });
     }
     return entries;
   });
@@ -122,19 +125,6 @@ const buildQuestionHref = (target: typeof question | null) => {
   return `/questions/${target.slug}`;
 };
 
-const markdownFiles = import.meta.glob("@/content/questions/*.md", { eager: true });
-const markdownModules = Object.values(markdownFiles);
-const findMarkdownModule = (fileName: string | undefined) =>
-  fileName ? markdownModules.find((module) => module.file?.endsWith(fileName)) ?? null : null;
-const rawMarkdownFiles = import.meta.glob("@/content/questions/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
-});
-const findRawMarkdownSource = (fileName?: string) =>
-  fileName
-    ? Object.entries(rawMarkdownFiles).find(([key]) => key.endsWith(`/${fileName}`))?.[1] ?? null
-    : null;
 const buildQuestionSnippet = (text: string | null, maxLength = 60) => {
   if (!text) {
     return null;
@@ -165,14 +155,10 @@ const listingItems = listingMatches
     })
   : null;
 
-const page = question ? findMarkdownModule(question.markdown) : null;
-const longPage = question ? findMarkdownModule(`${questionSlug}-long.md`) : null;
 const longAuthor = question && question.longAuthorId ? findAuthor(question.longAuthorId) : null;
-const showLongAuthor = Boolean(question && showAuthors && !question.suppressAuthor && longAuthor);
+const showLongAuthor = Boolean(question && showAuthors && !question.suppressAuthor && longAuthor && question.longHtml);
 const relatedQuestions = question ? getRelatedQuestions(question) : [];
-const questionSnippet = question
-  ? buildQuestionSnippet(findRawMarkdownSource(question.markdown ?? ""), 60)
-  : null;
+const questionSnippet = question ? buildQuestionSnippet(question.excerpt, 60) : null;
 const questionOgDescription =
   questionSnippet ?? (question ? question.title : null) ?? siteSettings.branding.description;
 const canonicalQuestionPath = question ? `/questions/${question.slug}` : undefined;
@@ -348,17 +334,17 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
         >
           See answer
         </button>
-        <div class="question-body" data-answer-content hidden data-bible-autolink>
-          {page ? <page.Content /> : <p><em>Content not found.</em></p>}
-        </div>
+        <div class="question-body" data-answer-content hidden data-bible-autolink set:html={question.answerHtml || "<p><em>Content not found.</em></p>"} />
       </div>
     ) : (
-      <div class="question-body" data-bible-autolink>
-        {page ? <page.Content /> : <p><em>Content not found.</em></p>}
-      </div>
+      <div
+        class="question-body"
+        data-bible-autolink
+        set:html={question.answerHtml || "<p><em>Content not found.</em></p>"}
+      />
     )}
 
-    {longPage ? (
+    {question.longHtml ? (
       <div class="long-explanation" data-long-explanation>
         <button
           type="button"
@@ -368,14 +354,12 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
         >
           Read the long explanation
         </button>
-        <div class="long-content" data-long-content hidden data-bible-autolink>
-          <longPage.Content />
-          {showLongAuthor ? (
-            <p class="long-author">
-              By <a href={`/authors/${longAuthor!.id}`}>{longAuthor!.name}</a>
-            </p>
-          ) : null}
-        </div>
+        <div class="long-content" data-long-content hidden data-bible-autolink set:html={question.longHtml} />
+        {showLongAuthor ? (
+          <p class="long-author">
+            By <a href={`/authors/${longAuthor!.id}`}>{longAuthor!.name}</a>
+          </p>
+        ) : null}
       </div>
     ) : null}
 
@@ -440,7 +424,7 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
 
   <BibleReferencesScript />
 
-  {longPage ? (
+  {question.longHtml ? (
     <script type="module" is:inline>
       const scrollWithOffset = (target) => {
         const header = document.querySelector(".navbar");

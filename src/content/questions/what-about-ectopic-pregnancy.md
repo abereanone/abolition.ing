@@ -1,3 +1,16 @@
+---
+id: 8
+title: What about ectopic pregnancy?
+categories:
+  - Scientific
+  - Pastoral
+authorId: chatgpt
+relatedAnswers:
+  - what-medical-evidence-distinguishes-ectopic-care-from-abortion
+  - how-can-churches-support-high-risk-pregnancies
+  - does-science-prove-life-begins-at-conception
+---
+
 Ectopic pregnancy is a tragic and rare condition where the embryo implants outside the womb. In most cases, the baby cannot survive.
 
 Abortion is never necessary, but it may be necessary to remove the child from the fallopian tubes, and this is not the same as intentional abortion. When doctors act to save the mother’s life, and the child’s death is an unintended result, this is not the same as abortion. The moral difference is the purpose. Abortion intends to kill; treatment in an ectopic case seeks to preserve life where possible (Exodus 21:22–23).

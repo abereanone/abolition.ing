@@ -1,3 +1,15 @@
+---
+id: 48
+title: If abortion can be forgiven, why not do it and just ask for forgiveness after?
+categories:
+  - Biblical
+  - Moral
+authorId: mac
+relatedAnswers:
+  - can-abortion-be-forgiven
+  - how-should-we-care-for-post-abortive-women
+---
+
 This question highlights a key distinction in how many people think about sin and forgiveness.
 
 Although God's grace is sufficient to forgive any sin His people commit or have committed Scripture repeatedly warns us to never _presume_ upon that grace (Romans 6:1-2). We should not sin with the expectation of forgiveness (Romans 3:8). If you find yourself thinking that way, it is a sign you have not yet bowed your knee to Christ as Lord; you likely do not have eternal life abiding in you (1 John 2:3-4)!

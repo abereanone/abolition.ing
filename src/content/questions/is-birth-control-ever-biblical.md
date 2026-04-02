@@ -1,3 +1,16 @@
+---
+id: 2
+title: Is birth control ever biblical?
+categories:
+  - Biblical
+  - Moral
+authorId: chatgpt
+relatedAnswers:
+  - does-scripture-allow-natural-family-planning
+  - are-hormonal-contraceptives-that-prevent-implantation-moral
+  - is-permanent-sterilization-a-faithful-family-planning-choice
+---
+
 Birth control is not always sinful, but some forms are. Methods that destroy an embryo or prevent its implantation are wrong because they end a human life (Exodus 20:13).
 
 There is a difference between preventing conception and taking a life that has already begun. Couples must act with knowledge and care, honoring God in every decision (Romans 14:12).

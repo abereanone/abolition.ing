@@ -1,113 +1,148 @@
 # abolition.ing
 
-Static Astro site for abolition.ing, publishing questions, resources, and category-driven articles around a pro-life apologetics theme.
+Static Astro site for abolition.ing, publishing question-and-answer content, category pages, author pages, and search.
 
 ## Stack
 
 - [Astro](https://astro.build/) 5.x
-- TypeScript-enabled project configuration (`tsconfig.json`)
+- TypeScript project configuration (`tsconfig.json`)
+- Markdown content in `src/content/questions/`
+- Generated question/search artifacts for fast page rendering
 - Static assets in `public/`
-- Content stored as JSON and Markdown within `src/`
 
 ## Project Structure
 
-```
+```text
 .
-├── public/                      # Static assets served as-is
-│   └── styles/theme.css         # Shared theme styles
-├── src/
-│   ├── components/              # Reusable UI pieces (Navbar, QuestionFeed, etc.)
-│   ├── layouts/                 # `Main.astro` site-wide layout shell
-│   ├── pages/                   # Astro routes (index, categories, authors, question detail, resources)
-│   ├── content/questions/       # Markdown bodies for individual questions
-│   └── data/                    # JSON data sources (questions, categories, authors, resources)
-├── package.json
-└── astro.config.mjs
+|-- public/
+|   |-- assets/search-client.js    # Search UI source file
+|   `-- styles/theme.css           # Shared theme styles
+|-- scripts/
+|   |-- build-questions.mjs        # Generates question/search artifacts
+|   |-- check-questions.mjs        # Validates question files without writing
+|   `-- new-question.mjs           # Scaffolds a new question file
+|-- src/
+|   |-- components/                # Reusable UI pieces
+|   |-- config/                    # Site-wide settings
+|   |-- content/questions/         # Canonical question files with frontmatter
+|   |-- data/
+|   |   |-- categories.json        # Optional category sort/group config
+|   |   `-- resources.json         # Optional author/resource metadata
+|   |-- generated/questions.json   # Generated from question Markdown; do not hand-edit
+|   |-- layouts/
+|   |-- lib/
+|   `-- pages/
+|-- package.json
+`-- worker.js
 ```
 
-Key data files:
+## Canonical Content Model
 
-- `src/data/questions/` contains one or more JSON files (each exporting an array of question objects). Questions support optional `longAuthorId` and `suppressAuthor` fields; long explanations are picked up automatically when a companion Markdown file following the `slug-long.md` convention exists.
-- `src/config/siteSettings.ts` centralizes global display toggles (e.g., `showQuestionId`, `showAuthor`, `enablePagination`, `questionsPerPage`). Setting `showAuthor` to `false` hides author/byline UI everywhere; when `true`, per-question `suppressAuthor` still applies. Disable pagination or adjust page size here as needed.
-- `src/data/categories.json` provides canonical category labels.
-- `src/data/resources.json` stores author/resource metadata (name, slug, external url, optional title/bio).
-- `src/lib/questions.ts` centralizes helpers for slugs, published-question filtering, and category/author lookups.
+Each question lives in one Markdown file under `src/content/questions/`.
+
+Example:
+
+```md
+---
+id: 105
+title: Is miscarriage the same as abortion?
+categories:
+  - Scientific
+  - Moral
+  - Pastoral
+authorId: mac
+relatedAnswers:
+  - will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage
+---
+
+Short answer goes here.
+
+<!-- LONG_ANSWER -->
+
+## Long Explanation
+
+Optional extended answer goes here.
+```
+
+Notes:
+
+- The filename is the default slug. Add `slug:` in frontmatter only if you need a custom URL.
+- `published` defaults to `true`.
+- `suppressAuthor` defaults to `false`.
+- `relatedAnswers` uses slugs, not numeric IDs.
+- `<!-- LONG_ANSWER -->` is optional. Content below it becomes the expandable long explanation.
+
+## Generated Files
+
+These are generated and should not be edited by hand:
+
+- `src/generated/questions.json`
+- `public/assets/search-index.json`
+
+They are rebuilt from the Markdown question files by `npm run build:questions`.
 
 ## Local Development
 
-Requirements: Node.js 18.20.8+, npm.
+Requirements: Node.js 18.20.8+ and npm.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Astro serves the site at `http://localhost:4321/` by default. Hot module reload is enabled.
+`npm run dev` regenerates the question/search artifacts first, then starts Astro at `http://localhost:4321/`.
 
-## Build & Preview
+## Build and Preview
 
 ```bash
-# Generate the production build
 npm run build
-
-# Preview the built site locally
 npm run preview
 ```
 
-Astro outputs static assets in `dist/`, suitable for static hosting or deployment via Cloudflare Workers (configuration provided in `wrangler.toml`).
+`npm run build` regenerates the question/search artifacts before running `astro build`.
 
 ## Content Workflow
 
-1. Add or update question metadata in a JSON file under `src/data/questions/` (set `published: true` and optional `suppressAuthor`, `longAuthorId`). Include an `id` value if you want it surfaced when `showQuestionId` is enabled-the list order also follows ascending `id` (falling back to title sorting when omitted). If you need a long-form answer, create a Markdown file named `{slug}-long.md` (or `{markdownFileName}-long.md`) alongside the main answer and it will be detected automatically. Pagination automatically slices lists according to `questionsPerPage`.
-2. Create the associated Markdown file under `src/content/questions/`.
-3. Rebuild generated search data after question edits with `npm run build:search-index` (or any full `npm run build` / `npm run dev`, which runs the same generator first). `src/data/search-index.json` is generated from the question JSON plus Markdown bodies, so manual edits to that file will be overwritten.
-4. Define any new categories in `src/data/categories.json`. The helper library automatically slugifies category names and counts question usage.
-5. Add or update author entries in `src/data/resources.json`, then reference by `authorId` inside questions.
-6. Category pages are generated at `/categories/{slug}` (index at `/categories/`); author/resource pages live at `/authors/{slug}` and feed the `/resources` listing.
+1. Create a new question with `npm run new:question -- "Your title here"` or add a Markdown file manually under `src/content/questions/`.
+2. Fill in the frontmatter and body in that file.
+3. If needed, add `<!-- LONG_ANSWER -->` and place the extended explanation below it.
+4. Update `src/data/categories.json` only when you need category sort order or a `groupCode`.
+5. Update `src/data/resources.json` only when you need author/resource metadata such as name, bio, URL, or sort order.
+6. Run `npm run check:questions` to validate the corpus.
+7. Run `npm run build:questions` if you want to refresh the generated artifacts without doing a full site build.
 
-### Grouped Question IDs
+## Grouped Question IDs
 
-- To partition questions into named groups (e.g., catechisms), add a `groupCode` property to any category in `src/data/categories.json` (e.g., `"groupCode": "WSC"`). Every question tagged with that category is treated as part of the group.
-- For grouped questions, ID-style URLs include the group code (`/questions/WSC8`). Prev/Next navigation, random links, and display labels stay within the active group context.
-- Visiting `/questions/<id>` still works: if multiple grouped answers share the same numeric ID, that route shows a hub listing each group-specific answer so the user can choose the desired version.
+- Add `groupCode` to a category in `src/data/categories.json` to place questions in a named group.
+- Questions tagged with that category get grouped ID routes such as `/questions/WSC8`.
+- Visiting `/questions/<id>` still works. If multiple grouped questions share that numeric ID, the site shows a selection page.
 
 ## Scripts
 
-- `npm run dev` – local development server.
-- `npm run build` – production build.
-- `npm run preview` – serve the built output locally.
-- `npm run astro ...` – access the Astro CLI directly (lint, check routes, etc.).
+- `npm run dev` - rebuild generated content, then start the local Astro dev server.
+- `npm run build:questions` - validate question files and regenerate `src/generated/questions.json` plus `public/assets/search-index.json`.
+- `npm run check:questions` - validate question files without writing generated output.
+- `npm run new:question -- "Title"` - scaffold a new question Markdown file with the next numeric ID.
+- `npm run build` - production build.
+- `npm run preview` - preview the production build locally.
+- `npm run astro ...` - run the Astro CLI directly.
 
 ## Deployment
 
-The repo includes `wrangler.toml` for Cloudflare Workers. Adjust per environment, then run:
+The repo includes `wrangler.toml` for Cloudflare Workers.
 
 ```bash
 npm run build
 npx wrangler deploy
 ```
 
-## Spinning Up A New Q&A Site
+## Notes for Future Updates
 
-Use this repo as a template for other projects (e.g., a catechism Q&A) by following this checklist:
-
-1. **Copy the repo** – clone to a new folder or repo; run `npm install`.
-2. **Update global branding** – edit `src/config/siteSettings.ts` (site name, description, logo path, footer copy, analytics IDs). Replace `/public/images/site-logo.svg` or adjust `logoPath`.
-3. **Swap data/content** – replace JSON entries in `src/data/questions/` with your new questions. Drop matching Markdown files (`slug.md` and optional `slug-long.md`) into `src/content/questions/`. Update categories (`src/data/categories.json`) and authors/resources (`src/data/resources.json`) if needed.
-4. **Adjust static text** – review `src/pages/about.astro`, `resources.astro`, `copyright.astro`, `README.md`, etc., for project-specific language.
-5. **Check assets** – update favicons/site manifest, hero images, or any brand-specific images under `public/`.
-6. **Verify locally** – `npm run dev` to spot-check pages, including mobile layout. Run `npm run build` to rebuild the search index/client bundle.
-7. **Deploy** – configure a new Cloudflare (or other host) project, then run `npm run build && npx wrangler deploy` (or your host’s equivalent).
-
-## Styling & Theme Notes
-
-- Global colors/typography live in `styles/theme.css`. Modify variables or base selectors there to change the overall aesthetic.
-- Component-specific styles are usually defined inside each `.astro` file’s `<style>` block. Update these blocks to tweak layout/spacing for individual components (e.g., `InlineSearchBox`, `QuestionFeed`, `Footer`).
-- The navbar/footer pull brand assets from `siteSettings.branding.logoPath`. Swap that file or update the config path to change the logo across the site.
-- For per-page tweaks, edit the `<style>` sections inside the relevant page templates (e.g., `src/pages/questions/[slug].astro` for question detail layout). Media queries are already present; extend them as needed for custom breakpoints.
+- `src/lib/questions.ts` reads from `src/generated/questions.json`, not directly from the Markdown files.
+- Search UI source lives in `public/assets/search-client.js`.
+- `worker.js` uses `public/assets/search-index.json` for the `/api/search` endpoint.
+- The source of truth for question content is always `src/content/questions/*.md`.
 
 ## License
 
-MIT – see `LICENSE`.
-
-
+MIT - see `LICENSE`.

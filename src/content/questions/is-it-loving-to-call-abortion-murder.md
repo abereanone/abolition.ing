@@ -1,3 +1,16 @@
+---
+id: 12
+title: Is it loving to call abortion murder?
+categories:
+  - Moral
+  - Biblical
+authorId: chatgpt
+relatedAnswers:
+  - why-is-abortion-wrong
+  - how-do-we-answer-claims-that-abortion-is-healthcare
+  - why-should-men-speak-out-against-abortion
+---
+
 Yes. Love tells the truth, even when it’s hard (Ephesians 4:15). To call abortion anything less than murder is to lie and allow sin to continue.
 
 Scripture commands us to expose the works of darkness (Ephesians 5:11). True love warns of danger and points to hope in Christ.

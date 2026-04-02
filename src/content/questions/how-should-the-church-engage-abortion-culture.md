@@ -1,3 +1,16 @@
+---
+id: 9
+title: How should the church engage abortion culture?
+categories:
+  - Biblical
+  - Practical
+authorId: chatgpt
+relatedAnswers:
+  - what-does-proverbs-teach-about-rescuing-the-preborn
+  - what-role-should-civil-government-play
+  - how-do-we-answer-claims-that-abortion-is-healthcare
+---
+
 The church must speak clearly and boldly. Silence in the face of evil is sin (Proverbs 24:11–12).
 
 Pastors should preach the truth about abortion and call for repentance (2 Timothy 4:2). Believers should act to defend the preborn, support mothers, and confront unjust laws.

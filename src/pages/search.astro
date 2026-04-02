@@ -5,6 +5,7 @@ import { listAuthors } from "@/lib/questions";
 
 const showQuestionIds = siteSettings.showQuestionId;
 const searchClientSrc = `/assets/search-client.js?v=${siteSettings.version}`;
+const searchIndexUrl = `/assets/search-index.json?v=${siteSettings.version}`;
 const siteName = siteSettings.branding.siteName;
 const siteDescription = siteSettings.branding.description;
 const authors = listAuthors().filter((author) => author.count > 0);
@@ -18,6 +19,7 @@ const authorOptions = authors.map((author) => ({ id: author.id, name: author.nam
     data-show-question-ids={showQuestionIds ? "true" : "false"}
     data-has-authors={authors.length ? "true" : "false"}
     data-author-map={JSON.stringify(authorOptions)}
+    data-search-index-url={searchIndexUrl}
   >
     <header class="search-header">
       <h1>Search</h1>

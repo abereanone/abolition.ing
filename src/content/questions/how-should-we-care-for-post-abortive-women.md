@@ -1,3 +1,16 @@
+---
+id: 11
+title: How should we care for post-abortive women?
+categories:
+  - Pastoral
+  - Practical
+authorId: chatgpt
+relatedAnswers:
+  - can-abortion-be-forgiven
+  - how-can-pastors-counsel-survivors-of-coerced-abortion
+  - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
+---
+
 Women who have had abortions need both truth and grace. We must never lessen the evil of what abortion is. To do so would dishonor God and offer false comfort. Abortion is the taking of an innocent life, and that reality must be spoken plainly (Exodus 20:13; Proverbs 28:13).
 
 Yet we must also proclaim the power of God’s grace. Forgiveness is real and complete for all who repent and trust in Jesus Christ (1 John 1:9; Isaiah 1:18). Healing does not come by downplaying sin but by confessing it and finding mercy in the Savior who bore our guilt.

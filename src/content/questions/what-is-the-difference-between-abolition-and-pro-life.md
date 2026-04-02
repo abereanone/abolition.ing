@@ -1,3 +1,16 @@
+---
+id: 3
+title: What is the difference between abolition and pro-life?
+categories:
+  - Practical
+  - Moral
+authorId: mac
+relatedAnswers:
+  - why-is-abortion-wrong
+  - can-abortion-be-forgiven
+  - how-can-christians-discern-compromised-prolife-legislation
+---
+
 The pro-life movement seeks to regulate abortion. Abolition calls for it to end immediately and completely.
 
 Pro-life legislation _usually_ allows abortion in some cases or only prior to certain stages of development. Abolition rejects partial measures and demands equal justice for all preborn children (Proverbs 17:15; Isaiah 1:16–17).

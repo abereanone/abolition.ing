@@ -2,6 +2,16 @@ const BIBLE_ID = "eng_bsb";
 const bookCache = new Map<string, any>();
 const referenceCache = new Map<string, string>();
 
+function rewriteDivineNameConventions(text: string): string {
+  return text
+    .replace(/\\f \+ \\fr 2:4 \\ft LORD or GOD, with capital letters.*?\\f\*/g, "")
+    .replace(/\\f \+ \\fr .*? \\ft That is, the LORD\\f\*/g, "")
+    .replace(/\b(the LORD GOD|GOD the LORD)\b/g, "Yah\u2014Yaweh himself\u2014")
+    .replace(/\bTHE LORD\b/g, "YAHWEH")
+    .replace(/(\b[Tt]he )?\bLORD\b(?! OF LORDS)/g, "Yahweh")
+    .replace(/(?<!UNKNOWN )\bGOD\b/g, "Yahweh");
+}
+
 async function fetchBook(bookCode: string): Promise<any> {
   if (bookCache.has(bookCode)) {
     return bookCache.get(bookCode);
@@ -57,7 +67,8 @@ export async function getVerse(rawReference: string): Promise<string> {
       continue;
     }
 
-    const verseText = (Array.isArray(pieces) ? pieces : [pieces])
+    const verseText = rewriteDivineNameConventions(
+      (Array.isArray(pieces) ? pieces : [pieces])
       .map((piece) => {
         if (typeof piece === "string") {
           return piece;
@@ -73,7 +84,8 @@ export async function getVerse(rawReference: string): Promise<string> {
         return "";
       })
       .join("")
-      .trim();
+      .trim()
+    );
 
     if (verseText) {
       verses.push(`${v} ${verseText}`);

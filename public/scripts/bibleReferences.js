@@ -316,6 +316,16 @@ const bookPattern = Object.keys(bookMap)
 
 const verseCache = new Map();
 
+function rewriteDivineNameConventions(text) {
+  return text
+    .replace(/\\f \+ \\fr 2:4 \\ft LORD or GOD, with capital letters.*?\\f\*/g, "")
+    .replace(/\\f \+ \\fr .*? \\ft That is, the LORD\\f\*/g, "")
+    .replace(/\b(the LORD GOD|GOD the LORD)\b/g, "Yah\u2014Yaweh himself\u2014")
+    .replace(/\bTHE LORD\b/g, "YAHWEH")
+    .replace(/(\b[Tt]he )?\bLORD\b(?! OF LORDS)/g, "Yahweh")
+    .replace(/(?<!UNKNOWN )\bGOD\b/g, "Yahweh");
+}
+
 async function getVerse(reference) {
   if (verseCache.has(reference)) {
     return verseCache.get(reference);
@@ -364,23 +374,25 @@ async function getVerse(reference) {
 
       const items = Array.isArray(pieces) ? pieces : [pieces];
 
-      const text = items
-        .map((item) => {
-          if (typeof item === "string") {
-            return item;
-          }
-          if (item && typeof item === "object") {
-            if (item.type === "note" || item.type === "heading") {
-              return "";
+      const text = rewriteDivineNameConventions(
+        items
+          .map((item) => {
+            if (typeof item === "string") {
+              return item;
             }
-            if (typeof item.contents === "string") {
-              return item.contents;
+            if (item && typeof item === "object") {
+              if (item.type === "note" || item.type === "heading") {
+                return "";
+              }
+              if (typeof item.contents === "string") {
+                return item.contents;
+              }
             }
-          }
-          return "";
-        })
-        .join("")
-        .trim();
+            return "";
+          })
+          .join("")
+          .trim()
+      );
 
       if (text) {
         verses.push(`${v} ${text}`);

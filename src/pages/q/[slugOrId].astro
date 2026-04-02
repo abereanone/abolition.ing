@@ -1,0 +1,24 @@
+---
+import { getPublishedQuestions } from "@/lib/questions";
+
+export function getStaticPaths() {
+  return getPublishedQuestions().flatMap((question) => {
+    const entries = [{ params: { slugOrId: question.slug } }];
+    if (typeof question.id === "number") {
+      entries.push({ params: { slugOrId: String(question.id) } });
+      question.groupCodes.forEach((code) => {
+        entries.push({ params: { slugOrId: `${code}${question.id}` } });
+      });
+    }
+    return entries;
+  });
+}
+
+const { slugOrId } = Astro.params;
+
+if (!slugOrId) {
+  throw new Error("Question alias route requires a slug or id.");
+}
+
+return Astro.redirect(`/questions/${slugOrId}`, 301);
+---

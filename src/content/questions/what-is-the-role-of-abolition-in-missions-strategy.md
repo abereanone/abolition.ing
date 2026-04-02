@@ -1,1 +1,14 @@
+---
+id: 85
+title: What role should abolition play in church missions strategy?
+categories:
+  - Biblical
+  - Practical
+authorId: chatgpt
+relatedAnswers:
+  - how-should-the-church-engage-abortion-culture
+  - what-does-proverbs-teach-about-rescuing-the-preborn
+  - how-do-we-answer-claims-that-abortion-is-healthcare
+---
+
 Missions aims to make disciples who obey Jesus everywhere (Matthew 28:18-20). That includes teaching nations to cherish life and reject murder. As churches plant and send, they should equip workers to confront abortion with the gospel, mercy, and just teaching, so local churches abroad become voices for the voiceless.

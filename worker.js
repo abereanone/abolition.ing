@@ -1,4 +1,4 @@
-import searchDataset from "./src/data/search-index.json";
+import searchDataset from "./public/assets/search-index.json";
 import { clampNumber, createSearchEngine, searchIndex } from "./src/lib/search-engine.js";
 
 const searchEngine = createSearchEngine(Array.isArray(searchDataset) ? searchDataset : []);
