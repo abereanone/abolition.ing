@@ -4,7 +4,7 @@ title: What about ectopic pregnancy?
 categories:
   - Scientific
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-medical-evidence-distinguishes-ectopic-care-from-abortion
   - how-can-churches-support-high-risk-pregnancies
