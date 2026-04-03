@@ -111,12 +111,17 @@ function scan() {
     .forEach((scope) => processScope(scope));
 }
 
-document.addEventListener("astro:page-load", scan);
+export function initBibleReferences() {
+  if (window.__bibleReferencesInitialized) {
+    return;
+  }
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", scan);
-} else {
-  scan();
+  window.__bibleReferencesInitialized = true;
+  document.addEventListener("astro:page-load", scan);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", scan, { once: true });
+  } else {
+    scan();
+  }
 }
-
-export {};
