@@ -11,4 +11,4 @@ relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
 ---
 
-Small groups can pray, fast, and rotate teams to be present where children are endangered. Provide literature, offer help to mothers, and connect them immediately to church support. Follow up faithfully; the goal is not protests but rescue and discipleship. Let your speech be gracious and truthful, seasoned with the gospel (Colossians 4:6).
+Small groups can pray, fast, and rotate teams to be present where children are being led to slaughter. Provide literature, offer help to mothers, and connect them immediately to church support. Follow up faithfully; the goal is not only protest but rescue and discipleship. Let your speech be gracious and truthful, seasoned with the gospel (Colossians 4:6).
