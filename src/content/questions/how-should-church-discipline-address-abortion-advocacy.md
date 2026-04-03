@@ -12,4 +12,4 @@ relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
 ---
 
-Christ has given the keys to the church to guard the gospel and the flock (Matthew 18; 1 Corinthians 5). If a member advocates for abortion, elders must warn, instruct, and call to repentance. Persisting in promoting murder hardens the conscience and dishonors Christ; loving discipline, up to excommunication if unrepentant, aims to restore the sinner and protect the assembly.
+Christ has given the keys to the church to guard the gospel and the flock (Matthew 18:15; 1 Corinthians 5). If a member advocates for abortion, elders must warn, instruct, and call to repentance. Persisting in promoting murder hardens the conscience and dishonors Christ; loving discipline, up to excommunication if unrepentant, aims to restore the sinner and protect the assembly.

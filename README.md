@@ -118,6 +118,21 @@ npm run preview
 - Questions tagged with that category get grouped ID routes such as `/questions/WSC8`.
 - Visiting `/questions/<id>` still works. If multiple grouped questions share that numeric ID, the site shows a selection page.
 
+Example category config:
+
+```json
+[
+  { "id": "biblical", "name": "Biblical", "sortOrder": 10, "groupCode": "BIB" },
+  { "id": "practical", "name": "Practical", "sortOrder": 50, "groupCode": "PR" }
+]
+```
+
+Example effect:
+
+- A question with `id: 41` in the `Biblical` category can be reached at `/questions/BIB41`.
+- A different question with `id: 41` in the `Practical` category can be reached at `/questions/PR41`.
+- If no category on a question has a `groupCode`, the question just uses its normal numeric or slug route.
+
 ## Scripts
 
 - `npm run dev` - rebuild generated content, then start the local Astro dev server.
