@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-can-christians-discern-compromised-prolife-legislation
@@ -13,4 +13,6 @@ relatedAnswers:
   - what-legal-strategies-end-abortion-without-exceptions
 ---
 
-Heartbeat bills can imply that life is protectable only after detection, leaving earlier children unprotected and often exempting mothers. God forbids partiality in justice (Deuteronomy 1:17); life begins at conception. Christians should press for abolition that bans all abortion with equal justice, not incremental measures that regulate murder.
+Heartbeat bills imply that life is protectable only after detection, leaving younger children unprotected. Additionally, these bills _normally_ exempt mothers from any wrongdoing.
+
+God forbids partiality in justice (Deuteronomy 1:17); life begins at conception. Christians should press for abolition that bans all abortion with equal justice, not incremental measures that regulate murder.

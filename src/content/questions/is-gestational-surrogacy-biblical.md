@@ -35,7 +35,7 @@ This undermines the exclusive one-flesh relationship of marriage (Genesis 2:24) 
 
 ### 3. **Human Life and Ethical Concerns**
 
-Surrogacy is frequently linked with IVF practices that involve the creation and destruction of multiple human embryos—each a distinct image-bearer of God (Genesis 1:27). Even when no embryos are intentionally destroyed, the process still commodifies life, renting the womb and reducing childbearing to a transactional arrangement.
+Surrogacy is frequently linked with IVF practices that involve the creation and destruction of multiple human embryos—each a distinct creation of God. Even when no embryos are intentionally destroyed, the process still commodifies life, renting the womb and reducing childbearing to a transactional arrangement.
 
 ### 4. **Theological Summary**
 
