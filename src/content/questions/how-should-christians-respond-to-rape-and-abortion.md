@@ -21,4 +21,4 @@ But we all have been hurt by someone at some point and none of that justifies ou
 
 The gospel offers healing and hope. God brings redemption even in tragedy (Romans 8:28). Our response should be mercy, justice, and truth.
 
-Finally, women who have been raped have a real need to be counseled biblically. The idea that "that child will be a constant reminder of the rape" is irrational. No woman forgets she was raped; a child will not change that, nor make it _worse_ for her. Her desire to kill her own child comes from her sinful passions within her (James 1:13-14;4:1-4).
+Finally, women who have been raped have a real need to be counseled biblically. The idea that "that child will be a constant reminder of the rape" is irrational. No woman forgets she was raped; a child will not change that, nor make it _worse_ for her. Her desire to kill her own child comes from her sinful passions within her (James 1:13-14;James 4:1-4).

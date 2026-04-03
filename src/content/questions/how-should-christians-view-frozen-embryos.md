@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - is-gestational-surrogacy-biblical
@@ -13,14 +13,16 @@ relatedAnswers:
   - what-are-ethical-alternatives-to-ivf
 ---
 
-Christians should view frozen IVF embryos as living human beings created in God’s image, not as property or biological material. Scripture teaches that human life begins at conception (Psalm 139:13–16; Luke 1:41–44), so every embryo has inherent dignity and moral worth. Creating and freezing embryos violates God’s design for procreation within marriage and treats human life as something to be produced, stored, or discarded at will. The only righteous response is repentance from such practices and the recognition that each frozen embryo is a child deserving protection, not experimentation or destruction.
+Christians should view frozen IVF embryos as living human beings deserving of protection, not as property or biological material. Scripture teaches that human life begins at conception (Psalm 139:13–16; Luke 1:41–44), so every embryo has inherent dignity and moral worth. Creating and freezing embryos violates God’s design for procreation within marriage and treats human life as something to be produced, stored, or discarded at will. The only righteous response is repentance from such practices and the recognition that each frozen embryo is a child deserving protection, not experimentation or destruction.
 
 <!-- LONG_ANSWER -->
 
-From a biblical and confessional perspective, Christians must understand that human life begins at fertilization—the moment when God creates a new, distinct person bearing His image (Genesis 1:27; Psalm 139:13–16). Therefore, embryos produced through in vitro fertilization (IVF) are not potential persons or mere “biological material,” but actual human beings made in God’s likeness.
+From a biblical and confessional perspective, Christians must understand that human life begins at fertilization—the moment when God creates a new, distinct person (Psalm 139:13–16). Therefore, embryos produced through in vitro fertilization (IVF) are not potential persons or mere “biological material,” but actual human beings worthy of protection from murder!
 
 The practice of IVF, as commonly carried out, involves creating multiple embryos, implanting only some, and freezing or discarding the rest. This commodifies human life and separates conception from the covenantal union of husband and wife, contrary to God’s design for procreation (Genesis 2:24; Hebrews 13:4). The Second London Baptist Confession (1689), in chapter 24 and 25, affirms that marriage and family life are to be governed by God’s moral law—making it clear that human reproduction is not ours to manipulate for convenience or efficiency.
 
 For Christians, the reality of thousands of frozen embryos represents a grave moral crisis. Each embryo is a living human being who should be protected and allowed to live, not stored indefinitely or destroyed. There is no morally sound way to justify their ongoing captivity or disposal. The appropriate Christian response is repentance for participating in or supporting such practices and advocacy for laws that recognize these embryos as persons with full human rights.
 
 Abolitionist Christians therefore call not for better regulation of IVF but for its abolition because it inherently violates the command “You shall not murder” (Exodus 20:13) and denies the sovereignty of God over life. Each embryo, no matter how small or hidden, is a neighbor we are commanded to love.
+
+Christians who are in a position to do so, ought to consider *snowflake adoption* with the counsel of their local church leadership.
