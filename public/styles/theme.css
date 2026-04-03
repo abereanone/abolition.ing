@@ -658,11 +658,14 @@ ul {
   display: flex;
   justify-content: center;
   margin: 0;
+  width: 100%;
 }
 
 .pagination ul {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
   list-style: none;
   padding: 0;
@@ -701,6 +704,15 @@ ul {
 .pagination-link.disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.pagination-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  padding: 0.4rem 0.2rem;
+  color: var(--color-muted);
 }
 
 .pagination-wrapper {
