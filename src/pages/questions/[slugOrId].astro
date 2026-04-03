@@ -201,6 +201,10 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
   }
   return `/questions/${entry.slug}`;
 }
+
+function getPrimaryGroupCode(entry: Question) {
+  return Array.isArray(entry.groupCodes) && entry.groupCodes.length ? entry.groupCodes[0] : null;
+}
 ---
 
 {listingItems ? (
@@ -367,16 +371,28 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
       <section class="related-questions">
         <h2>Related questions</h2>
         <ul class="question-list">
-          {relatedQuestions.map((entry) => (
-            <li>
-              <a class="question-card card-panel" href={`/questions/${entry.slug}`}>
-                {formatQuestionIdentifier(entry) ? (
-                  <span class="question-id">#{formatQuestionIdentifier(entry)}</span>
-                ) : null}
-                <span class="question-title">{entry.title}</span>
-              </a>
-            </li>
-          ))}
+          {relatedQuestions.map((entry) => {
+            const primaryGroup = getPrimaryGroupCode(entry);
+            const displayLabel = primaryGroup
+              ? formatQuestionIdentifier(entry, { groupCode: primaryGroup })
+              : null;
+            const entryCategories = primaryGroup ? getQuestionCategories(entry) : [];
+            const groupName = primaryGroup
+              ? entryCategories.find((cat) => cat.groupCode === primaryGroup)?.name ?? null
+              : null;
+
+            return (
+              <li>
+                <a class="question-card card-panel" href={getQuestionLink(entry, primaryGroup)}>
+                  {displayLabel ? <span class="question-id">#{displayLabel}</span> : null}
+                  <span class="question-title">
+                    {entry.title}
+                    {groupName ? <span class="question-group-label"> ({groupName})</span> : null}
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </section>
     ) : null}

@@ -13,6 +13,7 @@ const singleVerseRegex = new RegExp(
   `\\b(${bookPattern})\\s+(\\d+):(\\d+(?:[-\\u2013\\u2014]\\d+)?)\\b`,
   "gi"
 );
+const continuedVerseRegex = /([;]\s*)(\d+:\d+(?:[-\u2013\u2014]\d+)?)(?=(?:\s*[;),.]|\s*$))/g;
 
 export function autoLinkBibleRefs(html: string): string {
   const placeholders: string[] = [];
@@ -43,7 +44,30 @@ export function autoLinkBibleRefs(html: string): string {
     return `<span class="bible-ref" data-ref="${ref}">${match}</span>`;
   });
 
-  return withSingles.replace(/__BIBLE_MULTI__(\d+)__/g, (match, index) => {
+  const withContinuedVerses = withSingles.replace(
+    /((?:<span class="bible-ref" data-ref="([^"]+)">[^<]+<\/span>)(?:[^<]|<(?!span class="bible-ref"))*)/g,
+    (segment) => {
+      let lastBook: string | null = null;
+
+      const seedMatch = segment.match(/data-ref="([^"]+)"/);
+      if (seedMatch) {
+        const ref = seedMatch[1] ?? "";
+        const bookMatch = ref.match(/^(.+?)\s+\d+:\d+/);
+        lastBook = bookMatch?.[1] ?? null;
+      }
+
+      return segment.replace(continuedVerseRegex, (match, separator: string, chapterVerse: string) => {
+        if (!lastBook) {
+          return match;
+        }
+
+        const ref = `${lastBook} ${chapterVerse}`;
+        return `${separator}<span class="bible-ref" data-ref="${ref}">${chapterVerse}</span>`;
+      });
+    }
+  );
+
+  return withContinuedVerses.replace(/__BIBLE_MULTI__(\d+)__/g, (match, index) => {
     const idx = Number(index);
     return Number.isNaN(idx) ? match : placeholders[idx] ?? match;
   });
