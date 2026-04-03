@@ -153,6 +153,21 @@ export function detectNextQuestionId(documents) {
   );
 }
 
+export function detectFirstAvailableQuestionId(documents) {
+  const usedIds = new Set(
+    documents
+      .map((document) => document.frontmatter.id)
+      .filter((value) => typeof value === "number" && Number.isInteger(value) && value > 0)
+  );
+
+  let candidate = 1;
+  while (usedIds.has(candidate)) {
+    candidate += 1;
+  }
+
+  return candidate;
+}
+
 export async function buildQuestionArtifacts() {
   const { documents, categories } = await loadQuestionDocuments();
   validateQuestionDocuments(documents);
@@ -392,4 +407,3 @@ function normalizeNewlines(value = "") {
 function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
-

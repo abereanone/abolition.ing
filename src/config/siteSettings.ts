@@ -14,7 +14,7 @@ export const siteSettings = {
   version: appVersion,
   branding,
   footer: {
-    legalText: 'For copyright/licensing information',
+    legalText: 'Copyright information',
     legalLinkLabel: 'click here.',
   },
   integrations: {

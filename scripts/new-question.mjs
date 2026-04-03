@@ -3,7 +3,7 @@ import path from "node:path";
 
 import {
   QUESTION_CONTENT_DIR,
-  detectNextQuestionId,
+  detectFirstAvailableQuestionId,
   loadQuestionDocuments,
   serializeQuestionFrontmatter,
   slugify,
@@ -23,7 +23,7 @@ if (!slug) {
 }
 
 const { documents } = await loadQuestionDocuments();
-const nextId = detectNextQuestionId(documents);
+const nextId = detectFirstAvailableQuestionId(documents);
 const targetPath = path.join(QUESTION_CONTENT_DIR, `${slug}.md`);
 
 try {
@@ -55,4 +55,3 @@ Expand the answer here if needed.
 await fs.writeFile(targetPath, template);
 
 console.log(`Created ${path.relative(process.cwd(), targetPath)} with ID ${nextId}.`);
-
