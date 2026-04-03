@@ -28,7 +28,7 @@ Static Astro site for abolition.ing, publishing question-and-answer content, cat
 |   |-- data/
 |   |   |-- categories.json        # Optional category sort/group config
 |   |   `-- resources.json         # Optional author/resource metadata
-|   |-- generated/questions.json   # Generated from question Markdown; do not hand-edit
+|   |-- generated/questions.json   # Generated on build/dev; ignored by git
 |   |-- layouts/
 |   |-- lib/
 |   `-- pages/
@@ -80,6 +80,7 @@ These are generated and should not be edited by hand:
 - `public/assets/search-index.json`
 
 They are rebuilt from the Markdown question files by `npm run build:questions`.
+They are intended to be untracked build artifacts, not source files.
 
 ## Local Development
 
@@ -142,6 +143,7 @@ npx wrangler deploy
 - Search UI source lives in `public/assets/search-client.js`.
 - `worker.js` uses `public/assets/search-index.json` for the `/api/search` endpoint.
 - The source of truth for question content is always `src/content/questions/*.md`.
+- If the generated JSON files are removed from git, `npm run dev` and `npm run build` will recreate them automatically.
 
 ## License
 
