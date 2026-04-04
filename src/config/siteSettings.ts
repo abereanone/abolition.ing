@@ -1,4 +1,4 @@
-const appVersion = '0.1.18';
+const appVersion = '0.1.19';
 const siteName = 'abolition.ing';
 const defaultDescription = 'Questions & Answers about abortion abolition';
 const branding = {
@@ -14,10 +14,6 @@ export const siteSettings = {
   version: appVersion,
   branding,
   issueReportURL: 'https://github.com/abereanone/abolition.ing/issues/new',
-  footer: {
-    legalText: 'Copyright info',
-    legalLinkLabel: 'click here.',
-  },
   integrations: {
     googleAnalyticsId: 'G-0JVE2NPH9S',
   },
