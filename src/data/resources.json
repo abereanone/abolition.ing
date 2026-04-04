@@ -78,5 +78,22 @@
     "title": "Choice For 2",
     "bio": "Abolitionist Ministry",
     "sortOrder": 28
+  },
+  {
+    "id": "bfg",
+    "name": "Freely Given Books",
+    "url": "https://books.freely.giving/",
+    "title": "Website",
+    "bio": "Free Christian Books!",
+    "sortOrder": 125
+  },
+  {
+    "id": "fb",
+    "name": "Fetch Bible",
+    "url": "https://fetch.bible/",
+    "title": "Website",
+    "bio": "Fetch the Bible for free for your website! over a thousand translations.",
+    "sortOrder": 200
   }
+
 ]
