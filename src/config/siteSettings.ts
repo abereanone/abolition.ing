@@ -14,6 +14,7 @@ export const siteSettings = {
   version: appVersion,
   branding,
   issueReportURL: 'https://github.com/abereanone/abolition.ing/issues/new',
+  longExplanationText: 'Extended Answer',
   integrations: {
     googleAnalyticsId: 'G-0JVE2NPH9S',
   },
