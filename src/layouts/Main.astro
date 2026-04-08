@@ -125,7 +125,7 @@ const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport)
           is:inline
           data-analytics-id={analyticsId}
         >
-          {`(() => {
+          (() => {
             const script = document.currentScript;
             const id = script?.dataset.analyticsId;
             if (!id) {
@@ -135,7 +135,7 @@ const duplicateReportPayload = duplicateReport ? JSON.stringify(duplicateReport)
             function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', id);
-          })();`}
+          })();
         </script>
       </>
     ) : null}
