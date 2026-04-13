@@ -27,7 +27,7 @@ Yes, and we encourage you to study and understand the longer explanation given.
 
 Yes. However, in order understand this, we must understand the nature of that goal, and the foundation of it. We must begin, therefore, with what God has said.
 
-Exodus 20:13 clearly states, "You shall not murder." God Himself had already given the punishment for murder, namely, the death penalty, in Genesis 9:6, and Romans 13:3-4 makes especially clear that this is not only appropriate, but the undeniable responsibility of the governing authorities. The answer to the question above is illuminated, when we begin with the foundational question: "Is God, who instituted the death penalty for all murderers, a compassionate God?" The answer to this question is most certainly that He is, and the whole of His law, therefore, is in keeping with His character. 
+Exodus 20:13 clearly states, "You shall not murder." God Himself had already given the punishment for murder, namely, the death penalty, in Genesis 9:6, and Romans 13:3-4 makes especially clear that this is not only appropriate, but the undeniable responsibility of the governing authorities. The answer to the question above is illuminated, when we begin with the foundational question: "Is God, who instituted the death penalty for all murderers, a compassionate God?" The answer to this question is most certainly that He is, and the whole of His law, therefore, is in keeping with His character.Â 
 
 That said, there are four more ways in which we, even by human reasoning, based in Scripture, can see how it is that it will be compassionate to prosecute women for having abortions.
 
@@ -39,4 +39,5 @@ On this note, for the sake of clarification, this applies to men and women. The 
 
 Third, it is compassionate toward women who would still abort their children, even with the knowledge of the punishment. This is because ultimately, abortion is not against the child, but against God (Psalm 51:4), and the women who murder their children need to be confronted with that reality. Facing the punishment due to a murderer is an opportunity for these women to recognize who they are--sinners in need of a savior--and it's an opportunity for us to proclaim to them again the gospel of forgiveness, which only makes sense to someone who has seen they have done wrong.
 
-Fourth, it is compassionate toward the whole of our country, being that we are a blood-guilty nation under the judgement of God. We desire to repent as a nation (Psalm 106:6,Psalm 106:38), that we not perish for our wickedness. It will not be well with us if we continue to commit this most horrific genocide.
+Fourth, it is compassionate toward the whole of our country, being that we are a blood-guilty nation under the judgement of God. We desire to repent as a nation (Psalm 106:6, 38), that we not perish for our wickedness. It will not be well with us if we continue to commit this most horrific genocide.
+

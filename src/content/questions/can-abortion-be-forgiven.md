@@ -17,4 +17,4 @@ Anyone who has participated in abortion—whether through the act itself or by s
 
 Forgiveness does not erase what was done, but it removes guilt before God. The church must speak both truth and hope: abortion is murder, and Christ forgives murderers who turn to Him (Isaiah 1:18; Romans 8:1).
 
-We should be careful to treat abortion as really serious while also proclaiming a Christ whose death was sufficient to forgive someone for whom He died. That is to say, Abortion isn't _an unforgivable sin_, but it is also heinous and worthy of eternal damnation and temporary penalty (loss of your own life: Genesis 9:6).
+We should be careful to treat abortion as really serious while also proclaiming a Christ whose death was sufficient to forgive someone for whom He died. That is to say, abortion isn't _an unforgivable sin_, but it is also heinous and worthy of eternal damnation and temporary penalty (loss of your own life: Genesis 9:6).

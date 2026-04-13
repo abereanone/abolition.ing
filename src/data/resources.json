@@ -94,6 +94,14 @@
     "title": "Website",
     "bio": "Fetch the Bible for free for your website! over a thousand translations.",
     "sortOrder": 200
+  },
+  {
+    "id": "rcs",
+    "name": "Reformed Catechisms",
+    "url": "https://catechize.ing/",
+    "title": "Website",
+    "bio": "5 reformed catechsims in an easy to learn format like this site.",
+    "sortOrder": 20
   }
 
 ]
