@@ -173,6 +173,7 @@ const encodedEmailSubject = encodeURIComponent(`Question: ${shareText}`);
 const encodedEmailBody = encodeURIComponent(`${shareText}\n\n${shareUrl}`);
 const showLongExplanationLabel = `Show ${longExplanationText}`;
 const hideLongExplanationLabel = `Hide ${longExplanationText}`;
+const RELATED_PREVIEW_LENGTH = 200;
 
 function resolveGroupCodeFromParam(param: string | undefined, target: Question | null): string | null {
   if (!param || !target || typeof target.id !== "number") {
@@ -207,6 +208,30 @@ function getQuestionLink(entry: Question, preferredGroup?: string | null) {
 
 function getPrimaryGroupCode(entry: Question) {
   return Array.isArray(entry.groupCodes) && entry.groupCodes.length ? entry.groupCodes[0] : null;
+}
+
+function stripHtml(value: string): string {
+  return value
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getAnswerPreview(entry: Question, maxLength = RELATED_PREVIEW_LENGTH): string {
+  const answerHtml = typeof entry.answerHtml === "string" ? entry.answerHtml : "";
+  const answerBeforeProofs = answerHtml.split(/<h2[^>]*>\s*Proofs\s*<\/h2>/i)[0] ?? "";
+  const source = stripHtml(answerBeforeProofs) || (entry.excerpt ?? "").trim();
+
+  if (!source) {
+    return "";
+  }
+
+  if (source.length <= maxLength) {
+    return source;
+  }
+
+  return `${source.slice(0, maxLength).trimEnd()}...`;
 }
 ---
 
@@ -385,14 +410,18 @@ function getPrimaryGroupCode(entry: Question) {
             const groupName = primaryGroup
               ? entryCategories.find((cat) => cat.groupCode === primaryGroup)?.name ?? null
               : null;
+            const answerPreview = getAnswerPreview(entry);
 
             return (
               <li>
                 <a class="question-card card-panel" href={getQuestionLink(entry, primaryGroup)}>
                   {displayLabel ? <span class="question-id">#{displayLabel}</span> : null}
-                  <span class="question-title">
-                    {entry.title}
-                    {groupName ? <span class="question-group-label"> ({groupName})</span> : null}
+                  <span class="question-card-body">
+                    <span class="question-title">
+                      {entry.title}
+                      {groupName ? <span class="question-group-label"> ({groupName})</span> : null}
+                    </span>
+                    {answerPreview ? <span class="question-preview">{answerPreview}</span> : null}
                   </span>
                 </a>
               </li>
