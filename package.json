@@ -17,6 +17,6 @@
     "seed:bsb": "node ./bsb-data-pipeline/scripts/prepare-bsb.mjs"
   },
   "dependencies": {
-    "astro": "^5.18.1"
+    "astro": "^6.2.1"
   }
 }

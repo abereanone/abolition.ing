@@ -13,6 +13,7 @@ import {
   findAuthor,
 } from "@/lib/questions";
 import BibleReferencesScript from "@/components/BibleReferencesScript.astro";
+import QuestionReferenceHighlightScript from "@/components/QuestionReferenceHighlightScript.astro";
 import InlineSearchBox from "@/components/InlineSearchBox.astro";
 import { siteSettings } from "@/config/siteSettings";
 
@@ -493,6 +494,7 @@ function getAnswerPreview(entry: Question, maxLength = RELATED_PREVIEW_LENGTH): 
   )}
 
   <BibleReferencesScript />
+  <QuestionReferenceHighlightScript />
 
   {question.longHtml ? (
     <script type="module" is:inline>
@@ -842,6 +844,12 @@ function getAnswerPreview(entry: Question, maxLength = RELATED_PREVIEW_LENGTH): 
 
     .question-body[hidden] {
       display: none;
+    }
+
+    :global(.bible-ref.is-linked-reference) {
+      background: var(--surface-highlight);
+      outline: 2px solid var(--surface-border-strong);
+      outline-offset: 2px;
     }
   </style>
   </Main>
