@@ -9,6 +9,14 @@ relatedAnswers:
   - what-medical-evidence-distinguishes-ectopic-care-from-abortion
   - how-can-churches-support-high-risk-pregnancies
   - does-science-prove-life-begins-at-conception
+  - how-should-christians-engage-medical-providers-who-perform-abortion
+  - is-miscarriage-the-same-as-abortion
+  - when-does-human-life-begin
+  - are-hormonal-contraceptives-that-prevent-implantation-moral
+  - what-about-contraceptives-that-cause-early-abortion
+  - how-should-christians-view-genetic-testing-for-down-syndrome
+  - what-ethical-issues-arise-with-prenatal-blood-testing
+  - what-do-ultrasound-studies-reveal-about-fetal-pain
 ---
 
 Ectopic pregnancy is a tragic and rare condition where the embryo implants outside the womb. In most cases, the baby cannot survive. But it's not medically necessary to _immediately_ remove the baby!

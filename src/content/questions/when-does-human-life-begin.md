@@ -9,6 +9,15 @@ relatedAnswers:
   - does-science-prove-life-begins-at-conception
   - what-does-the-bible-say-about-the-value-of-life
   - does-a-detectable-heartbeat-prove-personhood
+  - if-infants-that-die-go-to-heaven-why-is-abortion-a-problem
+  - does-the-bible-affirm-the-personhood-of-the-unborn
+  - what-scientific-evidence-supports-protecting-preborn-children
+  - what-about-contraceptives-that-cause-early-abortion
+  - what-does-luke-1-teach-about-the-unborn
+  - what-do-ultrasound-studies-reveal-about-fetal-pain
+  - how-does-the-incarnation-inform-our-view-of-the-unborn
+  - are-hormonal-contraceptives-that-prevent-implantation-moral
+  - what-about-ectopic-pregnancy
 ---
 
 ### Biblical Answer:

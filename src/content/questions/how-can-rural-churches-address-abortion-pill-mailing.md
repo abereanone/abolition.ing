@@ -9,6 +9,15 @@ relatedAnswers:
   - should-magistrates-prosecute-abortion-pill-distribution
   - how-should-lawmakers-respond-to-abortion-tourism
   - how-do-we-answer-claims-that-abortion-is-healthcare
+  - what-should-christians-know-about-abortion-pill-reversal-claims
+  - how-do-chemical-abortions-impact-womens-health
+  - how-should-christians-respond-to-churches-that-wont-address-abortion
+  - how-can-churches-measure-faithful-engagement-against-abortion
+  - what-is-the-role-of-abolition-in-missions-strategy
+  - does-emergency-contraception-act-as-an-abortifacient
+  - how-should-church-discipline-address-abortion-advocacy
+  - what-liturgical-practices-help-churches-lament-abortion
+  - what-can-christians-learn-from-wilberforce-and-abolition-history
 ---
 
 Rural churches need to recognize that abortion hasn’t disappeared—it’s just become more hidden through mail-order pills.

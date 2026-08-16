@@ -9,6 +9,15 @@ relatedAnswers:
   - should-abortion-be-punished-by-law
   - should-magistrates-prosecute-abortion-pill-distribution
   - what-legal-strategies-end-abortion-without-exceptions
+  - how-should-the-church-engage-abortion-culture
+  - what-is-biblical-equal-protection-for-the-preborn
+  - how-to-correct-prolife-arguments-that-deny-equal-justice
+  - should-christians-pursue-federal-or-state-abolition-first
+  - what-role-do-psalm-82-and-micah-6-8-play-in-abolition
+  - how-should-lawmakers-respond-to-abortion-tourism
+  - will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage
+  - is-it-compassionate-to-prosecute-women-for-having-abortions
+  - how-can-christian-businesses-stand-against-abortion-mandates
 ---
 
 Civil government exists to punish evil and protect the innocent (Romans 13:3–4). Allowing abortion is rebellion against God’s authority.

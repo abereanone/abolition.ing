@@ -9,6 +9,15 @@ relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - why-is-abortion-wrong
+  - how-to-engage-local-media-with-the-abolition-message
+  - how-to-answer-claims-that-abolition-is-too-harsh
+  - how-can-small-groups-support-sidewalk-ministry
+  - how-do-i-respond-when-someone-asks-me-about-sex-trafficked-children
+  - how-to-keep-the-gospel-central-in-abolition-activism
+  - what-does-the-bible-say-about-the-value-of-life
+  - is-it-loving-to-call-abortion-murder
+  - how-does-jesus-welcoming-children-shape-abolition
+  - what-does-church-history-teach-about-abortion
 ---
 
 Graphic images can awaken the conscience to abortion’s cruelty, but it is the Word of God that abolitionists believe is the power of God (Hebrews 4:12-13). Use them with Christian care, lawful conduct, and readiness to offer the gospel and tangible help. Whatever you do, let love for neighbor and reverence for God govern your methods (1 Corinthians 16:14).

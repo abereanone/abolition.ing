@@ -11,6 +11,12 @@ relatedAnswers:
   - is-gestational-surrogacy-biblical
   - how-does-psalm-139-guide-our-view-of-lab-created-embryos
   - what-are-ethical-alternatives-to-ivf
+  - should-christians-pursue-embryo-adoption-from-ivf
+  - can-christians-participate-in-fetal-tissue-research
+  - how-should-christians-think-about-profit-based-surrogacy
+  - is-birth-control-ever-biblical
+  - does-scripture-allow-natural-family-planning
+  - is-permanent-sterilization-a-faithful-family-planning-choice
 ---
 
 Christians should view frozen IVF embryos as living human beings deserving of protection, not as property or biological material. Scripture teaches that human life begins at conception (Psalm 139:13–16; Luke 1:41–44), so every embryo has inherent dignity and moral worth. Creating and freezing embryos violates God’s design for procreation within marriage and treats human life as something to be produced, stored, or discarded at will. The only righteous response is repentance from such practices and the recognition that each frozen embryo is a child deserving protection, not experimentation or destruction.

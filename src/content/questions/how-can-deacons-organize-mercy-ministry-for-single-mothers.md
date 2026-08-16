@@ -10,6 +10,15 @@ relatedAnswers:
   - how-can-churches-support-high-risk-pregnancies
   - how-should-we-care-for-post-abortive-women
   - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
+  - how-to-structure-church-budget-for-mercy-to-mothers
+  - how-can-families-plan-to-stand-with-unplanned-pregnancies
+  - how-can-churches-train-women-to-mentor-young-mothers
+  - how-to-serve-college-students-facing-pregnancy
+  - what-does-the-bible-teach-about-fatherly-protection
+  - how-can-churches-measure-faithful-engagement-against-abortion
+  - how-should-christians-respond-to-prenatal-disability-diagnoses
+  - how-should-we-care-for-mothers
+  - what-practical-steps-can-communities-take-to-stand-with-mothers
 ---
 
 Deacons can organize mercy ministry for single mothers by meeting their physical and spiritual needs through coordinated, gospel-centered care. They should first assess needs within the church, mobilize members to help with meals, childcare, and mentorship, manage a deacon’s fund for emergency aid, and pair every act of mercy with discipleship and pastoral care. In all, they reflect Christ’s compassion and uphold His righteousness in service to vulnerable families.

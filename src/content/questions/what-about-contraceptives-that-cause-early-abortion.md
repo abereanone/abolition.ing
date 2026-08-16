@@ -9,6 +9,15 @@ relatedAnswers:
   - is-birth-control-ever-biblical
   - are-hormonal-contraceptives-that-prevent-implantation-moral
   - does-emergency-contraception-act-as-an-abortifacient
+  - is-miscarriage-the-same-as-abortion
+  - does-scripture-allow-natural-family-planning
+  - is-permanent-sterilization-a-faithful-family-planning-choice
+  - when-does-human-life-begin
+  - does-science-prove-life-begins-at-conception
+  - what-about-ectopic-pregnancy
+  - what-ethical-issues-arise-with-prenatal-blood-testing
+  - how-should-christians-view-genetic-testing-for-down-syndrome
+  - what-do-ultrasound-studies-reveal-about-fetal-pain
 ---
 
 Some contraceptives can cause early abortion by preventing an embryo from implanting or surviving. Such methods destroy a human life and are morally wrong (Exodus 20:13).

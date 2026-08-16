@@ -9,6 +9,15 @@ relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
   - what-role-should-civil-government-play
   - how-do-we-answer-claims-that-abortion-is-healthcare
+  - how-should-church-discipline-address-abortion-advocacy
+  - how-should-christians-respond-to-churches-that-wont-address-abortion
+  - how-to-engage-local-media-with-the-abolition-message
+  - what-liturgical-practices-help-churches-lament-abortion
+  - how-can-small-groups-support-sidewalk-ministry
+  - how-does-the-great-commission-shape-abolition
+  - how-can-youth-be-discipled-for-abolition
+  - what-role-do-prayer-and-fasting-play-in-abolition
+  - how-to-guard-against-burnout-in-abolition-ministry
 ---
 
 The church must speak clearly and boldly. Silence in the face of evil is sin (Proverbs 24:11–12).

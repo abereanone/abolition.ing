@@ -10,6 +10,11 @@ relatedAnswers:
   - is-it-compassionate-to-prosecute-women-for-having-abortions
   - will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage
   - what-about-contraceptives-that-cause-early-abortion
+  - how-to-answer-claims-that-criminalizing-abortion-harms-women
+  - what-medical-evidence-distinguishes-ectopic-care-from-abortion
+  - what-about-ectopic-pregnancy
+  - what-protections-do-post-roe-states-provide-for-mothers
+  - how-should-christians-engage-medical-providers-who-perform-abortion
 ---
 
 No. Miscarriage is the tragic death of a child in the womb by natural causes. Abortion is the intentional killing of a child in the womb. The deaths may both be grievous, but they are not morally the same because the cause and intent are not the same.

@@ -11,6 +11,15 @@ relatedAnswers:
   - should-abortion-be-punished-by-law
   - should-christians-support-fetal-heartbeat-legislation
   - what-legal-strategies-end-abortion-without-exceptions
+  - how-to-correct-prolife-arguments-that-deny-equal-justice
+  - what-is-the-difference-between-abolition-and-pro-life
+  - should-christians-pursue-federal-or-state-abolition-first
+  - what-is-biblical-equal-protection-for-the-preborn
+  - how-to-answer-claims-that-abolition-is-too-harsh
+  - what-role-do-psalm-82-and-micah-6-8-play-in-abolition
+  - what-can-christians-learn-from-wilberforce-and-abolition-history
+  - does-a-detectable-heartbeat-prove-personhood
+  - what-is-the-biblical-case-against-exceptions-for-rape-or-incest
 ---
 
 Ask: 

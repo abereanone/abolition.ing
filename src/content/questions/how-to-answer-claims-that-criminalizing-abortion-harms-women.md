@@ -9,6 +9,15 @@ relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - should-abortion-be-punished-by-law
   - how-should-we-care-for-post-abortive-women
+  - is-it-compassionate-to-prosecute-women-for-having-abortions
+  - will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage
+  - what-protections-do-post-roe-states-provide-for-mothers
+  - how-to-answer-claims-that-abolition-is-too-harsh
+  - is-miscarriage-the-same-as-abortion
+  - how-can-christians-respond-to-family-pressure-to-abort
+  - how-to-correct-prolife-arguments-that-deny-equal-justice
+  - how-should-we-care-for-mothers
+  - how-should-christians-respond-to-rape-and-abortion
 ---
 
 True harm is done by abortion itself. Equal justice protects women by upholding their duty not to kill and by restraining those who prey on them. Laws should pair penalties with mercy provisions for those coerced, while still naming the act what it is. God’s law is for our good; sin destroys, but Christ heals.

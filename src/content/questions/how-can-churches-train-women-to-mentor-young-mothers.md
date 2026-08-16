@@ -9,6 +9,15 @@ relatedAnswers:
   - how-can-churches-support-high-risk-pregnancies
   - how-should-we-care-for-post-abortive-women
   - how-can-deacons-organize-mercy-ministry-for-single-mothers
+  - how-to-structure-church-budget-for-mercy-to-mothers
+  - how-can-churches-prepare-legal-help-for-mothers-pressured-to-abort
+  - how-should-we-care-for-mothers
+  - how-to-serve-college-students-facing-pregnancy
+  - how-can-youth-be-discipled-for-abolition
+  - what-practical-steps-can-communities-take-to-stand-with-mothers
+  - how-can-families-plan-to-stand-with-unplanned-pregnancies
+  - how-to-disciple-new-believers-rescued-from-abortion-culture
+  - what-hymns-and-scriptures-encourage-mothers-choosing-life
 ---
 
 Older women should train younger women to love their children and be self-controlled (Titus 2:3-5). Build mentoring pairs, offer classes on newborn care, budgeting, and prayer, and include the gospel at every step. Mentorship turns doctrine into embodied help, showing young mothers they are not alone.

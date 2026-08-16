@@ -10,6 +10,15 @@ relatedAnswers:
   - can-abortion-be-forgiven
   - why-is-abortion-wrong
   - when-does-human-life-begin
+  - if-abortion-can-be-forgiven
+  - what-does-justice-require-for-abortionists-who-repent
+  - is-it-loving-to-call-abortion-murder
+  - how-should-christians-view-dignity-for-fetal-remains
+  - how-to-disciple-new-believers-rescued-from-abortion-culture
+  - what-pastoral-care-do-men-need-after-coercing-abortion
+  - what-does-the-bible-say-about-the-value-of-life
+  - how-should-churches-walk-with-repentant-post-abortive-parents
+  - what-does-church-history-teach-about-abortion
 ---
 
 That question goes right to the heart of the matter, and it’s one that deserves a clear and biblical answer.

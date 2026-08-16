@@ -9,6 +9,15 @@ relatedAnswers:
   - can-abortion-be-forgiven
   - how-can-pastors-counsel-survivors-of-coerced-abortion
   - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
+  - what-pastoral-care-do-men-need-after-coercing-abortion
+  - if-abortion-can-be-forgiven
+  - what-liturgical-practices-help-churches-lament-abortion
+  - how-can-families-plan-to-stand-with-unplanned-pregnancies
+  - how-to-serve-college-students-facing-pregnancy
+  - how-to-guard-against-burnout-in-abolition-ministry
+  - how-can-deacons-organize-mercy-ministry-for-single-mothers
+  - what-role-do-prayer-and-fasting-play-in-abolition
+  - how-to-structure-church-budget-for-mercy-to-mothers
 ---
 
 Women who have had abortions need both truth and grace. We must never lessen the evil of what abortion is. To do so would dishonor God and offer false comfort. Abortion is the taking of an innocent life, and that reality must be spoken plainly (Exodus 20:13; Proverbs 28:13).

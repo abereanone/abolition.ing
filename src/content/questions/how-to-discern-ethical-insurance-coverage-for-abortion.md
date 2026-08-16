@@ -9,6 +9,11 @@ relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - what-protections-do-post-roe-states-provide-for-mothers
   - does-emergency-contraception-act-as-an-abortifacient
+  - how-can-christian-businesses-stand-against-abortion-mandates
+  - how-should-christians-engage-medical-providers-who-perform-abortion
+  - can-christians-participate-in-fetal-tissue-research
+  - will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage
+  - what-does-justice-require-for-abortionists-who-repent
 ---
 
 If an insurance plan funds abortion, believers must not participate in the shedding of innocent blood (Romans 1:32). Seek alternatives: opt-out riders, employer negotiations, health-share ministries, or conscience accommodations. If constrained, protest in writing, pursue change, and consider costly obedience for a clear conscience (Acts 5:29). Trust the Lord to provide as you refuse to finance murder.

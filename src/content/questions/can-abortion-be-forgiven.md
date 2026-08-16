@@ -9,6 +9,15 @@ relatedAnswers:
   - if-abortion-can-be-forgiven
   - what-is-the-difference-between-abolition-and-pro-life
   - how-should-we-care-for-post-abortive-women
+  - why-is-abortion-wrong
+  - if-infants-that-die-go-to-heaven-why-is-abortion-a-problem
+  - how-should-christians-interpret-exodus-21-in-the-abortion-debate
+  - how-should-christians-view-dignity-for-fetal-remains
+  - what-does-justice-require-for-abortionists-who-repent
+  - how-should-churches-walk-with-repentant-post-abortive-parents
+  - what-hope-does-revelation-offer-to-persecuted-abolitionists
+  - what-scriptures-address-children-conceived-in-rape
+  - what-scientific-evidence-supports-protecting-preborn-children
 ---
 
 Yes. Christ's atonement is sufficient for every sin of His people, including abortion. Abortion is a grave sin, but Christ’s grace is greater (1 John 1:7–9).

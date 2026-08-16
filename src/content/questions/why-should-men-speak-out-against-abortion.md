@@ -9,6 +9,15 @@ relatedAnswers:
   - what-steps-should-fathers-take-when-mothers-consider-abortion
   - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
   - what-does-the-bible-teach-about-fatherly-protection
+  - what-should-elders-teach-men-about-sexual-sin-and-abortion-demand
+  - is-it-loving-to-call-abortion-murder
+  - how-can-christians-respond-to-family-pressure-to-abort
+  - what-pastoral-care-do-men-need-after-coercing-abortion
+  - how-can-churches-measure-faithful-engagement-against-abortion
+  - how-can-pastors-counsel-survivors-of-coerced-abortion
+  - how-should-church-discipline-address-abortion-advocacy
+  - how-to-guard-against-burnout-in-abolition-ministry
+  - how-can-small-groups-support-sidewalk-ministry
 ---
 
 Men are called to protect, lead, and defend the innocent (Proverbs 24:11–12; Micah 6:8). Silence in the face of injustice is cowardice (James 4:17). Abortion persists partly because men have abdicated their duty to act as righteous leaders and defenders. God holds men accountable to do justice and walk uprightly — not only as fathers and husbands, but also as citizens (Ezekiel 22:30; 1 Corinthians 16:13).

@@ -9,6 +9,15 @@ relatedAnswers:
   - why-is-abortion-wrong
   - can-abortion-be-forgiven
   - how-can-christians-discern-compromised-prolife-legislation
+  - what-steps-should-churches-take-when-a-member-procures-an-abortion
+  - how-to-correct-prolife-arguments-that-deny-equal-justice
+  - how-to-answer-claims-that-abolition-is-too-harsh
+  - should-christians-support-fetal-heartbeat-legislation
+  - should-christians-pursue-federal-or-state-abolition-first
+  - what-can-christians-learn-from-wilberforce-and-abolition-history
+  - what-is-the-biblical-case-against-exceptions-for-rape-or-incest
+  - what-is-biblical-equal-protection-for-the-preborn
+  - does-a-detectable-heartbeat-prove-personhood
 ---
 
 The pro-life movement seeks to regulate abortion. Abolition calls for it to end immediately and completely.

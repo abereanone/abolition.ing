@@ -10,6 +10,10 @@ relatedAnswers:
   - how-should-christians-respond-to-prenatal-disability-diagnoses
   - what-do-ultrasound-studies-reveal-about-fetal-pain
   - does-science-prove-life-begins-at-conception
+  - what-ethical-issues-arise-with-prenatal-blood-testing
+  - are-hormonal-contraceptives-that-prevent-implantation-moral
+  - what-about-ectopic-pregnancy
+  - what-about-contraceptives-that-cause-early-abortion
 ---
 
 Genetic screenings must not become a pretext for murder. Every child, including those with Down's Syndrome are created by God and inherently deserve protection. Testing may inform care, but it must never guide toward abortion. Christians should reject selective killing, offer robust support to families, and celebrate the dignity of every child.

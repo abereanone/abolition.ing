@@ -5,6 +5,19 @@ categories:
   - Pastoral
   - Practical
 authorId: chatgpt
+relatedAnswers:
+  - how-to-structure-church-budget-for-mercy-to-mothers
+  - what-practical-steps-can-communities-take-to-stand-with-mothers
+  - how-can-deacons-organize-mercy-ministry-for-single-mothers
+  - how-can-churches-train-women-to-mentor-young-mothers
+  - how-can-churches-prepare-legal-help-for-mothers-pressured-to-abort
+  - what-hymns-and-scriptures-encourage-mothers-choosing-life
+  - how-can-families-plan-to-stand-with-unplanned-pregnancies
+  - how-to-serve-college-students-facing-pregnancy
+  - how-can-christians-respond-to-family-pressure-to-abort
+  - what-steps-should-fathers-take-when-mothers-consider-abortion
+  - how-to-answer-claims-that-criminalizing-abortion-harms-women
+  - how-should-christians-respond-to-prenatal-disability-diagnoses
 ---
 
 We begin by reminding them that the God who sees Hagar also sees them. We speak plainly about the value of their child while offering tangible help, local church support, and gospel hope.

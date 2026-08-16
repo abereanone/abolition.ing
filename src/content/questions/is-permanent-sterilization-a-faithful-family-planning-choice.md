@@ -11,6 +11,13 @@ relatedAnswers:
   - is-birth-control-ever-biblical
   - does-scripture-allow-natural-family-planning
   - are-hormonal-contraceptives-that-prevent-implantation-moral
+  - how-should-christians-think-about-profit-based-surrogacy
+  - what-about-contraceptives-that-cause-early-abortion
+  - does-emergency-contraception-act-as-an-abortifacient
+  - is-gestational-surrogacy-biblical
+  - should-christians-pursue-embryo-adoption-from-ivf
+  - how-should-christians-view-frozen-embryos
+  - what-are-ethical-alternatives-to-ivf
 ---
 
 God calls children a blessing (Psalm 127:3-5). Sterilization chosen to shut the door on future children rejects that gift without biblical warrant. Except for rare, grave medical necessity, it reflects distrust of providence. Christians should seek wisdom, not autonomy, receiving offspring as from the Lord.

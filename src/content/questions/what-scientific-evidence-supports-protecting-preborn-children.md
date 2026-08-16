@@ -8,6 +8,15 @@ relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
   - how-should-the-church-engage-abortion-culture
   - can-abortion-be-forgiven
+  - what-do-ultrasound-studies-reveal-about-fetal-pain
+  - does-science-prove-life-begins-at-conception
+  - does-a-detectable-heartbeat-prove-personhood
+  - when-does-human-life-begin
+  - does-the-bible-affirm-the-personhood-of-the-unborn
+  - what-ethical-issues-arise-with-prenatal-blood-testing
+  - should-christians-support-fetal-heartbeat-legislation
+  - what-medical-evidence-distinguishes-ectopic-care-from-abortion
+  - how-should-christians-interpret-exodus-21-in-the-abortion-debate
 ---
 
 Modern embryology recognizes that human life begins at fertilization, when a distinct DNA code is formed. Ultrasound imagery, fetal heartbeat detection, and pain-response studies all reveal an active, developing child rather than impersonal tissue. Science therefore confirms what Scripture declares—that every preborn child is a human neighbor worthy of protection.

@@ -11,6 +11,15 @@ relatedAnswers:
   - how-should-christians-view-frozen-embryos
   - what-are-ethical-alternatives-to-ivf
   - what-does-church-history-teach-about-abortion
+  - how-should-christians-view-dignity-for-fetal-remains
+  - how-should-christians-engage-medical-providers-who-perform-abortion
+  - how-can-christian-businesses-stand-against-abortion-mandates
+  - should-christians-pursue-embryo-adoption-from-ivf
+  - how-to-discern-ethical-insurance-coverage-for-abortion
+  - how-does-psalm-139-guide-our-view-of-lab-created-embryos
+  - how-should-christians-think-about-profit-based-surrogacy
+  - is-birth-control-ever-biblical
+  - is-gestational-surrogacy-biblical
 ---
 
 Harvesting or using tissue from children slain by abortion joins hands with bloodshed (Proverbs 6:16–17). Even noble aims cannot justify doing evil that good may come (Romans 3:8). Christians must refuse complicity, expose this darkness (Ephesians 5:11), and honor every child as one whom God requires us to protect.

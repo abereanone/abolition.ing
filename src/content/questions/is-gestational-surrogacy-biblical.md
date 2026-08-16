@@ -10,6 +10,12 @@ relatedAnswers:
   - how-should-christians-view-frozen-embryos
   - what-are-ethical-alternatives-to-ivf
   - how-does-psalm-139-guide-our-view-of-lab-created-embryos
+  - how-should-christians-think-about-profit-based-surrogacy
+  - is-permanent-sterilization-a-faithful-family-planning-choice
+  - should-christians-pursue-embryo-adoption-from-ivf
+  - can-christians-participate-in-fetal-tissue-research
+  - is-birth-control-ever-biblical
+  - does-scripture-allow-natural-family-planning
 ---
 
 No. Gestational surrogacy is **not consistent with biblical teaching** because it separates procreation from the covenant of marriage, divides motherhood, and often involves treating children as products rather than gifts from God (Genesis 2:24; Psalm 127:3).

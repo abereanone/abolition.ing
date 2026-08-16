@@ -8,6 +8,15 @@ authorId: mac
 relatedAnswers:
   - can-abortion-be-forgiven
   - how-should-we-care-for-post-abortive-women
+  - if-infants-that-die-go-to-heaven-why-is-abortion-a-problem
+  - what-does-justice-require-for-abortionists-who-repent
+  - what-pastoral-care-do-men-need-after-coercing-abortion
+  - how-should-christians-view-dignity-for-fetal-remains
+  - how-can-pastors-counsel-survivors-of-coerced-abortion
+  - how-to-disciple-new-believers-rescued-from-abortion-culture
+  - how-should-churches-walk-with-repentant-post-abortive-parents
+  - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
+  - what-steps-should-churches-take-when-a-member-procures-an-abortion
 ---
 
 This question highlights a key distinction in how many people think about sin and forgiveness.

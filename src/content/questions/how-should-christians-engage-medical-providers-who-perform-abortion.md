@@ -9,6 +9,11 @@ relatedAnswers:
   - what-about-ectopic-pregnancy
   - how-do-chemical-abortions-impact-womens-health
   - how-do-we-answer-claims-that-abortion-is-healthcare
+  - how-can-christian-businesses-stand-against-abortion-mandates
+  - how-to-discern-ethical-insurance-coverage-for-abortion
+  - can-christians-participate-in-fetal-tissue-research
+  - what-medical-evidence-distinguishes-ectopic-care-from-abortion
+  - is-miscarriage-the-same-as-abortion
 ---
 
 Approach physicians with truth and sobriety: abortion is the shedding of innocent blood (Exodus 20:13; Proverbs 6:17). Appeal to their conscience and professional oath to heal, not kill. 

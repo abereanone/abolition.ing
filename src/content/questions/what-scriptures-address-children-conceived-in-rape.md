@@ -11,6 +11,10 @@ relatedAnswers:
   - how-should-christians-respond-to-rape-and-abortion
   - how-should-christians-respond-to-prenatal-disability-diagnoses
   - can-abortion-be-forgiven
+  - what-is-the-biblical-case-against-exceptions-for-rape-or-incest
+  - how-does-jesus-welcoming-children-shape-abolition
+  - how-should-christians-interpret-exodus-21-in-the-abortion-debate
+  - what-hope-does-revelation-offer-to-persecuted-abolitionists
 ---
 
 Scripture affirms every child as God's handiwork (Psalm 139:13-16). The child is not punished for the father's sin (Ezekiel 18:20). Christ welcomed little ones without distinction (Mark 10:14). Justice prosecutes the rapist; mercy protects the child. Abortion compounds evil with another killing.

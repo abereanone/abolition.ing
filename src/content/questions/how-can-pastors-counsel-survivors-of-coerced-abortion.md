@@ -10,6 +10,14 @@ relatedAnswers:
   - how-should-we-care-for-post-abortive-women
   - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
   - what-steps-should-fathers-take-when-mothers-consider-abortion
+  - what-pastoral-care-do-men-need-after-coercing-abortion
+  - what-steps-should-churches-take-when-a-member-procures-an-abortion
+  - how-should-church-discipline-address-abortion-advocacy
+  - how-to-disciple-new-believers-rescued-from-abortion-culture
+  - how-should-churches-walk-with-repentant-post-abortive-parents
+  - why-should-men-speak-out-against-abortion
+  - if-abortion-can-be-forgiven
+  - what-should-elders-teach-men-about-sexual-sin-and-abortion-demand
 ---
 
 Pastors must approach this issue with both truth and tenderness—refusing to flatten the moral reality of abortion while also recognizing the real suffering many women have endured.

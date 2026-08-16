@@ -9,6 +9,11 @@ relatedAnswers:
   - what-does-church-history-teach-about-abortion
   - can-christians-participate-in-fetal-tissue-research
   - can-abortion-be-forgiven
+  - if-abortion-can-be-forgiven
+  - what-can-christians-learn-from-wilberforce-and-abolition-history
+  - if-infants-that-die-go-to-heaven-why-is-abortion-a-problem
+  - what-does-justice-require-for-abortionists-who-repent
+  - how-should-churches-walk-with-repentant-post-abortive-parents
 ---
 
 Even after death, human remains deserve dignity because they belong to a person made by God (Deuteronomy 21:22-23).

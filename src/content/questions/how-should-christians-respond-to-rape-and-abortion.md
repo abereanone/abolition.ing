@@ -9,6 +9,11 @@ relatedAnswers:
   - what-scriptures-address-children-conceived-in-rape
   - how-should-christians-respond-to-prenatal-disability-diagnoses
   - how-can-churches-support-high-risk-pregnancies
+  - what-is-the-biblical-case-against-exceptions-for-rape-or-incest
+  - how-can-christians-respond-to-family-pressure-to-abort
+  - how-can-families-plan-to-stand-with-unplanned-pregnancies
+  - what-practical-steps-can-communities-take-to-stand-with-mothers
+  - how-to-answer-claims-that-criminalizing-abortion-harms-women
 ---
 
 Rape is evil, and those who commit it must face justice (Deuteronomy 22:25–27). But abortion does not bring justice. It takes the life of an innocent child.

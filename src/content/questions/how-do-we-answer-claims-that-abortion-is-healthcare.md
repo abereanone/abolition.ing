@@ -10,6 +10,15 @@ relatedAnswers:
   - why-is-abortion-wrong
   - how-do-chemical-abortions-impact-womens-health
   - how-should-the-church-engage-abortion-culture
+  - is-it-loving-to-call-abortion-murder
+  - how-should-christians-engage-medical-providers-who-perform-abortion
+  - how-can-christian-businesses-stand-against-abortion-mandates
+  - how-can-rural-churches-address-abortion-pill-mailing
+  - how-to-discern-ethical-insurance-coverage-for-abortion
+  - how-can-small-groups-support-sidewalk-ministry
+  - how-to-engage-local-media-with-the-abolition-message
+  - should-christians-use-graphic-imagery-in-abolition-outreach
+  - how-does-the-great-commission-shape-abolition
 ---
 
 We answer that claim by going back to the truth about what abortion *is*. Scripture and reason both reveal that abortion is **the intentional killing of an innocent human being**. No act that deliberately takes innocent human life can rightly be called “healthcare.”

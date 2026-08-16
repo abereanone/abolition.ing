@@ -4,6 +4,14 @@ title: How do I respond when someone asks me about sex-trafficked children?
 categories:
   - Biblical
 authorId: mac
+relatedAnswers:
+  - should-christians-use-graphic-imagery-in-abolition-outreach
+  - how-to-answer-claims-that-abolition-is-too-harsh
+  - how-can-small-groups-support-sidewalk-ministry
+  - how-to-engage-local-media-with-the-abolition-message
+  - should-christians-support-fetal-heartbeat-legislation
+  - how-to-keep-the-gospel-central-in-abolition-activism
+  - what-is-the-biblical-case-against-exceptions-for-rape-or-incest
 ---
 
 People who are guilty of abortion or defenders of abortion often deflect that guilt by questioning why you are focused on abortion. Their argument boils down to a few ideas:

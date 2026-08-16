@@ -9,6 +9,14 @@ relatedAnswers:
   - is-birth-control-ever-biblical
   - are-hormonal-contraceptives-that-prevent-implantation-moral
   - is-permanent-sterilization-a-faithful-family-planning-choice
+  - what-about-contraceptives-that-cause-early-abortion
+  - does-emergency-contraception-act-as-an-abortifacient
+  - how-should-christians-view-frozen-embryos
+  - how-does-psalm-139-guide-our-view-of-lab-created-embryos
+  - should-christians-pursue-embryo-adoption-from-ivf
+  - what-are-ethical-alternatives-to-ivf
+  - is-gestational-surrogacy-biblical
+  - how-should-christians-think-about-profit-based-surrogacy
 ---
 
 * Scripture **does not forbid** careful timing or spacing of children through natural observation, when done with humility and right motives.

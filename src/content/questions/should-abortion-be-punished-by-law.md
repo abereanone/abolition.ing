@@ -9,6 +9,15 @@ relatedAnswers:
   - what-legal-strategies-end-abortion-without-exceptions
   - how-can-christians-discern-compromised-prolife-legislation
   - should-magistrates-prosecute-abortion-pill-distribution
+  - what-role-should-civil-government-play
+  - is-it-compassionate-to-prosecute-women-for-having-abortions
+  - how-to-answer-claims-that-criminalizing-abortion-harms-women
+  - what-does-justice-require-for-abortionists-who-repent
+  - what-is-biblical-equal-protection-for-the-preborn
+  - how-to-correct-prolife-arguments-that-deny-equal-justice
+  - should-christians-pursue-federal-or-state-abolition-first
+  - will-abortion-laws-criminalize-a-mother-who-has-had-a-miscarriage
+  - how-should-lawmakers-respond-to-abortion-tourism
 ---
 
 Yes. A just government must punish those who take innocent life (Romans 13:3–4). Equal justice under the law requires that abortion be treated as homicide.

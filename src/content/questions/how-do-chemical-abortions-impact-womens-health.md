@@ -10,6 +10,13 @@ relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - does-emergency-contraception-act-as-an-abortifacient
   - what-do-ultrasound-studies-reveal-about-fetal-pain
+  - how-should-christians-engage-medical-providers-who-perform-abortion
+  - what-should-christians-know-about-abortion-pill-reversal-claims
+  - what-medical-evidence-distinguishes-ectopic-care-from-abortion
+  - how-should-lawmakers-respond-to-abortion-tourism
+  - should-magistrates-prosecute-abortion-pill-distribution
+  - how-can-rural-churches-address-abortion-pill-mailing
+  - what-ethical-issues-arise-with-prenatal-blood-testing
 ---
 
 Like all sin, chemical abortions (mifepristone/misoprostol) are bad for the sinner as well as the one sinned against. By starving your child to death, then expelling him or her, you naturally incur consequences to your own health as well. Risks include hemorrhage, infection, or other problems. Sin always carries with it risk and danger. These risks are meant to lead you away from the sin.

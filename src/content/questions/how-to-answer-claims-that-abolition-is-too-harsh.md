@@ -9,6 +9,15 @@ relatedAnswers:
   - why-is-abortion-wrong
   - how-can-christians-discern-compromised-prolife-legislation
   - is-it-loving-to-call-abortion-murder
+  - what-is-the-difference-between-abolition-and-pro-life
+  - should-christians-use-graphic-imagery-in-abolition-outreach
+  - how-to-engage-local-media-with-the-abolition-message
+  - how-to-correct-prolife-arguments-that-deny-equal-justice
+  - should-christians-support-fetal-heartbeat-legislation
+  - how-can-small-groups-support-sidewalk-ministry
+  - how-do-i-respond-when-someone-asks-me-about-sex-trafficked-children
+  - how-to-answer-claims-that-criminalizing-abortion-harms-women
+  - should-christians-pursue-federal-or-state-abolition-first
 ---
 
 God forbids partiality in justice (Deuteronomy 1:17). Abolition is not harsh; it is consistent love for every one of our neighbors and represents equal justice/protection. Softening justice for the preborn denies their humanity. We pair truthful law with rich mercy for mothers and fathers, holding out Christ who saves sinners and upholds righteousness.
