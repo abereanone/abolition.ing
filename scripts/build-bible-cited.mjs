@@ -21,12 +21,6 @@ const singleChapterBooks = new Set([
   "jud",
 ]);
 
-const bsbCodeOverrides = {
-  mrk: "MAR",
-  nah: "NAM",
-  phm: "PHL",
-};
-
 let referencePattern = null;
 
 function escapeRegExp(value) {
@@ -202,7 +196,7 @@ function expandReferenceVariants(normalizedReference) {
 }
 
 function toBsbBookCode(bookCode) {
-  return bsbCodeOverrides[bookCode] ?? String(bookCode).toUpperCase();
+  return String(bookCode).toLowerCase();
 }
 
 function normalizeVersion(value) {
