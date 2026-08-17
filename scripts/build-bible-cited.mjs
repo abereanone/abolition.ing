@@ -1,6 +1,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createRefCollector } from "./lib/collectBibleRefs.mjs";
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(currentDir, "..");
@@ -104,38 +105,6 @@ function normalizeLookupKey(value) {
     .toLowerCase()
     .replace(/\u2013|\u2014/g, "-")
     .replace(/\s+/g, " ");
-}
-
-function stripTags(value) {
-  return value.replace(/<[^>]+>/g, " ");
-}
-
-function decodeHtml(value) {
-  return value
-    .replace(/&#x([0-9a-f]+);/gi, (_match, hex) => String.fromCodePoint(Number.parseInt(hex, 16)))
-    .replace(/&#(\d+);/g, (_match, decimal) => String.fromCodePoint(Number.parseInt(decimal, 10)))
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">");
-}
-
-function extractParentheticalReferences(html) {
-  const plainText = decodeHtml(stripTags(String(html ?? "")));
-  const matches = [...plainText.matchAll(/\(([^()]+)\)/g)];
-  const references = [];
-
-  matches.forEach((match) => {
-    const content = String(match[1] ?? "");
-    content
-      .split(";")
-      .map((part) => part.trim())
-      .filter(Boolean)
-      .forEach((part) => references.push(part));
-  });
-
-  return references;
 }
 
 function cleanReference(reference) {
@@ -418,18 +387,43 @@ async function run() {
   }
 
   const allReferences = new Set();
+  const collectRefs = createRefCollector(bookMap);
+
+  // Harvest every reference the client autolinker will turn into a hoverable
+  // link (inline prose, parentheticals, chapter-only, ranges, and continued
+  // "; 25:1" forms) so generated verse data covers exactly what gets requested.
+  const harvest = (html) => {
+    if (!html) {
+      return;
+    }
+
+    collectRefs(String(html)).forEach((rawReference) => {
+      const normalizedKey = normalizeReferenceChunk(bookMap, rawReference);
+      if (!normalizedKey) {
+        return;
+      }
+
+      expandReferenceVariants(normalizedKey).forEach((variant) => allReferences.add(variant));
+    });
+  };
 
   for (const question of questions) {
-    const htmlSegments = [question?.answerHtml, question?.longHtml];
-    for (const html of htmlSegments) {
-      extractParentheticalReferences(html).forEach((rawReference) => {
-        const normalizedKey = normalizeReferenceChunk(bookMap, rawReference);
-        if (!normalizedKey) {
-          return;
-        }
+    harvest(question?.answerHtml);
+    harvest(question?.longHtml);
+  }
 
-        expandReferenceVariants(normalizedKey).forEach((variant) => allReferences.add(variant));
-      });
+  // Static pages also autolink Scripture (any element with data-bible-autolink),
+  // so their references need verse data too. Scan those .astro pages.
+  const pagesDir = path.join(rootDir, "src", "pages");
+  const pageFiles = await fs.readdir(pagesDir, { recursive: true });
+  for (const entry of pageFiles) {
+    if (!entry.endsWith(".astro")) {
+      continue;
+    }
+
+    const contents = await fs.readFile(path.join(pagesDir, entry), "utf8");
+    if (contents.includes("data-bible-autolink")) {
+      harvest(contents);
     }
   }
 
@@ -471,7 +465,14 @@ async function run() {
   }
 }
 
-run().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+export { resolveVerseData, normalizeReferenceChunk, expandReferenceVariants, toBsbBookCode };
+
+const invokedDirectly =
+  process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+
+if (invokedDirectly) {
+  run().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}
