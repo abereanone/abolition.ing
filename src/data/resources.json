@@ -48,6 +48,14 @@
     "sortOrder": 15
   },
   {
+    "id": "mac-links",
+    "name": "Sites managed by the curator of Abolition.ing",
+    "url": "https://michaelcoughlin.net/links",
+    "title": "Link Directory",
+    "bio": "A directory of the other websites Michael Coughlin builds and maintains.",
+    "sortOrder": 16
+  },
+  {
     "id": "jay",
     "name": "Jay Harrod",
     "url": "https://thingsabove.us/author/jayharrod/",
@@ -100,7 +108,15 @@
     "name": "Reformed Catechisms",
     "url": "https://catechize.ing/",
     "title": "Website",
-    "bio": "5 reformed catechsims in an easy to learn format like this site.",
+    "bio": "5 reformed catechisms in an easy to learn format like this site.",
+    "sortOrder": 20
+  },
+  {
+    "id": "rconfess",
+    "name": "Reformed Confessions",
+    "url": "https://confess.catechize.ing/",
+    "title": "Website",
+    "bio": "Easily read, study and compare reformed confessions, reverse lookup scripture, and read the Bible online for FREE.",
     "sortOrder": 20
   }
 

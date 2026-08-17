@@ -17,6 +17,7 @@
     "seed:bsb": "node ./bsb-data-pipeline/scripts/prepare-bsb.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^6.2.1"
   }
 }

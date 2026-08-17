@@ -4,7 +4,7 @@ Static Astro site for abolition.ing, publishing question-and-answer content, cat
 
 ## Stack
 
-- [Astro](https://astro.build/) 5.x
+- [Astro](https://astro.build/) 6.x
 - TypeScript project configuration (`tsconfig.json`)
 - Markdown content in `src/content/questions/`
 - Generated question/search artifacts for fast page rendering
@@ -16,6 +16,7 @@ Static Astro site for abolition.ing, publishing question-and-answer content, cat
 .
 |-- public/
 |   |-- assets/search-client.js    # Search UI source file
+|   |-- robots.txt                 # Crawl rules; points at the generated sitemap
 |   `-- styles/theme.css           # Shared theme styles
 |-- scripts/
 |   |-- build-questions.mjs        # Generates question/search artifacts
@@ -82,9 +83,14 @@ These are generated and should not be edited by hand:
 They are rebuilt from the Markdown question files by `npm run build:questions`.
 They are intended to be untracked build artifacts, not source files.
 
+`npm run build` also emits `dist/sitemap-index.xml` and `dist/sitemap-0.xml` via
+`@astrojs/sitemap`. The config in `astro.config.mjs` strips the `.html` extension so
+sitemap URLs match the extensionless canonical links, and excludes the `/q/*` redirect
+aliases, `/random`, and the numeric/group-code question routes.
+
 ## Local Development
 
-Requirements: Node.js 18.20.8+ and npm.
+Requirements: Node.js 22.12.0+ and npm 9.6.5+ (enforced by Astro 6).
 
 ```bash
 npm install
@@ -145,12 +151,14 @@ Example effect:
 
 ## Deployment
 
-The repo includes `wrangler.toml` for Cloudflare Workers.
+`npm run build` produces static files in `dist/`. `worker.js` is the Cloudflare Worker
+entry point: it serves those files through an `ASSETS` binding and handles the
+`/api/search` endpoint from `public/assets/search-index.json`.
 
-```bash
-npm run build
-npx wrangler deploy
-```
+There is no `wrangler.toml` in this repo (it was removed in `4335467`); deployment
+configuration lives outside the codebase. To deploy with Wrangler directly you would
+need to recreate a config that sets `main` to `worker.js`, points the assets directory
+at `dist/`, and binds it as `ASSETS`.
 
 ## Notes for Future Updates
 
