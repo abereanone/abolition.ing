@@ -405,7 +405,7 @@ ul {
 }
 
 .question-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .question-article {
@@ -421,7 +421,7 @@ ul {
 }
 
 .question-header h1 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 
 .question-meta {
