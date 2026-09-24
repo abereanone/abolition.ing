@@ -14,10 +14,16 @@
     "preview": "astro preview",
     "astro": "astro",
     "build:bible": "node ./scripts/build-bible-cited.mjs",
-    "seed:bsb": "node ./bsb-data-pipeline/scripts/prepare-bsb.mjs"
+    "seed:bsb": "node ./bsb-data-pipeline/scripts/prepare-bsb.mjs",
+    "precheck:types": "npm run build:questions && npm run build:bible",
+    "check:types": "astro check"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^6.2.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
   }
 }

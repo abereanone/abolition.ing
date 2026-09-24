@@ -18,7 +18,7 @@ export interface Question {
   groupCodes: string[];
 }
 
-type Category = (typeof categoriesData)[number];
+type Category = (typeof categoriesData)[number] & { groupCode?: string };
 type Author = (typeof authorsData)[number];
 
 type CategorySummary = {
@@ -128,7 +128,7 @@ const categoryConfigMap = buildCategoryConfigMap();
 function buildCategoryMap(): Map<string, CategorySummary> {
   const map = new Map<string, CategorySummary>();
 
-  categoriesData.forEach((category) => {
+  (categoriesData as Category[]).forEach((category) => {
     const canonicalSlug = slugify(category.id);
     map.set(canonicalSlug, {
       id: canonicalSlug,
@@ -270,7 +270,7 @@ export function findQuestion(slug: string): Question | null {
 }
 
 export function getRelatedQuestions(question: Question): Question[] {
-  const related = [];
+  const related: Question[] = [];
   const seen = new Set<string>();
 
   question.relatedAnswers.forEach((slug) => {
