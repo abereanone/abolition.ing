@@ -9,6 +9,7 @@
   },
   {
     "id": "end-abortion-now",
+    "logo": "/images/resources/end-abortion-now.svg",
     "name": "End Abortion Now",
     "url": "https://endabortionnow.com",
     "title": "Abolitionist Ministry",
@@ -17,6 +18,7 @@
   },
   {
     "id": "end-abortion-oh",
+    "logo": "/images/resources/end-abortion-oh.png",
     "name": "End Abortion Ohio",
     "url": "https://endabortionohio.com",
     "title": "Abolitionist Ministry in Ohio",
@@ -25,6 +27,7 @@
   },
   {
     "id": "ar",
+    "logo": "/images/resources/ar.png",
     "name": "Abolitionists Rising",
     "url": "https://abolitionistsrising.com",
     "title": "Abolitionist Ministry",
@@ -33,6 +36,7 @@
   },
   {
     "id": "free-the-states",
+    "logo": "/images/resources/free-the-states.png",
     "name": "Free the States",
     "url": "https://freethestates.com",
     "title": "Abolitionist Organization",
@@ -41,6 +45,7 @@
   },
   {
     "id": "mac",
+    "photo": "/images/resources/mac.jpg",
     "name": "Michael Coughlin",
     "url": "https://thingsabove.us/author/mac/",
     "title": "President",
@@ -49,6 +54,7 @@
   },
   {
     "id": "mac-links",
+    "photo": "/images/resources/mac.jpg",
     "name": "Sites managed by the curator of Abolition.ing",
     "url": "https://michaelcoughlin.net/links",
     "title": "Link Directory",
@@ -73,6 +79,7 @@
   },
   {
     "id": "hr",
+    "logo": "/images/resources/hr.png",
     "name": "Heritage Restored",
     "url": "https://HeritageRestored.org",
     "title": "Heritage Restored",
@@ -81,6 +88,7 @@
   },
   {
     "id": "choice42",
+    "logo": "/images/resources/choice42.png",
     "name": "Choice 4 2",
     "url": "https://www.choice42.com",
     "title": "Choice For 2",
@@ -89,6 +97,7 @@
   },
   {
     "id": "bfg",
+    "logo": "/images/resources/bfg.png",
     "name": "Freely Given Books",
     "url": "https://books.freely.giving/",
     "title": "Website",
@@ -97,6 +106,7 @@
   },
   {
     "id": "fb",
+    "logo": "/images/resources/fb.png",
     "name": "Fetch Bible",
     "url": "https://fetch.bible/",
     "title": "Website",
@@ -105,6 +115,7 @@
   },
   {
     "id": "rcs",
+    "logo": "/images/resources/rcs.png",
     "name": "Reformed Catechisms",
     "url": "https://catechize.ing/",
     "title": "Website",
@@ -113,6 +124,7 @@
   },
   {
     "id": "rconfess",
+    "logo": "/images/resources/rconfess.png",
     "name": "Reformed Confessions",
     "url": "https://confess.catechize.ing/",
     "title": "Website",
