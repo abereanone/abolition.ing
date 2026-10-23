@@ -4,7 +4,7 @@ Static Astro site for abolition.ing, publishing question-and-answer content, cat
 
 ## Stack
 
-- [Astro](https://astro.build/) 6.x
+- [Astro](https://astro.build/) 7.x
 - TypeScript project configuration (`tsconfig.json`)
 - Markdown content in `src/content/questions/`
 - Generated question/search artifacts for fast page rendering
@@ -18,10 +18,13 @@ Static Astro site for abolition.ing, publishing question-and-answer content, cat
 |   |-- assets/search-client.js    # Search UI source file
 |   |-- robots.txt                 # Crawl rules; points at the generated sitemap
 |   `-- styles/theme.css           # Shared theme styles
+|-- bsb-data-pipeline/             # Local BSB corpus + normalizer (see its README)
 |-- scripts/
 |   |-- build-questions.mjs        # Generates question/search artifacts
+|   |-- build-bible-cited.mjs      # Generates src/generated/bible-cited.json (verse text for tooltips)
 |   |-- check-questions.mjs        # Validates question files without writing
-|   `-- new-question.mjs           # Scaffolds a new question file
+|   |-- new-question.mjs           # Scaffolds a new question file
+|   `-- lib/                       # questions-core.mjs, collectBibleRefs.mjs
 |-- src/
 |   |-- components/                # Reusable UI pieces
 |   |-- config/                    # Site-wide settings
@@ -33,6 +36,7 @@ Static Astro site for abolition.ing, publishing question-and-answer content, cat
 |   |-- layouts/
 |   |-- lib/
 |   `-- pages/
+|-- .github/workflows/ci.yml       # CI: check:questions + check:types on push and PR
 |-- package.json
 `-- worker.js
 ```
@@ -90,7 +94,7 @@ aliases, `/random`, and the numeric/group-code question routes.
 
 ## Local Development
 
-Requirements: Node.js 22.12.0+ and npm 9.6.5+ (enforced by Astro 6).
+Requirements: Node.js 22.12.0+ and npm 9.6.5+ (enforced by Astro 7).
 
 ```bash
 npm install
@@ -145,6 +149,10 @@ Example effect:
 - `npm run build:questions` - validate question files and regenerate `src/generated/questions.json` plus `public/assets/search-index.json`.
 - `npm run check:questions` - validate question files without writing generated output.
 - `npm run new:question -- "Title"` - scaffold a new question Markdown file with the next numeric ID.
+- `npm run build:bible` - regenerate `src/generated/bible-cited.json` from `bsb-data-pipeline/bsb.json`: it collects every Bible reference found in the questions and stores the verse text the tooltips show. Runs before `dev`, `build` and `check:types`, after `build:questions`.
+- `npm run seed:bsb` - normalize `bsb-data-pipeline/bsb.json` in place (see `bsb-data-pipeline/README.md`). Rarely needed.
+- `npm run check:types` - rebuild the generated artifacts, then run `astro check`. CI runs this.
+- `npm run build:search-index` - alias of `build:questions`.
 - `npm run build` - production build.
 - `npm run preview` - preview the production build locally.
 - `npm run astro ...` - run the Astro CLI directly.
@@ -162,6 +170,7 @@ at `dist/`, and binds it as `ASSETS`.
 
 ## Notes for Future Updates
 
+- `scripts/lib/questions-core.mjs` is shared code (paths, slugs, frontmatter, validation, artifact building). Identical copies exist in `catechize.ing`, `suffering.catechize.ing` and `usa`; keep them in step. `scripts/lib/collectBibleRefs.mjs` is a plain-JS port of `src/lib/bible/autoLinkBibleRefs.ts`; change both together.
 - `src/lib/questions.ts` reads from `src/generated/questions.json`, not directly from the Markdown files.
 - Search UI source lives in `public/assets/search-client.js`.
 - `worker.js` uses `public/assets/search-index.json` for the `/api/search` endpoint.
