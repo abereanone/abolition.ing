@@ -24,7 +24,10 @@ function ensureTooltip(element) {
 
       const tooltip = document.createElement("div");
       tooltip.className = "bible-tooltip";
-      tooltip.textContent = verse ? `${verse.text} (${verse.version})` : "Verse not found.";
+      const label = String(element.dataset.ref || "").trim();
+      tooltip.textContent = verse
+        ? `${label ? `${label} - ` : ""}${verse.text} (${verse.version})`
+        : `${label ? `${label} - ` : ""}Verse not found.`;
       document.body.appendChild(tooltip);
 
       element.__tooltipElement = tooltip;
