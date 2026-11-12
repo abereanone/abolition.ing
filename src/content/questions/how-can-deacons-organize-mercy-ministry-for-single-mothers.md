@@ -4,7 +4,7 @@ title: How can deacons organize mercy ministry for single mothers?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-can-churches-support-high-risk-pregnancies

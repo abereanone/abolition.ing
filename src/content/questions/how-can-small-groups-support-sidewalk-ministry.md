@@ -4,7 +4,7 @@ title: How can small groups support sidewalk ministry outside abortion centers?
 categories:
   - Practical
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - what-does-proverbs-teach-about-rescuing-the-preborn

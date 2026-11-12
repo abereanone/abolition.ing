@@ -4,7 +4,7 @@ title: Is it loving to call abortion murder?
 categories:
   - Moral
   - Biblical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - why-is-abortion-wrong
   - how-do-we-answer-claims-that-abortion-is-healthcare

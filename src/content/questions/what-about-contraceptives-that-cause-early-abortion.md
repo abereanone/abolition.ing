@@ -4,7 +4,7 @@ title: What about contraceptives that cause early abortion?
 categories:
   - Scientific
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - is-birth-control-ever-biblical
   - are-hormonal-contraceptives-that-prevent-implantation-moral

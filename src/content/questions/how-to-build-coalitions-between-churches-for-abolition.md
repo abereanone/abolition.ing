@@ -4,7 +4,7 @@ title: How can churches build coalitions for abolition in their region?
 categories:
   - Practical
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - what-does-proverbs-teach-about-rescuing-the-preborn

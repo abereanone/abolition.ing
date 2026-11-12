@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - is-birth-control-ever-biblical

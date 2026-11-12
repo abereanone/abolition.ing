@@ -4,7 +4,7 @@ title: Should abortion be punished by law?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-legal-strategies-end-abortion-without-exceptions
   - how-can-christians-discern-compromised-prolife-legislation

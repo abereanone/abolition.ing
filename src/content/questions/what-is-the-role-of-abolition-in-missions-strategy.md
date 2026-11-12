@@ -4,7 +4,7 @@ title: What role should abolition play in church missions strategy?
 categories:
   - Biblical
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - what-does-proverbs-teach-about-rescuing-the-preborn

@@ -4,7 +4,7 @@ title: How does Jesus welcoming children shape abolition?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-the-bible-say-about-the-value-of-life
   - why-is-abortion-wrong

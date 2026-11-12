@@ -4,7 +4,7 @@ title: What steps should churches take when a member procures an abortion?
 categories:
   - Pastoral
   - Biblical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-can-pastors-counsel-survivors-of-coerced-abortion
   - how-should-we-care-for-post-abortive-women

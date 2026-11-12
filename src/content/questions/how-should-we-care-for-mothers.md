@@ -4,7 +4,7 @@ title: How should we care for mothers?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-to-structure-church-budget-for-mercy-to-mothers
   - what-practical-steps-can-communities-take-to-stand-with-mothers

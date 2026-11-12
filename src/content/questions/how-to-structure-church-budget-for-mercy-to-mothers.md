@@ -4,7 +4,7 @@ title: How can churches structure budgets to fund mercy for mothers?
 categories:
   - Practical
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-can-deacons-organize-mercy-ministry-for-single-mothers
   - how-can-churches-support-high-risk-pregnancies

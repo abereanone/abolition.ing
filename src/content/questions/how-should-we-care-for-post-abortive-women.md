@@ -4,7 +4,7 @@ title: How should we care for post-abortive women?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - can-abortion-be-forgiven
   - how-can-pastors-counsel-survivors-of-coerced-abortion

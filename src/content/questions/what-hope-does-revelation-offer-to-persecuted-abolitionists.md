@@ -4,7 +4,7 @@ title: What hope does Revelation offer to persecuted abolitionists?
 categories:
   - Biblical
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
   - how-should-the-church-engage-abortion-culture

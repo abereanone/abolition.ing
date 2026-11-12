@@ -4,7 +4,7 @@ title: How can Christians engage local media with the abolition message?
 categories:
   - Practical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - how-should-the-church-engage-abortion-culture

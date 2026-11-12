@@ -5,7 +5,7 @@ categories:
   - Scientific
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - what-about-ectopic-pregnancy

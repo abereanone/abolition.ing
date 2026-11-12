@@ -4,7 +4,7 @@ title: How can rural churches address abortion pill mailing into their communiti
 categories:
   - Practical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - should-magistrates-prosecute-abortion-pill-distribution
   - how-should-lawmakers-respond-to-abortion-tourism

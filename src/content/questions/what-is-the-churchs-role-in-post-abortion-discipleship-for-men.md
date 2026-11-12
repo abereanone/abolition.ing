@@ -4,7 +4,7 @@ title: What is the church's role in post-abortion discipleship for men?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-should-we-care-for-post-abortive-women

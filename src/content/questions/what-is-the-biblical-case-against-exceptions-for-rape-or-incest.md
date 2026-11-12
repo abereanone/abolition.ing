@@ -4,7 +4,7 @@ title: What is the biblical case against abortion exceptions for rape or incest?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-christians-respond-to-rape-and-abortion
   - what-scriptures-address-children-conceived-in-rape

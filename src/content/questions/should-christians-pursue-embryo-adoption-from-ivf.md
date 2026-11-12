@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-christians-view-frozen-embryos
   - what-are-ethical-alternatives-to-ivf

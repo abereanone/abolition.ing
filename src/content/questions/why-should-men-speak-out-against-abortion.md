@@ -4,7 +4,7 @@ title: Why should men speak out against abortion?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-steps-should-fathers-take-when-mothers-consider-abortion
   - what-is-the-churchs-role-in-post-abortion-discipleship-for-men

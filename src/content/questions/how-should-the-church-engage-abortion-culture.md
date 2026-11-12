@@ -4,7 +4,7 @@ title: How should the church engage abortion culture?
 categories:
   - Biblical
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
   - what-role-should-civil-government-play

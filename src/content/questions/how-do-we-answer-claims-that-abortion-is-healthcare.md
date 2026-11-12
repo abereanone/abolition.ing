@@ -5,7 +5,7 @@ categories:
   - Scientific
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - why-is-abortion-wrong
   - how-do-chemical-abortions-impact-womens-health

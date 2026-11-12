@@ -4,7 +4,7 @@ title: What liturgical practices help churches lament abortion?
 categories:
   - Pastoral
   - Biblical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - what-does-proverbs-teach-about-rescuing-the-preborn

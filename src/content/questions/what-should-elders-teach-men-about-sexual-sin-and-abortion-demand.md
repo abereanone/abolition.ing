@@ -4,7 +4,7 @@ title: What should elders teach men about sexual sin and abortion demand?
 categories:
   - Pastoral
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - why-should-men-speak-out-against-abortion
   - what-steps-should-fathers-take-when-mothers-consider-abortion

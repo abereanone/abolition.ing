@@ -4,7 +4,7 @@ title: What role should civil government play in ending abortion?
 categories:
   - Biblical
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - should-abortion-be-punished-by-law
   - should-magistrates-prosecute-abortion-pill-distribution

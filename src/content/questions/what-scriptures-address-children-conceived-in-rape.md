@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Pastoral
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-should-christians-respond-to-rape-and-abortion

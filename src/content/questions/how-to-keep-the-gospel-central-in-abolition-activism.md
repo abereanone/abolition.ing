@@ -4,7 +4,7 @@ title: How can Christians keep the gospel central in abolition activism?
 categories:
   - Biblical
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - how-do-we-answer-claims-that-abortion-is-healthcare

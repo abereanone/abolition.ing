@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - can-abortion-be-forgiven
   - should-abortion-be-punished-by-law

@@ -1,19 +1,11 @@
 [
   {
-    "id": "chatgpt",
-    "name": "AI",
-    "url": "https://michaelcoughlin.net",
-    "title": "AI",
-    "bio": "GPT created by Michael Coughlin. Responses align with the 1689 Baptist Confession of Faith.",
-    "sortOrder": 30
-  },
-  {
     "id": "end-abortion-now",
     "logo": "/images/resources/end-abortion-now.svg",
     "name": "End Abortion Now",
     "url": "https://endabortionnow.com",
     "title": "Abolitionist Ministry",
-    "bio": "Equipping churches with resources to engage their communities and defend the lives of preborn children." ,
+    "bio": "Equipping churches with resources to engage their communities and defend the lives of preborn children.",
     "sortOrder": 150
   },
   {
@@ -22,7 +14,7 @@
     "name": "End Abortion Ohio",
     "url": "https://endabortionohio.com",
     "title": "Abolitionist Ministry in Ohio",
-    "bio": "Abolishing abortion to the glory of God." ,
+    "bio": "Abolishing abortion to the glory of God.",
     "sortOrder": 150
   },
   {
@@ -31,7 +23,7 @@
     "name": "Abolitionists Rising",
     "url": "https://abolitionistsrising.com",
     "title": "Abolitionist Ministry",
-    "bio": "Many resources including videos and articles to help fight abortion." ,
+    "bio": "Many resources including videos and articles to help fight abortion.",
     "sortOrder": 150
   },
   {
@@ -131,5 +123,4 @@
     "bio": "Easily read, study and compare reformed confessions, reverse lookup scripture, and read the Bible online for FREE.",
     "sortOrder": 20
   }
-
 ]

@@ -4,7 +4,7 @@ title: What ethical issues arise with prenatal blood testing?
 categories:
   - Scientific
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-do-ultrasound-studies-reveal-about-fetal-pain
   - does-emergency-contraception-act-as-an-abortifacient

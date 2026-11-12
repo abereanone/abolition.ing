@@ -4,7 +4,7 @@ title: How can Christian businesses stand against abortion mandates?
 categories:
   - Practical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - how-should-lawmakers-respond-to-abortion-tourism

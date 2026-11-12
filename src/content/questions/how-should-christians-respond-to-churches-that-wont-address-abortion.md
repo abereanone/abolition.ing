@@ -4,7 +4,7 @@ title: How should Christians respond when churches refuse to address abortion?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - what-does-proverbs-teach-about-rescuing-the-preborn

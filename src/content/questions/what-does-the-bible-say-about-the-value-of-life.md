@@ -3,7 +3,7 @@ id: 6
 title: What does the Bible say about the value of life?
 categories:
   - Biblical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - why-is-abortion-wrong
   - does-science-prove-life-begins-at-conception

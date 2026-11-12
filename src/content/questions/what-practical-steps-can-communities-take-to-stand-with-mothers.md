@@ -3,7 +3,7 @@ id: 103
 title: What practical steps can communities take to stand with mothers?
 categories:
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-can-families-plan-to-stand-with-unplanned-pregnancies
   - how-should-we-care-for-mothers

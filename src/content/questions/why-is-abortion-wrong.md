@@ -4,7 +4,7 @@ title: Why is abortion wrong?
 categories:
   - Moral
   - Biblical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - can-abortion-be-forgiven
   - what-does-the-bible-say-about-the-value-of-life

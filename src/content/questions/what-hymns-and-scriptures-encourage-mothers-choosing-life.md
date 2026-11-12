@@ -4,7 +4,7 @@ title: What hymns and Scriptures encourage mothers choosing life?
 categories:
   - Pastoral
   - Biblical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-can-churches-support-high-risk-pregnancies
   - how-should-we-care-for-post-abortive-women

@@ -4,7 +4,7 @@ title: What pastoral care do men need after coercing abortion?
 categories:
   - Pastoral
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-is-the-churchs-role-in-post-abortion-discipleship-for-men
   - how-can-pastors-counsel-survivors-of-coerced-abortion

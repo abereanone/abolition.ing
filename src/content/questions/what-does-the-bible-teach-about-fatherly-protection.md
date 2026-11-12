@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - why-should-men-speak-out-against-abortion

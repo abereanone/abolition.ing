@@ -4,7 +4,7 @@ title: How can churches serve college students facing pregnancy?
 categories:
   - Practical
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-can-churches-support-high-risk-pregnancies
   - how-can-deacons-organize-mercy-ministry-for-single-mothers

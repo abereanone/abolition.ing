@@ -4,7 +4,7 @@ title: How can Christians discern ethical responses to insurance plans that cove
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - what-protections-do-post-roe-states-provide-for-mothers

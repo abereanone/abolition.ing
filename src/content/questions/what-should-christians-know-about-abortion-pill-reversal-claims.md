@@ -4,7 +4,7 @@ title: What should Christians know about so-called abortion pill reversal?
 categories:
   - Scientific
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - should-magistrates-prosecute-abortion-pill-distribution
   - how-do-chemical-abortions-impact-womens-health

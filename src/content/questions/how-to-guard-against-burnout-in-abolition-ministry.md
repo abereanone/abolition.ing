@@ -4,7 +4,7 @@ title: How can Christians guard against burnout in abolition ministry?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - how-should-we-care-for-post-abortive-women

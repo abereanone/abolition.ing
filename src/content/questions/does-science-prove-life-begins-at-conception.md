@@ -4,7 +4,7 @@ title: Does science prove life begins at conception?
 categories:
   - Scientific
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - when-does-human-life-begin
   - does-a-detectable-heartbeat-prove-personhood

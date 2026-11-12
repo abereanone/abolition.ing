@@ -3,7 +3,7 @@ id: 101
 title: How should churches walk with repentant post-abortive parents?
 categories:
   - Pastoral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - can-abortion-be-forgiven
   - how-should-we-care-for-post-abortive-women

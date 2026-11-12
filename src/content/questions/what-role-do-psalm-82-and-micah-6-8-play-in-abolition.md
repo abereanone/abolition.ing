@@ -4,7 +4,7 @@ title: What role do Psalm 82 and Micah 6:8 play in shaping abolition?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
   - why-is-abortion-wrong

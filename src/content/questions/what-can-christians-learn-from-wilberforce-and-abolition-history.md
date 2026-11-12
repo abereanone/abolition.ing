@@ -4,7 +4,7 @@ title: What can Christians learn from Wilberforce and abolition history?
 categories:
   - Practical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-church-history-teach-about-abortion
   - what-does-proverbs-teach-about-rescuing-the-preborn

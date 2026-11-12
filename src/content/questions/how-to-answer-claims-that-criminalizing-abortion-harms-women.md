@@ -4,7 +4,7 @@ title: How can Christians answer claims that criminalizing abortion harms women?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-do-we-answer-claims-that-abortion-is-healthcare
   - should-abortion-be-punished-by-law

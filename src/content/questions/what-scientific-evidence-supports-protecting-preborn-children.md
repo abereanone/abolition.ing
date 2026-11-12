@@ -3,7 +3,7 @@ id: 99
 title: What scientific evidence supports protecting preborn children?
 categories:
   - Scientific
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-proverbs-teach-about-rescuing-the-preborn
   - how-should-the-church-engage-abortion-culture

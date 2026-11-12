@@ -4,7 +4,7 @@ title: How should Christians engage medical providers who perform abortions?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-about-ectopic-pregnancy
   - how-do-chemical-abortions-impact-womens-health

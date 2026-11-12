@@ -4,7 +4,7 @@ title: How should lawmakers respond to abortion tourism?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - what-protections-do-post-roe-states-provide-for-mothers

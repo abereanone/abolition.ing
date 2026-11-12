@@ -4,7 +4,7 @@ title: What protections do post-Roe states provide for mothers?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-should-lawmakers-respond-to-abortion-tourism

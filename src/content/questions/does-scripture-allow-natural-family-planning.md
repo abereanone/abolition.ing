@@ -4,7 +4,7 @@ title: Does Scripture allow for delaying pregnancy through natural family planni
 categories:
   - Biblical
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - is-birth-control-ever-biblical
   - are-hormonal-contraceptives-that-prevent-implantation-moral

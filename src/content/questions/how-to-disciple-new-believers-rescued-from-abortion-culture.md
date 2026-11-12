@@ -4,7 +4,7 @@ title: How can churches disciple new believers rescued from abortion culture?
 categories:
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-we-care-for-post-abortive-women
   - how-can-churches-support-high-risk-pregnancies

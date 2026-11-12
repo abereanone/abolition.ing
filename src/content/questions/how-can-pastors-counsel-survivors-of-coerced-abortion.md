@@ -4,7 +4,7 @@ title: How can pastors counsel survivors of coerced abortion?
 categories:
   - Pastoral
   - Moral
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-should-we-care-for-post-abortive-women

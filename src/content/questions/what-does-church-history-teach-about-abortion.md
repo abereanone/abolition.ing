@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - why-is-abortion-wrong

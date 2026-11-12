@@ -4,7 +4,7 @@ title: How should Christians interpret Exodus 21 in the abortion debate?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - why-is-abortion-wrong
   - is-it-loving-to-call-abortion-murder

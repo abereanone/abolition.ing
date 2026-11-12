@@ -4,7 +4,7 @@ title: What legal strategies end abortion without exceptions?
 categories:
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - should-abortion-be-punished-by-law

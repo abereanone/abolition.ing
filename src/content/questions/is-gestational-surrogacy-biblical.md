@@ -4,7 +4,7 @@ title: Is gestational surrogacy consistent with biblical teaching on motherhood?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 suppressAuthor: false
 relatedAnswers:
   - how-should-christians-view-frozen-embryos

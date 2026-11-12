@@ -4,7 +4,7 @@ title: How does the incarnation inform our view of the unborn?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-does-the-bible-say-about-the-value-of-life
   - does-a-detectable-heartbeat-prove-personhood

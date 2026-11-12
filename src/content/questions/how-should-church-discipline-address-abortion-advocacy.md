@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Pastoral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - how-can-pastors-counsel-survivors-of-coerced-abortion

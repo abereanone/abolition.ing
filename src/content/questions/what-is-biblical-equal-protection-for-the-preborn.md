@@ -5,7 +5,7 @@ categories:
   - Biblical
   - Moral
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - what-legal-strategies-end-abortion-without-exceptions
   - should-abortion-be-punished-by-law

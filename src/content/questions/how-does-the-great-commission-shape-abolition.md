@@ -4,7 +4,7 @@ title: How does the Great Commission shape abolition work?
 categories:
   - Biblical
   - Practical
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - how-should-the-church-engage-abortion-culture
   - how-do-we-answer-claims-that-abortion-is-healthcare

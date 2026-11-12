@@ -4,7 +4,7 @@ title: Is birth control ever biblical?
 categories:
   - Biblical
   - Moral
-authorId: chatgpt
+authorId: mac
 relatedAnswers:
   - does-scripture-allow-natural-family-planning
   - are-hormonal-contraceptives-that-prevent-implantation-moral
