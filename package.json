@@ -10,7 +10,7 @@
     "predev": "npm run build:questions && npm run build:bible",
     "dev": "astro dev",
     "prebuild": "npm run build:questions && npm run build:bible",
-    "build": "astro build",
+    "build": "astro build && node scripts/go-links.mjs dist --base /go/ --own abolition.ing,www.abolition.ing",
     "preview": "astro preview",
     "astro": "astro",
     "build:bible": "node ./scripts/build-bible-cited.mjs",
