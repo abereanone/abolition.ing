@@ -1,4 +1,5 @@
 import { getVerseData } from "@/lib/bible/bibleClient";
+import { setVerseText } from "@/lib/bible/pluralYou.js";
 
 export function initScripturePreview() {
   const verseCard = document.querySelector("[data-scripture-verse]");
@@ -11,9 +12,10 @@ export function initScripturePreview() {
 
   getVerseData(referenceKey)
     .then((verse) => {
-      verseBody.textContent = verse
-        ? `${verse.text} (${verse.version})`
-        : "Verse text could not be loaded for this reference.";
+      setVerseText(
+        verseBody,
+        verse ? `${verse.text} (${verse.version})` : "Verse text could not be loaded for this reference."
+      );
     })
     .catch(() => {
       verseBody.textContent = "Verse text could not be loaded for this reference.";
