@@ -282,7 +282,6 @@ function getAnswerPreview(entry: Question, maxLength = RELATED_PREVIEW_LENGTH): 
     {previousQuestion || nextQuestion ? (
       <QuestionNav
         variant="top"
-        randomLabel="Random"
         prevHref={previousQuestion ? buildQuestionHref(previousQuestion) : null}
         nextHref={nextQuestion ? buildQuestionHref(nextQuestion) : null}
         searchId={`question-search-${questionSlug}`}
