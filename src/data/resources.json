@@ -97,6 +97,15 @@
     "sortOrder": 125
   },
   {
+    "id": "cwp",
+    "logo": "/images/resources/cwp.png",
+    "name": "Common Weal Press",
+    "url": "https://commonwealpress.org/",
+    "title": "Website",
+    "bio": "Classic Christian books, carefully edited for today's readers. Free to read and download!",
+    "sortOrder": 126
+  },
+  {
     "id": "fb",
     "logo": "/images/resources/fb.png",
     "name": "Fetch Bible",
