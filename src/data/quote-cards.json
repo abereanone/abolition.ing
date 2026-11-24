@@ -1,0 +1,1184 @@
+{
+ "site": "abolition",
+ "topicLabel": "Topic",
+ "topics": [
+  {
+   "id": "biblical",
+   "name": "Biblical",
+   "n": 23
+  },
+  {
+   "id": "moral",
+   "name": "Moral",
+   "n": 28
+  },
+  {
+   "id": "sci",
+   "name": "Scientific",
+   "n": 3
+  },
+  {
+   "id": "pastoral",
+   "name": "Pastoral",
+   "n": 26
+  },
+  {
+   "id": "practical",
+   "name": "Practical",
+   "n": 32
+  }
+ ],
+ "keywords": [
+  {
+   "word": "church",
+   "n": 26
+  },
+  {
+   "word": "christ",
+   "n": 25
+  },
+  {
+   "word": "mother",
+   "n": 19
+  },
+  {
+   "word": "christian",
+   "n": 16
+  },
+  {
+   "word": "mercy",
+   "n": 15
+  },
+  {
+   "word": "abolition",
+   "n": 14
+  },
+  {
+   "word": "gospel",
+   "n": 14
+  },
+  {
+   "word": "love",
+   "n": 13
+  },
+  {
+   "word": "justice",
+   "n": 12
+  },
+  {
+   "word": "scripture",
+   "n": 12
+  },
+  {
+   "word": "murder",
+   "n": 11
+  },
+  {
+   "word": "equal",
+   "n": 10
+  },
+  {
+   "word": "protection",
+   "n": 10
+  },
+  {
+   "word": "psalm",
+   "n": 10
+  },
+  {
+   "word": "refuse",
+   "n": 9
+  },
+  {
+   "word": "blood",
+   "n": 8
+  },
+  {
+   "word": "protect",
+   "n": 8
+  },
+  {
+   "word": "hope",
+   "n": 7
+  },
+  {
+   "word": "rescue",
+   "n": 7
+  },
+  {
+   "word": "discipleship",
+   "n": 6
+  },
+  {
+   "word": "legal",
+   "n": 6
+  },
+  {
+   "word": "lord",
+   "n": 6
+  },
+  {
+   "word": "obedience",
+   "n": 6
+  },
+  {
+   "word": "partiality",
+   "n": 6
+  },
+  {
+   "word": "preborn",
+   "n": 6
+  },
+  {
+   "word": "romans",
+   "n": 6
+  },
+  {
+   "word": "believers",
+   "n": 5
+  },
+  {
+   "word": "disciple",
+   "n": 5
+  },
+  {
+   "word": "evil",
+   "n": 5
+  },
+  {
+   "word": "faithfulness",
+   "n": 5
+  }
+ ],
+ "books": [],
+ "cards": [
+  {
+   "id": 22,
+   "slug": "what-does-the-bible-teach-about-fatherly-protection",
+   "question": "What does the Bible teach about fathers protecting preborn children?",
+   "answer": "Fathers are charged to protect and provide (Ephesians 6:4; 1 Timothy 5:8). Scripture calls men to defend the weak (Psalm 82:3) and to love their wives as Christ loves the church (Ephesians 5:25). Allowing abortion betrays both mother and child; godly fathers guard life, lead sacrificially, and refuse cowardice.",
+   "topics": [
+    "biblical",
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mother",
+    "love",
+    "scripture",
+    "psalm",
+    "refuse",
+    "protect",
+    "preborn"
+   ],
+   "books": []
+  },
+  {
+   "id": 26,
+   "slug": "is-permanent-sterilization-a-faithful-family-planning-choice",
+   "question": "Is permanent sterilization an acceptable Christian response to family planning?",
+   "answer": "God calls children a blessing (Psalm 127:3-5). Sterilization chosen to shut the door on future children rejects that gift without biblical warrant. Except for rare, grave medical necessity, it reflects distrust of providence. Christians should seek wisdom, not autonomy, receiving offspring as from the Lord.",
+   "topics": [
+    "biblical",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "christian",
+    "psalm",
+    "lord"
+   ],
+   "books": []
+  },
+  {
+   "id": 33,
+   "slug": "what-are-ethical-alternatives-to-ivf",
+   "question": "What are ethical alternatives to IVF for infertile couples?",
+   "answer": "Use means that honor the personhood of every child: medical care that heals underlying infertility without creating embryos outside of the womb or excess embryos, or that brings unnecessary risk to your children; adoption; embryo rescue only where it does not incentivize further creation of disposable embryos; prayerful contentment in God’s providence. All methods must avoid commodifying or discarding children.",
+   "topics": [
+    "biblical",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "rescue"
+   ],
+   "books": []
+  },
+  {
+   "id": 35,
+   "slug": "what-does-church-history-teach-about-abortion",
+   "question": "What does church history teach about abortion in the early centuries?",
+   "answer": "The early church uniformly condemned abortion. The Didache called it murder; Athanasius, Tertullian, and Basil spoke likewise. Believers rescued exposed infants and opposed child-killing as a fruit of the gospel ethic. Historic Christianity aligns with Scripture: the church must protect preborn children and oppose this bloodshed.",
+   "topics": [
+    "biblical",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "gospel",
+    "scripture",
+    "murder",
+    "protect",
+    "preborn",
+    "believers"
+   ],
+   "books": []
+  },
+  {
+   "id": 36,
+   "slug": "should-christians-support-fetal-heartbeat-legislation",
+   "question": "Should Christians support fetal heartbeat legislation?",
+   "answer": "Heartbeat bills imply that life is protectable only after detection, leaving younger children unprotected. Additionally, these bills normally exempt mothers from any wrongdoing. God forbids partiality in justice (Deuteronomy 1:17); life begins at conception. Christians should press for abolition that bans all abortion with equal justice, not incremental measures that regulate murder.",
+   "topics": [
+    "biblical",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "mother",
+    "christian",
+    "abolition",
+    "justice",
+    "murder",
+    "equal",
+    "partiality"
+   ],
+   "books": []
+  },
+  {
+   "id": 40,
+   "slug": "what-scriptures-address-children-conceived-in-rape",
+   "question": "What scriptures address the value of children conceived in rape?",
+   "answer": "Scripture affirms every child as God’s handiwork (Psalm 139:13-16). The child is not punished for the father’s sin (Ezekiel 18:20). Christ welcomed little ones without distinction (Mark 10:14). Justice prosecutes the rapist; mercy protects the child. Abortion compounds evil with another killing.",
+   "topics": [
+    "biblical",
+    "moral",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "mercy",
+    "justice",
+    "scripture",
+    "psalm",
+    "protect",
+    "evil"
+   ],
+   "books": []
+  },
+  {
+   "id": 49,
+   "slug": "how-should-church-discipline-address-abortion-advocacy",
+   "question": "How should church discipline address members who advocate for abortion?",
+   "answer": "Christ has given the keys to the church to guard the gospel and the flock (Matthew 18:15; 1 Corinthians 5). If a member advocates for abortion, elders must warn, instruct, and call to repentance. Persisting in promoting murder hardens the conscience and dishonors Christ; loving discipline, up to excommunication if unrepentant, aims to restore the sinner and protect the assembly.",
+   "topics": [
+    "biblical",
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "gospel",
+    "murder",
+    "protect"
+   ],
+   "books": []
+  },
+  {
+   "id": 52,
+   "slug": "what-role-do-psalm-82-and-micah-6-8-play-in-abolition",
+   "question": "What role do Psalm 82 and Micah 6:8 play in shaping abolition?",
+   "answer": "Psalm 82 rebukes rulers who fail to rescue the weak; Micah 6:8 commands us to do justice, love mercy, and walk humbly with God. Together they frame abolition: defend the fatherless, refuse partiality, and act under God’s gaze. Abortion is legalized oppression; these texts demand we oppose it with justice rooted in worship.",
+   "topics": [
+    "biblical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "mercy",
+    "abolition",
+    "love",
+    "justice",
+    "psalm",
+    "refuse",
+    "rescue",
+    "partiality"
+   ],
+   "books": []
+  },
+  {
+   "id": 54,
+   "slug": "should-christians-pursue-embryo-adoption-from-ivf",
+   "question": "Should Christians pursue embryo adoption from IVF clinics?",
+   "answer": "Embryos are created by God, not surplus property (Psalm 139:13-16). Rescuing frozen children can be an act of mercy, yet the IVF system that created them is unjust. Couples must proceed with sober conscience, refusing to participate in further creation or destruction of embryos, and seek pastoral wisdom. Whatever is not from faith is sin (Romans 14:23).",
+   "topics": [
+    "biblical",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "christian",
+    "mercy",
+    "psalm",
+    "romans"
+   ],
+   "books": []
+  },
+  {
+   "id": 56,
+   "slug": "how-does-the-great-commission-shape-abolition",
+   "question": "How does the Great Commission shape abolition work?",
+   "answer": "Jesus commands us to make disciples, teaching them to obey all He commanded (Matthew 28:18-20). That includes rescuing the weak, refusing murder, and loving neighbors in the womb. Abolition flows from disciple-making: evangelize, baptize, and train believers to keep Christ’s law in public and private, confident He is with us to the end.",
+   "topics": [
+    "biblical",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "abolition",
+    "murder",
+    "believers",
+    "disciple"
+   ],
+   "books": []
+  },
+  {
+   "id": 61,
+   "slug": "what-is-biblical-equal-protection-for-the-preborn",
+   "question": "What is biblical equal protection for the preborn?",
+   "answer": "Equal protection means the same laws against murder apply to every human from conception without exception (Genesis 9:6). No immunity for age, location, or stage; no partiality for the powerful. Civil rulers are God’s servants to punish evil (Romans 13:4). Anything less tolerates injustice; true love demands equal justice and equal mercy.",
+   "topics": [
+    "biblical",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "mercy",
+    "love",
+    "justice",
+    "murder",
+    "equal",
+    "protection",
+    "partiality",
+    "preborn",
+    "romans",
+    "evil"
+   ],
+   "books": []
+  },
+  {
+   "id": 68,
+   "slug": "how-does-the-incarnation-inform-our-view-of-the-unborn",
+   "question": "How does the incarnation inform our view of the unborn?",
+   "answer": "The eternal Son took on flesh and was first known as a child in the womb (Luke 1). The incarnation dignifies life from conception; God dwelt among us beginning in hiddenness. To assault the womb is to despise the pattern God honored. Also see Luke 1:41,44",
+   "topics": [
+    "biblical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [],
+   "books": []
+  },
+  {
+   "id": 72,
+   "slug": "what-role-do-prayer-and-fasting-play-in-abolition",
+   "question": "What role do prayer and fasting play in abolition?",
+   "answer": "Prayer and fasting humble us before God and align us with His purposes (Isaiah 58). They are not substitutes for obedience but fuel for faithfulness. As we seek His face, we gain courage to rescue and persevere. The battle is spiritual and demands dependence on Christ’s power, not human strength.",
+   "topics": [
+    "biblical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "abolition",
+    "rescue",
+    "obedience",
+    "faithfulness"
+   ],
+   "books": []
+  },
+  {
+   "id": 73,
+   "slug": "how-should-christians-interpret-exodus-21-in-the-abortion-debate",
+   "question": "How should Christians interpret Exodus 21 in the abortion debate?",
+   "answer": "Exodus 21:22-25 treats harm to the unborn with the same lex talionis standard applied to all persons. If there is injury, the penalty is life for life, eye for eye. The passage affirms personhood in the womb and God’s demand for equal justice. It undercuts any claim that Scripture permits lesser protections for the preborn.",
+   "topics": [
+    "biblical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christian",
+    "justice",
+    "scripture",
+    "equal",
+    "protection",
+    "preborn"
+   ],
+   "books": []
+  },
+  {
+   "id": 78,
+   "slug": "how-does-jesus-welcoming-children-shape-abolition",
+   "question": "How does Jesus welcoming children shape abolition?",
+   "answer": "Jesus received little children and rebuked those who hindered them (Mark 10:13-16). If the King welcomes the smallest, His people must too. Abolition is simply living out Christ’s welcome: protecting, blessing, and making room for every child, because the kingdom belongs to such as these.",
+   "topics": [
+    "biblical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "abolition"
+   ],
+   "books": []
+  },
+  {
+   "id": 83,
+   "slug": "what-does-justice-require-for-abortionists-who-repent",
+   "question": "What does justice require for abortionists who repent?",
+   "answer": "God’s justice requires truthful reckoning: those who shed innocent blood are liable to punishment (Genesis 9:6; Romans 13:4). If an abortionist repents, the church extends gospel forgiveness and discipleship, yet civil authorities must still do their duty. Mercy in Christ does not erase earthly justice; both honor God’s holiness.",
+   "topics": [
+    "biblical",
+    "moral",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mercy",
+    "gospel",
+    "justice",
+    "blood",
+    "discipleship",
+    "romans"
+   ],
+   "books": []
+  },
+  {
+   "id": 85,
+   "slug": "what-is-the-role-of-abolition-in-missions-strategy",
+   "question": "What role should abolition play in church missions strategy?",
+   "answer": "Missions aims to make disciples who obey Jesus everywhere (Matthew 28:18-20). That includes teaching nations to cherish life and reject murder. As churches plant and send, they should equip workers to confront abortion with the gospel, mercy, and just teaching, so local churches abroad become voices for the voiceless.",
+   "topics": [
+    "biblical",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mercy",
+    "abolition",
+    "gospel",
+    "murder",
+    "disciple"
+   ],
+   "books": []
+  },
+  {
+   "id": 89,
+   "slug": "what-is-the-biblical-case-against-exceptions-for-rape-or-incest",
+   "question": "What is the biblical case against abortion exceptions for rape or incest?",
+   "answer": "Scripture forbids punishing children for their fathers’ sins (Ezekiel 18:20). Each child is knit by God and belongs to Him (Psalm 139:13-16). Justice demands we prosecute the rapist and protect the baby. Exceptions make innocence a matter of circumstance; God calls all shedding of innocent blood evil.",
+   "topics": [
+    "biblical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "justice",
+    "scripture",
+    "psalm",
+    "blood",
+    "protect",
+    "evil"
+   ],
+   "books": []
+  },
+  {
+   "id": 93,
+   "slug": "how-to-keep-the-gospel-central-in-abolition-activism",
+   "question": "How can Christians keep the gospel central in abolition activism?",
+   "answer": "Without the gospel, activism becomes anger or self-righteousness. Keep Christ crucified and risen at the center: preach repentance and faith, confess your own sins, and extend mercy to all involved in abortion. Let activism flow from worship and love for Christ, so your labor is in the Lord and not in the flesh.",
+   "topics": [
+    "biblical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "christian",
+    "mercy",
+    "abolition",
+    "gospel",
+    "love",
+    "lord"
+   ],
+   "books": []
+  },
+  {
+   "id": 98,
+   "slug": "what-hope-does-revelation-offer-to-persecuted-abolitionists",
+   "question": "What hope does Revelation offer to persecuted abolitionists?",
+   "answer": "Revelation shows the Lamb reigning and the martyrs vindicated. Those who resist the dragon’s war on children share in Christ’s sufferings but also in His victory. Persevering witnesses conquer by the blood of the Lamb and the word of their testimony (Revelation 12:11). Endurance is worth it; Jesus will wipe away every tear (Revelation 21:4).",
+   "topics": [
+    "biblical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "blood",
+    "hope"
+   ],
+   "books": []
+  },
+  {
+   "id": 28,
+   "slug": "what-protections-do-post-roe-states-provide-for-mothers",
+   "question": "What protections do post-Roe states provide for mothers?",
+   "answer": "Many states wrongly shield mothers from prosecution and allow chemical abortion trafficking, leaving children unprotected. True justice offers equal protection for child and mother: bans on abortion, prosecution of all who intentionally kill, and robust mercy ministries for families. Christians should demand laws that defend both lives without partiality.",
+   "topics": [
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "mother",
+    "christian",
+    "mercy",
+    "justice",
+    "equal",
+    "protection",
+    "partiality"
+   ],
+   "books": []
+  },
+  {
+   "id": 32,
+   "slug": "how-should-lawmakers-respond-to-abortion-tourism",
+   "question": "How should lawmakers respond to abortion tourism?",
+   "answer": "Magistrates bear the sword to punish evil (Romans 13:4). They must criminalize abortion within their jurisdiction, bar facilitation of out-of-state killings, and prosecute pill trafficking. No sanctuary for bloodshed. Uphold equal protection for every child and resist laws that license murder by travel.",
+   "topics": [
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "murder",
+    "equal",
+    "protection",
+    "romans",
+    "evil"
+   ],
+   "books": []
+  },
+  {
+   "id": 41,
+   "slug": "what-legal-strategies-end-abortion-without-exceptions",
+   "question": "What legal strategies end abortion without exceptions?",
+   "answer": "Pass abolition bills that establish equal protection from conception, criminalize all intentional killing of preborn children, and remove immunity that treats mothers or abortionists differently. Reject regulatory schemes that permit some murders (gestational limits, exceptions). Magistrates must fear God, not man (2 Samuel 23:3), and uphold justice consistently.",
+   "topics": [
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "mother",
+    "abolition",
+    "justice",
+    "murder",
+    "equal",
+    "protection",
+    "legal",
+    "preborn"
+   ],
+   "books": []
+  },
+  {
+   "id": 53,
+   "slug": "how-to-discern-ethical-insurance-coverage-for-abortion",
+   "question": "How can Christians discern ethical responses to insurance plans that cover abortion?",
+   "answer": "If an insurance plan funds abortion, believers must not participate in the shedding of innocent blood (Romans 1:32). Seek alternatives: opt-out riders, employer negotiations, health-share ministries, or conscience accommodations. If constrained, protest in writing, pursue change, and consider costly obedience for a clear conscience (Acts 5:29). Trust the Lord to provide as you refuse to finance murder.",
+   "topics": [
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "christian",
+    "murder",
+    "refuse",
+    "blood",
+    "lord",
+    "obedience",
+    "romans",
+    "believers"
+   ],
+   "books": []
+  },
+  {
+   "id": 90,
+   "slug": "how-to-correct-prolife-arguments-that-deny-equal-justice",
+   "question": "How can Christians correct pro-life arguments that deny equal justice?",
+   "answer": "When pro-life arguments excuse mothers or permit regulated killing, expose the partiality (Proverbs 24:11-12). Point to God’s equal standards and the command of God in the Noahic covenant (Genesis 9:6). Call for consistency: true love seeks both mercy and justice, not immunity that leaves some lives unprotected.",
+   "topics": [
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "mother",
+    "christian",
+    "mercy",
+    "love",
+    "justice",
+    "equal",
+    "partiality"
+   ],
+   "books": []
+  },
+  {
+   "id": 92,
+   "slug": "what-ethical-issues-arise-with-prenatal-blood-testing",
+   "question": "What ethical issues arise with prenatal blood testing?",
+   "answer": "Prenatal blood tests can be helpful for care but are often used to target children for abortion. The information gained must be stewarded for the child’s good, not destruction. Couples should reject any counsel that treats disability as a death sentence and seek physicians who honor life at every stage.",
+   "topics": [
+    "sci",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "blood"
+   ],
+   "books": []
+  },
+  {
+   "id": 94,
+   "slug": "what-should-christians-know-about-abortion-pill-reversal-claims",
+   "question": "What should Christians know about so-called abortion pill reversal?",
+   "answer": "Some report that progesterone given after the first abortion pill can halt the process. Evidence is contested, but Christians should not promise what is uncertain. The surest righteousness is to refuse the first pill and rescue the child. Advocate for mothers in crisis, offer medical help that honors both lives, and speak truth without false hope.",
+   "topics": [
+    "sci",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "mother",
+    "christian",
+    "refuse",
+    "hope",
+    "rescue"
+   ],
+   "books": []
+  },
+  {
+   "id": 99,
+   "slug": "what-scientific-evidence-supports-protecting-preborn-children",
+   "question": "What scientific evidence supports protecting preborn children?",
+   "answer": "Modern embryology recognizes that human life begins at fertilization, when a distinct DNA code is formed. Ultrasound imagery, fetal heartbeat detection, and pain-response studies all reveal an active, developing child rather than impersonal tissue. Science therefore confirms what Scripture declares—that every preborn child is a human neighbor worthy of protection.",
+   "topics": [
+    "sci"
+   ],
+   "scripture": [],
+   "words": [
+    "scripture",
+    "protection",
+    "preborn"
+   ],
+   "books": []
+  },
+  {
+   "id": 30,
+   "slug": "what-is-the-churchs-role-in-post-abortion-discipleship-for-men",
+   "question": "What is the church’s role in post-abortion discipleship for men?",
+   "answer": "Men who participated in abortion need conviction, repentance, and restoration. Churches must preach law and gospel, call sin what it is, and offer Christ’s full forgiveness (Isaiah 1:18). Assign mature mentors, require restitution where possible, and integrate them into accountable fellowship and service. Grace trains us to holiness (Titus 2:11-12).",
+   "topics": [
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "gospel",
+    "discipleship"
+   ],
+   "books": []
+  },
+  {
+   "id": 34,
+   "slug": "how-can-pastors-counsel-survivors-of-coerced-abortion",
+   "question": "How can pastors counsel survivors of coerced abortion?",
+   "answer": "Pastors must approach this issue with both truth and tenderness—refusing to flatten the moral reality of abortion while also recognizing the real suffering many women have endured.",
+   "topics": [
+    "pastoral",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [],
+   "books": []
+  },
+  {
+   "id": 43,
+   "slug": "what-steps-should-fathers-take-when-mothers-consider-abortion",
+   "question": "What steps should fathers take when mothers consider abortion?",
+   "answer": "Repent of passivity; lovingly plead for the child’s life; provide tangible support and protection; involve church shepherds; seek just legal recourse if needed. Fathers must reflect Christ’s sacrificial headship (Ephesians 5:25) and obey Proverbs 24:11 by intervening to rescue. Pray, stand firm, and offer ongoing care for mother and baby.",
+   "topics": [
+    "pastoral",
+    "moral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mother",
+    "protection",
+    "rescue",
+    "legal"
+   ],
+   "books": []
+  },
+  {
+   "id": 55,
+   "slug": "how-can-youth-be-discipled-for-abolition",
+   "question": "How can churches disciple youth for abolition?",
+   "answer": "Disciple teenagers with Scripture’s view of life, sin, and the cross. Walk through Proverbs 24:11-12, Psalm 139, and Luke 1 so they see God’s heart. Train them in prayer, mercy, and courage, paired with practical service alongside mature believers. Keep the gospel central so zeal flows from love, not mere outrage.",
+   "topics": [
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mercy",
+    "abolition",
+    "gospel",
+    "love",
+    "scripture",
+    "psalm",
+    "believers",
+    "disciple"
+   ],
+   "books": []
+  },
+  {
+   "id": 57,
+   "slug": "how-should-christians-respond-to-churches-that-wont-address-abortion",
+   "question": "How should Christians respond when churches refuse to address abortion?",
+   "answer": "Appeal humbly to leaders with Scripture (Proverbs 24:11-12; Psalm 82). If they refuse to name abortion as murder and shepherd the flock, continue to exhort with patience, but seek faithful oversight where the whole counsel of God is preached (Acts 20:27). Silence in the face of bloodshed is negligence; love requires truthful, pastoral action.",
+   "topics": [
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christian",
+    "love",
+    "scripture",
+    "murder",
+    "psalm",
+    "refuse"
+   ],
+   "books": []
+  },
+  {
+   "id": 64,
+   "slug": "what-pastoral-care-do-men-need-after-coercing-abortion",
+   "question": "What pastoral care do men need after coercing abortion?",
+   "answer": "Men who coerced abortion need conviction, confession, and the cleansing blood of Christ (1 John 1:9). Pastors should call them to repentance, require restitution where possible, and shepherd them into accountable community. Grace trains us to renounce ungodliness (Titus 2:11-12); disciplined love aims for restored, holy manhood.",
+   "topics": [
+    "pastoral",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "love",
+    "blood"
+   ],
+   "books": []
+  },
+  {
+   "id": 67,
+   "slug": "what-liturgical-practices-help-churches-lament-abortion",
+   "question": "What liturgical practices help churches lament abortion?",
+   "answer": "Corporate lament teaches us to hate what God hates and hope in His mercy. Use Psalms of lament, pastoral prayers that name the sin of abortion, and assurance of pardon in Christ. Periodic days of fasting and prayer can cultivate earnestness without replacing obedience. Lament should move us to rescue and to rest in the gospel.",
+   "topics": [
+    "pastoral",
+    "biblical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mercy",
+    "gospel",
+    "psalm",
+    "hope",
+    "rescue",
+    "obedience"
+   ],
+   "books": []
+  },
+  {
+   "id": 70,
+   "slug": "what-should-elders-teach-men-about-sexual-sin-and-abortion-demand",
+   "question": "What should elders teach men about sexual sin and abortion demand?",
+   "answer": "Elders must confront lust, pornography, and fornication that fuel abortion demand. Call men to purity, covenant faithfulness, and fatherly courage (Ephesians 5:25; 1 Thessalonians 4:3-4). Teach that abandoning mother and child is cowardice; Christ’s love sets men free to lead, provide, and protect.",
+   "topics": [
+    "pastoral",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "mother",
+    "love",
+    "protect",
+    "faithfulness"
+   ],
+   "books": []
+  },
+  {
+   "id": 75,
+   "slug": "how-to-guard-against-burnout-in-abolition-ministry",
+   "question": "How can Christians guard against burnout in abolition ministry?",
+   "answer": "Burnout comes when we carry the load apart from Christ. Rest in the finished work of Jesus, keep the Sabbath rhythm, share the load with the body, and remember that results belong to God (1 Corinthians 3:6-7). Take joy in small obediences; do not confuse urgency with unbelieving frenzy. The Lord is our strength.",
+   "topics": [
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "christian",
+    "abolition",
+    "lord",
+    "obedience"
+   ],
+   "books": []
+  },
+  {
+   "id": 76,
+   "slug": "what-steps-should-churches-take-when-a-member-procures-an-abortion",
+   "question": "What steps should churches take when a member procures an abortion?",
+   "answer": "Churches must respond with both truth and restoration. Pursue Matthew 18: private confrontation, then witnesses, then the church if unrepentant. Hold out Christ’s full pardon to the penitent and walk with them through grief and restitution. Discipline aims at recovery, not shame, and protects the flock from treating murder lightly.",
+   "topics": [
+    "pastoral",
+    "biblical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "murder",
+    "protect"
+   ],
+   "books": []
+  },
+  {
+   "id": 79,
+   "slug": "what-hymns-and-scriptures-encourage-mothers-choosing-life",
+   "question": "What hymns and Scriptures encourage mothers choosing life?",
+   "answer": "Read and pray Psalm 23, Psalm 139, and Romans 8 to fix hope on the Lord’s nearness. Sing hymns like “Great Is Thy Faithfulness” and “It Is Well” to steady fearful hearts. Scripture and song remind mothers that Christ is with them and that the church will stand beside them.",
+   "topics": [
+    "pastoral",
+    "biblical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mother",
+    "scripture",
+    "psalm",
+    "hope",
+    "lord",
+    "romans",
+    "faithfulness"
+   ],
+   "books": []
+  },
+  {
+   "id": 86,
+   "slug": "how-to-disciple-new-believers-rescued-from-abortion-culture",
+   "question": "How can churches disciple new believers rescued from abortion culture?",
+   "answer": "New believers need milk and meat: clear teaching on grace, repentance, and the lordship of Christ. Address past sins, including abortion, with gospel hope (Isaiah 1:18) and practical accountability. Integrate them into ordinary means of grace, mentoring, and service so they grow in holiness and love for life.",
+   "topics": [
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "gospel",
+    "love",
+    "hope",
+    "believers",
+    "disciple"
+   ],
+   "books": []
+  },
+  {
+   "id": 101,
+   "slug": "how-should-churches-walk-with-repentant-post-abortive-parents",
+   "question": "How should churches walk with repentant post-abortive parents?",
+   "answer": "Churches must lead with the gospel, assuring repentant parents that Christ’s blood truly cleanses every sin. Pair that hope with patient discipleship, biblical counseling, and intergenerational fellowship that refuses to stigmatize the forgiven. As the body bears their burdens, the repentant can heal, testify, and join the mission to protect other families.",
+   "topics": [
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "gospel",
+    "refuse",
+    "blood",
+    "protect",
+    "hope",
+    "discipleship"
+   ],
+   "books": []
+  },
+  {
+   "id": 102,
+   "slug": "how-should-we-care-for-mothers",
+   "question": "How should we care for mothers?",
+   "answer": "We begin by reminding them that the God who sees Hagar also sees them. We speak plainly about the value of their child while offering tangible help, local church support, and gospel hope.",
+   "topics": [
+    "pastoral",
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mother",
+    "gospel",
+    "hope"
+   ],
+   "books": []
+  },
+  {
+   "id": 59,
+   "slug": "how-can-small-groups-support-sidewalk-ministry",
+   "question": "How can small groups support sidewalk ministry outside abortion centers?",
+   "answer": "Small groups can pray, fast, and rotate teams to be present where children are being led to slaughter. Provide literature, offer help to mothers, and connect them immediately to church support. Follow up faithfully; the goal is not only protest but rescue and discipleship. Let your speech be gracious and truthful, seasoned with the gospel (Colossians 4:6).",
+   "topics": [
+    "practical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mother",
+    "gospel",
+    "rescue",
+    "discipleship"
+   ],
+   "books": []
+  },
+  {
+   "id": 66,
+   "slug": "how-to-serve-college-students-facing-pregnancy",
+   "question": "How can churches serve college students facing pregnancy?",
+   "answer": "Meet students with compassion, not shame. Provide housing, transportation, childcare help, and academic advocacy. Connect them with older women for discipleship (Titus 2), and with physicians who refuse abortion. The church’s welcome should show that Christ cares for mother and child, even when campus culture pressures abandonment.",
+   "topics": [
+    "practical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mother",
+    "refuse",
+    "discipleship"
+   ],
+   "books": []
+  },
+  {
+   "id": 69,
+   "slug": "how-can-christian-businesses-stand-against-abortion-mandates",
+   "question": "How can Christian businesses stand against abortion mandates?",
+   "answer": "Christian employers must obey God rather than men (Acts 5:29). Challenge abortion mandates through legal channels, seek exemptions, and refuse to pay for the shedding of innocent blood. Care well for employees by offering alternatives that uphold life. Courageous obedience may be costly, but Christ is Lord over every ledger and policy.",
+   "topics": [
+    "practical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "christian",
+    "refuse",
+    "blood",
+    "legal",
+    "lord",
+    "obedience"
+   ],
+   "books": []
+  },
+  {
+   "id": 71,
+   "slug": "how-to-structure-church-budget-for-mercy-to-mothers",
+   "question": "How can churches structure budgets to fund mercy for mothers?",
+   "answer": "Build mercy for mothers into the church budget, not as an afterthought. Fund housing help, childcare, medical costs, and legal aid as needed. Deacons can steward these resources (Acts 6) while pastors shepherd souls. Sacrificial generosity displays the gospel to parents tempted by fear.",
+   "topics": [
+    "practical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mother",
+    "mercy",
+    "gospel",
+    "legal"
+   ],
+   "books": []
+  },
+  {
+   "id": 74,
+   "slug": "should-christians-pursue-federal-or-state-abolition-first",
+   "question": "Should Christians prioritize federal abolition or state-level strategies?",
+   "answer": "Both state and federal spheres are accountable to God. Pursue abolition wherever jurisdiction allows: press your state to enact equal protection now, and urge federal authorities to uphold justice nationally. Reject delay framed as strategy; partiality is sin. We labor on all fronts, trusting Christ to honor faithfulness more than political calculus.",
+   "topics": [
+    "practical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "christian",
+    "abolition",
+    "justice",
+    "equal",
+    "protection",
+    "partiality",
+    "faithfulness"
+   ],
+   "books": []
+  },
+  {
+   "id": 80,
+   "slug": "how-to-engage-local-media-with-the-abolition-message",
+   "question": "How can Christians engage local media with the abolition message?",
+   "answer": "Speak plainly and respectfully about abortion as the unjust taking of human life. Offer stories of mercy ministry that back your words. Anchor claims in Scripture and basic science, and call civil leaders to equal protection. Refuse euphemisms; let your light shine before others, pointing to Christ’s authority (Matthew 5:16).",
+   "topics": [
+    "practical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "christian",
+    "mercy",
+    "abolition",
+    "scripture",
+    "equal",
+    "protection",
+    "refuse"
+   ],
+   "books": []
+  },
+  {
+   "id": 87,
+   "slug": "what-can-christians-learn-from-wilberforce-and-abolition-history",
+   "question": "What can Christians learn from Wilberforce and abolition history?",
+   "answer": "Wilberforce modeled patient, principled persistence against entrenched evil. He paired legislative labor with mercy to the oppressed and unwavering conviction rooted in the gospel. Christians today should imitate his refusal to compromise, his coalition-building, and his confidence that Christ’s kingdom advances through truth and love.",
+   "topics": [
+    "practical",
+    "moral"
+   ],
+   "scripture": [],
+   "words": [
+    "christ",
+    "christian",
+    "mercy",
+    "abolition",
+    "gospel",
+    "love",
+    "evil"
+   ],
+   "books": []
+  },
+  {
+   "id": 88,
+   "slug": "how-can-churches-measure-faithful-engagement-against-abortion",
+   "question": "How can churches measure faithful engagement against abortion?",
+   "answer": "Measure faithfulness, not publicity: Are we preaching clearly? Are members serving mothers and fathers? Are we advocating for equal justice? Are we praying and fasting? Track tangible care (housing, meals, legal help), discipleship, and public witness. Numbers matter less than steadfast obedience from a pure heart.",
+   "topics": [
+    "practical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mother",
+    "justice",
+    "equal",
+    "discipleship",
+    "legal",
+    "obedience",
+    "faithfulness"
+   ],
+   "books": []
+  },
+  {
+   "id": 95,
+   "slug": "how-to-build-coalitions-between-churches-for-abolition",
+   "question": "How can churches build coalitions for abolition in their region?",
+   "answer": "Start with prayer and shared doctrine: agree on the sin of abortion, and the authority of Christ. Gather pastors to repent of apathy, plan joint mercy efforts, and speak with one voice to magistrates. Cooperation around truth multiplies courage and care for mothers and children.",
+   "topics": [
+    "practical",
+    "pastoral"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "christ",
+    "mother",
+    "mercy",
+    "abolition"
+   ],
+   "books": []
+  },
+  {
+   "id": 103,
+   "slug": "what-practical-steps-can-communities-take-to-stand-with-mothers",
+   "question": "What practical steps can communities take to stand with mothers?",
+   "answer": "Communities can build coalitions of churches, crisis-pregnancy workers, medical professionals, and mentors who respond the moment a mother asks for help. Provide housing, childcare, legal aid, and job pathways so she never feels cornered by fear. When neighbors show up with tangible love, abortion becomes unthinkable and families thrive.",
+   "topics": [
+    "practical"
+   ],
+   "scripture": [],
+   "words": [
+    "church",
+    "mother",
+    "love",
+    "legal"
+   ],
+   "books": []
+  }
+ ]
+}
