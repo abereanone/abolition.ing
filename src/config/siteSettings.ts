@@ -16,7 +16,8 @@ export const siteSettings = {
   issueReportURL: 'https://github.com/abereanone/abolition.ing/issues/new',
   longExplanationText: 'Extended Answer',
   integrations: {
-    googleAnalyticsId: 'G-0JVE2NPH9S',
+    // Google Analytics removed 2026-11-24: stats come from Cloudflare (C:/code/site-stats).
+    googleAnalyticsId: '',
   },
   openGraph: {
     title: branding.siteName,
