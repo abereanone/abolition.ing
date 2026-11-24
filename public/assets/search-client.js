@@ -52,7 +52,8 @@ function createSearchEngine(dataset = []) {
     accumulateTokens(tokenWeights, doc?.content ?? "", 1);
     accumulateTokens(tokenWeights, (doc?.categories ?? []).join(" "), 2);
 
-    const tokenCount = Array.from(tokenWeights.values()).reduce((sum, value) => sum + value, 0) || 1;
+    const tokenCount =
+      Array.from(tokenWeights.values()).reduce((sum, value) => sum + value, 0) || 1;
 
     const record = {
       ...doc,
@@ -81,7 +82,9 @@ function searchIndex(engine, query, options = {}) {
     return { total: 0, items: [] };
   }
 
-  const tokens = tokenize(query).filter((token) => token.length >= MIN_TOKEN_LENGTH && !STOP_WORDS.has(token));
+  const tokens = tokenize(query).filter(
+    (token) => token.length >= MIN_TOKEN_LENGTH && !STOP_WORDS.has(token)
+  );
   const uniqueTokens = [...new Set(tokens)];
   const docScores = new Map();
 
@@ -429,11 +432,13 @@ function initSearchPage() {
       });
       const { items, total } = payload;
 
-      const authorName = selectedAuthor ? authorLookup[selectedAuthor] ?? selectedAuthor : null;
+      const authorName = selectedAuthor ? (authorLookup[selectedAuthor] ?? selectedAuthor) : null;
       const filterLabel = buildFilterLabel(hasQuery ? normalizedQuery : "", authorName);
 
       if (!items.length) {
-        metaContainer.textContent = filterLabel ? `No results found for ${filterLabel}.` : "No results found.";
+        metaContainer.textContent = filterLabel
+          ? `No results found for ${filterLabel}.`
+          : "No results found.";
         resultsContainer.innerHTML = "";
         return;
       }
@@ -448,11 +453,10 @@ function initSearchPage() {
           const titleHtml = result.highlightedTitle || result.title;
           const snippetHtml = result.snippet || result.excerpt || "";
           const idLabel =
-            result.idLabel ?? (result.id !== null && result.id !== undefined ? String(result.id) : null);
+            result.idLabel ??
+            (result.id !== null && result.id !== undefined ? String(result.id) : null);
           const titlePrefix =
-            showQuestionIds && idLabel
-              ? `<span class="result-id">#${idLabel}</span> `
-              : "";
+            showQuestionIds && idLabel ? `<span class="result-id">#${idLabel}</span> ` : "";
 
           return `
             <article class="search-result">

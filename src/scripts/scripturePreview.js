@@ -14,11 +14,12 @@ export function initScripturePreview() {
     .then((verse) => {
       setVerseText(
         verseBody,
-        verse ? `${verse.text} (${verse.version})` : "Verse text could not be loaded for this reference."
+        verse
+          ? `${verse.text} (${verse.version})`
+          : "Verse text could not be loaded for this reference."
       );
     })
     .catch(() => {
       verseBody.textContent = "Verse text could not be loaded for this reference.";
     });
 }
-

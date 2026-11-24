@@ -6,7 +6,16 @@
 // Deploy-safe: pure JS, no .ts imports (the prebuild step runs this under plain
 // node, where importing .ts is not guaranteed).
 
-const singleChapterBooks = new Set(["obadiah", "oba", "philemon", "phm", "2jn", "3jn", "jude", "jud"]);
+const singleChapterBooks = new Set([
+  "obadiah",
+  "oba",
+  "philemon",
+  "phm",
+  "2jn",
+  "3jn",
+  "jude",
+  "jud",
+]);
 
 export function createRefCollector(bookMap) {
   const bookPattern = Object.keys(bookMap)
@@ -79,8 +88,7 @@ export function createRefCollector(bookMap) {
         push(`${baseRef}:${firstVerse}`);
         let output = `<span class="bible-ref" data-ref="${baseRef}:${firstVerse}">${book} ${chapter}:${firstVerse}</span>`;
         const rest = match.slice(`${book} ${chapter}:${firstVerse}`.length);
-        const extraMatches =
-          rest.match(/,\s*\d+(?::\d+(?:[-–—]\d+)?)?(?:[-–—]\d+)?/g) ?? [];
+        const extraMatches = rest.match(/,\s*\d+(?::\d+(?:[-–—]\d+)?)?(?:[-–—]\d+)?/g) ?? [];
         extraMatches.forEach((chunk) => {
           const verse = chunk.replace(/,\s*/, "");
           const ref = verse.includes(":") ? `${book} ${verse}` : `${baseRef}:${verse}`;

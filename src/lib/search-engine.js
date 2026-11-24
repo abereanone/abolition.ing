@@ -51,7 +51,8 @@ export function createSearchEngine(dataset = []) {
     accumulateTokens(tokenWeights, doc?.content ?? "", 1);
     accumulateTokens(tokenWeights, (doc?.categories ?? []).join(" "), 2);
 
-    const tokenCount = Array.from(tokenWeights.values()).reduce((sum, value) => sum + value, 0) || 1;
+    const tokenCount =
+      Array.from(tokenWeights.values()).reduce((sum, value) => sum + value, 0) || 1;
 
     const record = {
       ...doc,
@@ -80,7 +81,9 @@ export function searchIndex(engine, query, options = {}) {
     return { total: 0, items: [] };
   }
 
-  const tokens = tokenize(query).filter((token) => token.length >= MIN_TOKEN_LENGTH && !STOP_WORDS.has(token));
+  const tokens = tokenize(query).filter(
+    (token) => token.length >= MIN_TOKEN_LENGTH && !STOP_WORDS.has(token)
+  );
   const uniqueTokens = [...new Set(tokens)];
   const docScores = new Map();
 

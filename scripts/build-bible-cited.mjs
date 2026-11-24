@@ -39,7 +39,10 @@ function normalizeBookName(bookMap, book) {
 }
 
 function normalizeReference(bookMap, reference) {
-  const lower = reference.trim().toLowerCase().replace(/\u2013|\u2014/g, "-");
+  const lower = reference
+    .trim()
+    .toLowerCase()
+    .replace(/\u2013|\u2014/g, "-");
   const parts = lower.split(/\s+/);
 
   if (parts.length < 2) {
@@ -280,7 +283,11 @@ function resolveVerseData(bible, normalizedReference) {
     if (ffMatch) {
       const start = Number.parseInt(ffMatch[1], 10);
       if (!Number.isNaN(start) && start > 0) {
-        for (let verseNumber = start; verseNumber <= chapterEntriesForValue.length; verseNumber += 1) {
+        for (
+          let verseNumber = start;
+          verseNumber <= chapterEntriesForValue.length;
+          verseNumber += 1
+        ) {
           appendVerse(chapterValue, verseNumber);
         }
       }
@@ -384,7 +391,9 @@ async function run() {
   const bible = JSON.parse(bibleRaw);
 
   if (!Array.isArray(questions)) {
-    throw new Error("src/generated/questions.json must be an array. Run npm run build:questions first.");
+    throw new Error(
+      "src/generated/questions.json must be an array. Run npm run build:questions first."
+    );
   }
 
   const allReferences = new Set();

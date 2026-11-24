@@ -7,9 +7,45 @@ import { siteSettings } from "@/config/siteSettings";
 // cards, so the page read as mostly headings.
 const entries = listScriptures();
 const oldTestamentCodes = new Set([
-  "gen", "exo", "lev", "num", "deu", "jos", "jdg", "rut", "1sa", "2sa", "1ki", "2ki", "1ch",
-  "2ch", "ezr", "neh", "est", "job", "psa", "pro", "ecc", "sng", "isa", "jer", "lam", "ezk",
-  "dan", "hos", "jol", "amo", "oba", "jon", "mic", "nah", "hab", "zep", "hag", "zec", "mal",
+  "gen",
+  "exo",
+  "lev",
+  "num",
+  "deu",
+  "jos",
+  "jdg",
+  "rut",
+  "1sa",
+  "2sa",
+  "1ki",
+  "2ki",
+  "1ch",
+  "2ch",
+  "ezr",
+  "neh",
+  "est",
+  "job",
+  "psa",
+  "pro",
+  "ecc",
+  "sng",
+  "isa",
+  "jer",
+  "lam",
+  "ezk",
+  "dan",
+  "hos",
+  "jol",
+  "amo",
+  "oba",
+  "jon",
+  "mic",
+  "nah",
+  "hab",
+  "zep",
+  "hag",
+  "zec",
+  "mal",
 ]);
 const siteName = siteSettings.branding.siteName;
 ---
@@ -19,53 +55,75 @@ const siteName = siteSettings.branding.siteName;
     <h1>Scriptures</h1>
     <p>Browse the scripture references cited in proof sections and see which questions use them.</p>
 
-    {entries.length ? (
-      <>
-        <div class="scripture-testament-picker" aria-label="Choose testament">
-          <button type="button" class="scripture-testament-button is-active" aria-pressed="true" data-testament-button data-testament-target="all">
-            All
-          </button>
-          <button type="button" class="scripture-testament-button" aria-pressed="false" data-testament-button data-testament-target="ot">
-            Old Testament
-          </button>
-          <button type="button" class="scripture-testament-button" aria-pressed="false" data-testament-button data-testament-target="nt">
-            New Testament
-          </button>
-        </div>
-        <label class="scripture-filter">
-          <span class="scripture-filter-label">Filter references</span>
-          <input
-            type="search"
-            class="scripture-filter-input"
-            placeholder="Search references, e.g. Exodus 1 or ex 1"
-            data-scripture-filter
-          />
-        </label>
-        <ul class="scripture-grid">
-          {entries.map((entry) => (
-            <li
-              data-scripture-item
-              data-testament={oldTestamentCodes.has(entry.bookCode) ? "ot" : "nt"}
-              data-book-code={entry.bookCode}
-              data-book-search={entry.bookSearchText}
-              data-reference-search={entry.referencePart}
+    {
+      entries.length ? (
+        <>
+          <div class="scripture-testament-picker" aria-label="Choose testament">
+            <button
+              type="button"
+              class="scripture-testament-button is-active"
+              aria-pressed="true"
+              data-testament-button
+              data-testament-target="all"
             >
-              <a class="scripture-card card-panel" href={`/scriptures/${entry.slug}`}>
-                <span class="scripture-reference">{entry.reference}</span>
-                <span class="scripture-count">
-                  {entry.questionCount === 1 ? "1 question" : `${entry.questionCount} questions`}
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <p class="scripture-empty-state" data-scripture-empty hidden>
-          <em>No references match that search.</em>
+              All
+            </button>
+            <button
+              type="button"
+              class="scripture-testament-button"
+              aria-pressed="false"
+              data-testament-button
+              data-testament-target="ot"
+            >
+              Old Testament
+            </button>
+            <button
+              type="button"
+              class="scripture-testament-button"
+              aria-pressed="false"
+              data-testament-button
+              data-testament-target="nt"
+            >
+              New Testament
+            </button>
+          </div>
+          <label class="scripture-filter">
+            <span class="scripture-filter-label">Filter references</span>
+            <input
+              type="search"
+              class="scripture-filter-input"
+              placeholder="Search references, e.g. Exodus 1 or ex 1"
+              data-scripture-filter
+            />
+          </label>
+          <ul class="scripture-grid">
+            {entries.map((entry) => (
+              <li
+                data-scripture-item
+                data-testament={oldTestamentCodes.has(entry.bookCode) ? "ot" : "nt"}
+                data-book-code={entry.bookCode}
+                data-book-search={entry.bookSearchText}
+                data-reference-search={entry.referencePart}
+              >
+                <a class="scripture-card card-panel" href={`/scriptures/${entry.slug}`}>
+                  <span class="scripture-reference">{entry.reference}</span>
+                  <span class="scripture-count">
+                    {entry.questionCount === 1 ? "1 question" : `${entry.questionCount} questions`}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p class="scripture-empty-state" data-scripture-empty hidden>
+            <em>No references match that search.</em>
+          </p>
+        </>
+      ) : (
+        <p>
+          <em>No scripture references are indexed yet.</em>
         </p>
-      </>
-    ) : (
-      <p><em>No scripture references are indexed yet.</em></p>
-    )}
+      )
+    }
   </section>
 
   <script type="module" is:inline>
@@ -219,17 +277,25 @@ const siteName = siteSettings.branding.siteName;
 
       return segments.some((segment) => {
         if (queryReference.verse == null) {
-          return queryReference.chapter >= segment.startChapter && queryReference.chapter <= segment.endChapter;
+          return (
+            queryReference.chapter >= segment.startChapter &&
+            queryReference.chapter <= segment.endChapter
+          );
         }
 
-        if (queryReference.chapter < segment.startChapter || queryReference.chapter > segment.endChapter) {
+        if (
+          queryReference.chapter < segment.startChapter ||
+          queryReference.chapter > segment.endChapter
+        ) {
           return false;
         }
 
         if (segment.startChapter === segment.endChapter) {
-          return queryReference.chapter === segment.startChapter
-            && queryReference.verse >= segment.startVerse
-            && queryReference.verse <= segment.endVerse;
+          return (
+            queryReference.chapter === segment.startChapter &&
+            queryReference.verse >= segment.startVerse &&
+            queryReference.verse <= segment.endVerse
+          );
         }
 
         if (queryReference.chapter === segment.startChapter) {
@@ -240,7 +306,10 @@ const siteName = siteSettings.branding.siteName;
           return queryReference.verse <= segment.endVerse;
         }
 
-        return queryReference.chapter > segment.startChapter && queryReference.chapter < segment.endChapter;
+        return (
+          queryReference.chapter > segment.startChapter &&
+          queryReference.chapter < segment.endChapter
+        );
       });
     };
 
@@ -258,7 +327,8 @@ const siteName = siteSettings.branding.siteName;
         return false;
       }
 
-      const remainingTokens = matchedAliasLength > 0 ? queryTokens.slice(matchedAliasLength) : queryTokens;
+      const remainingTokens =
+        matchedAliasLength > 0 ? queryTokens.slice(matchedAliasLength) : queryTokens;
       const bookCode = String(item.getAttribute("data-book-code") || "");
       const isSingleChapterBook = singleChapterBooks.has(bookCode);
       const queryReference = parseReferenceQuery(remainingTokens, isSingleChapterBook);

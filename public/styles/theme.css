@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
 
 /* === Brand & Design Tokens === */
 :root {
   color-scheme: dark;
 
   /* Typography */
-  --font-body: 'Merriweather', serif;
-  --font-heading: 'Playfair Display', serif;
+  --font-body: "Merriweather", serif;
+  --font-heading: "Playfair Display", serif;
   --font-size-body: 1.15rem;
   --font-size-main: 1.1rem;
   --line-height-body: 1.8;
@@ -97,18 +97,12 @@
 
   --transition-theme: background-color 0.2s ease, color 0.2s ease;
   --transition-surface:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease,
-    background-color 0.2s ease;
+    transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
   --transition-border-bg: background-color 0.2s ease, border-color 0.2s ease;
-  --transition-border-bg-color:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
+  --transition-border-bg-color: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   color-scheme: light;
 
   /* Core colors */
@@ -513,7 +507,9 @@ ul {
   color: var(--color-link);
   cursor: pointer;
   border-bottom: 1px dotted currentColor;
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-bottom-color 0.2s ease;
 }
 
 .bible-ref:hover,

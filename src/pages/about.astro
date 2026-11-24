@@ -10,44 +10,48 @@ const siteName = siteSettings.branding.siteName;
   <section data-bible-autolink>
     <h1>About {siteName}</h1>
     <p>
-      {siteName} exists to serve all of humanity so that we might see abortion rightly and act
-      accordingly. Our purpose is not to repeat political slogans or echo the shifting rhetoric of
-      worldly movements, but to declare the unchanging truth of God's Word: every child, from conception,
-      is a human being that deserves full protection under the law. Here you will find biblical and
-      historical answers that call Christians to reject compromise and to pursue the total and immediate
-      abolition of abortion in our generation as an act of obedience to King Jesus.
+      {siteName} exists to serve all of humanity so that we might see abortion rightly and act accordingly.
+      Our purpose is not to repeat political slogans or echo the shifting rhetoric of worldly movements,
+      but to declare the unchanging truth of God's Word: every child, from conception, is a human being
+      that deserves full protection under the law. Here you will find biblical and historical answers
+      that call Christians to reject compromise and to pursue the total and immediate abolition of abortion
+      in our generation as an act of obedience to King Jesus.
     </p>
 
     <p>
       Because abolition is not a mere political cause but a command of justice rooted in the gospel,
       {siteName} directs believers to faithful churches and ministries that labor for righteousness without
-      partiality. We seek to equip pastors, legislators, educators, and ordinary saints with resources that
-      unite conviction with compassion, proclaiming truth in love yet refusing to excuse or regulate evil.
-      Through a fun question and answer format, visitors can learn how to engage the culture, confront unjust
-      laws, and bear witness to the Lord who demands that His people "rescue those being taken away to death"
-      (Proverbs 24:11).
+      partiality. We seek to equip pastors, legislators, educators, and ordinary saints with resources
+      that unite conviction with compassion, proclaiming truth in love yet refusing to excuse or regulate
+      evil. Through a fun question and answer format, visitors can learn how to engage the culture, confront
+      unjust laws, and bear witness to the Lord who demands that His people "rescue those being taken
+      away to death" (Proverbs 24:11).
     </p>
 
     <p>
       {siteName} is maintained by followers of Christ who desire to see His bride purified and His justice
       established. We welcome correction and contribution that strengthen the clarity and courage of the
-      church's witness. All resources are freely offered so that every believer may study, share, and act
-      upon the truth. Our prayer is that these pages would stir repentance where apathy has reigned, embolden
-      redemptive action among God's people, and renew grateful confidence in the gospel--the power of God
-      that compels us to defend the preborn and to proclaim Christ as Lord over life, law, and love.
+      church's witness. All resources are freely offered so that every believer may study, share, and
+      act upon the truth. Our prayer is that these pages would stir repentance where apathy has reigned,
+      embolden redemptive action among God's people, and renew grateful confidence in the gospel--the
+      power of God that compels us to defend the preborn and to proclaim Christ as Lord over life, law,
+      and love.
     </p>
 
     <p>
-      {siteName} diplays a modified text of the Berean Standard Bible when you hover over or tap on verse links. This text comes from our local curated copy of the Berean Standard Bible, with the covenant name Yahweh displayed instead of LORD.
+      {siteName} diplays a modified text of the Berean Standard Bible when you hover over or tap on verse
+      links. This text comes from our local curated copy of the Berean Standard Bible, with the covenant
+      name Yahweh displayed instead of LORD.
     </p>
 
+    <p>Contact us via email at abereanone (at) pm (dot) me.</p>
     <p>
-      Contact us via email at abereanone (at) pm (dot) me.
-    </p>
-    <p>
-      Donations are never required, but if you want to co-labor with us we will use all the funds for God's
-      glory. We use a secure payment processor called
-      <a href="https://www.zeffy.com/en-US/referral?referredByOrganizationId=4c5e3aa2-763d-407c-973c-19e522a3f5c1" target="blank">Zeffy</a>
+      Donations are never required, but if you want to co-labor with us we will use all the funds
+      for God's glory. We use a secure payment processor called
+      <a
+        href="https://www.zeffy.com/en-US/referral?referredByOrganizationId=4c5e3aa2-763d-407c-973c-19e522a3f5c1"
+        target="blank">Zeffy</a
+      >
       that does not charge fees to non-profits.
     </p>
     <div
@@ -55,7 +59,8 @@ const siteName = siteSettings.branding.siteName;
       style="margin-top:2rem;padding:1.5rem;border:1px solid rgba(255,255,255,0.12);border-radius:18px;background:rgba(255,255,255,0.03);"
     >
       <p style="margin-top:0;">
-        The donation form is loaded only when requested to keep third-party scripts from running by default.
+        The donation form is loaded only when requested to keep third-party scripts from running by
+        default.
       </p>
       <button
         type="button"
@@ -68,7 +73,8 @@ const siteName = siteSettings.branding.siteName;
         data-donation-form-container
         hidden
         style="position:relative;overflow:hidden;height:550px;width:100%;margin-top:1.5rem;"
-      ></div>
+      >
+      </div>
     </div>
   </section>
 
@@ -80,7 +86,11 @@ const siteName = siteSettings.branding.siteName;
         const trigger = document.querySelector("[data-donation-form-trigger]");
         const container = document.querySelector("[data-donation-form-container]");
 
-        if (!(root instanceof HTMLElement) || !(trigger instanceof HTMLButtonElement) || !(container instanceof HTMLElement)) {
+        if (
+          !(root instanceof HTMLElement) ||
+          !(trigger instanceof HTMLButtonElement) ||
+          !(container instanceof HTMLElement)
+        ) {
           return;
         }
 
